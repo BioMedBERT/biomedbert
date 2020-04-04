@@ -1,5 +1,5 @@
 ===============================
-biomedbert
+BioMedBERT
 ===============================
 
 .. image:: https://badge.fury.io/py/biomedbert.png
