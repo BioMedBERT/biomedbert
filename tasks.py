@@ -17,6 +17,7 @@ def clean(ctx):
     run('rm -rf build')
     run('rm -rf dist')
     run('rm -rf BioMedBERT.egg-info')
+    run('rm -rf biomedbert.egg-info')
     clean_docs(ctx)
     print("Cleaned up.")
 

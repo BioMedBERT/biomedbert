@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-'''biomedbert
+"""biomedbert
 
 Usage:
-  biomedbert ship new <name>...
+  biomedbert project <name>...
   biomedbert ship <name> move <x> <y> [--speed=<kn>]
   biomedbert ship shoot <x> <y>
   biomedbert mine (set|remove) <x> <y> [--moored|--drifting]
@@ -16,7 +16,7 @@ Options:
   --speed=<kn>  Speed in knots [default: 10].
   --moored      Moored (anchored) mine.
   --drifting    Drifting mine.
-'''
+"""
 
 from __future__ import unicode_literals, print_function
 from docopt import docopt
@@ -27,9 +27,10 @@ __license__ = "MIT"
 
 
 def main():
-    '''Main entry point for the biomedbert CLI.'''
+    """Main entry point for the biomedbert CLI."""
     args = docopt(__doc__, version=__version__)
     print(args)
+
 
 if __name__ == '__main__':
     main()

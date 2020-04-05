@@ -4,10 +4,10 @@ import sys
 from setuptools import setup
 from setuptools.command.test import test as TestCommand
 
-
 REQUIRES = [
-    'docopt',
+    'docopt', 'invoke'
 ]
+
 
 class PyTest(TestCommand):
     def finalize_options(self):
@@ -22,11 +22,11 @@ class PyTest(TestCommand):
 
 
 def find_version(fname):
-    '''Attempts to find the version number in the file names fname.
+    """Attempts to find the version number in the file names fname.
     Raises RuntimeError if not found.
-    '''
+    """
     version = ''
-    with open(fname, 'r') as fp:
+    with open(fname) as fp:
         reg = re.compile(r'__version__ = [\'"]([^\'"]*)[\'"]')
         for line in fp:
             m = reg.match(line)
@@ -37,6 +37,7 @@ def find_version(fname):
         raise RuntimeError('Cannot find version information')
     return version
 
+
 __version__ = find_version("biomedbert.py")
 
 
@@ -44,6 +45,7 @@ def read(fname):
     with open(fname) as fp:
         content = fp.read()
     return content
+
 
 setup(
     name='biomedbert',
