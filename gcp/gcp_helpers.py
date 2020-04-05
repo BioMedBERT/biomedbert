@@ -1,54 +1,53 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import os
+import time
+import webbrowser
+from subprocess import Popen, CalledProcessError
+from invoke import run, exceptions
+from tqdm import trange
 
-from invoke import run
+
+def set_gcp_project(project_id: str, zone: str):
+    """Set GCP project ID"""
+    try:
+        run('gcloud config set project {}'.format(project_id))
+        run('gcloud config set compute/zone {}'.format(zone))
+    except exceptions.UnexpectedExit:
+        print('Bad command')
 
 
-class GCPHelpers():
-    """
-    Class for GCP helper functions
-    """
-    def __init__(self):
-        """Constructor"""
-        self.project_id = None
-        self.zone = None
-        self.vm_instance = None
+def start_vm(vm_instance: str):
+    """Start VM"""
+    try:
+        run('gcloud compute instances start {}'.format(vm_instance))
+    except exceptions.UnexpectedExit:
+        print('Bad command')
 
-    def set_gcp_project(self, project_id: str, zone: str):
-        """Set GCP project ID"""
-        self.project_id = project_id
-        self.zone = zone
-        run('gcloud config set project {}'.format(self.project_id))
-        run('gcloud config set compute/zone {}'.format(self.zone))
 
-    def set_vm_instance(self, vm_instance: str):
-        """Set VM Instance"""
-        self.vm_instance = vm_instance
+def stop_vm(vm_instance: str):
+    """Stop VM"""
+    try:
+        run('gcloud compute instances stop {}'.format(vm_instance))
+    except exceptions.UnexpectedExit:
+        print('Bad command')
 
-    def start_vm(self):
-        """Start VM"""
-        if self.vm_instance is None:
-            print('Insance Name {} not set'.format(self.vm_instance))
-        else:
-            run('gcloud compute instances start {}'.format(self.vm_instance))
 
-    def stop_vm(self):
-        """Stop VM"""
-        if self.vm_instance is None:
-            print('Insance Name {} not set'.format(self.vm_instance))
-        else:
-            run('gcloud compute instances stop {}'.format(self.vm_instance))
+def launch_notebook(project_id: str, zone: str, vm_instance: str):
+    """Lauch notebook on VM"""
+    try:
+        process = Popen(['nohup', 'bash', './bash/connect_jupyterlab.sh', project_id, zone, vm_instance],
+                        stdout=open('/dev/null', 'w'),
+                        stderr=open('logfile.log', 'a'),
+                        preexec_fn=os.setpgrp
+                        )
 
-    def launch_notebook(self):
-        """Lauch notebook on VM"""
-        if self.project_id is None:
-            print('GCP ProjectID not set')
-        elif self.zone is None:
-            print('GCP zone not set')
-        elif self.vm_instance is None:
-            print('GCP VM Instance not set')
-        else:
-            run('gcloud compute ssh --project {} --zone {} {} -- -L 8080:localhost:8080'.format(
-                self.project_id, self.zone, self.vm_instance))
-
+        if process.returncode is None:
+            print('Connecting to Jupyterlab at http://localhost:8080/lab?')
+            # sleep for 25 seconds then launch http://localhost:8080/lab?
+            for i in trange(25):
+                time.sleep(1)
+            webbrowser.open('http://localhost:8080/lab?')
+    except CalledProcessError:
+        print('Bad command')

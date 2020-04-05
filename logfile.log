@@ -1,0 +1,21 @@
+ERROR: (gcloud.compute.ssh) unrecognized arguments: -- -L 8080:localhost:8080 
+
+To search the help text of gcloud commands, run:
+  gcloud help -- SEARCH_TERMS
+ERROR: (gcloud.compute.ssh) unrecognized arguments: -- -L 8080:localhost:8080 
+
+To search the help text of gcloud commands, run:
+  gcloud help -- SEARCH_TERMS
+ERROR: (gcloud.compute.ssh) unrecognized arguments: -- -L 8080:localhost:8080 
+
+To search the help text of gcloud commands, run:
+  gcloud help -- SEARCH_TERMS
+tcsetattr: Interrupted system call
+Connection to 35.197.45.247 closed by remote host.
+Connection to 35.197.45.247 closed.
+ERROR: (gcloud.compute.ssh) [/usr/bin/ssh] exited with return code [255].
+External IP address was not found; defaulting to using IAP tunneling.
+ERROR: (gcloud.compute.start-iap-tunnel) Error while connecting [4033: u'not authorized'].
+ssh_exchange_identification: Connection closed by remote host
+ERROR: (gcloud.compute.ssh) [/usr/bin/ssh] exited with return code [255].
+tcsetattr: Interrupted system call
