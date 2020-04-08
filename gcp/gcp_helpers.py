@@ -4,7 +4,7 @@
 import os
 import time
 import webbrowser
-from subprocess import Popen, CalledProcessError
+from subprocess import call, Popen, CalledProcessError
 from invoke import run, exceptions
 from tqdm import trange
 
@@ -37,9 +37,8 @@ def stop_vm(vm_instance: str):
 def connect_vm(project_id: str, zone: str, vm_instance: str):
     """SSH into VM"""
     try:
-        run('gcloud beta compute ssh --zone {} {} --project {}'.format(
-            zone, vm_instance, project_id))
-    except exceptions.UnexpectedExit:
+        call(['gcloud', 'compute', 'ssh', '--zone', zone, vm_instance, '--project', project_id])
+    except CalledProcessError:
         print('Bad command')
 
 

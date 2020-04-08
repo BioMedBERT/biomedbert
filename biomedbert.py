@@ -34,7 +34,7 @@ def code_commands(args: dict):
     # train vocab
     if args['code'] and args['train'] and args['vocab']:
         if args['data'] and args['prefix']:
-            train_vocabulary(args['data'], args['prefix'])
+            train_vocabulary(args['<data>'], args['<prefix>'])
 
 
 def gcp_commands(args: dict):
@@ -68,7 +68,13 @@ def gcp_commands(args: dict):
 
     # connect VM
     if args['gcp'] and args['vm'] and args['connect']:
-        connect_vm(args['<vm-instance>'])
+        # read configurations
+        config.read('config/gcp_config.ini')
+        project_id = config['PROJECT']['name']
+        zone = config['PROJECT']['zone']
+
+        # ssh to instance
+        connect_vm(project_id, zone, args['<vm-instance>'])
 
     # launch jupyter notebook on VM
     if args['gcp'] and args['vm'] and args['notebook']:
