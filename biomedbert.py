@@ -7,6 +7,8 @@ Usage:
   biomedbert gcp vm start <vm-instance>
   biomedbert gcp vm stop <vm-instance>
   biomedbert gcp vm notebook <vm-instance>
+  biomedbert gcp vm connect <vm-instance>
+  biomedbert code train vocab <data> <prefix>
   biomedbert -h | --help
   biomedbert --version
 
@@ -18,11 +20,21 @@ Options:
 from __future__ import unicode_literals, print_function
 import configparser
 from docopt import docopt
-from gcp.gcp_helpers import set_gcp_project, start_vm, stop_vm, launch_notebook
+from gcp.gcp_helpers import set_gcp_project, start_vm, stop_vm, launch_notebook, connect_vm
+from code_.modules import train_vocabulary
 
 __version__ = "0.1.0"
 __author__ = "AI vs COVID-19 Team"
 __license__ = "MIT"
+
+
+def code_commands(args: dict):
+    """Command to train BioMedBert model"""
+
+    # train vocab
+    if args['code'] and args['train'] and args['vocab']:
+        if args['data'] and args['prefix']:
+            train_vocabulary(args['data'], args['prefix'])
 
 
 def gcp_commands(args: dict):
@@ -54,6 +66,10 @@ def gcp_commands(args: dict):
     if args['gcp'] and args['vm'] and args['stop']:
         stop_vm(args['<vm-instance>'])
 
+    # connect VM
+    if args['gcp'] and args['vm'] and args['connect']:
+        connect_vm(args['<vm-instance>'])
+
     # launch jupyter notebook on VM
     if args['gcp'] and args['vm'] and args['notebook']:
         # read configurations
@@ -73,6 +89,9 @@ def main():
 
     if args['gcp']:
         gcp_commands(args)
+
+    if args['code']:
+        code_commands(args)
 
 
 if __name__ == '__main__':

@@ -34,6 +34,15 @@ def stop_vm(vm_instance: str):
         print('Bad command')
 
 
+def connect_vm(project_id: str, zone: str, vm_instance: str):
+    """SSH into VM"""
+    try:
+        run('gcloud beta compute ssh --zone {} {} --project {}'.format(
+            zone, vm_instance, project_id))
+    except exceptions.UnexpectedExit:
+        print('Bad command')
+
+
 def launch_notebook(project_id: str, zone: str, vm_instance: str):
     """Lauch notebook on VM"""
     try:

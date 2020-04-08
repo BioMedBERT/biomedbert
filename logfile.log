@@ -19,3 +19,12 @@ ERROR: (gcloud.compute.start-iap-tunnel) Error while connecting [4033: u'not aut
 ssh_exchange_identification: Connection closed by remote host
 ERROR: (gcloud.compute.ssh) [/usr/bin/ssh] exited with return code [255].
 tcsetattr: Interrupted system call
+packet_write_wait: Connection to 35.197.45.247 port 22: Broken pipe
+ERROR: (gcloud.compute.ssh) [/usr/bin/ssh] exited with return code [255].
+tcsetattr: Interrupted system call
+packet_write_wait: Connection to 35.197.45.247 port 22: Broken pipe
+ERROR: (gcloud.compute.ssh) [/usr/bin/ssh] exited with return code [255].
+tcsetattr: Interrupted system call
+packet_write_wait: Connection to 35.197.45.247 port 22: Broken pipe
+ERROR: (gcloud.compute.ssh) [/usr/bin/ssh] exited with return code [255].
+tcsetattr: Interrupted system call
