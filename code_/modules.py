@@ -13,7 +13,7 @@ def train_vocabulary(data: str, prefix: str):
     prc_data_fpath = data  # "processed_ncbi_comm_use_BODY.txt"
     model_prefix = prefix  # "biomedbert"
     voc_size = 32000
-    subsample_size = 12800000
+    subsample_size = 9000000
     num_placeholders = 256
 
     spm_command = ('--input={} --model_prefix={} '
