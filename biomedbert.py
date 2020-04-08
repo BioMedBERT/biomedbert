@@ -33,7 +33,7 @@ def code_commands(args: dict):
 
     # train vocab
     if args['code'] and args['train'] and args['vocab']:
-        if args['data'] and args['prefix']:
+        if args['<data>'] and args['<prefix>']:
             train_vocabulary(args['<data>'], args['<prefix>'])
 
 
