@@ -50,7 +50,7 @@ def generate_pre_trained_data(pretraining_dir: str, voc_fname: str, number_of_sh
 
     xargs_cmd = ("ls ./shards/" + shard_path + "/ | "
                  "xargs -n 1 -P {} -I{} "
-                 "python3 bert/create_pretraining_data.py "
+                 "sudo python3 bert/create_pretraining_data.py "
                  "--input_file=./shards/" + shard_path + "/{} "
                  "--output_file={}/{}.tfrecord "
                  "--vocab_file={} "
@@ -61,6 +61,11 @@ def generate_pre_trained_data(pretraining_dir: str, voc_fname: str, number_of_sh
                  "--random_seed=34 "
                  "--dupe_factor=5")
 
+    # ls ./shards/ncbi/ | xargs -n 1 -P 2 -I sudo python3 bert/create_pretraining_data.py
+    # --input_file=./shards/ncbi/ --output_file="pre_trained_data/{}".tfrecord
+    # --vocab_file=vocabulary/ncbi/biomedbert-8M.txt --do_lower_case=True  --max_predictions_per_seq=20
+    # --max_seq_length=128 --masked_lm_prob=0.15 --random_seed=34 --dupe_factor=5
+
     xargs_cmd = xargs_cmd.format(processes, '{}', '{}', pretraining_dir, '{}',
                                  voc_fname, do_lower_case,
                                  max_predictions, max_seq_length, masked_lm_prob)
@@ -68,7 +73,7 @@ def generate_pre_trained_data(pretraining_dir: str, voc_fname: str, number_of_sh
     tf.io.gfile.mkdir(pretraining_dir)
     # run('${}'.format(xargs_cmd))
     try:
-        call(['${}'.format(xargs_cmd)])
+        call(xargs_cmd)
     except CalledProcessError:
         print('Error in running {}'.format(xargs_cmd))
 
