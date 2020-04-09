@@ -103,6 +103,6 @@ def _write_vocabulary_to_file(model_prefix: str, voc_fname: str):
     bert_vocab += ["[UNUSED_{}]".format(i) for i in range(voc_size - len(bert_vocab))]
 
     # write vocabulary to file
-    with open(voc_fname, "w") as fo:
+    with open(voc_fname+'.txt', "w") as fo:
         for token in bert_vocab:
             fo.write(token + "\n")

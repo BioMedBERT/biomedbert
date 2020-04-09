@@ -5,17 +5,19 @@ from setuptools import setup
 from setuptools.command.test import test as TestCommand
 
 REQUIRES = [
-    'docopt', 'invoke', 'tqdm', 'sentencepiece'#, 'tensorflow'
+    'docopt', 'invoke', 'tqdm', 'sentencepiece'
 ]
 
 
 class PyTest(TestCommand):
     def finalize_options(self):
+        """finalize options"""
         TestCommand.finalize_options(self)
         self.test_args = []
         self.test_suite = True
 
     def run_tests(self):
+        """run tests"""
         import pytest
         errcode = pytest.main(self.test_args)
         sys.exit(errcode)
@@ -42,6 +44,7 @@ __version__ = find_version("biomedbert.py")
 
 
 def read(fname):
+    """read file content"""
     with open(fname) as fp:
         content = fp.read()
     return content
