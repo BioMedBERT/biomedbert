@@ -50,7 +50,7 @@ def generate_pre_trained_data(pretraining_dir: str, voc_fname: str, number_of_sh
 
     xargs_cmd = ("ls ./shards/" + shard_path + "/ | "
                  "xargs -n 1 -P {} -I{} "
-                 "sudo python3 bert/create_pretraining_data.py "
+                 "python3 bert/create_pretraining_data.py "
                  "--input_file=./shards/" + shard_path + "/{} "
                  "--output_file={}/{}.tfrecord "
                  "--vocab_file={} "
