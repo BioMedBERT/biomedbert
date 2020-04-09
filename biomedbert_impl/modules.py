@@ -36,7 +36,8 @@ def train_vocabulary(data_path: str, prefix: str):
     _write_vocabulary_to_file(model_prefix, model_prefix)
 
 
-def generate_pre_trained_data(pretraining_dir: str, voc_fname: str, number_of_shards: int, data_path: str):
+def generate_pre_trained_data(pretraining_dir: str, voc_fname: str, number_of_shards: int,
+                              data_path: str, shard_path: str):
     """generating pre-trained data"""
     max_seq_length = 128
     masked_lm_prob = 0.15
@@ -46,7 +47,7 @@ def generate_pre_trained_data(pretraining_dir: str, voc_fname: str, number_of_sh
     pretraining_dir = pretraining_dir  # "pretraining_data"
 
     # shard dataset
-    _shard_dataset(number_of_shards, data_path)
+    _shard_dataset(number_of_shards, shard_path, data_path)
 
     xargs_cmd = ("ls ./shards/ | "
                  "xargs -n 1 -P {} -I{} "
