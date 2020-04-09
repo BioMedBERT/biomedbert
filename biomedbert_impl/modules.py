@@ -71,7 +71,6 @@ def generate_pre_trained_data(pretraining_dir: str, voc_fname: str, number_of_sh
                                  max_predictions, max_seq_length, masked_lm_prob)
 
     tf.io.gfile.mkdir(pretraining_dir)
-    # run('${}'.format(xargs_cmd))
     try:
         call(xargs_cmd, shell=True)
     except CalledProcessError:
