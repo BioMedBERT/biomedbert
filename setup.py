@@ -5,7 +5,7 @@ from setuptools import setup
 from setuptools.command.test import test as TestCommand
 
 REQUIRES = [
-    'docopt', 'invoke', 'tqdm', 'sentencepiece'
+    'docopt', 'invoke', 'tqdm', 'sentencepiece', 'tensorflow-gpu', 'tensorflow',
 ]
 
 
