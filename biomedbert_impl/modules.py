@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 import os
-import sys
 import sentencepiece as spm
 import tensorflow as tf
 from subprocess import call, CalledProcessError
@@ -39,9 +38,6 @@ def train_vocabulary(data_path: str, prefix: str):
 def generate_pre_trained_data(pretraining_dir: str, voc_fname: str, number_of_shards: int,
                               data_path: str, shard_path: str):
     """generating pre-trained data"""
-
-    sys.path.append("bert")
-
     max_seq_length = 128
     masked_lm_prob = 0.15
     max_predictions = 20

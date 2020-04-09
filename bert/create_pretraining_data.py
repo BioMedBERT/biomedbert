@@ -20,7 +20,8 @@ from __future__ import print_function
 
 import collections
 import random
-import tokenization
+# import tokenization
+from .tokenization import printable_text, convert_to_unicode, FullTokenizer
 import tensorflow as tf
 
 flags = tf.compat.v1.flags
@@ -79,13 +80,13 @@ class TrainingInstance(object):
     def __str__(self):
         s = ""
         s += "tokens: %s\n" % (" ".join(
-            [tokenization.printable_text(x) for x in self.tokens]))
+            [printable_text(x) for x in self.tokens]))
         s += "segment_ids: %s\n" % (" ".join([str(x) for x in self.segment_ids]))
         s += "is_random_next: %s\n" % self.is_random_next
         s += "masked_lm_positions: %s\n" % (" ".join(
             [str(x) for x in self.masked_lm_positions]))
         s += "masked_lm_labels: %s\n" % (" ".join(
-            [tokenization.printable_text(x) for x in self.masked_lm_labels]))
+            [printable_text(x) for x in self.masked_lm_labels]))
         s += "\n"
         return s
 
@@ -148,7 +149,7 @@ def write_instance_to_example_files(instances, tokenizer, max_seq_length,
         if inst_index < 20:
             tf.compat.v1.logging.info("*** Example ***")
             tf.compat.v1.logging.info("tokens: %s" % " ".join(
-                [tokenization.printable_text(x) for x in instance.tokens]))
+                [printable_text(x) for x in instance.tokens]))
 
             for feature_name in features.keys():
                 feature = features[feature_name]
@@ -191,7 +192,7 @@ def create_training_instances(input_files, tokenizer, max_seq_length,
     for input_file in input_files:
         with tf.compat.v1.gfile.GFile(input_file, "r") as reader:
             while True:
-                line = tokenization.convert_to_unicode(reader.readline())
+                line = convert_to_unicode(reader.readline())
                 if not line:
                     break
                 line = line.strip()
@@ -436,7 +437,7 @@ def truncate_seq_pair(tokens_a, tokens_b, max_num_tokens, rng):
 def main(_):
     tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.INFO)
 
-    tokenizer = tokenization.FullTokenizer(
+    tokenizer = FullTokenizer(
         vocab_file=FLAGS.vocab_file, do_lower_case=FLAGS.do_lower_case)
 
     input_files = []
