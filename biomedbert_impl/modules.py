@@ -4,7 +4,6 @@
 import os
 import sentencepiece as spm
 import tensorflow as tf
-from invoke import run
 from subprocess import call, CalledProcessError
 
 # global parameters
@@ -49,7 +48,7 @@ def generate_pre_trained_data(pretraining_dir: str, voc_fname: str, number_of_sh
     # shard dataset
     _shard_dataset(number_of_shards, shard_path, data_path)
 
-    xargs_cmd = ("ls ./shards/ | "
+    xargs_cmd = ("ls ./shards/" + shard_path + " | "
                  "xargs -n 1 -P {} -I{} "
                  "python3 ../bert/create_pretraining_data.py "
                  "--input_file=./shards/{} "
@@ -77,7 +76,7 @@ def generate_pre_trained_data(pretraining_dir: str, voc_fname: str, number_of_sh
 def _shard_dataset(number_of_shards: int, shard_path: str, data_path: str):
     """sharding the dataset"""
     if not os.path.exists('./shards/{}'.format(shard_path)):
-        call(['mkdir', './shards/{}'.format(shard_path)])
+        call(['mkdir', '-p', './shards/{}'.format(shard_path)])
         # run('mkdir ./shards')
     call(['split', '-a', number_of_shards, '-l', '5560', '-d', data_path, './shards/{}/shard_'.format(shard_path)])
     # run('split -a {} -l 5560 -d {} ./shards/shard_'.format(number_of_shards, data_path))
