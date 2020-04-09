@@ -48,7 +48,7 @@ def generate_pre_trained_data(pretraining_dir: str, voc_fname: str, number_of_sh
     # shard dataset
     _shard_dataset(number_of_shards, shard_path, data_path)
 
-    xargs_cmd = ("ls ./shards/" + shard_path + " | "
+    xargs_cmd = ("ls ./shards/" + shard_path + "/ | "
                  "xargs -n 1 -P {} -I{} "
                  "python3 bert/create_pretraining_data.py "
                  "--input_file=./shards/" + shard_path + "/{} "
