@@ -5,6 +5,7 @@ import os
 import sentencepiece as spm
 import tensorflow as tf
 from invoke import run
+from subprocess import call, CalledProcessError
 
 # global parameters
 voc_size = 32000
@@ -65,15 +66,22 @@ def generate_pre_trained_data(pretraining_dir: str, voc_fname: str, number_of_sh
                                  max_predictions, max_seq_length, masked_lm_prob)
 
     tf.io.gfile.MkDir(pretraining_dir)
-    run('${}'.format(xargs_cmd))
+    # run('${}'.format(xargs_cmd))
+    try:
+        call(['${}'.format(xargs_cmd)])
+    except CalledProcessError:
+        print('Error in running {}'.format(xargs_cmd))
 
 
 def _shard_dataset(number_of_shards: int, data_path: str):
     """sharding the dataset"""
     if not os.path.exists('./shards'):
-        run('mkdir ./shards')
-    run('split -a {} -l 5560 -d {} ./shards/shard_'.format(number_of_shards, data_path))
-    run('ls ./shards/')
+        call(['mkdir', './shards'])
+        # run('mkdir ./shards')
+    call(['split', '-a', number_of_shards, '-l', '5560', '-d', data_path, './shards/shard_'])
+    # run('split -a {} -l 5560 -d {} ./shards/shard_'.format(number_of_shards, data_path))
+    # run('ls ./shards/')
+    call(['ls', './shards/'])
 
 
 def _read_sentencepiece_vocab(filepath: str):
