@@ -71,18 +71,19 @@ def generate_pre_trained_data(pretraining_dir: str, voc_fname: str, number_of_sh
                                  max_predictions, max_seq_length, masked_lm_prob)
 
     tf.io.gfile.mkdir(pretraining_dir)
+
     try:
         call(xargs_cmd, shell=True)
     except CalledProcessError:
         print('Error in running {}'.format(xargs_cmd))
 
 
-def _shard_dataset(number_of_shards: int, shard_path: str, data_path: str):
+def _shard_dataset(number_of_shards: int, shard_path: str, prc_data_path: str):
     """sharding the dataset"""
     if not os.path.exists('./shards/{}'.format(shard_path)):
         call(['mkdir', '-p', './shards/{}'.format(shard_path)])
         # run('mkdir ./shards')
-    call(['split', '-a', number_of_shards, '-l', '5560', '-d', data_path, './shards/{}/shard_'.format(shard_path)])
+    call(['split', '-a', number_of_shards, '-l', '5560', '-d', prc_data_path, './shards/{}/shard_'.format(shard_path)])
     # run('split -a {} -l 5560 -d {} ./shards/shard_'.format(number_of_shards, data_path))
     # run('ls ./shards/')
     call(['ls', './shards/{}'.format(shard_path)])
