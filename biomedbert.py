@@ -9,7 +9,7 @@ Usage:
   biomedbert gcp vm notebook <vm-instance>
   biomedbert gcp vm connect <vm-instance>
   biomedbert code train vocab <data_path> <prefix>
-  biomedbert code make pretrain data <pre_trained_dir> <voc_filename> <num_shard> <data_path>
+  biomedbert code make pretrain data <pre_trained_dir> <voc_filename> <num_shard> <data_path> <shard_name>
   biomedbert -h | --help
   biomedbert --version
 
@@ -39,7 +39,7 @@ def code_commands(args: dict):
     # generate pre-trained dataset
     if args['code'] and args['make'] and args['pretrain'] and args['data']:
         generate_pre_trained_data(args['<pre_trained_dir>'], args['<voc_filename>'],
-                                  args['<num_shard>'], args['<data_path>'])
+                                  args['<num_shard>'], args['<data_path>'], args['<shard_name>'])
 
 
 def gcp_commands(args: dict):
