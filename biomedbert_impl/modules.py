@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import os
 import sentencepiece as spm
 import tensorflow as tf
 from invoke import run
@@ -69,7 +70,8 @@ def generate_pre_trained_data(pretraining_dir: str, voc_fname: str, number_of_sh
 
 def _shard_dataset(number_of_shards: int, data_path: str):
     """sharding the dataset"""
-    run('mkdir ./shards')
+    if not os.path.exists('./shards'):
+        run('mkdir ./shards')
     run('split -a {} -l 5560 -d {} ./shards/shard_'.format(number_of_shards, data_path))
     run('ls ./shards/')
 
