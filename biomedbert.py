@@ -22,7 +22,7 @@ from __future__ import unicode_literals, print_function
 import configparser
 from docopt import docopt
 from gcp.gcp_helpers import set_gcp_project, start_vm, stop_vm, launch_notebook, connect_vm
-from biomedbert.modules import train_vocabulary, generate_pre_trained_data
+from biomedbert_impl.modules import train_vocabulary, generate_pre_trained_data
 
 __version__ = "0.1.0"
 __author__ = "AI vs COVID-19 Team"
