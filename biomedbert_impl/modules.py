@@ -73,7 +73,7 @@ def generate_pre_trained_data(pretraining_dir: str, voc_fname: str, number_of_sh
     tf.io.gfile.mkdir(pretraining_dir)
     # run('${}'.format(xargs_cmd))
     try:
-        call(xargs_cmd)
+        call(xargs_cmd, shell=True)
     except CalledProcessError:
         print('Error in running {}'.format(xargs_cmd))
 
