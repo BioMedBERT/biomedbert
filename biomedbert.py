@@ -3,13 +3,14 @@
 """biomedbert
 
 Usage:
-  biomedbert gcp project set ([-p | --project] <project-id>) ([-z | --zone] <project-zone>)
+  biomedbert gcp project set <project-id> <project-zone>
   biomedbert gcp vm start <vm-instance>
   biomedbert gcp vm stop <vm-instance>
   biomedbert gcp vm notebook <vm-instance>
   biomedbert gcp vm connect <vm-instance>
   biomedbert code train vocab <data_path> <prefix>
-  biomedbert code make pretrain data <pre_trained_dir> <voc_filename> <num_shard> <data_path> <shard_name>
+  biomedbert code shard data <number_of_shards> <shard_path> <prc_data_path>
+  biomedbert code make pretrain data <pre_trained_dir> <voc_filename> <prc_data_path>
   biomedbert -h | --help
   biomedbert --version
 
@@ -22,9 +23,8 @@ from __future__ import unicode_literals, print_function
 
 import configparser
 from docopt import docopt
-from biomedbert_impl.modules import train_vocabulary, generate_pre_trained_data
+from biomedbert_impl.modules import train_vocabulary, generate_pre_trained_data, shard_dataset
 from gcp.gcp_helpers import set_gcp_project, start_vm, stop_vm, launch_notebook, connect_vm
-
 
 __version__ = "0.1.0"
 __author__ = "AI vs COVID-19 Team"
@@ -41,7 +41,11 @@ def code_commands(args: dict):
     # generate pre-trained dataset
     if args['code'] and args['make'] and args['pretrain'] and args['data']:
         generate_pre_trained_data(args['<pre_trained_dir>'], args['<voc_filename>'],
-                                  args['<num_shard>'], args['<data_path>'], args['<shard_name>'])
+                                  args['<prc_data_path>'])
+
+    # shard the dataset
+    if args['code'] and args['shard'] and args['data']:
+        shard_dataset(args['<number_of_shards>'], args['<shard_path>'], args['<prc_data_path>'])
 
 
 def gcp_commands(args: dict):

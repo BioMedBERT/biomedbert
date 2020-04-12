@@ -35,3 +35,19 @@ tcsetattr: Interrupted system call
 packet_write_wait: Connection to 34.83.210.223 port 22: Broken pipe
 ERROR: (gcloud.compute.ssh) [/usr/bin/ssh] exited with return code [255].
 tcsetattr: Interrupted system call
+packet_write_wait: Connection to 34.83.210.223 port 22: Broken pipe
+ERROR: (gcloud.compute.ssh) [/usr/bin/ssh] exited with return code [255].
+tcsetattr: Interrupted system call
+packet_write_wait: Connection to 34.83.210.223 port 22: Broken pipe
+ERROR: (gcloud.compute.ssh) [/usr/bin/ssh] exited with return code [255].
+tcsetattr: Interrupted system call
+bind [127.0.0.1]:8080: Address already in use
+channel_setup_fwd_listener_tcpip: cannot listen to port: 8080
+Could not request local forwarding.
+tcsetattr: Interrupted system call
+Connection to 34.83.210.223 closed by remote host.
+Connection to 34.83.210.223 closed.
+Connection to 34.83.210.223 closed by remote host.
+Connection to 34.83.210.223 closed.
+ERROR: (gcloud.compute.ssh) [/usr/bin/ssh] exited with return code [255].
+ERROR: (gcloud.compute.ssh) [/usr/bin/ssh] exited with return code [255].

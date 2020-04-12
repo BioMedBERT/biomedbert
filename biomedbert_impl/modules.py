@@ -35,8 +35,7 @@ def train_vocabulary(data_path: str, prefix: str):
     _write_vocabulary_to_file(model_prefix, model_prefix)
 
 
-def generate_pre_trained_data(pretraining_dir: str, voc_fname: str, number_of_shards: int,
-                              data_path: str, shard_path: str):
+def generate_pre_trained_data(pretraining_dir: str, voc_fname: str, shard_path: str):
     """generating pre-trained data"""
     max_seq_length = 128
     masked_lm_prob = 0.15
@@ -44,9 +43,6 @@ def generate_pre_trained_data(pretraining_dir: str, voc_fname: str, number_of_sh
     do_lower_case = True
     processes = 2
     pretraining_dir = pretraining_dir  # "pretraining_data"
-
-    # shard dataset
-    _shard_dataset(number_of_shards, shard_path, data_path)
 
     xargs_cmd = ("ls ./shards/" + shard_path + "/ | "
                  "xargs -n 1 -P {} -I{} "
@@ -73,15 +69,16 @@ def generate_pre_trained_data(pretraining_dir: str, voc_fname: str, number_of_sh
         print('Error in running {}'.format(xargs_cmd))
 
 
-def _shard_dataset(number_of_shards: int, shard_path: str, prc_data_path: str):
+def shard_dataset(number_of_shards: int, shard_path: str, prc_data_path: str):
     """sharding the dataset"""
     if not os.path.exists('./shards/{}'.format(shard_path)):
         call(['mkdir', '-p', './shards/{}'.format(shard_path)])
-        # run('mkdir ./shards')
-    call(['split', '-a', number_of_shards, '-l', '5560', '-d', prc_data_path, './shards/{}/shard_'.format(shard_path)])
-    # run('split -a {} -l 5560 -d {} ./shards/shard_'.format(number_of_shards, data_path))
-    # run('ls ./shards/')
-    call(['ls', './shards/{}'.format(shard_path)])
+
+    try:
+        call(['split', '-a', number_of_shards, '-l', '5560', '-d', prc_data_path, './shards/{}/shard_'.format(shard_path)])
+        call(['ls', './shards/{}'.format(shard_path)])
+    except CalledProcessError:
+        print('Error in sharding')
 
 
 def _read_sentencepiece_vocab(filepath: str):
