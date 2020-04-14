@@ -75,7 +75,8 @@ def shard_dataset(number_of_shards: int, shard_path: str, prc_data_path: str):
         call(['mkdir', '-p', './shards/{}'.format(shard_path)])
 
     try:
-        call(['split', '-a', number_of_shards, '-l', '5560', '-d', prc_data_path, './shards/{}/shard_'.format(shard_path)])
+        call(['split', '-a', number_of_shards, '-l', '5560', '-d', prc_data_path,
+              './shards/{}/shard_'.format(shard_path)])
         call(['ls', './shards/{}'.format(shard_path)])
     except CalledProcessError:
         print('Error in sharding')

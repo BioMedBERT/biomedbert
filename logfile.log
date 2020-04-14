@@ -51,3 +51,4 @@ Connection to 34.83.210.223 closed by remote host.
 Connection to 34.83.210.223 closed.
 ERROR: (gcloud.compute.ssh) [/usr/bin/ssh] exited with return code [255].
 ERROR: (gcloud.compute.ssh) [/usr/bin/ssh] exited with return code [255].
+tcsetattr: Interrupted system call
