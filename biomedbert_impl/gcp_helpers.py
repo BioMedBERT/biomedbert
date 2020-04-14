@@ -59,3 +59,11 @@ def launch_notebook(project_id: str, zone: str, vm_instance: str):
             webbrowser.open('http://localhost:8080/lab?')
     except CalledProcessError:
         print('Bad command')
+
+
+def create_compute_tpu_vm(vm_instance: str):
+    """Create Compute and TPU VM"""
+    try:
+        call(['nohup', 'bash', './bash/create_compute_tpu_vm.sh', vm_instance])
+    except CalledProcessError:
+        print('Bad command')
