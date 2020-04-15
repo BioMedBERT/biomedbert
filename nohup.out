@@ -1,0 +1,14 @@
+PROJECT_ID=for-ekaba
+ERROR: (gcloud.compute.instances.create) unrecognized arguments: startup-script=echo export TPU_NAME=for-ekaba-tpu > /etc/profile.d/tpu-env.sh 
+
+To search the help text of gcloud commands, run:
+  gcloud help -- SEARCH_TERMS
+ERROR: (gcloud.compute.tpus.create) RESOURCE_EXHAUSTED: Quota limit 'TPUV2sPodPerProjectPerRegionForTPUAPI,TPUV2sPodPerProjectPerZoneForTPUAPI' has been exceeded. Limit: 0,0 in region us-central1,zone us-central1-a.
+- '@type': type.googleapis.com/google.rpc.QuotaFailure
+  violations:
+  - description: Quota 'TPUV2sPodPerProjectPerRegionForTPUAPI' exhausted. Limit 0
+      in region us-central1
+    subject: project:7187674364
+  - description: Quota 'TPUV2sPodPerProjectPerZoneForTPUAPI' exhausted. Limit 0 in
+      zone us-central1-a
+    subject: project:7187674364

@@ -3,12 +3,15 @@
 """biomedbert
 
 Usage:
-  biomedbert gcp project set ([-p | --project] <project-id>) ([-z | --zone] <project-zone>)
+  biomedbert gcp project set <project-id> <project-zone>
   biomedbert gcp vm start <vm-instance>
   biomedbert gcp vm stop <vm-instance>
   biomedbert gcp vm notebook <vm-instance>
   biomedbert gcp vm connect <vm-instance>
-  biomedbert code train vocab <data> <prefix>
+  biomedbert gcp vm create compute tpu <vm-instance>
+  biomedbert code train vocab <data_path> <prefix>
+  biomedbert code shard data <number_of_shards> <shard_path> <prc_data_path>
+  biomedbert code make pretrain data <pre_trained_dir> <voc_filename> <shard_path>
   biomedbert -h | --help
   biomedbert --version
 
@@ -18,10 +21,12 @@ Options:
 """
 
 from __future__ import unicode_literals, print_function
+
 import configparser
 from docopt import docopt
-from gcp.gcp_helpers import set_gcp_project, start_vm, stop_vm, launch_notebook, connect_vm
-from code_.modules import train_vocabulary
+from biomedbert_impl.modules import train_vocabulary, generate_pre_trained_data, shard_dataset
+from biomedbert_impl.gcp_helpers import set_gcp_project, start_vm, stop_vm,\
+    launch_notebook, connect_vm, create_compute_tpu_vm
 
 __version__ = "0.1.0"
 __author__ = "AI vs COVID-19 Team"
@@ -33,8 +38,16 @@ def code_commands(args: dict):
 
     # train vocab
     if args['code'] and args['train'] and args['vocab']:
-        if args['<data>'] and args['<prefix>']:
-            train_vocabulary(args['<data>'], args['<prefix>'])
+        train_vocabulary(args['<data_path>'], args['<prefix>'])
+
+    # generate pre-trained dataset
+    if args['code'] and args['make'] and args['pretrain'] and args['data']:
+        generate_pre_trained_data(args['<pre_trained_dir>'], args['<voc_filename>'],
+                                  args['<shard_path>'])
+
+    # shard the dataset
+    if args['code'] and args['shard'] and args['data']:
+        shard_dataset(args['<number_of_shards>'], args['<shard_path>'], args['<prc_data_path>'])
 
 
 def gcp_commands(args: dict):
@@ -56,6 +69,11 @@ def gcp_commands(args: dict):
 
         # call set project
         set_gcp_project(args['<project-id>'], args['<project-zone>'])
+
+    # create compute and tpu VM
+    if args['gcp'] and args['vm'] and args['create'] and args['compute'] and args['tpu']:
+        # start vm
+        create_compute_tpu_vm(args['<vm-instance>'])
 
     # start VM
     if args['gcp'] and args['vm'] and args['start']:
