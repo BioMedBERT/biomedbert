@@ -2,8 +2,10 @@
 # -*- coding: utf-8 -*-
 
 import os
+import sys
 import time
 import webbrowser
+import subprocess
 from subprocess import call, Popen, CalledProcessError
 from invoke import run, exceptions
 from tqdm import trange
@@ -64,6 +66,7 @@ def launch_notebook(project_id: str, zone: str, vm_instance: str):
 def create_compute_tpu_vm(vm_instance: str):
     """Create Compute and TPU VM"""
     try:
-        call(['nohup', 'bash', './bash/create_compute_tpu_vm.sh', vm_instance])
-    except CalledProcessError:
+        # run works to print output to console
+        run('bash ./bash/create_compute_tpu_vm.sh {}'.format(vm_instance))
+    except exceptions.UnexpectedExit:
         print('Bad command')

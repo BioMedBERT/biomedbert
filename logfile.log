@@ -157,3 +157,26 @@ packet_write_wait: Connection to 35.222.186.230 port 22: Broken pipe
 ERROR: (gcloud.compute.ssh) [/usr/bin/ssh] exited with return code [255].
 packet_write_wait: Connection to 35.222.186.230 port 22: Broken pipe
 ERROR: (gcloud.compute.ssh) [/usr/bin/ssh] exited with return code [255].
+tcsetattr: Interrupted system call
+channel 3: open failed: connect failed: Connection refused
+channel 4: open failed: connect failed: Connection refused
+channel 3: open failed: connect failed: Connection refused
+channel 3: open failed: connect failed: Connection refused
+channel 4: open failed: connect failed: Connection refused
+channel 3: open failed: connect failed: Connection refused
+channel 3: open failed: connect failed: Connection refused
+channel 4: open failed: connect failed: Connection refused
+channel 3: open failed: connect failed: Connection refused
+packet_write_wait: Connection to 35.232.194.28 port 22: Broken pipe
+ERROR: (gcloud.compute.ssh) [/usr/bin/ssh] exited with return code [255].
+tcsetattr: Interrupted system call
+Connection to 35.226.133.148 closed by remote host.
+Connection to 35.226.133.148 closed.
+ERROR: (gcloud.compute.ssh) [/usr/bin/ssh] exited with return code [255].
+ERROR: (gcloud.compute.ssh) Could not fetch resource:
+ - The resource 'projects/ai-vs-covid19/zones/us-central1-f/instances/for-ekaba' was not found
+
+ERROR: (gcloud.compute.ssh) Could not fetch resource:
+ - The resource 'projects/ai-vs-covid19/zones/us-central1-f/instances/for-ekaba' was not found
+
+tcsetattr: Interrupted system call
