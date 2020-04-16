@@ -57,7 +57,7 @@ setup(
     long_description=read("README.rst"),
     author='AI vs COVID-19 Team',
     author_email='dvdbisong@gmail.com',
-    url='https://github.com/dvdbisong/biomedbert',
+    url='https://github.com/ghego/covid-19_research_collaboration',
     install_requires=REQUIRES,
     license=read("LICENSE"),
     zip_safe=False,
