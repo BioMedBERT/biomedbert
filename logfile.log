@@ -180,3 +180,4 @@ ERROR: (gcloud.compute.ssh) Could not fetch resource:
  - The resource 'projects/ai-vs-covid19/zones/us-central1-f/instances/for-ekaba' was not found
 
 tcsetattr: Interrupted system call
+tcsetattr: Interrupted system call

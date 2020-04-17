@@ -8,7 +8,7 @@ Usage:
   biomedbert gcp vm stop <vm-instance>
   biomedbert gcp vm notebook <vm-instance>
   biomedbert gcp vm connect <vm-instance>
-  biomedbert gcp vm create compute tpu <vm-instance>
+  biomedbert gcp vm create compute tpu <vm-instance> <project-zone>
   biomedbert code train vocab <data_path> <prefix>
   biomedbert code shard data <number_of_shards> <shard_path> <prc_data_path>
   biomedbert code make pretrain data <pre_trained_dir> <voc_filename> <shard_path>
@@ -73,7 +73,7 @@ def gcp_commands(args: dict):
     # create compute and tpu VM
     if args['gcp'] and args['vm'] and args['create'] and args['compute'] and args['tpu']:
         # start vm
-        create_compute_tpu_vm(args['<vm-instance>'])
+        create_compute_tpu_vm(args['<vm-instance>'], args['<project-zone>'])
 
     # start VM
     if args['gcp'] and args['vm'] and args['start']:
