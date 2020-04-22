@@ -19,9 +19,11 @@ from __future__ import division
 from __future__ import print_function
 
 import os
+import datetime
 import modeling
 import optimization
 import tensorflow as tf
+# import tensorflow.compat.v2 as tf
 
 flags = tf.compat.v1.flags #tf.flags
 
@@ -108,15 +110,20 @@ flags.DEFINE_integer(
 
 def model_fn_builder(bert_config, init_checkpoint, learning_rate,
                      num_train_steps, num_warmup_steps, use_tpu,
-                     use_one_hot_embeddings):
+                     use_one_hot_embeddings, log_dir):
   """Returns `model_fn` closure for TPUEstimator."""
+
+#   summary_writer = tf.compat.v1.summary.FileWriter(log_dir)
+#   summary_writer = tf.summary.create_file_writer(log_dir) # + datetime.datetime.now().strftime("%Y%m%d-%H%M%S"))
 
   def model_fn(features, labels, mode, params):  # pylint: disable=unused-argument
     """The `model_fn` for TPUEstimator."""
 
-    tf.logging.info("*** Features ***")
+    tf.compat.v1.logging.info("*** Features ***")
     for name in sorted(features.keys()):
-      tf.logging.info("  name = %s, shape = %s" % (name, features[name].shape))
+      tf.compat.v1.logging.info("  name = %s, shape = %s" % (name, features[name].shape))
+    
+#     summary_writer = tf.compat.v2.summary.create_file_writer(log_dir)
 
     input_ids = features["input_ids"]
     input_mask = features["input_mask"]
@@ -164,12 +171,12 @@ def model_fn_builder(bert_config, init_checkpoint, learning_rate,
       else:
         tf.train.init_from_checkpoint(init_checkpoint, assignment_map)
 
-    tf.logging.info("**** Trainable Variables ****")
+    tf.compat.v1.logging.info("**** Trainable Variables ****")
     for var in tvars:
       init_string = ""
       if var.name in initialized_variable_names:
         init_string = ", *INIT_FROM_CKPT*"
-      tf.logging.info("  name = %s, shape = %s%s", var.name, var.shape,
+      tf.compat.v1.logging.info("  name = %s, shape = %s%s", var.name, var.shape,
                       init_string)
 
     output_spec = None
@@ -182,6 +189,16 @@ def model_fn_builder(bert_config, init_checkpoint, learning_rate,
           loss=total_loss,
           train_op=train_op,
           scaffold_fn=scaffold_fn)
+
+        
+      writer_steps = num_train_steps // 10
+#       with summary_writer.as_default():
+      
+      tf.compat.v1.logging.info("  total_loss = {}".format(total_loss.eval()))
+      tf.compat.v1.logging.info("  learning_rate = {}".format(learning_rate))
+#       tf.compat.v2.summary.scalar('total_loss', total_loss, step=writer_steps, description='Training total loss')
+#       tf.compat.v2.summary.scalar('learning_rate', learning_rate, step=writer_steps, description='Training learning rate')
+        
     elif mode == tf.estimator.ModeKeys.EVAL:
 
       def metric_fn(masked_lm_example_loss, masked_lm_log_probs, masked_lm_ids,
@@ -229,6 +246,26 @@ def model_fn_builder(bert_config, init_checkpoint, learning_rate,
           loss=total_loss,
           eval_metrics=eval_metrics,
           scaffold_fn=scaffold_fn)
+      
+      writer_steps = num_train_steps // 10
+#       with summary_writer.as_default():
+#       tf.compat.v2.summary.scalar('masked_lm_accuracy', eval_metrics['masked_lm_accuracy'], step=writer_steps, description='Masked lm accuracy')
+#       tf.compat.v2.summary.scalar('masked_lm_loss', eval_metrics['masked_lm_loss'], step=writer_steps, description='Masked lm loss')
+#       tf.compat.v2.summary.scalar('next_sentence_accuracy', eval_metrics['next_sentence_accuracy'], step=writer_steps, description='Next sentence accuracy')
+#       tf.compat.v2.summary.scalar('next_sentence_loss', eval_metrics['next_sentence_loss'], step=writer_steps, description='Next sentence loss')
+      tf.compat.v1.logging.info("  Masked LM Accuracy: {}".format(eval_metrics['masked_lm_accuracy']))
+      tf.compat.v1.logging.info("  Masked LM loss: {}".format(eval_metrics['masked_lm_loss']))
+      tf.compat.v1.logging.info("  Next sentence accuracy: {}".format(eval_metrics['next_sentence_accuracy']))
+      tf.compat.v1.logging.info("  Next sentence loss: {}".format(eval_metrics['next_sentence_loss']))
+        
+#       with open("masked_lm_accuracy.txt", "w+a") as file_object:
+#         file_object.write(eval_metrics['masked_lm_accuracy'])
+      
+#       masked_lm_accuracy_file = os.path.join(FLAGS.output_dir, "masked_lm_accuracy.txt")
+#       with tf.gfile.GFile(masked_lm_accuracy_file, "w") as writer:
+#         tf.compat.v1.logging.info("***** Masked lm accuracy *****")
+#         tf.compat.v1.logging.info("Masked LM Accuracy: {}".format(eval_metrics['masked_lm_accuracy']))
+#         writer.write("Masked LM Accuracy: {}".format(eval_metrics['masked_lm_accuracy']))
     else:
       raise ValueError("Only TRAIN and EVAL modes are supported: %s" % (mode))
 
@@ -242,10 +279,10 @@ def get_masked_lm_output(bert_config, input_tensor, output_weights, positions,
   """Get loss and log probs for the masked LM."""
   input_tensor = gather_indexes(input_tensor, positions)
 
-  with tf.variable_scope("cls/predictions"):
+  with tf.compat.v1.variable_scope("cls/predictions"):
     # We apply one more non-linear transformation before the output layer.
     # This matrix is not used after pre-training.
-    with tf.variable_scope("transform"):
+    with tf.compat.v1.variable_scope("transform"):
       input_tensor = tf.layers.dense(
           input_tensor,
           units=bert_config.hidden_size,
@@ -287,7 +324,7 @@ def get_next_sentence_output(bert_config, input_tensor, labels):
 
   # Simple binary classification. Note that 0 is "next sentence" and 1 is
   # "random sentence". This weight matrix is not used after pre-training.
-  with tf.variable_scope("cls/seq_relationship"):
+  with tf.compat.v1.variable_scope("cls/seq_relationship"):
     output_weights = tf.get_variable(
         "output_weights",
         shape=[2, bert_config.hidden_size],
@@ -334,19 +371,19 @@ def input_fn_builder(input_files,
 
     name_to_features = {
         "input_ids":
-            tf.FixedLenFeature([max_seq_length], tf.int64),
+            tf.io.FixedLenFeature([max_seq_length], tf.int64),
         "input_mask":
-            tf.FixedLenFeature([max_seq_length], tf.int64),
+            tf.io.FixedLenFeature([max_seq_length], tf.int64),
         "segment_ids":
-            tf.FixedLenFeature([max_seq_length], tf.int64),
+            tf.io.FixedLenFeature([max_seq_length], tf.int64),
         "masked_lm_positions":
-            tf.FixedLenFeature([max_predictions_per_seq], tf.int64),
+            tf.io.FixedLenFeature([max_predictions_per_seq], tf.int64),
         "masked_lm_ids":
-            tf.FixedLenFeature([max_predictions_per_seq], tf.int64),
+            tf.io.FixedLenFeature([max_predictions_per_seq], tf.int64),
         "masked_lm_weights":
-            tf.FixedLenFeature([max_predictions_per_seq], tf.float32),
+            tf.io.FixedLenFeature([max_predictions_per_seq], tf.float32),
         "next_sentence_labels":
-            tf.FixedLenFeature([1], tf.int64),
+            tf.io.FixedLenFeature([1], tf.int64),
     }
 
     # For training, we want a lot of parallel reading and shuffling.
@@ -362,7 +399,7 @@ def input_fn_builder(input_files,
       # `sloppy` mode means that the interleaving is not exact. This adds
       # even more randomness to the training pipeline.
       d = d.apply(
-          tf.contrib.data.parallel_interleave(
+          tf.data.experimental.parallel_interleave(
               tf.data.TFRecordDataset,
               sloppy=is_training,
               cycle_length=cycle_length))
@@ -378,7 +415,7 @@ def input_fn_builder(input_files,
     # and we *don't* want to drop the remainder, otherwise we wont cover
     # every sample.
     d = d.apply(
-        tf.contrib.data.map_and_batch(
+        tf.data.experimental.map_and_batch(
             lambda record: _decode_record(record, name_to_features),
             batch_size=batch_size,
             num_parallel_batches=num_cpu_threads,
@@ -390,21 +427,22 @@ def input_fn_builder(input_files,
 
 def _decode_record(record, name_to_features):
   """Decodes a record to a TensorFlow example."""
-  example = tf.parse_single_example(record, name_to_features)
+  example = tf.io.parse_single_example(record, name_to_features)
 
   # tf.Example only supports tf.int64, but the TPU only supports tf.int32.
   # So cast all int64 to int32.
   for name in list(example.keys()):
     t = example[name]
     if t.dtype == tf.int64:
-      t = tf.to_int32(t)
+#       t = tf.compat.v1.to_int32(t)
+      t = tf.cast(t, tf.int32)
     example[name] = t
 
   return example
 
 
 def main(_):
-  tf.logging.set_verbosity(tf.logging.INFO)
+  tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.INFO)
 
   if not FLAGS.do_train and not FLAGS.do_eval:
     raise ValueError("At least one of `do_train` or `do_eval` must be True.")
@@ -417,9 +455,9 @@ def main(_):
   for input_pattern in FLAGS.input_file.split(","):
     input_files.extend(tf.gfile.Glob(input_pattern))
 
-  tf.logging.info("*** Input Files ***")
+  tf.compat.v1.logging.info("*** Input Files ***")
   for input_file in input_files:
-    tf.logging.info("  %s" % input_file)
+    tf.compat.v1.logging.info("  %s" % input_file)
 
   tpu_cluster_resolver = None
   if FLAGS.use_tpu and FLAGS.tpu_name:
@@ -456,8 +494,8 @@ def main(_):
       eval_batch_size=FLAGS.eval_batch_size)
 
   if FLAGS.do_train:
-    tf.logging.info("***** Running training *****")
-    tf.logging.info("  Batch size = %d", FLAGS.train_batch_size)
+    tf.compat.v1.logging.info("***** Running training *****")
+    tf.compat.v1.logging.info("  Batch size = %d", FLAGS.train_batch_size)
     train_input_fn = input_fn_builder(
         input_files=input_files,
         max_seq_length=FLAGS.max_seq_length,
@@ -466,8 +504,8 @@ def main(_):
     estimator.train(input_fn=train_input_fn, max_steps=FLAGS.num_train_steps)
 
   if FLAGS.do_eval:
-    tf.logging.info("***** Running evaluation *****")
-    tf.logging.info("  Batch size = %d", FLAGS.eval_batch_size)
+    tf.compat.v1.logging.info("***** Running evaluation *****")
+    tf.compat.v1.logging.info("  Batch size = %d", FLAGS.eval_batch_size)
 
     eval_input_fn = input_fn_builder(
         input_files=input_files,
@@ -480,9 +518,9 @@ def main(_):
 
     output_eval_file = os.path.join(FLAGS.output_dir, "eval_results.txt")
     with tf.gfile.GFile(output_eval_file, "w") as writer:
-      tf.logging.info("***** Eval results *****")
+      tf.compat.v1.logging.info("***** Eval results *****")
       for key in sorted(result.keys()):
-        tf.logging.info("  %s = %s", key, str(result[key]))
+        tf.compat.v1.logging.info("  %s = %s", key, str(result[key]))
         writer.write("%s = %s\n" % (key, str(result[key])))
 
 

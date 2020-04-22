@@ -619,11 +619,11 @@ def create_model(bert_config, is_training, input_ids, input_mask, segment_ids,
 
 def model_fn_builder(bert_config, num_labels, init_checkpoint, learning_rate,
                      num_train_steps, num_warmup_steps, use_tpu,
-                     use_one_hot_embeddings, log_dir):
+                     use_one_hot_embeddings):#, log_dir):
     
     
-  summary_writer = tf.summary.create_file_writer(
-      log_dir + datetime.datetime.now().strftime("%Y%m%d-%H%M%S"))
+#   summary_writer = tf.summary.create_file_writer(
+#       log_dir + datetime.datetime.now().strftime("%Y%m%d-%H%M%S"))
 
   """Returns `model_fn` closure for TPUEstimator."""
 
@@ -686,10 +686,10 @@ def model_fn_builder(bert_config, num_labels, init_checkpoint, learning_rate,
           train_op=train_op,
           scaffold_fn=scaffold_fn)
       
-      writer_steps = num_train_steps // 10
-      with summary_writer.as_default():
-        tf.summary.scalar('total_loss', total_loss, step=writer_steps, description='Training loss')
-        tf.summary.scalar('learning_rate', learning_rate, step=writer_steps, description='Training learning rate')
+#       writer_steps = num_train_steps // 10
+#       with summary_writer.as_default():
+#         tf.summary.scalar('total_loss', total_loss, step=writer_steps, description='Training loss')
+#         tf.summary.scalar('learning_rate', learning_rate, step=writer_steps, description='Training learning rate')
     elif mode == tf.estimator.ModeKeys.EVAL:
 
       def metric_fn(per_example_loss, label_ids, logits, is_real_example):
@@ -710,10 +710,10 @@ def model_fn_builder(bert_config, num_labels, init_checkpoint, learning_rate,
           eval_metrics=eval_metrics,
           scaffold_fn=scaffold_fn)
       
-      writer_steps = num_train_steps // 10
-      with summary_writer.as_default():
-        tf.summary.scalar('eval_loss', eval_metrics['eval_loss'], step=writer_steps, description='Evaluation loss')
-        tf.summary.scalar('eval_accuracy', eval_metrics['eval_accuracy'], step=writer_steps, description='Evaluation accuracy')
+#       writer_steps = num_train_steps // 10
+#       with summary_writer.as_default():
+#         tf.summary.scalar('eval_loss', eval_metrics['eval_loss'], step=writer_steps, description='Evaluation loss')
+#         tf.summary.scalar('eval_accuracy', eval_metrics['eval_accuracy'], step=writer_steps, description='Evaluation accuracy')
     else:
       output_spec = tf.contrib.tpu.TPUEstimatorSpec(
           mode=mode,
