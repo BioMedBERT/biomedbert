@@ -1,0 +1,19 @@
+{
+  "pooler_fc_size": 768,
+  "pooler_num_attention_heads": 12,
+  "attention_probs_dropout_prob": 0.1,
+  "num_hidden_layers": 12,
+  "vocab_size": 32000,
+  "max_position_embeddings": 512,
+  "intermediate_size": 3072,
+  "directionality": "bidi",
+  "hidden_act": "gelu",
+  "pooler_type": "first_token_transform",
+  "num_attention_heads": 12,
+  "pooler_size_per_head": 128,
+  "initializer_range": 0.02,
+  "hidden_size": 768,
+  "hidden_dropout_prob": 0.1,
+  "pooler_num_fc_layers": 3,
+  "type_vocab_size": 2
+}
