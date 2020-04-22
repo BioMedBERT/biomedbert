@@ -181,3 +181,7 @@ ERROR: (gcloud.compute.ssh) Could not fetch resource:
 
 tcsetattr: Interrupted system call
 tcsetattr: Interrupted system call
+bind [127.0.0.1]:8080: Address already in use
+channel_setup_fwd_listener_tcpip: cannot listen to port: 8080
+Could not request local forwarding.
+tcsetattr: Interrupted system call

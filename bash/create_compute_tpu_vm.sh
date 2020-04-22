@@ -10,6 +10,7 @@ TPU_NAME=$INSTANCE_NAME"-tpu"
 
 gcloud compute instances create "${INSTANCE_NAME}" \
       --machine-type=n1-highmem-64 \
+      --scopes=https://www.googleapis.com/auth/cloud-platform \
       --zone="$ZONE" \
       --image-project=deeplearning-platform-release \
       --image-family=tf2-2-0-cu100 \
