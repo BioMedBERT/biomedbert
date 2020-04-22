@@ -40,7 +40,7 @@ def code_commands(args: dict):
     # extract contextual embeddings
     if args['code'] and args['extract'] and args['embeddings']:
         extract_embeddings(args['<input_txt>'], args['<voc_fname>'],
-                           args['<config_fname>'], args['<init_ckt>'])
+                           args['<config_fname>'], args['<init_checkpoint>'])
 
     # train vocab
     if args['code'] and args['train'] and args['vocab']:
