@@ -10,6 +10,7 @@ Usage:
   biomedbert gcp vm connect <vm-instance>
   biomedbert gcp vm create compute tpu <vm-instance> <project-zone>
   biomedbert code train vocab <data_path> <prefix>
+  biomedbert code extract embeddings <input_txt> <voc_fname> <config_fname> <init_checkpoint>
   biomedbert code shard data <number_of_shards> <shard_path> <prc_data_path>
   biomedbert code make pretrain data <pre_trained_dir> <voc_filename> <shard_path>
   biomedbert -h | --help
@@ -24,7 +25,7 @@ from __future__ import unicode_literals, print_function
 
 import configparser
 from docopt import docopt
-from biomedbert_impl.modules import train_vocabulary, generate_pre_trained_data, shard_dataset
+from biomedbert_impl.modules import train_vocabulary, generate_pre_trained_data, shard_dataset, extract_embeddings
 from biomedbert_impl.gcp_helpers import set_gcp_project, start_vm, stop_vm,\
     launch_notebook, connect_vm, create_compute_tpu_vm
 
@@ -35,6 +36,11 @@ __license__ = "MIT"
 
 def code_commands(args: dict):
     """Command to train BioMedBert model"""
+
+    # extract contextual embeddings
+    if args['code'] and args['extract'] and args['embeddings']:
+        extract_embeddings(args['<input_txt>'], args['<voc_fname>'],
+                           args['<config_fname>'], args['<init_ckt>'])
 
     # train vocab
     if args['code'] and args['train'] and args['vocab']:

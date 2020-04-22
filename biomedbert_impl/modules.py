@@ -9,7 +9,6 @@ from subprocess import call, CalledProcessError
 # global parameters
 voc_size = 32000
 
-
 def train_vocabulary(data_path: str, prefix: str):
     """Method to train the vocabulary using sentencepiece"""
 
@@ -33,6 +32,30 @@ def train_vocabulary(data_path: str, prefix: str):
 
     # write processed vocab to file.
     _write_vocabulary_to_file(model_prefix, model_prefix)
+
+
+def extract_embeddings(input_txt: str, voc_fname: str, config_fname: str, init_ckt: str):
+    """extract contextual embeddings"""
+    input_txt = input_txt  # 'input_fra.txt'
+    output_file = "output" + input_txt.split('.')[0] + ".jsonl"  # 'output_fra.jsonl'
+
+    xargs_cmd = ("python3 bert/extract_features.py "
+                 "--input_file={} "
+                 "--output_file={} "
+                 "--vocab_file={} "
+                 "--bert_config_file={} "
+                 "--init_checkpoint={} "
+                 "--layers=-1,-2,-3,-4 "
+                 "--max_seq_length=128 "
+                 "--batch_size=8 ")
+
+    xargs_cmd = xargs_cmd.format(input_txt, output_file, voc_fname,
+                                 config_fname, init_ckt)
+
+    try:
+        call(xargs_cmd, shell=True)
+    except CalledProcessError:
+        print('Error in running {}'.format(xargs_cmd))
 
 
 def generate_pre_trained_data(pretraining_dir: str, voc_fname: str, shard_path: str):
@@ -111,6 +134,6 @@ def _write_vocabulary_to_file(model_prefix: str, voc_fname: str):
     bert_vocab += ["[UNUSED_{}]".format(i) for i in range(voc_size - len(bert_vocab))]
 
     # write vocabulary to file
-    with open(voc_fname+'.txt', "w") as fo:
+    with open(voc_fname + '.txt', "w") as fo:
         for token in bert_vocab:
             fo.write(token + "\n")
