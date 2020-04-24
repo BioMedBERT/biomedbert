@@ -16,6 +16,8 @@ Usage:
   biomedbert glue finetune <dataset> <biomedbert_gcs_path>
   biomedbert glue predict <dataset> <biomedbert_gcs_path>
   biomedbert glue download dataset
+  biomedbert squad v1 <biomedbert_gcs_path> <biomedbert_model_type>
+  biomedbert squad v2 <biomedbert_gcs_path> <biomedbert_model_type>
 
   biomedbert -h | --help
   biomedbert --version
@@ -31,14 +33,27 @@ import configparser
 from docopt import docopt
 from biomedbert_impl.modules import train_vocabulary, generate_pre_trained_data, shard_dataset, \
     extract_embeddings
-from biomedbert_impl.gcp_helpers import set_gcp_project, start_vm, stop_vm,\
+from biomedbert_impl.gcp_helpers import set_gcp_project, start_vm, stop_vm, \
     launch_notebook, connect_vm, create_compute_tpu_vm
 from biomedbert_impl.glue_helpers import fine_tune_classification_glue, download_glue_data, \
     predict_classification_glue
+from biomedbert_impl.squad_modules import run_squad_v11, run_squad_v2
 
 __version__ = "0.1.0"
 __author__ = "AI vs COVID-19 Team"
 __license__ = "MIT"
+
+
+def squad_commands(args: dict):
+    """Command to SQuAD question answering benchmark dataset"""
+
+    # run squad v1.1
+    if args['squad'] and args['v1']:
+        run_squad_v11(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
+
+    # run squad v2.0
+    if args['squad'] and args['v2']:
+        run_squad_v2(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
 
 
 def glue_commands(args: dict):
@@ -148,6 +163,9 @@ def main():
 
     if args['glue']:
         glue_commands(args)
+
+    if args['squad']:
+        squad_commands(args)
 
 
 if __name__ == '__main__':
