@@ -16,6 +16,7 @@ python3 bert/run_squad.py \
   --do_predict=True \
   --predict_file="$SQUAD_DIR"/dev-v1.1.json \
   --train_batch_size=256 \
+  --predict_batch_size=256 \
   --learning_rate=3e-5 \
   --num_train_epochs=2.0 \
   --max_seq_length=384 \
