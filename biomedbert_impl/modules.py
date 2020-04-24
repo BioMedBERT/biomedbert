@@ -69,17 +69,17 @@ def generate_pre_trained_data(pretraining_dir: str, voc_fname: str, shard_path: 
     pretraining_dir = pretraining_dir  # "pretraining_data"
 
     xargs_cmd = ("ls ./shards/" + shard_path + "/ | "
-                   "xargs -n 1 -P {} -I{} "
-                   "python3 bert/create_pretraining_data.py "
-                   "--input_file=./shards/" + shard_path + "/{} "
-                   "--output_file={}/{}.tfrecord "
-                   "--vocab_file={} "
-                   "--do_lower_case={} "
-                   "--max_predictions_per_seq={} "
-                   "--max_seq_length={} "
-                   "--masked_lm_prob={} "
-                   "--random_seed=34 "
-                   "--dupe_factor=5")
+                 "xargs -n 1 -P {} -I{} "
+                 "python3 bert/create_pretraining_data.py "
+                 "--input_file=./shards/" + shard_path + "/{} "
+                 "--output_file={}/{}.tfrecord "
+                 "--vocab_file={} "
+                 "--do_lower_case={} "
+                 "--max_predictions_per_seq={} "
+                 "--max_seq_length={} "
+                 "--masked_lm_prob={} "
+                 "--random_seed=34 "
+                 "--dupe_factor=5")
 
     xargs_cmd = xargs_cmd.format(processes, '{}', '{}', pretraining_dir, '{}',
                                  voc_fname, do_lower_case,
