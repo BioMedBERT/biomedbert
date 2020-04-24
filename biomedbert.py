@@ -10,6 +10,7 @@ Usage:
   biomedbert gcp vm connect <vm-instance>
   biomedbert gcp vm create compute tpu <vm-instance> <project-zone>
   biomedbert code finetune glue <dataset>
+  biomedbert code download glue dataset
   biomedbert code train vocab <data_path> <prefix>
   biomedbert code extract embeddings <input_txt> <voc_fname> <config_fname> <init_checkpoint>
   biomedbert code shard data <number_of_shards> <shard_path> <prc_data_path>
@@ -27,7 +28,7 @@ from __future__ import unicode_literals, print_function
 import configparser
 from docopt import docopt
 from biomedbert_impl.modules import train_vocabulary, generate_pre_trained_data, shard_dataset, \
-    extract_embeddings, fine_tune_classification
+    extract_embeddings, fine_tune_classification, download_glue_data
 from biomedbert_impl.gcp_helpers import set_gcp_project, start_vm, stop_vm,\
     launch_notebook, connect_vm, create_compute_tpu_vm
 
@@ -38,6 +39,10 @@ __license__ = "MIT"
 
 def code_commands(args: dict):
     """Command to train BioMedBert model"""
+
+    # downlosd glue dataset
+    if args['code'] and args['download'] and args['glue'] and args['dataset']:
+        download_glue_data()
 
     # finetune glue
     if args['code'] and args['finetune'] and args['glue']:

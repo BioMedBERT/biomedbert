@@ -146,3 +146,11 @@ def fine_tune_classification(glue_dataset: str):
         call(['bash', './bash/fine_tune_classification_glue.sh', glue_dataset])
     except CalledProcessError:
         print('Cannot finetune {} model'.format(glue_dataset))
+
+
+def download_glue_data():
+    """download GLUE dataset"""
+    try:
+        call(['python', 'download_glue_data.py', '--data_dir', 'glue_data', '--tasks', 'all'])
+    except CalledProcessError:
+        print('Cannot download GLUE dataset')
