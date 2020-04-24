@@ -147,7 +147,7 @@ def main():
         code_commands(args)
 
     if args['glue']:
-        code_commands(args)
+        glue_commands(args)
 
 
 if __name__ == '__main__':
