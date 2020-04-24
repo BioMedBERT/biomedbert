@@ -4,7 +4,7 @@ The following script is for predicting
 classification tasks from the GLUE dataset.
 '
 
-BERT_BASE_DIR=$1 #/path/to/bert/uncased_L-12_H-768_A-12
+BERT_BASE_DIR=$1
 DATASET=$2 #MRPC
 
 python3 bert/run_classifier.py \
