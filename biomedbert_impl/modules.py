@@ -151,6 +151,7 @@ def fine_tune_classification(glue_dataset: str):
 def download_glue_data():
     """download GLUE dataset"""
     try:
-        call(['python', 'download_glue_data.py', '--data_dir', 'glue_data', '--tasks', 'all'])
+        call(['python', './biomedbert_impl/download_glue_data.py',
+              '--data_dir', 'glue_data', '--tasks', 'all'])
     except CalledProcessError:
         print('Cannot download GLUE dataset')
