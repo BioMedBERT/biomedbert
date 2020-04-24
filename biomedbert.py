@@ -9,12 +9,14 @@ Usage:
   biomedbert gcp vm notebook <vm-instance>
   biomedbert gcp vm connect <vm-instance>
   biomedbert gcp vm create compute tpu <vm-instance> <project-zone>
-  biomedbert code finetune glue <dataset>
-  biomedbert code download glue dataset
   biomedbert code train vocab <data_path> <prefix>
   biomedbert code extract embeddings <input_txt> <voc_fname> <config_fname> <init_checkpoint>
   biomedbert code shard data <number_of_shards> <shard_path> <prc_data_path>
   biomedbert code make pretrain data <pre_trained_dir> <voc_filename> <shard_path>
+  biomedbert glue finetune <dataset> <biomedbert_gcs_path>
+  biomedbert glue predict <dataset> <biomedbert_gcs_path>
+  biomedbert glue download dataset
+
   biomedbert -h | --help
   biomedbert --version
 
@@ -28,25 +30,35 @@ from __future__ import unicode_literals, print_function
 import configparser
 from docopt import docopt
 from biomedbert_impl.modules import train_vocabulary, generate_pre_trained_data, shard_dataset, \
-    extract_embeddings, fine_tune_classification, download_glue_data
+    extract_embeddings
 from biomedbert_impl.gcp_helpers import set_gcp_project, start_vm, stop_vm,\
     launch_notebook, connect_vm, create_compute_tpu_vm
+from biomedbert_impl.glue_helpers import fine_tune_classification_glue, download_glue_data, \
+    predict_classification_glue
 
 __version__ = "0.1.0"
 __author__ = "AI vs COVID-19 Team"
 __license__ = "MIT"
 
 
-def code_commands(args: dict):
-    """Command to train BioMedBert model"""
+def glue_commands(args: dict):
+    """Command to run GLUE classification"""
 
-    # downlosd glue dataset
-    if args['code'] and args['download'] and args['glue'] and args['dataset']:
+    # download glue dataset
+    if args['glue'] and args['download'] and args['dataset']:
         download_glue_data()
 
+    # predict glue
+    if args['glue'] and args['predict']:
+        predict_classification_glue(args['<dataset>'], args['<biomedbert_gcs_path>'])
+
     # finetune glue
-    if args['code'] and args['finetune'] and args['glue']:
-        fine_tune_classification(args['<dataset>'])
+    if args['glue'] and args['finetune']:
+        fine_tune_classification_glue(args['<dataset>'], args['<biomedbert_gcs_path>'])
+
+
+def code_commands(args: dict):
+    """Command to train BioMedBert model"""
 
     # extract contextual embeddings
     if args['code'] and args['extract'] and args['embeddings']:
@@ -132,6 +144,9 @@ def main():
         gcp_commands(args)
 
     if args['code']:
+        code_commands(args)
+
+    if args['glue']:
         code_commands(args)
 
 
