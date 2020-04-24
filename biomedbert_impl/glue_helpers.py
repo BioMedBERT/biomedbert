@@ -17,7 +17,7 @@ def predict_classification_glue(glue_dataset: str, biomedbert_gcs_dir: str):
     try:
         call(['bash', './bash/predict_classification_glue.sh', biomedbert_gcs_dir, glue_dataset])
     except CalledProcessError:
-        print('Cannot finetune {} model'.format(glue_dataset))
+        print('Cannot predict {} model'.format(glue_dataset))
 
 
 def download_glue_data():

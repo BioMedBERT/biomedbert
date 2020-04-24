@@ -5,7 +5,7 @@ classification tasks from the GLUE dataset.
 '
 
 DATASET=$1 #MRPC
-BERT_BASE_DIR=$2 #gs://ekaba-assets/bert_model_sat_18th_april # $2
+BERT_BASE_DIR=$2 # gs://ekaba-assets/bert_model_sat_18th_april
 
 
 python3 bert/run_classifier.py \
