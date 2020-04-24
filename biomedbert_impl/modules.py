@@ -9,6 +9,7 @@ from subprocess import call, CalledProcessError
 # global parameters
 voc_size = 32000
 
+
 def train_vocabulary(data_path: str, prefix: str):
     """Method to train the vocabulary using sentencepiece"""
 
@@ -37,7 +38,7 @@ def train_vocabulary(data_path: str, prefix: str):
 def extract_embeddings(input_txt: str, voc_fname: str, config_fname: str, init_ckt: str):
     """extract contextual embeddings"""
     input_txt = input_txt  # 'input_fra.txt'
-    output_file = "output" + input_txt.split('.')[0] + ".jsonl"  # 'output_fra.jsonl'
+    output_file = "output-" + input_txt.split('.')[0] + ".jsonl"  # 'output_fra.jsonl'
 
     xargs_cmd = ("python3 bert/extract_features.py "
                  "--input_file={} "
