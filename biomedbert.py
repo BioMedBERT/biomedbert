@@ -49,15 +49,15 @@ def bioasq_commands(args: dict):
 
     # run bioasq 4b
     if args['bioasq'] and args['4b']:
-        run_bioasq_a(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
+        run_bioasq_4b(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
 
     # run bioasq 5b
     if args['bioasq'] and args['5b']:
-        run_bioasq_a(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
+        run_bioasq_5b(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
 
     # run bioasq 6b
     if args['bioasq'] and args['6b']:
-        run_bioasq_a(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
+        run_bioasq_6b(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
 
 
 def squad_commands(args: dict):
