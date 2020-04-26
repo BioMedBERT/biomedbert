@@ -193,3 +193,14 @@ tcsetattr: Interrupted system call
 packet_write_wait: Connection to 34.91.88.67 port 22: Broken pipe
 ERROR: (gcloud.compute.ssh) [/usr/bin/ssh] exited with return code [255].
 tcsetattr: Interrupted system call
+packet_write_wait: Connection to 34.91.88.67 port 22: Broken pipe
+ERROR: (gcloud.compute.ssh) [/usr/bin/ssh] exited with return code [255].
+tcsetattr: Interrupted system call
+packet_write_wait: Connection to 34.91.88.67 port 22: Broken pipe
+ERROR: (gcloud.compute.ssh) [/usr/bin/ssh] exited with return code [255].
+tcsetattr: Interrupted system call
+packet_write_wait: Connection to 34.91.88.67 port 22: Broken pipe
+ERROR: (gcloud.compute.ssh) [/usr/bin/ssh] exited with return code [255].
+tcsetattr: Interrupted system call
+packet_write_wait: Connection to 34.91.88.67 port 22: Broken pipe
+ERROR: (gcloud.compute.ssh) [/usr/bin/ssh] exited with return code [255].
