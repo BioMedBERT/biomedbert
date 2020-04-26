@@ -38,10 +38,26 @@ from biomedbert_impl.gcp_helpers import set_gcp_project, start_vm, stop_vm, \
 from biomedbert_impl.glue_helpers import fine_tune_classification_glue, download_glue_data, \
     predict_classification_glue
 from biomedbert_impl.squad_modules import run_squad_v11, run_squad_v2
+from biomedbert_impl.bioasq_modules import run_bioasq_4b, run_bioasq_5b, run_bioasq_6b
 
 __version__ = "0.1.0"
 __author__ = "AI vs COVID-19 Team"
 __license__ = "MIT"
+
+def bioasq_commands(args: dict):
+    """Command to BIOASQ question answering benchmark dataset"""
+
+    # run bioasq 4b
+    if args['bioasq'] and args['4b']:
+        run_bioasq_a(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
+
+    # run bioasq 5b
+    if args['bioasq'] and args['5b']:
+        run_bioasq_a(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
+
+    # run bioasq 6b
+    if args['bioasq'] and args['6b']:
+        run_bioasq_a(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
 
 
 def squad_commands(args: dict):
