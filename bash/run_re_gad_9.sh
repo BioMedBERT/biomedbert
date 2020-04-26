@@ -1,13 +1,13 @@
 #!/bin/bash
 : '
-The following script is for running RE GAD 1
+The following script is for running RE GAD 9
 '
 
 BERT_BASE_DIR=$1
 MODEL_TYPE=$2 # base or large
-RE_DIR=datasets/RE/GAD/1
+RE_DIR=datasets/RE/GAD/9
 TASK_NAME=gad
-OUTPUT_DIR='re_outputs_gad_1'
+OUTPUT_DIR='re_outputs_gad_9'
 
 mkdir -p $OUTPUT_DIR
 

@@ -1,12 +1,12 @@
 #!/bin/bash
 : '
-The following script is for running ner NCBI-disease
+The following script is for running ner BC2GM
 '
 
 BERT_BASE_DIR=$1
 MODEL_TYPE=$2 # base or large
-NER_DIR=datasets/NER/NCBI-disease
-OUTPUT_DIR='ner_outputs_NCBI_disease'
+NER_DIR=datasets/NER/BC2GM
+OUTPUT_DIR='ner_outputs_BC2GM'
 
 mkdir -p $OUTPUT_DIR
 python3 biobert/run_ner.py \

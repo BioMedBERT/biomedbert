@@ -8,7 +8,8 @@ MODEL_TYPE=$2 # base or large
 QA_DIR=datasets/QA/BioASQ
 OUTPUT_DIR=qa_outputs
 
-python3 run_qa.py \
+mkdir -p $OUTPUT_DIR
+python3 biobert/run_qa.py \
   --do_train=True \
   --do_predict=True \
   --vocab_file='$BERT_BASE_DIR'/vocab.txt \
