@@ -43,6 +43,8 @@ from biomedbert_impl.ner_modules import run_ner_bc2gm, run_ner_bc4chemd, run_ner
     run_ner_bc5cdr_disease, run_ner_jnlpba, run_ner_ncbi_disease, run_ner_linnaeus, run_ner_s800
 from biomedbert_impl.re_modules import run_re_gad_1, run_re_gad_2, run_re_gad_3, run_re_gad_4, \
     run_re_gad_5, run_re_gad_6, run_re_gad_7, run_re_gad_8, run_re_gad_9, run_re_gad_10, \
+    run_re_euadr_1, run_re_euadr_2, run_re_euadr_3, run_re_euadr_4, run_re_euadr_5, \
+    run_re_euadr_6, run_re_euadr_7, run_re_euadr_8, run_re_euadr_9, run_re_euadr_10
 
 
 __version__ = "0.1.0"
