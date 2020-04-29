@@ -10,6 +10,7 @@ Usage:
   biomedbert gcp vm connect <vm-instance>
   biomedbert gcp vm create compute tpu <vm-instance> <project-zone>
   biomedbert code train vocab <data_path> <prefix>
+  biomedbert code train biomedbert (base|large) <data_path> <prefix>
   biomedbert code extract embeddings <input_txt> <voc_fname> <config_fname> <init_checkpoint>
   biomedbert code shard data <number_of_shards> <shard_path> <prc_data_path>
   biomedbert code make pretrain data <pre_trained_dir> <voc_filename> <shard_path>
@@ -32,7 +33,7 @@ from __future__ import unicode_literals, print_function
 import configparser
 from docopt import docopt
 from biomedbert_impl.modules import train_vocabulary, generate_pre_trained_data, shard_dataset, \
-    extract_embeddings
+    extract_embeddings, train_biomedbert_base
 from biomedbert_impl.gcp_helpers import set_gcp_project, start_vm, stop_vm, \
     launch_notebook, connect_vm, create_compute_tpu_vm
 from biomedbert_impl.glue_helpers import fine_tune_classification_glue, download_glue_data, \
@@ -218,6 +219,11 @@ def glue_commands(args: dict):
 
 def code_commands(args: dict):
     """Command to train BioMedBert model"""
+
+    # train biomedbert-base
+    if args['code'] and args['train'] and args['biomedbert']:
+        if args['<model_type>'] == 'base':
+            train_biomedbert_base(args['<model_dir>'], args['<pretraining_dir>'], args['<bucket_name>'])
 
     # extract contextual embeddings
     if args['code'] and args['extract'] and args['embeddings']:
