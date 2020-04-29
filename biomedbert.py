@@ -10,7 +10,7 @@ Usage:
   biomedbert gcp vm connect <vm-instance>
   biomedbert gcp vm create compute tpu <vm-instance> <project-zone>
   biomedbert code train vocab <data_path> <prefix>
-  biomedbert code train biomedbert (base|large) <data_path> <prefix>
+  biomedbert code train model (base|large) <data_path> <prefix>
   biomedbert code extract embeddings <input_txt> <voc_fname> <config_fname> <init_checkpoint>
   biomedbert code shard data <number_of_shards> <shard_path> <prc_data_path>
   biomedbert code make pretrain data <pre_trained_dir> <voc_filename> <shard_path>
@@ -221,7 +221,7 @@ def code_commands(args: dict):
     """Command to train BioMedBert model"""
 
     # train biomedbert-base
-    if args['code'] and args['train'] and args['biomedbert']:
+    if args['code'] and args['train'] and args['model']:
         if args['<model_type>'] == 'base':
             train_biomedbert_base(args['<model_dir>'], args['<pretraining_dir>'], args['<bucket_name>'])
 
