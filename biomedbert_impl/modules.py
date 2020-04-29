@@ -135,7 +135,7 @@ def train_vocabulary(data_path: str, prefix: str):
     # except exceptions.UnexpectedExit:
     #     log.info('Could not download dataset from GCS')
 
-    subsample_size = 10000000  # 8M
+    subsample_size = 20000000  # 8M -> 20M
     num_placeholders = 256
 
     prc_data_fpath = data_path.split('/')[-1]  # "processed_ncbi_comm_use_BODY.txt"
