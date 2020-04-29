@@ -129,11 +129,11 @@ def train_vocabulary(data_path: str, prefix: str):
     """Method to train the vocabulary using sentencepiece"""
 
     # download dataset to VM before training vocabulary
-    try:
-        run('gsutil -m cp {} .'.format(data_path))
-        log.info('Dataset {} downloaded to VM'.format(data_path))
-    except exceptions.UnexpectedExit:
-        log.info('Could not download dataset from GCS')
+    # try:
+    #     run('gsutil -m cp {} .'.format(data_path))
+    #     log.info('Dataset {} downloaded to VM'.format(data_path))
+    # except exceptions.UnexpectedExit:
+    #     log.info('Could not download dataset from GCS')
 
     subsample_size = 10000000  # 8M
     num_placeholders = 256
