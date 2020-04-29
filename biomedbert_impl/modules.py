@@ -130,7 +130,7 @@ def train_vocabulary(data_path: str, prefix: str):
 
     # download dataset to VM before training vocabulary
     try:
-        run('gsutil -m cp gs://{} .'.format(data_path))
+        run('gsutil -m cp {} .'.format(data_path))
         log.info('Dataset {} downloaded to VM'.format(data_path))
     except exceptions.UnexpectedExit:
         log.info('Could not download dataset from GCS')
