@@ -15,6 +15,9 @@ from bert.run_pretraining import input_fn_builder, model_fn_builder
 # global parameters
 voc_size = 32000
 
+log = logging.getLogger('biomedbert')
+log.setLevel(logging.INFO)
+
 
 def train_biomedbert_base(model_dir: str, pretraining_dir: str, bucket_name: str = 'ekaba-assets'):
     """Method to train BioMedBERT"""
@@ -50,9 +53,6 @@ def train_biomedbert_base(model_dir: str, pretraining_dir: str, bucket_name: str
             run('gsutil -m cp -r {} gs://{}'.format(model_dir, bucket_name))
         except exceptions.UnexpectedExit:
             print('Could not upload {} to GCS'.format(model_dir))
-
-    log = logging.getLogger('tensorflow')
-    log.setLevel(logging.INFO)
 
     # Input data pipeline config
     train_batch_size = 128
@@ -128,13 +128,17 @@ def train_biomedbert_base(model_dir: str, pretraining_dir: str, bucket_name: str
 def train_vocabulary(data_path: str, prefix: str):
     """Method to train the vocabulary using sentencepiece"""
 
-    if data_path is None or prefix is None:
-        return 'Assign name for data and prefix'
+    # download dataset to VM before training vocabulary
+    try:
+        run('gsutil -m cp gs://{} .'.format(data_path))
+        log.info('Dataset {} downloaded to VM'.format(data_path))
+    except exceptions.UnexpectedExit:
+        log.info('Could not download dataset from GCS')
 
-    subsample_size = 8000000
+    subsample_size = 10000000  # 8M
     num_placeholders = 256
 
-    prc_data_fpath = data_path  # "processed_ncbi_comm_use_BODY.txt"
+    prc_data_fpath = data_path.split('/')[-1]  # "processed_ncbi_comm_use_BODY.txt"
     model_prefix = prefix  # "biomedbert"
 
     spm_command = ('--input={} --model_prefix={} '
@@ -148,6 +152,13 @@ def train_vocabulary(data_path: str, prefix: str):
 
     # write processed vocab to file.
     _write_vocabulary_to_file(model_prefix, model_prefix)
+
+    # delete dataset from VM
+    try:
+        run('rm {}'.format(prc_data_fpath))
+        log.info('Dataset {} removed from VM'.format(prc_data_fpath))
+    except exceptions.UnexpectedExit:
+        log.info('Could not delete dataset')
 
 
 def extract_embeddings(input_txt: str, voc_fname: str, config_fname: str, init_ckt: str):
@@ -224,7 +235,7 @@ def shard_dataset(number_of_shards: int, shard_path: str, prc_data_path: str):
               './shards/{}/shard_'.format(shard_path)])
         call(['ls', './shards/{}'.format(shard_path)])
     except CalledProcessError:
-        print('Error in sharding')
+        log.info('Error in sharding')
 
 
 def _read_sentencepiece_vocab(filepath: str):
