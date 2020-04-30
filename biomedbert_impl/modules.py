@@ -143,7 +143,6 @@ def train_vocabulary(data_path: str, prefix: str):
 
     spm_command = ('--input={} --model_prefix={} '
                    '--vocab_size={} --input_sentence_size={} '
-                   '--max_sentence_length=10000'
                    '--shuffle_input_sentence=true '
                    '--bos_id=-1 --eos_id=-1').format(
         prc_data_fpath, model_prefix,
