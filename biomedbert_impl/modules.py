@@ -129,11 +129,11 @@ def train_vocabulary(data_path: str, prefix: str):
     """Method to train the vocabulary using sentencepiece"""
 
     # download dataset to VM before training vocabulary
-    # try:
-    #     run('gsutil -m cp {} .'.format(data_path))
-    #     log.info('Dataset {} downloaded to VM'.format(data_path))
-    # except exceptions.UnexpectedExit:
-    #     log.info('Could not download dataset from GCS')
+    try:
+        run('gsutil -m cp {} .'.format(data_path))
+        log.info('Dataset {} downloaded to VM'.format(data_path))
+    except exceptions.UnexpectedExit:
+        log.info('Could not download dataset from GCS')
 
     subsample_size = 8000000  # 8M
     num_placeholders = 256
@@ -154,12 +154,12 @@ def train_vocabulary(data_path: str, prefix: str):
     # write processed vocab to file.
     _write_vocabulary_to_file(model_prefix, model_prefix)
 
-    # delete dataset from VM
+    # move vocabulary to GCS
     try:
-        run('rm {}'.format(prc_data_fpath))
-        log.info('Dataset {} removed from VM'.format(prc_data_fpath))
+        run('gsutil -m cp -r vocabulary/ gs://ekaba-assets/')
+        log.info('Dataset moved to GCS')
     except exceptions.UnexpectedExit:
-        log.info('Could not delete dataset')
+        log.info('Move vocabulary to GCS')
 
 
 def extract_embeddings(input_txt: str, voc_fname: str, config_fname: str, init_ckt: str):
@@ -224,6 +224,13 @@ def generate_pre_trained_data(pretraining_dir: str, voc_fname: str, shard_path: 
         run('gsutil -m cp -r {} gs://{}'.format(pretraining_dir, bucket_name))
     except exceptions.UnexpectedExit:
         print('Could not upload Pre-training data to GCS')
+
+    # # delete dataset from VM
+    # try:
+    #     run('rm {}'.format(prc_data_fpath))
+    #     log.info('Dataset {} removed from VM'.format(prc_data_fpath))
+    # except exceptions.UnexpectedExit:
+    #     log.info('Could not delete dataset')
 
 
 def shard_dataset(number_of_shards: int, shard_path: str, prc_data_path: str):
