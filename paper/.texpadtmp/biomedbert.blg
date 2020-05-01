@@ -2,13 +2,11 @@ This is BibTeX, Version 0.99d (TeX Live 2019)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: /Users/ekababisong/Documents/Playground/biomedbert/paper/.texpadtmp/biomedbert.aux
 The style file: unsrt.bst
-I found no \bibdata command---while reading file /Users/ekababisong/Documents/Playground/biomedbert/paper/.texpadtmp/biomedbert.aux
-Warning--I didn't find a database entry for "kour2014real"
-Warning--I didn't find a database entry for "kour2014fast"
-Warning--I didn't find a database entry for "hadash2018estimate"
+I found no \citation commands---while reading file /Users/ekababisong/Documents/Playground/biomedbert/paper/.texpadtmp/biomedbert.aux
+Database file #1: ../references.bib
 You've used 0 entries,
             1791 wiz_defined-function locations,
-            447 strings with 3696 characters,
+            445 strings with 3667 characters,
 and the built_in function-call counts, 18 in all, are:
 = -- 0
 > -- 0
