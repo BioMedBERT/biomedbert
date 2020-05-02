@@ -55,15 +55,15 @@ def train_biomedbert_base(model_dir: str, pretraining_dir: str, bucket_name: str
             print('Could not upload {} to GCS'.format(model_dir))
 
     # Input data pipeline config
-    train_batch_size = 128
+    train_batch_size = 12800000  # 128 -> 12.8M
     max_predictions = 20
     max_seq_length = 128
 
     # Training procedure config
-    eval_batch_size = 128  # 64
+    eval_batch_size = 12800000  # 64, 128 - 12.8M
     learning_rate = 2e-5
-    train_steps = 10000000  # 10M
-    save_checkpoints_steps = 2500
+    train_steps = 100000000  # 1M -> 100M
+    save_checkpoints_steps = 250000  # 2500 -> 250000
     num_tpu_cores = 128
 
     if bucket_name:
@@ -120,7 +120,8 @@ def train_biomedbert_base(model_dir: str, pretraining_dir: str, bucket_name: str
         input_files=input_files,
         max_seq_length=max_seq_length,
         max_predictions_per_seq=max_predictions,
-        is_training=True)
+        is_training=True,
+        num_cpu_threads=64)
 
     estimator.train(input_fn=train_input_fn, max_steps=train_steps)
 
