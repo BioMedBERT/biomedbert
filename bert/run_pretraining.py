@@ -194,7 +194,7 @@ def model_fn_builder(bert_config, init_checkpoint, learning_rate,
       writer_steps = num_train_steps // 10
 #       with summary_writer.as_default():
       
-      tf.compat.v1.logging.info("  total_loss = {}".format(total_loss.eval()))
+      tf.compat.v1.logging.info("  total_loss = {}".format(total_loss))
       tf.compat.v1.logging.info("  learning_rate = {}".format(learning_rate))
 #       tf.compat.v2.summary.scalar('total_loss', total_loss, step=writer_steps, description='Training total loss')
 #       tf.compat.v2.summary.scalar('learning_rate', learning_rate, step=writer_steps, description='Training learning rate')
