@@ -194,7 +194,7 @@ def model_fn_builder(bert_config, init_checkpoint, learning_rate,
       writer_steps = num_train_steps // 10
 #       with summary_writer.as_default():
       
-      tf.compat.v1.logging.info("  total_loss = {}".format(total_loss.eval()))
+      tf.compat.v1.logging.info("  total_loss = {}".format(total_loss))
       tf.compat.v1.logging.info("  learning_rate = {}".format(learning_rate))
 #       tf.compat.v2.summary.scalar('total_loss', total_loss, step=writer_steps, description='Training total loss')
 #       tf.compat.v2.summary.scalar('learning_rate', learning_rate, step=writer_steps, description='Training learning rate')
@@ -403,7 +403,7 @@ def input_fn_builder(input_files,
               tf.data.TFRecordDataset,
               sloppy=is_training,
               cycle_length=cycle_length))
-      d = d.shuffle(buffer_size=100)
+      d = d.shuffle(buffer_size=len(input_files))  # buffer_size = 100
     else:
       d = tf.data.TFRecordDataset(input_files)
       # Since we evaluate for a fixed number of steps we don't want to encounter
