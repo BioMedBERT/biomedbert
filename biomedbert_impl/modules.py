@@ -55,8 +55,8 @@ def train_biomedbert_base(model_dir: str, pretraining_dir: str, bucket_name: str
             print('Could not upload {} to GCS'.format(model_dir))
 
     # configure logging
-    log = logging.getLogger('biomedbert')
-    log.setLevel(logging.INFO)
+    # log = logging.getLogger('biomedbert')
+    # log.setLevel(logging.INFO)
 
     # Input data pipeline config
     train_batch_size = 12800  # 128 -> 12.8K
