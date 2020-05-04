@@ -1,11 +1,11 @@
-#!/bin/bash
+#!/usr/bin/env bash
 : '
 The following script is for predicting
 classification tasks from the GLUE dataset.
 '
 
-BERT_BASE_DIR=$1
-DATASET=$2 #MRPC
+declare -r BERT_BASE_DIR="${BERT_BASE_DIR:-$1}"
+declare -r DATASET="${DATASET:-$2}" # MRPC
 
 python3 bert/run_classifier.py \
   --task_name="$DATASET" \
