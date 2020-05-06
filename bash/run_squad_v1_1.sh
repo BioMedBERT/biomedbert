@@ -1,11 +1,11 @@
-#!/bin/bash
+#!/usr/bin/env bash
 : '
 The following script is for running squad v1.1.
 '
 
-BERT_BASE_DIR=$1
-MODEL_TYPE=$2 # base or large
-SQUAD_DIR=squad_data/v1.1
+declare -r BERT_BASE_DIR="${BERT_BASE_DIR:-$1}"
+declare -r MODEL_TYPE="${MODEL_TYPE:-$2}"  # base or large
+declare -r SQUAD_DIR="${SQUAD_DIR:-squad_data/v1.1}"
 
 python3 bert/run_squad.py \
   --vocab_file="$BERT_BASE_DIR"/biomedbert-8M.txt \
