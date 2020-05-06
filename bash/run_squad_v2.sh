@@ -1,20 +1,20 @@
-#!/bin/bash
+#!/usr/bin/env bash
 : '
 The following script is for running squad v2.0.
 '
 
-BERT_BASE_DIR=$1
-MODEL_TYPE=$2 # base or large
-SQUAD_DIR=squad_data/v2.0
+declare -r BERT_BASE_DIR="${BERT_BASE_DIR:-$1}"
+declare -r MODEL_TYPE="${MODEL_TYPE:-$2}"  # base or large
+declare -r SQUAD_DIR="${SQUAD_DIR:-squad_data/v2.0}"
 
 python3 bert/run_squad.py \
   --vocab_file="$BERT_BASE_DIR"/biomedbert-8M.txt \
   --bert_config_file="$BERT_BASE_DIR"/bert_config.json \
   --init_checkpoint="$BERT_BASE_DIR"/model.ckpt-1000000 \
   --do_train=True \
-  --train_file=$SQUAD_DIR/train-v2.0.json \
+  --train_file="$SQUAD_DIR"/train-v2.0.json \
   --do_predict=True \
-  --predict_file=$SQUAD_DIR/dev-v2.0.json \
+  --predict_file="$SQUAD_DIR"/dev-v2.0.json \
   --train_batch_size=256 \
   --predict_batch_size=256 \
   --learning_rate=3e-5 \
