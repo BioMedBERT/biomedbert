@@ -59,12 +59,12 @@ def train_biomedbert_base(model_dir: str, pretraining_dir: str, bucket_name: str
     # log.setLevel(logging.INFO)
 
     # Input data pipeline config
-    train_batch_size = 1280  # 128 -> 12.8K
+    train_batch_size = 512  # 128 -> 12.8K
     max_predictions = 20
     max_seq_length = 128
 
     # Training procedure config
-    eval_batch_size = 1280  # 64, 128 - 12.8K
+    eval_batch_size = 512  # 64, 128 - 12.8K
     learning_rate = 1e-5  # 2e-5
     train_steps = 100000000  # 1M -> 100M
     save_checkpoints_steps = 25000  # 2500 -> 25K
