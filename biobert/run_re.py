@@ -1037,7 +1037,7 @@ def main(_):
     # number of steps.
     if FLAGS.use_tpu:
       assert len(eval_examples) % FLAGS.eval_batch_size == 0
-      eval_steps = int(len(eval_examples) // FLAGS.eval_batch_size)
+      eval_steps = int(len(eval_examples) / FLAGS.eval_batch_size)
       tf.logging.info("  Eval steps: {}".format(eval_steps))
 
     eval_drop_remainder = True if FLAGS.use_tpu else False
