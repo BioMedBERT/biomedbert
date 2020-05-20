@@ -4,18 +4,22 @@
 from subprocess import call, CalledProcessError
 
 
-def fine_tune_classification_glue(glue_dataset: str, biomedbert_gcs_dir: str):
+def fine_tune_classification_glue(glue_dataset: str, model_dir: str,
+                                  init_checkpoint: str, vocab_file: str):
     """finetune classification tasks from the GLUE dataset"""
     try:
-        call(['bash', './bash/fine_tune_classification_glue.sh', biomedbert_gcs_dir, glue_dataset])
+        call(['bash', './bash/fine_tune_classification_glue.sh', glue_dataset,
+              model_dir, init_checkpoint, vocab_file])
     except CalledProcessError:
         print('Cannot finetune {} model'.format(glue_dataset))
 
 
-def predict_classification_glue(glue_dataset: str, biomedbert_gcs_dir: str):
+def predict_classification_glue(glue_dataset: str, model_dir: str,
+                                init_checkpoint: str, vocab_file: str):
     """predict classification tasks from the GLUE dataset"""
     try:
-        call(['bash', './bash/predict_classification_glue.sh', biomedbert_gcs_dir, glue_dataset])
+        call(['bash', './bash/predict_classification_glue.sh', glue_dataset,
+              model_dir, init_checkpoint, vocab_file])
     except CalledProcessError:
         print('Cannot predict {} model'.format(glue_dataset))
 

@@ -1,0 +1,534 @@
+index	sentence	label
+0	To confirm our observation that the CYP3A4*1B allele increases SCLC risk and modifies the smoking-related @DISEASE$ risk in a gender-specific manner, further studies, including @GENE$ haplotype analysis, will be necessary.	1
+1	These findings suggest that the @GENE$ and CYP3A5 variants, or other alleles on the haplotypes they help distinguish, are associated with @DISEASE$ risk and aggressiveness.	1
+2	The observation that @GENE$ and CYP3A43 were associated with @DISEASE$, are not in linkage equilibrium, and are both involved in testosterone metabolism, suggest that both CYP3A4*1B and CYP3A43*3 may influence the probability of having prostate cancer and disease severity.	1
+3	The observation that @GENE$ and CYP3A43 were associated with prostate cancer, are not in linkage equilibrium, and are both involved in testosterone metabolism, suggest that both CYP3A4*1B and CYP3A43*3 may influence the probability of having @DISEASE$ and disease severity.	1
+4	The observation that CYP3A4 and CYP3A43 were associated with @DISEASE$, are not in linkage equilibrium, and are both involved in testosterone metabolism, suggest that both @GENE$*1B and CYP3A43*3 may influence the probability of having prostate cancer and disease severity.	1
+5	The observation that CYP3A4 and CYP3A43 were associated with prostate cancer, are not in linkage equilibrium, and are both involved in testosterone metabolism, suggest that both @GENE$*1B and CYP3A43*3 may influence the probability of having @DISEASE$ and disease severity.	1
+6	Consequently, the finding suggests that the @GENE$ polymorphism was not associated with the risk of @DISEASE$.	1
+7	These findings suggest that the CYP3A4 and @GENE$ variants, or other alleles on the haplotypes they help distinguish, are associated with @DISEASE$ risk and aggressiveness.	1
+8	The study demonstrates that patients who develop myalgia while taking atorvastatin are more likely to experience a greater degree of @DISEASE$ if they express two copies of @GENE$*3.	1
+9	The present results do not support a major involvement of the @GENE$ gene in @DISEASE$ in the Swedish population investigated.	1
+10	Taken together, these results do not provide support for a role of the @GENE$ TaqI marker in our persistent @DISEASE$ samples.	1
+11	These results demonstrate the association of a new polymorphism of @GENE$ (I232T) with susceptibility to @DISEASE$ in the Japanese.	1
+12	These results suggest that an expression variant of @GENE$ is a risk factor for human @DISEASE$ and implicate FCGR2B in disease pathogenesis.	1
+13	These results suggest that an expression variant of FCGR2B is a risk factor for human @DISEASE$ and implicate @GENE$ in disease pathogenesis.	1
+14	In conclusion, @GENE$-176F/V polymorphism is not associated with @DISEASE$ in Koreans.	1
+15	In conclusion, @GENE$-176F/V polymorphism is not associated with @DISEASE$ in Koreans.	1
+16	@DISEASE$ patients with @GENE$-158 V/V genotype have a better biological and, possibly, clinical response to infliximab.	1
+17	Polymorphisms of @GENE$ are associated with a higher risk of developing @DISEASE$, in particular early onset cervical carcinogenesis.	1
+18	Our results seems to confirm previous observations on the non random association between @DISEASE$ and @GENE$ premutation.	1
+19	@GENE$(*)0103 is associated with susceptibility to @DISEASE$, and IKBL+738(C) marks a propensity to extensive and more severe disease.	1
+20	These results indicate that @GENE$ * 1501 is a better primary candidate susceptibility gene for @DISEASE$ in Chinese.	1
+21	(1) @GENE$ * 0405 and DRB1 * 15 are closely associated with the susceptibility to @DISEASE$, DRB1 * 0405 may be the major susceptible gene and DRB1 * 15 may be the minor; (2) DRB1 * 14 and DRB1 * 08 are negatively associated with the susceptibility to VKH syndrome, suggesting that they may be the resistant genes; (3) DRB1 * 0405 is not related to the clinical features, incidence of ocular complications as well as visual prognosis.	1
+22	(1) @GENE$ * 0405 and DRB1 * 15 are closely associated with the susceptibility to VKH syndrome, DRB1 * 0405 may be the major susceptible gene and DRB1 * 15 may be the minor; (2) DRB1 * 14 and DRB1 * 08 are negatively associated with the susceptibility to @DISEASE$, suggesting that they may be the resistant genes; (3) DRB1 * 0405 is not related to the clinical features, incidence of ocular complications as well as visual prognosis.	1
+23	(1) DRB1 * 0405 and @GENE$ * 15 are closely associated with the susceptibility to @DISEASE$, DRB1 * 0405 may be the major susceptible gene and DRB1 * 15 may be the minor; (2) DRB1 * 14 and DRB1 * 08 are negatively associated with the susceptibility to VKH syndrome, suggesting that they may be the resistant genes; (3) DRB1 * 0405 is not related to the clinical features, incidence of ocular complications as well as visual prognosis.	1
+24	(1) DRB1 * 0405 and @GENE$ * 15 are closely associated with the susceptibility to VKH syndrome, DRB1 * 0405 may be the major susceptible gene and DRB1 * 15 may be the minor; (2) DRB1 * 14 and DRB1 * 08 are negatively associated with the susceptibility to @DISEASE$, suggesting that they may be the resistant genes; (3) DRB1 * 0405 is not related to the clinical features, incidence of ocular complications as well as visual prognosis.	1
+25	(1) DRB1 * 0405 and DRB1 * 15 are closely associated with the susceptibility to @DISEASE$, @GENE$ * 0405 may be the major susceptible gene and DRB1 * 15 may be the minor; (2) DRB1 * 14 and DRB1 * 08 are negatively associated with the susceptibility to VKH syndrome, suggesting that they may be the resistant genes; (3) DRB1 * 0405 is not related to the clinical features, incidence of ocular complications as well as visual prognosis.	1
+26	(1) DRB1 * 0405 and DRB1 * 15 are closely associated with the susceptibility to VKH syndrome, @GENE$ * 0405 may be the major susceptible gene and DRB1 * 15 may be the minor; (2) DRB1 * 14 and DRB1 * 08 are negatively associated with the susceptibility to @DISEASE$, suggesting that they may be the resistant genes; (3) DRB1 * 0405 is not related to the clinical features, incidence of ocular complications as well as visual prognosis.	1
+27	(1) DRB1 * 0405 and DRB1 * 15 are closely associated with the susceptibility to @DISEASE$, DRB1 * 0405 may be the major susceptible gene and @GENE$ * 15 may be the minor; (2) DRB1 * 14 and DRB1 * 08 are negatively associated with the susceptibility to VKH syndrome, suggesting that they may be the resistant genes; (3) DRB1 * 0405 is not related to the clinical features, incidence of ocular complications as well as visual prognosis.	1
+28	(1) DRB1 * 0405 and DRB1 * 15 are closely associated with the susceptibility to VKH syndrome, DRB1 * 0405 may be the major susceptible gene and @GENE$ * 15 may be the minor; (2) DRB1 * 14 and DRB1 * 08 are negatively associated with the susceptibility to @DISEASE$, suggesting that they may be the resistant genes; (3) DRB1 * 0405 is not related to the clinical features, incidence of ocular complications as well as visual prognosis.	1
+29	(1) DRB1 * 0405 and DRB1 * 15 are closely associated with the susceptibility to @DISEASE$, DRB1 * 0405 may be the major susceptible gene and DRB1 * 15 may be the minor; (2) @GENE$ * 14 and DRB1 * 08 are negatively associated with the susceptibility to VKH syndrome, suggesting that they may be the resistant genes; (3) DRB1 * 0405 is not related to the clinical features, incidence of ocular complications as well as visual prognosis.	1
+30	(1) DRB1 * 0405 and DRB1 * 15 are closely associated with the susceptibility to VKH syndrome, DRB1 * 0405 may be the major susceptible gene and DRB1 * 15 may be the minor; (2) @GENE$ * 14 and DRB1 * 08 are negatively associated with the susceptibility to @DISEASE$, suggesting that they may be the resistant genes; (3) DRB1 * 0405 is not related to the clinical features, incidence of ocular complications as well as visual prognosis.	1
+31	(1) DRB1 * 0405 and DRB1 * 15 are closely associated with the susceptibility to @DISEASE$, DRB1 * 0405 may be the major susceptible gene and DRB1 * 15 may be the minor; (2) DRB1 * 14 and @GENE$ * 08 are negatively associated with the susceptibility to VKH syndrome, suggesting that they may be the resistant genes; (3) DRB1 * 0405 is not related to the clinical features, incidence of ocular complications as well as visual prognosis.	1
+32	(1) DRB1 * 0405 and DRB1 * 15 are closely associated with the susceptibility to VKH syndrome, DRB1 * 0405 may be the major susceptible gene and DRB1 * 15 may be the minor; (2) DRB1 * 14 and @GENE$ * 08 are negatively associated with the susceptibility to @DISEASE$, suggesting that they may be the resistant genes; (3) DRB1 * 0405 is not related to the clinical features, incidence of ocular complications as well as visual prognosis.	1
+33	(1) DRB1 * 0405 and DRB1 * 15 are closely associated with the susceptibility to @DISEASE$, DRB1 * 0405 may be the major susceptible gene and DRB1 * 15 may be the minor; (2) DRB1 * 14 and DRB1 * 08 are negatively associated with the susceptibility to VKH syndrome, suggesting that they may be the resistant genes; (3) @GENE$ * 0405 is not related to the clinical features, incidence of ocular complications as well as visual prognosis.	1
+34	(1) DRB1 * 0405 and DRB1 * 15 are closely associated with the susceptibility to VKH syndrome, DRB1 * 0405 may be the major susceptible gene and DRB1 * 15 may be the minor; (2) DRB1 * 14 and DRB1 * 08 are negatively associated with the susceptibility to @DISEASE$, suggesting that they may be the resistant genes; (3) @GENE$ * 0405 is not related to the clinical features, incidence of ocular complications as well as visual prognosis.	1
+35	The results obtained are in favor of the genetic heterogeneity of @DISEASE$, and suggest the possibility of epistatic interactions between the MBP and @GENE$ genes.	1
+36	Observations from this study confirm earlier findings of a negative association between @GENE$*13 and @DISEASE$ and suggest that specific DRB1-DQB1 haplotype combinations, rather than individual DQB1*03 alleles, increase the risk for cervical cancer.	1
+37	Observations from this study confirm earlier findings of a negative association between @GENE$*13 and cervical cancer and suggest that specific DRB1-DQB1 haplotype combinations, rather than individual DQB1*03 alleles, increase the risk for @DISEASE$.	1
+38	Observations from this study confirm earlier findings of a negative association between DRB1*13 and @DISEASE$ and suggest that specific @GENE$-DQB1 haplotype combinations, rather than individual DQB1*03 alleles, increase the risk for cervical cancer.	1
+39	Observations from this study confirm earlier findings of a negative association between DRB1*13 and cervical cancer and suggest that specific @GENE$-DQB1 haplotype combinations, rather than individual DQB1*03 alleles, increase the risk for @DISEASE$.	1
+40	Genotyping control showed a high risk of RF and @DISEASE$ in patients with @GENE$*01-DQB1*0301-DRB1*07-DQB1*0302 and DRB1*15-DQB1*0302-DRB1*07-DQB1*0303.	1
+41	Genotyping control showed a high risk of RF and @DISEASE$ in patients with DRB1*01-DQB1*0301-@GENE$*07-DQB1*0302 and DRB1*15-DQB1*0302-DRB1*07-DQB1*0303.	1
+42	Genotyping control showed a high risk of RF and @DISEASE$ in patients with DRB1*01-DQB1*0301-DRB1*07-DQB1*0302 and @GENE$*15-DQB1*0302-DRB1*07-DQB1*0303.	1
+43	Genotyping control showed a high risk of RF and @DISEASE$ in patients with DRB1*01-DQB1*0301-DRB1*07-DQB1*0302 and DRB1*15-DQB1*0302-@GENE$*07-DQB1*0303.	1
+44	These data suggest that these two polymorphic sites at CTLA-4 do not play a major role in the susceptibility of the disease in an Italian population while female gender, age over 50 years, @GENE$*04-DQB1*0301 haplotype increase the risk of developing @DISEASE$.	1
+45	Thus, in the present study on a small group with carefully characterised @DISEASE$ phenotypes, there was no indication that @GENE$, -DQA1, and -DQB1 subtypes or ACE gene polymorphisms were associated with severe retinopathy in younger Type 1 diabetic patients.	1
+46	Since none of the remaining @GENE$*04 subtypes was associated with type 1 DM, our study may present another piece of evidence that the DRB1*0401 and DRB1*0404 alleles do not modify @DISEASE$ risk generally in European populations.	1
+47	Since none of the remaining DRB1*04 subtypes was associated with type 1 DM, our study may present another piece of evidence that the @GENE$*0401 and DRB1*0404 alleles do not modify @DISEASE$ risk generally in European populations.	1
+48	Since none of the remaining DRB1*04 subtypes was associated with type 1 DM, our study may present another piece of evidence that the DRB1*0401 and @GENE$*0404 alleles do not modify @DISEASE$ risk generally in European populations.	1
+49	The @GENE$*0803 allele alone, the DRB1*0803, DQA1*0103, DQB1*0601 haplotype, or both were negatively associated with @DISEASE$ to Bunashimeji, and these alleles might be involved in the prevention of Bunashimeji mushroom-specific respiratory allergy.	1
+50	The @GENE$*0803 allele alone, the DRB1*0803, DQA1*0103, DQB1*0601 haplotype, or both were negatively associated with allergy to Bunashimeji, and these alleles might be involved in the prevention of Bunashimeji mushroom-specific respiratory @DISEASE$.	1
+51	The HLA-DRB1*0803 allele alone, the @GENE$*0803, DQA1*0103, DQB1*0601 haplotype, or both were negatively associated with @DISEASE$ to Bunashimeji, and these alleles might be involved in the prevention of Bunashimeji mushroom-specific respiratory allergy.	1
+52	The HLA-DRB1*0803 allele alone, the @GENE$*0803, DQA1*0103, DQB1*0601 haplotype, or both were negatively associated with allergy to Bunashimeji, and these alleles might be involved in the prevention of Bunashimeji mushroom-specific respiratory @DISEASE$.	1
+53	The results suggest that the presence of alleles HLA-G*0104, @GENE$*07/06, HCMV sequences and the fetal inheritance of maternal G*0104, should be considered as conditioning factors for the development of @DISEASE$.	1
+54	The results of this study provide evidence that variants in both the P1 and P2 promoters of @GENE$ increase risk for typical @DISEASE$.	1
+55	We conclude that  variation in the @GENE$ enhancer element is not a common cause of susceptibility to @DISEASE$.	1
+56	In conclusion, we have replicated the association of the @GENE$ P2 promoter haplotype with @DISEASE$ in a U.K. Caucasian population where there is no evidence of linkage to 20q.	1
+57	Consistent with results from studies of Finnish and Ashkenazi Jewish subjects, variation near the P2 region of @GENE$ is associated with @DISEASE$ in the Danish population.	1
+58	We conclude that  variants in @GENE$ do not appear to be major determinants for @DISEASE$ in Pima Indians; however, HNF4alpha may have a minor role in type 2 diabetes susceptibility within this Native American population.	1
+59	We conclude that  variants in @GENE$ do not appear to be major determinants for type 2 diabetes in Pima Indians; however, HNF4alpha may have a minor role in @DISEASE$ susceptibility within this Native American population.	1
+60	We conclude that  variants in HNF4alpha do not appear to be major determinants for @DISEASE$ in Pima Indians; however, @GENE$ may have a minor role in type 2 diabetes susceptibility within this Native American population.	1
+61	We conclude that  variants in HNF4alpha do not appear to be major determinants for type 2 diabetes in Pima Indians; however, @GENE$ may have a minor role in @DISEASE$ susceptibility within this Native American population.	1
+62	In conclusion, these results suggest that the @GENE$ gene may contribute to the genetic susceptibility to @DISEASE$.	1
+63	Our data demonstrate that in B-@DISEASE$, plasma levels of IL-1 beta, IL-1Ra and @GENE$ differ from normal, and mechanisms other than allelic imbalance of their genes account for the distinct cytokine profiles observed in this disease.	1
+64	We conclude that  the @GENE$ G(-174)C polymorphism is not associated with the risk of CAD or @DISEASE$ and does not contribute to cardiovascular risk stratification.	1
+65	Functional variants of CD14 -260C/T, TNF-alpha -308G/A, and @GENE$ -174G/C, implicated in the susceptibility to infection, are unlikely to confer major risk for susceptibility to @DISEASE$ and its progression or response to therapy in the LCAS population.	1
+66	This is the first report that @GENE$, IL8, and PPARG genes are important in relation to inflammation-related risk of sporadic @DISEASE$.	1
+67	We conclude that  @GENE$ (-174) polymorphism does not influence the risk of developing @DISEASE$ in our cohort.	1
+68	In conclusion, these results suggest that the @GENE$ gene may contribute to the genetic susceptibility to @DISEASE$.	1
+69	This is the first report that @GENE$, IL8, and PPARG genes are important in relation to inflammation-related risk of sporadic @DISEASE$.	1
+70	The presence of the C allele in the -174 position in the gene coding for @GENE$ could play a role in the pathology of @DISEASE$ following IAI in the mother and probably is connected with decreased of immunological reaction.	1
+71	The NADH/NADPH oxidase p22 phox gene is a susceptibility locus for @DISEASE$ in men, and the stromelysin-1 and @GENE$ genes are susceptibility loci in women.	1
+72	Genetic variations in the @GENE$ and IL-1ra gene identify IBD patients at risk for increased @DISEASE$.	1
+73	This result strongly speaks for a role of @GENE$ on recognition of HLA-Cw6 in susceptibility to @DISEASE$.	1
+74	Trp64Arg polymorphism of the beta3-AR gene appears to be a genetic risk factor for @DISEASE$ in Japanese children, but Gln223Arg polymorphism of the @GENE$ gene does not appear to be associated with obesity.	1
+75	Trp64Arg polymorphism of the beta3-AR gene appears to be a genetic risk factor for obesity in Japanese children, but Gln223Arg polymorphism of the @GENE$ gene does not appear to be associated with @DISEASE$.	1
+76	This case-control study showed no significant association between @GENE$ gene polymorphisms and the risk of young-onset @DISEASE$, suggesting that genetic variations in OBR are unlikely to have a major role in the development of early-onset prostate cancer in the UK.	1
+77	This case-control study showed no significant association between @GENE$ gene polymorphisms and the risk of young-onset prostate cancer, suggesting that genetic variations in OBR are unlikely to have a major role in the development of early-onset @DISEASE$ in the UK.	1
+78	This case-control study showed no significant association between leptin receptor gene polymorphisms and the risk of young-onset @DISEASE$, suggesting that genetic variations in @GENE$ are unlikely to have a major role in the development of early-onset prostate cancer in the UK.	1
+79	This case-control study showed no significant association between leptin receptor gene polymorphisms and the risk of young-onset prostate cancer, suggesting that genetic variations in @GENE$ are unlikely to have a major role in the development of early-onset @DISEASE$ in the UK.	1
+80	To conclude, our results support the hypothesis that Gln223Arg polymorphism of @GENE$ in Mexican adolescents is associated with haemodynamic and metabolic disturbances related to @DISEASE$.	1
+81	Gln223Arg variant in @GENE$ gene is associated with @DISEASE$ in type II diabetic male patients, especially with elevation of systolic blood pressure.	1
+82	These studies support that @GENE$ mutations are not a common cause of @DISEASE$ in white people and argue strongly against a role for the MEF2A 21-bp deletion in autosomal dominant CAD.	1
+83	These studies support that @GENE$ mutations are not a common cause of CAD in white people and argue strongly against a role for the MEF2A 21-bp deletion in autosomal dominant @DISEASE$.	1
+84	These studies support that MEF2A mutations are not a common cause of @DISEASE$ in white people and argue strongly against a role for the @GENE$ 21-bp deletion in autosomal dominant CAD.	1
+85	These studies support that MEF2A mutations are not a common cause of CAD in white people and argue strongly against a role for the @GENE$ 21-bp deletion in autosomal dominant @DISEASE$.	1
+86	The results provide evidence for polymorphisms in the @GENE$ gene, and in particular the CATT(7)-MIF-173(*)C haplotype, being of importance in susceptibility to @DISEASE$.	1
+87	The results provide evidence for polymorphisms in the MIF gene, and in particular the CATT(7)-@GENE$-173(*)C haplotype, being of importance in susceptibility to @DISEASE$.	1
+88	Polymorphism in @GENE$ gene promoter -173 G/C does not appear to be a genetic risk factor for @DISEASE$ in Northwest Spain.	1
+89	Although these data need further confirmation, they indicate that CRP and @GENE$ gene polymorphisms are not associated with @DISEASE$.	1
+90	@GENE$ gene C677T mutation associated with a predisposition to increased plasma homocysteine levels may represent a genetic risk factor for diabetic nephropathy in Chinese @DISEASE$.	1
+91	Our data suggest that there is no association between the C677T mutation of the human @GENE$ gene and the risk of @DISEASE$ or VT among Chinese in Taiwan.	1
+92	Combined heterozygosity for @GENE$ mutations C677T and A1298C may represent a genetic marker for @DISEASE$.	1
+93	Homozygosity for the T677 allele of the @GENE$ gene, although slightly more prevalent in patients compared to controls, has not been found in association with @DISEASE$.	1
+94	In conclusion, there was no association between the beta-fibrinogen -455 G/A, GP IIIa PlA1/A2, PAI-1 4G/5G, factor V Leiden 1691 G/A, TNFalpha -238 G/A, TNFalpha -308 G/A, IL-1alpha -889 C/T, the IL-1beta -511 C/T, @GENE$ 677 C/T and eNOS 4 b/a gene polymorphisms and the risk of @DISEASE$ after PTCA as well as recurrent restenosis after repeated PTCA.	1
+95	In conclusion, there was no association between the beta-fibrinogen -455 G/A, GP IIIa PlA1/A2, PAI-1 4G/5G, factor V Leiden 1691 G/A, TNFalpha -238 G/A, TNFalpha -308 G/A, IL-1alpha -889 C/T, the IL-1beta -511 C/T, @GENE$ 677 C/T and eNOS 4 b/a gene polymorphisms and the risk of restenosis after PTCA as well as recurrent @DISEASE$ after repeated PTCA.	1
+96	It was suggested that @GENE$ gene C677T mutation was a possible risk factor of Chinese premature @DISEASE$.	1
+97	These findings suggest that 677CT polymorphism in @GENE$ may be a genetic susceptibility factor for @DISEASE$ among Chinese women.	1
+98	The common @GENE$ C677T and TS enhancer region polymorphisms were not risk factors for @DISEASE$ in this patient cohort nor were they associated with phenotypic features or with prognosis.	1
+99	Hyperhomocysteinemia, but not @GENE$ 677C --> T mutation, is a risk factor for @DISEASE$ in young adults without other thrombogenic factors.	1
+100	The eNOS G894T or eNOS 894TT genotypes in combination with the @GENE$ 677TT or ACE D/D genotype increases the risk of @DISEASE$.	1
+101	These results became important once the C677T @GENE$ gene polymorphism was found to be an independent risk factor for vascular disease, a common clinical event in @DISEASE$.	1
+102	The @GENE$ 677 CT and TT polymorphisms appeared protective against @DISEASE$.	1
+103	The present data suggest that individuals with the deletion of the 29 base pair sequence in the promoter region of the @GENE$ gene may confer susceptibility to a certain form of @DISEASE$.	1
+104	In the present case-control study, we found no evidence of an association between the Glu298Asp variant of the @GENE$ gene and @DISEASE$/MI among Taiwanese.	1
+105	In the present case-control study, we found no evidence of an association between the Glu298Asp variant of the @GENE$ gene and @DISEASE$/MI among Taiwanese.	1
+106	Glu298-->Asp polymorphism of the @GENE$ gene appears to be associated with the presence, extent, and severity of angiographically assessed @DISEASE$.	1
+107	Our findings of an increased risk of @DISEASE$ in ACE D and @GENE$ 894T allele carriers suggest that these polymorphisms may contribute to the pathogenesis of the disease.	1
+108	Our study does not support the conclusion that the @GENE$ Asp298 allele contributes to the development of premature @DISEASE$.	1
+109	In a large case-control study, and in contrast to some earlier positive findings by others, we have found no evidence for an association between several @GENE$ gene polymorphisms and premature @DISEASE$ in an Australian Caucasian population.	1
+110	The C allele at the T(-786)C @GENE$ polymorphism is associated with a higher risk of multivessel @DISEASE$ in Caucasians.	1
+111	We conclude that  the presence of the Glu298Asp @GENE$ gene variant could be a marker of increased risk of developing @DISEASE$.	1
+112	In conclusion, the 27-bp repeat polymorphism of the @GENE$ gene was not associated with @DISEASE$ and the occurrence of AMI or unstable angina in a hospital-based Taiwanese population.	1
+113	Although based on a limited number of patients, our work suggests that individuals who are @GENE$-CC + ACE-DD are at a higher risk for early @DISEASE$, probably as a consequence of increased endothelial dysfunction.	1
+114	The @GENE$ gene 4a/b polymorphism was not associated with the extent of coronary atherosclerosis, but the a-allele of the variant seems to protect to some degree against the development of @DISEASE$.	1
+115	Taken together, these findings strongly suggest that the T-786-->C mutation in the @GENE$ gene reduces the endothelial NO synthesis and predisposes the patients with the mutation to @DISEASE$.	1
+116	Our findings show that the Glu/Asp(298) polymorphism of the @GENE$ gene is associated with @DISEASE$ susceptibility.	1
+117	In conclusion, there was no association between the beta-fibrinogen -455 G/A, GP IIIa PlA1/A2, PAI-1 4G/5G, factor V Leiden 1691 G/A, TNFalpha -238 G/A, TNFalpha -308 G/A, IL-1alpha -889 C/T, the IL-1beta -511 C/T, MTHFR 677 C/T and @GENE$ 4 b/a gene polymorphisms and the risk of @DISEASE$ after PTCA as well as recurrent restenosis after repeated PTCA.	1
+118	In conclusion, there was no association between the beta-fibrinogen -455 G/A, GP IIIa PlA1/A2, PAI-1 4G/5G, factor V Leiden 1691 G/A, TNFalpha -238 G/A, TNFalpha -308 G/A, IL-1alpha -889 C/T, the IL-1beta -511 C/T, MTHFR 677 C/T and @GENE$ 4 b/a gene polymorphisms and the risk of restenosis after PTCA as well as recurrent @DISEASE$ after repeated PTCA.	1
+119	There was a significantly higher frequency of the a allele of intron 4 in both nondiabetic and diabetic hemodialysis patients, so the polymorphism of intron 4 of the @GENE$ gene may have a wide influence on the progression of @DISEASE$.	1
+120	In a large case-control study, and in contrast to some earlier positive findings by others, we have found no evidence for an association between several @GENE$ gene polymorphisms and premature @DISEASE$ in an Australian Caucasian population.	1
+121	Our study does not support the conclusion that the @GENE$ Asp298 allele contributes to the development of premature @DISEASE$.	1
+122	Our data suggested that these polymorphisms of the @GENE$ gene are unlikely to be major factors in the susceptibility to @DISEASE$ in the Japanese population studied.	1
+123	Glu298-->Asp polymorphism of the @GENE$ gene appears to be associated with the presence, extent, and severity of angiographically assessed @DISEASE$.	1
+124	In patients with @DISEASE$, the possession of the 298Asp and -786C variants of the @GENE$ gene are a risk factor for coronary in-stent restenosis, demonstrating the importance of the nitric oxide system in restenosis.	1
+125	The present study provides evidence that the Glu(298)-->Asp and T(786)-->C polymorphisms of the @GENE$ gene are associated with the presence and severity of angiographically defined @DISEASE$ in the Italian population and that those individuals carrying both eNOS variants simultaneously might have a higher risk of developing CAD.	1
+126	The present study provides evidence that the Glu(298)-->Asp and T(786)-->C polymorphisms of the @GENE$ gene are associated with the presence and severity of angiographically defined CAD in the Italian population and that those individuals carrying both eNOS variants simultaneously might have a higher risk of developing @DISEASE$.	1
+127	The present study provides evidence that the Glu(298)-->Asp and T(786)-->C polymorphisms of the eNOS gene are associated with the presence and severity of angiographically defined @DISEASE$ in the Italian population and that those individuals carrying both @GENE$ variants simultaneously might have a higher risk of developing CAD.	1
+128	The present study provides evidence that the Glu(298)-->Asp and T(786)-->C polymorphisms of the eNOS gene are associated with the presence and severity of angiographically defined CAD in the Italian population and that those individuals carrying both @GENE$ variants simultaneously might have a higher risk of developing @DISEASE$.	1
+129	These data suggest gender-specific gene-environment interaction between the CA repeat @GENE$ polymorphism and homocysteine in @DISEASE$.	1
+130	Our results suggest that the @GENE$ gene polymorphism can serve as a useful genetic marker of increased susceptibility to @DISEASE$ and its renal complications.	1
+131	Our findings show that the Glu/Asp(298) polymorphism of the @GENE$ gene is associated with @DISEASE$ susceptibility.	1
+132	Our findings suggest that the 4a allele and the @GENE$ combined genotypes are independent predisposing factors to @DISEASE$.	1
+133	Result showed that the @DISEASE$ of the Turkish population seemed to develop without any alterations in @GENE$ Glu298Asp genotype frequency and the serum nitric oxide level.	1
+134	The @GENE$ intron 4 polymorphism may be a marker of multi-vessel @DISEASE$ in African Americans and Caucasians.	1
+135	These results suggest that premature @DISEASE$ is associated with the Glu298Asp polymorphism of the @GENE$ gene in our population.	1
+136	Promoter variants in @GENE$ may be associated with @DISEASE$ susceptibility among young black women.	1
+137	We conclude that  the presence of the Glu298Asp @GENE$ gene variant could be a marker of increased risk of developing @DISEASE$.	1
+138	In the present case-control study, we found no evidence of an association between the Glu298Asp variant of the @GENE$ gene and @DISEASE$/MI among Taiwanese.	1
+139	The C allele at the T(-786)C @GENE$ polymorphism is associated with a higher risk of multivessel @DISEASE$ in Caucasians.	1
+140	For patients with @DISEASE$ caused by systolic function, the Asp298 variant of @GENE$ is associated with poorer event-free survival, particularly in patients with nonischemic cardiomyopathy.	1
+141	We conclude that the presence of the Glu298Asp @GENE$ gene is not a marker for the increased risk of @DISEASE$ in a population where the level of prenatal care is such that preeclampsia is still frequently seen.	1
+142	We conclude that the presence of the Glu298Asp @GENE$ gene is not a marker for the increased risk of preeclampsia in a population where the level of prenatal care is such that @DISEASE$ is still frequently seen.	1
+143	In contrast to the findings in Japanese women, @DISEASE$ was not associated with the Asp variant of @GENE$ in an American population.	1
+144	The @GENE$ Glu298Asp polymorphism and the Asp298-786C-4b haplotype are risk factors for @DISEASE$.	1
+145	These results suggest that polymorphisms of the @GENE$ gene, but not the ACE gene, may be associated with the development of @DISEASE$.	1
+146	Therefore, our results suggest that Glu298Asp @GENE$ polymorphism plays a role as a genetic susceptibility factor for @DISEASE$.	1
+147	This cross-sectional study showed a synergistic effect between the intron 4 polymorphism or T(-786)-->C polymorphism of the @GENE$ gene and the apoE polymorphism with respect to risk for @DISEASE$ in nondiabetic hemodialysis patients.	1
+148	Our results indicate that @GENE$ (G894T) and p22(phox) (C242T) polymorphisms do not influence susceptibility to and the course of @DISEASE$.	1
+149	The @GENE$ gene a/b polymorphism and the NADH/NADPH oxidase p22 phox gene C242T polymorphism were found to be significantly associated with the development of @DISEASE$ in Korean male patients less than 51 years old.	1
+150	These results did not support any association of @GENE$ and iNOS gene polymorphisms to the development of CAL in @DISEASE$ patients in a Japanese population.	1
+151	The @GENE$ G894T or eNOS 894TT genotypes in combination with the MTHFR 677TT or ACE D/D genotype increases the risk of @DISEASE$.	1
+152	The eNOS G894T or @GENE$ 894TT genotypes in combination with the MTHFR 677TT or ACE D/D genotype increases the risk of @DISEASE$.	1
+153	This study indicates a synergistic contribution of RAS genes (ACE I/D, AGT T/M, AT1R T/C) and @GENE$ Glu298Asp polymorphisms to the development of the premature @DISEASE$.	1
+154	Therefore, in this present study, we find no evidence for the involvement of these @GENE$ polymorphisms in increasing susceptibility to @DISEASE$.	1
+155	This study shows that patients with @DISEASE$ have a higher frequency of @GENE$ T4065C TC genotype and T allele that supports a role of the PLAU T4065C polymorphism in determining the risk of MVP among the Chinese population in Taiwan.	1
+156	This study shows that patients with MVP have a higher frequency of @GENE$ T4065C TC genotype and T allele that supports a role of the PLAU T4065C polymorphism in determining the risk of @DISEASE$ among the Chinese population in Taiwan.	1
+157	This study shows that patients with @DISEASE$ have a higher frequency of PLAU T4065C TC genotype and T allele that supports a role of the @GENE$ T4065C polymorphism in determining the risk of MVP among the Chinese population in Taiwan.	1
+158	This study shows that patients with MVP have a higher frequency of PLAU T4065C TC genotype and T allele that supports a role of the @GENE$ T4065C polymorphism in determining the risk of @DISEASE$ among the Chinese population in Taiwan.	1
+159	it is likely that @GENE$ gene does not have a major role in diabetes and @DISEASE$ in our populations, although we can not exclude a minor contribution of the PPARalpha gene to the risk of CHD associated with Type 2 diabetes through a modulation of atherogenic plasma lipids.	1
+160	it is likely that @GENE$ gene does not have a major role in diabetes and CHD in our populations, although we can not exclude a minor contribution of the PPARalpha gene to the risk of @DISEASE$ associated with Type 2 diabetes through a modulation of atherogenic plasma lipids.	1
+161	it is likely that PPARalpha gene does not have a major role in diabetes and @DISEASE$ in our populations, although we can not exclude a minor contribution of the @GENE$ gene to the risk of CHD associated with Type 2 diabetes through a modulation of atherogenic plasma lipids.	1
+162	it is likely that PPARalpha gene does not have a major role in diabetes and CHD in our populations, although we can not exclude a minor contribution of the @GENE$ gene to the risk of @DISEASE$ associated with Type 2 diabetes through a modulation of atherogenic plasma lipids.	1
+163	These results suggest, that @GENE$ polymorphism may be a risk factor for @DISEASE$.	1
+164	In conclusion, the @GENE$-L162V polymorphism alone or in interaction with dietary fat intake is associated with components of the @DISEASE$.	1
+165	The @GENE$ V162 allele is associated with reduced @DISEASE$ and has a substantial population-attributable risk.	1
+166	These data indicate that @GENE$ gene variation influences the onset and progression of @DISEASE$.	1
+167	These results show that association of the @GENE$ locus with @DISEASE$ is due to linkage disequilibrium with the associated HLA haplotype DRB1*0304-DQB1*02-DQA1*0501.	1
+168	We conclude that  @GENE$ is not a major or independent determinant in the occurrence of @DISEASE$ in the Chinese Han population.	1
+169	Although some molecular variants within the @GENE$ gene were associated with clinical traits in @DISEASE$ patients, the low detection rate of mutations in this gene strongly suggests that variation of the SLC3A1 is not the major genetic factor contributing to cystinuria in this Mediterranean population.	1
+170	Although some molecular variants within the @GENE$ gene were associated with clinical traits in cystinuria patients, the low detection rate of mutations in this gene strongly suggests that variation of the SLC3A1 is not the major genetic factor contributing to @DISEASE$ in this Mediterranean population.	1
+171	Although some molecular variants within the SLC3A1 gene were associated with clinical traits in @DISEASE$ patients, the low detection rate of mutations in this gene strongly suggests that variation of the @GENE$ is not the major genetic factor contributing to cystinuria in this Mediterranean population.	1
+172	Although some molecular variants within the SLC3A1 gene were associated with clinical traits in cystinuria patients, the low detection rate of mutations in this gene strongly suggests that variation of the @GENE$ is not the major genetic factor contributing to @DISEASE$ in this Mediterranean population.	1
+173	Our results indicate a role of the @GENE$ gene in genetic predisposition of metabolic diseases such as @DISEASE$, type 2 diabetes, and dyslipidemia.	1
+174	Our data support @GENE$/CP2/LSF as a candidate gene/risk factor for @DISEASE$ and provide justification for future studies to investigate the role of this gene in Alzheimer's disease.	1
+175	Our data support @GENE$/CP2/LSF as a candidate gene/risk factor for AD and provide justification for future studies to investigate the role of this gene in @DISEASE$.	1
+176	Our data support LBP-1c/@GENE$/LSF as a candidate gene/risk factor for @DISEASE$ and provide justification for future studies to investigate the role of this gene in Alzheimer's disease.	1
+177	Our data support LBP-1c/@GENE$/LSF as a candidate gene/risk factor for AD and provide justification for future studies to investigate the role of this gene in @DISEASE$.	1
+178	Our data support LBP-1c/CP2/@GENE$ as a candidate gene/risk factor for @DISEASE$ and provide justification for future studies to investigate the role of this gene in Alzheimer's disease.	1
+179	Our data support LBP-1c/CP2/@GENE$ as a candidate gene/risk factor for AD and provide justification for future studies to investigate the role of this gene in @DISEASE$.	1
+180	Our data suggest that genotyping patients for the @GENE$ polymorphism would be useful in identifying patients who are more likely to respond to capecitabine treatment for advanced @DISEASE$.	1
+181	These results warrant further large-scale clinical study of the role of the @GENE$ genotyping for the prediction of efficacy using 5-FU-based chemotherapy and prognosis in @DISEASE$.	1
+182	In conclusion, the polymorphisms of @GENE$ are likely to contribute to the risk of @DISEASE$ in non-Hispanic whites and interact with dietary factors in lung cancer development.	1
+183	In conclusion, the polymorphisms of @GENE$ are likely to contribute to the risk of lung cancer in non-Hispanic whites and interact with dietary factors in @DISEASE$ development.	1
+184	The results are supportive of @GENE$ involvement in the neurodevelopmental origin of @DISEASE$ and contribute in delineating etiological and pathogenetic mechanism of the schizophrenia subtype related to 22q11.2 deletion syndrome.	1
+185	The results are supportive of @GENE$ involvement in the neurodevelopmental origin of schizophrenia and contribute in delineating etiological and pathogenetic mechanism of the @DISEASE$ subtype related to 22q11.2 deletion syndrome.	1
+186	This finding suggests that @GENE$ is a potential @DISEASE$ susceptibility gene and implies that dysregulation of neurogenesis may be involved in suicide.	1
+187	This finding suggests that @GENE$ is a potential suicide susceptibility gene and implies that dysregulation of neurogenesis may be involved in @DISEASE$.	1
+188	278A polymorphism of @GENE$ gene was associated with idiopathic @DISEASE$, while C/T, 370G/A, 430G/C, 467T/C, 468G/A polymorphisms might be very rare in Chinese population.	1
+189	It is unlikely that the @GENE$ gene is a locus responsible for @DISEASE$.	1
+190	Our findings indicate that @GENE$ gene may be a candidate susceptibility gene for @DISEASE$ in Chinese Han population, and also provide further support for the potential importance of NMDAR-mediated glutamatergic transmission in the etiology of schizophrenia.	1
+191	Our findings indicate that @GENE$ gene may be a candidate susceptibility gene for schizophrenia in Chinese Han population, and also provide further support for the potential importance of NMDAR-mediated glutamatergic transmission in the etiology of @DISEASE$.	1
+192	In conclusion, the data provide evidence that a low frequency sequence variation in the @GENE$ gene could play a role in the etiology of @DISEASE$.	1
+193	We conclude that  mutations in @GENE$ may confer risk for the @DISEASE$.	1
+194	The significant association of @DISEASE$ with the @GENE$*3 allele encoding a low detoxification activity protein is identified and implicates UGT1A7 as a risk gene of hepatocarcinogenesis in addition to a role as potential marker for cancer risk assessment in chronic liver disease.	1
+195	The significant association of @DISEASE$ with the UGT1A7*3 allele encoding a low detoxification activity protein is identified and implicates @GENE$ as a risk gene of hepatocarcinogenesis in addition to a role as potential marker for cancer risk assessment in chronic liver disease.	1
+196	In conclusion, carriage of the @GENE$*3 allele, as well as variant-211 UGT1A1 allele represents a risk factor for the development of, and a determinant for, metastases associated with @DISEASE$ patients.	1
+197	Most patients with @DISEASE$, in addition to their reduced B-UGT enzyme activity, may have abnormalities in the glucuronidation of aspirin or coumarin- and dopamine-derivatives, due to this combination of UGT1A1*28 and @GENE$*2 genotypes.	1
+198	Our results indicate that homozygosity and compound heterozygosity for mutations in the @GENE$ gene promoter (T-3263G and A[TA](7)TAA) and/or exon 1 of the gene (G211A) could explain the @DISEASE$ seen in the majority of individuals with Gilbert's syndrome.	1
+199	These observations suggest that lower expression of @GENE$ decreases the risk of @DISEASE$ by reducing the excretion of 2-hydroxyestradiol, the antiproliferative metabolite of E(2), in the endometrium.	1
+200	In conclusion, the prevalence of @GENE$*28 found in mucinous OCP could suggest a role in the development of specific histologic sub-groups and could become a marker to be considered when planning @DISEASE$ chemotherapy.	1
+201	This study shows that the @GENE$ gene promoter polymorphism is a major genetic risk factor modifying the frequency and age-at-onset of @DISEASE$ in SCA patients.	1
+202	In conclusion, carriage of the UGT1A7*3 allele, as well as variant-211 @GENE$ allele represents a risk factor for the development of, and a determinant for, metastases associated with @DISEASE$ patients.	1
+203	Most patients with @DISEASE$, in addition to their reduced B-UGT enzyme activity, may have abnormalities in the glucuronidation of aspirin or coumarin- and dopamine-derivatives, due to this combination of @GENE$*28 and UGT1A6*2 genotypes.	1
+204	Our results indicate that homozygosity and compound heterozygosity for mutations in the @GENE$ gene promoter (T-3263G and A[TA](7)TAA) and/or exon 1 of the gene (G211A) could explain the @DISEASE$ seen in the majority of individuals with Gilbert's syndrome.	1
+205	These studies suggest that there may be a modifying role of variants of @GENE$ on @DISEASE$-1 disease progression that warrants further investigation.	1
+206	Genotyping these tags in a set of 576 @DISEASE$ patients and 514 controls did not demonstrate a case-control partition for allele or for haplotype and thus provides evidence against the existence of a common functional variants in @GENE$ that has a strong influence on PD risk.	1
+207	Variants in the regulatory region shared by PARK2 and @GENE$ therefore act as common risk factors for @DISEASE$.	1
+208	The @GENE$-G allele appears to be a risk modifier for @DISEASE$.	1
+209	However, we report a positive association between @DISEASE$ and the locus containing the gene for @GENE$.	1
+210	This study suggests that C3435T polymorphism of the @GENE$ gene has an association with @DISEASE$ in Iranian population as previously reported in western countries.	1
+211	The current results taken together suggest that, aside from other known causes of @DISEASE$, such as tobacco smoke, the existence of polymorphisms in the @GENE$ gene and, specifically, the presence of the G2677T mutation can be crucial in conferring susceptibility to lung cancer.	1
+212	The current results taken together suggest that, aside from other known causes of lung cancer, such as tobacco smoke, the existence of polymorphisms in the @GENE$ gene and, specifically, the presence of the G2677T mutation can be crucial in conferring susceptibility to @DISEASE$.	1
+213	An interaction between the E298D and T-786C polymorphisms in @GENE$, cigarette smoking, and risk of incident @DISEASE$ and ischemic stroke events appears to exist, suggesting a potential complex interplay between genetic and environmental factors and cardiovascular disease risk.	1
+214	The strong @DISEASE$ predisposition conferred by the @GENE$ and CFH SNPs may result from biological epistasis, because ERCC6 functions in universal transcription as a component of RNA pol I transcription complex.	1
+215	The strong @DISEASE$ predisposition conferred by the ERCC6 and CFH SNPs may result from biological epistasis, because @GENE$ functions in universal transcription as a component of RNA pol I transcription complex.	1
+216	In this sample, @GENE$ AA, associated with decreased production of myeloperoxidase, was found to be a risk factor for @DISEASE$.	1
+217	In this sample, MPO AA, associated with decreased production of @GENE$, was found to be a risk factor for @DISEASE$.	1
+218	We conclude that  variability at the @GENE$ locus is associated with @DISEASE$ and other features of the insulin resistance syndrome, but given the nature of the two SNPs, the risk haplotype is most probably a marker in linkage disequilibrium with an as yet unidentified polymorphism that affects plasma adiponectin levels and insulin sensitivity.	1
+219	We conclude that  variability at the adiponectin locus is associated with @DISEASE$ and other features of the insulin resistance syndrome, but given the nature of the two SNPs, the risk haplotype is most probably a marker in linkage disequilibrium with an as yet unidentified polymorphism that affects plasma @GENE$ levels and insulin sensitivity.	1
+220	This study shows that patients with FMV/@DISEASE$ have higher frequency of @GENE$ exon 31 GG genotype that supports a role of the COL3A1 exon 31 polymorphism in determining the risk of FMV/MVP among the Chinese population in Taiwan.	1
+221	This study shows that patients with FMV/MVP have higher frequency of @GENE$ exon 31 GG genotype that supports a role of the COL3A1 exon 31 polymorphism in determining the risk of FMV/@DISEASE$ among the Chinese population in Taiwan.	1
+222	This study shows that patients with FMV/@DISEASE$ have higher frequency of COL3A1 exon 31 GG genotype that supports a role of the @GENE$ exon 31 polymorphism in determining the risk of FMV/MVP among the Chinese population in Taiwan.	1
+223	This study shows that patients with FMV/MVP have higher frequency of COL3A1 exon 31 GG genotype that supports a role of the @GENE$ exon 31 polymorphism in determining the risk of FMV/@DISEASE$ among the Chinese population in Taiwan.	1
+224	Our results indicate that the @GENE$ gene locus may predispose to @DISEASE$ by increasing the 24S-hydroxycholesterol/cholesterol ratio in the brain.	1
+225	The results obtained are in favor of the genetic heterogeneity of @DISEASE$, and suggest the possibility of epistatic interactions between the @GENE$ and DRB1 genes.	1
+226	In this population, individuals homozygous for the arginine variant of codon 72 of the @GENE$ gene were at increased risk of @DISEASE$.	1
+227	Using logistic regression and multiple correlation analysis (MCA), we confirmed that the main risk factor associated and consistently grouped with @DISEASE$ patients in this population is APOE4, but this association was not observed with alleles and genotypes of ACE and @GENE$.	1
+228	We conclude that  common genetic variation at @GENE$ is unlikely to confer clinically significant risk of @DISEASE$ in Caucasians.	1
+229	These results suggest that @GENE$ variants may act through insulin secretion to increase the risk of @DISEASE$.	1
+230	Tunisian persons carrying the P2/P2 genotype of the @GENE$ gene may have an increased risk of @DISEASE$.	1
+231	In conclusion, the determination of the @GENE$ genotype might be a powerful tool for the prognosis of patients with early @DISEASE$.	1
+232	Our novel observation of a differential effect of OC use on @DISEASE$ risk by @GENE$ 1315Leu-carrier status suggests the interesting possibility of the Sonic hedgehog/Patched (SHH/PTCH1) signaling pathway being involved in hormone-induced development of breast carcinoma.	1
+233	Our novel observation of a differential effect of OC use on breast cancer risk by @GENE$ 1315Leu-carrier status suggests the interesting possibility of the Sonic hedgehog/Patched (SHH/PTCH1) signaling pathway being involved in hormone-induced development of @DISEASE$.	1
+234	Our novel observation of a differential effect of OC use on @DISEASE$ risk by PTCH1 1315Leu-carrier status suggests the interesting possibility of the Sonic hedgehog/Patched (SHH/@GENE$) signaling pathway being involved in hormone-induced development of breast carcinoma.	1
+235	Our novel observation of a differential effect of OC use on breast cancer risk by PTCH1 1315Leu-carrier status suggests the interesting possibility of the Sonic hedgehog/Patched (SHH/@GENE$) signaling pathway being involved in hormone-induced development of @DISEASE$.	1
+236	We conclude that  the analyzed SNPs in GAL and @GENE$ do not play a major role in early onset @DISEASE$ or dietary fat intake in the obese children and adolescents of our study groups.	1
+237	We conclude that  the analyzed SNPs in GAL and @GENE$ do not play a major role in early onset obesity or dietary fat intake in the @DISEASE$ children and adolescents of our study groups.	1
+238	We conclude that  this study has failed to produce evidence in support of the notion that variations within these 24 candidate @GENE$ and asthma genes significantly influence the expression of the atopic asthmatic phenotype or contribute to the susceptibility of @DISEASE$.	1
+239	We conclude that  there is no significant association between the hypertension associated @GENE$ gene polymorphism and @DISEASE$ in patients with IDDM in the UK.	1
+240	We conclude that  IL-4-589*T, but not TNF-alpha-308*2 or Fcalpha RIbeta*G, is a risk factor for the development of @GENE$, @DISEASE$, and rhinitis by 12 mo of age.	1
+241	We conclude that  the @GENE$ gene is a significant, independent risk factor for @DISEASE$ in whites, but not in blacks, and may play a particularly important role for subjects with certain constellations of other risk factors.	1
+242	We conclude that  the @GENE$ gene (Gln27Glu) variant might not be an important factor for @DISEASE$ or IGT in Japanese subjects.	1
+243	We conclude that  this study has failed to produce evidence in support of the notion that variations within these 24 candidate @GENE$ and asthma genes significantly influence the expression of the atopic asthmatic phenotype or contribute to the susceptibility of @DISEASE$.	1
+244	We conclude that  activating mutations of the @GENE$ gene are not a major contributor to the development of @DISEASE$ in these data.	1
+245	We conclude that  the @GENE$ L10P polymorphism is not associated with @DISEASE$ risk.	1
+246	The present study allows definition of the @DISEASE$-associated variants of @GENE$ as those which are in linkage disequilibrium with a (CA)-repeat insertion polymorphism in intron 9 of the large, 22 exon, > 120-kb gene, but not those associated with a polymorphism in the second intron.	1
+247	The present study strengthens the hypothesis of an association of both @GENE$ gene polymorphisms with the extent of @DISEASE$.	1
+248	These analyses suggest that variation in the @GENE$ gene may primarily affect the inattentive subtype of @DISEASE$.	1
+249	The results of this study suggest that a polymorphism in the @GENE$ gene, rs6871510, is a potential risk factor for the development of @DISEASE$ in an African American population, whereas polymorphisms in the Homer2 gene are not.	1
+250	The findings of the case-control and family-based studies demonstrate clearly that DNA sequence differences in @GENE$ influence the risk of advanced nephropathy in @DISEASE$.	1
+251	This @GENE$ VNTR gene polymorphism may be a protective factor for severe joint destruction in @DISEASE$ that could be used as a prognostic marker early in the course of the disease.	1
+252	There does not appear to be an association of the @GENE$ gene mutation with @DISEASE$ and therefore it is unlikely to be involved in the etiology of IBD.	1
+253	There does not appear to be an association of the @GENE$ gene mutation with IBD and therefore it is unlikely to be involved in the etiology of @DISEASE$.	1
+254	These results indicate that the @GENE$-308 allele 2 may be partly associated with the extent of emphysematous changes in patients with @DISEASE$.	1
+255	The present investigation provides no evidence that the variable repeat located in the regulatory sequences of the @DISEASE$ gene @GENE$ is associated with the risk of developing POAG or exfoliation glaucoma.	1
+256	These findings support the hypothesis that these two @GENE$ variants may contribute to the risk of developing @DISEASE$.	1
+257	These data indicate that @GENE$ and beta 2 genes are not loci influencing @DISEASE$ susceptibility, either RR/SPMS or PPMS, in this population.	1
+258	A common variant of @GENE$, previously associated with a lower AHSG protein level, is thus more common among lean than @DISEASE$ and overweight men, supporting the results from Ahsg knock-out mice, namely, that AHSG modulates body mass.	1
+259	A common variant of AHSG, previously associated with a lower @GENE$ protein level, is thus more common among lean than @DISEASE$ and overweight men, supporting the results from Ahsg knock-out mice, namely, that AHSG modulates body mass.	1
+260	A common variant of AHSG, previously associated with a lower AHSG protein level, is thus more common among lean than @DISEASE$ and overweight men, supporting the results from @GENE$ knock-out mice, namely, that AHSG modulates body mass.	1
+261	A common variant of AHSG, previously associated with a lower AHSG protein level, is thus more common among lean than @DISEASE$ and overweight men, supporting the results from Ahsg knock-out mice, namely, that @GENE$ modulates body mass.	1
+262	An association between this @GENE$ gene polymorphism and @DISEASE$ supports the notion that cell adhesion molecules are involved in the etiology of schizophrenia.	1
+263	An association between this @GENE$ gene polymorphism and schizophrenia supports the notion that cell adhesion molecules are involved in the etiology of @DISEASE$.	1
+264	It was suggested that for the Han Chinese children with @DISEASE$ in this study, there was no association between ADHD and Val158Met polymorphism of @GENE$ gene.	1
+265	It was suggested that for the Han Chinese children with ADHD in this study, there was no association between @DISEASE$ and Val158Met polymorphism of @GENE$ gene.	1
+266	These results do not support the hypothesis that the @GENE$ Val(158)Met or BDNF C(270)T gene polymorphisms are associated with liability to @DISEASE$.	1
+267	Genetic variations in @GENE$ may define a high-risk subgroup of @DISEASE$ where the component of chronic bronchitis is predominant.	1
+268	Genetic variations in @GENE$ may define a high-risk subgroup of @DISEASE$ where the component of chronic bronchitis is predominant.	1
+269	We conclude that  there is no association of the @GENE$ locus with @DISEASE$ in Taiwanese populations.	1
+270	These results demonstrate the association of a new polymorphism of @GENE$ (I232T) with susceptibility to @DISEASE$ in the Japanese.	1
+271	This study suggests that certain null @GENE$ and GSTT1 genotypes may be associated with an elevated risk of @DISEASE$ which may be modified by interaction of the two genetic polymorphisms and cigarette smoking.	1
+272	These findings suggest that immunogenetic factors for susceptibility to @DISEASE$ are present in the host, the @GENE$*04051 allele is a host genetic risk factor for gastric adenocarcinoma, and that this genetic risk is independent of H. pylori infection.	1
+273	These findings suggest that immunogenetic factors for susceptibility to gastric adenocarcinoma are present in the host, the @GENE$*04051 allele is a host genetic risk factor for @DISEASE$, and that this genetic risk is independent of H. pylori infection.	1
+274	We found little evidence @GENE$ and IFNgamma genotypes predispose to the development of @DISEASE$ or influence the inflammatory host response.	1
+275	The @GENE$ Gly15Arg mutation is rare in patients with @DISEASE$, and is not associated with the disease in the Netherlands.	1
+276	The increased @DISEASE$ rate of homozygous @GENE$-174G carriers was especially related to an increase in Gram-positive infections, and was not observed in VLBW infants who received prophylaxis with teicoplanin (frequency of Gram-positive sepsis in homozygous IL6-174G carriers without prophylaxis 16.5% versus 2.4% in homozygous IL6-174G carriers with prophylaxis; p = 0.033).	1
+277	The increased @DISEASE$ rate of homozygous IL6-174G carriers was especially related to an increase in Gram-positive infections, and was not observed in VLBW infants who received prophylaxis with teicoplanin (frequency of Gram-positive sepsis in homozygous @GENE$-174G carriers without prophylaxis 16.5% versus 2.4% in homozygous IL6-174G carriers with prophylaxis; p = 0.033).	1
+278	The increased @DISEASE$ rate of homozygous IL6-174G carriers was especially related to an increase in Gram-positive infections, and was not observed in VLBW infants who received prophylaxis with teicoplanin (frequency of Gram-positive sepsis in homozygous IL6-174G carriers without prophylaxis 16.5% versus 2.4% in homozygous @GENE$-174G carriers with prophylaxis; p = 0.033).	1
+279	We cannot find support for the involvement of variation in @GENE$ in susceptibility to @DISEASE$, but the role of this and other genes from the phosphoinositol signalling pathway in predicting response to lithium treatment merits further investigation.	1
+280	The authors believe that @GENE$ VV genotype is associated with the development of NTDs and @DISEASE$.	0
+281	Our data suggest that there is no association between the C677T @DISEASE$ of the human @GENE$ gene and the risk of CAD or VT among Chinese in Taiwan.	0
+282	The present study extends previous observations by the @DISEASE$ that carriers of the N5,@GENE$-methylenetetrahydrofolate reductase C677T TT genotype with various coronary high risk profiles had clearly higher coronary heart disease scores than individuals with at least one C677T C allele.	0
+283	@DISEASE$, serum folate levels and both C677T and A1298C @GENE$ mutations are associated with CVD in HD patients.	0
+284	These results suggest that homozygous C677T @GENE$ @DISEASE$ could be considered as a genetic risk factor for venous thrombosis.	0
+285	According to our study, the frequency of the homozygote state (T/T) of @GENE$ and increased @DISEASE$ levels of homocysteine is greater in women suffering from preeclampsia.	0
+286	It was suggested that @GENE$ gene C677T @DISEASE$ was a possible risk factor of Chinese premature coronary heart disease.	0
+287	Results in the present study suggested that there was a coordinated effect between @GENE$ 1298 genotypes and habits of smoking, alcohol drinking and tea @DISEASE$ in the development of EC.	0
+288	We conclude that the NO concentration but not the polymorphism of @GENE$ and eNOS gene and @DISEASE$ are associated with recurrent pregnancy loss in Japanese.	0
+289	The common MTHFR C677T and @GENE$ enhancer region polymorphisms were not risk factors for @DISEASE$ in this patient cohort nor were they associated with phenotypic features or with prognosis.	0
+290	Increased plasma Hcy level played an important role in the occurrence of @DISEASE$ in Chinese people, and the mutation of @GENE$ C677T was not associated with Hcy level or stroke which led to the speculation that plasma Hcy level was important in the prevention of cardio-cerebro-vascular diseases among Chinese people.	0
+291	@DISEASE$, but not @GENE$ 677C --> T mutation, is a risk factor for venous thromboembolism in young adults without other thrombogenic factors.	0
+292	In summary, our study shows that the 2756A-->G @DISEASE$ of @GENE$ in combination with MTHFR 677TT/1298AA and 677CT/1298AC can be associated with extremely high tHcy plasma levels.	0
+293	Our results provide no evidence that the above @GENE$ gene mutations are a risk factor for CLP.A NAT1 gene @DISEASE$ instead could be a risk factor for CLP.	0
+294	These results became important once the C677T @GENE$ gene polymorphism was found to be an independent risk factor for @DISEASE$, a common clinical event in sickle cell disease.	0
+295	The MTHFR 677 @GENE$ and TT polymorphisms appeared protective against @DISEASE$.	0
+296	Our @DISEASE$ suggests that the D919G polymorphism of the @GENE$ gene may be a useful genetic marker to predict the antihypertensive effect of short-term benazepril therapy in hypertensive patients of Anhui Province, China.	0
+297	Our study suggests that L-myc polymorphism can be a predisposing factor in the development of @GENE$ @DISEASE$ in stomach cancer patients.	0
+298	The present data suggest that individuals with the @DISEASE$ of the 29 @GENE$ pair sequence in the promoter region of the NQO2 gene may confer susceptibility to a certain form of schizophrenia.	0
+299	Present data suggest that an insertion/@DISEASE$ polymorphism in the promoter region of the @GENE$ gene plays an important role in the pathogenesis of alcoholism and alcohol withdrawal symptoms.	0
+300	This result indicated that the @GENE$ genotype could modify cerebrovascular circulation in a general population by potentiating the @DISEASE$ of smoking.	0
+301	Therefore, the -786 @GENE$ genotype in NO synthase is a significant contributing factor for increasing the risk of @DISEASE$.	0
+302	Our results do not support the hypothesis that the @GENE$ 4 a/b polymorphism interacts with the development of early carotid @DISEASE$ in young type-1 diabetic patients, but they give grounds to assume that in these patients it could influence the occurence of diabetic retinopathy.	0
+303	The @GENE$ a allele in intron 4 may be an independent risk factor for @DISEASE$ in the Chinese population studied, especially in those lacking other conventional risk factors.	0
+304	In patients with coronary artery disease, the possession of the 298Asp and -786C variants of the @GENE$ gene are a risk factor for coronary in-stent @DISEASE$, demonstrating the importance of the nitric oxide system in restenosis.	0
+305	The T(-786)C promoter polymorphism and its interaction with exon 7 Glu298Asp affect endothelium-dependent @DISEASE$ in mild-to-moderate @GENE$ patients and NT Caucasian subjects.	0
+306	The @GENE$ gene 4a/b polymorphism was not associated with the extent of @DISEASE$, but the a-allele of the variant seems to protect to some degree against the development of MI.	0
+307	The G894T @DISEASE$ of the @GENE$ gene may be a marker for genetical predisposition of CHD in Chinese Han population.	0
+308	Taken together, these findings strongly suggest that the T-786-->C @DISEASE$ in the @GENE$ gene reduces the endothelial NO synthesis and predisposes the patients with the mutation to coronary spasm.	0
+309	Our results demonstrate that the @GENE$, a nitric oxide synthase constitutively expressed in epithelial cells, plays an important role in determining measured levels of exhaled nitric oxide, a marker of the @DISEASE$ condition.	0
+310	T(-786)-->C polymorphism may be involved in the @DISEASE$ of both nondiabetic and @GENE$, along with intron 4 polymorphism.	0
+311	Therefore, we show associations between Glu allele of @GENE$ (Glu298Asp) and @DISEASE$ and between 4a allele (ecNOS4a/4b) and diastolic dysfunction in patients with essential hypertension.	0
+312	The @GENE$ Glu298Asp polymorphism does not appear to influence the risk of developing @DISEASE$ in an Italian population.	0
+313	Our results suggest that the @GENE$ gene polymorphism can serve as a useful genetic marker of increased susceptibility to type 2 diabetes and its renal @DISEASE$.	0
+314	Although the polymorphism of @GENE$ gene G894T did not seem to play an important and direct role in the @DISEASE$ of EH it might have indirect effects through certain risk factors.	0
+315	There was no association between @DISEASE$ and @GENE$ III G894T polymorphism in Chinese Han population.	0
+316	These results suggest that the allelic variation (G894T) of the @GENE$ gene or a locus closely linked to it is associated with lower arterial wall @DISEASE$, adjusting for BP levels, in young adults.	0
+317	Regulation of @GENE$ expression by the functional CCTTT-polymorphism does not modify @DISEASE$ pathogenesis.	0
+318	These results imply that @GENE$(GT) genotype is associated with the @DISEASE$ of type 2 DN in Korean patients.	0
+319	Our results imply that G894T polymorphism of the @GENE$ gene is associated with elevated levels of inflammatory and @DISEASE$ markers, which may partially explain the increased prevalence of G894T polymorphism among patients with cardiovascular disease.	0
+320	Homozygosity for Asp298, a common variant of the @GENE$ gene, is an independent risk factor for @DISEASE$ in this study population.	0
+321	These data support the hypothesis that the @DISEASE$ observed in the blood vessels of smokers is related to reduced NO bioactivity but indicate that @GENE$ genotype does not influence significantly the level of plasma NO(x) or the risk of IHD in this population sample of middle-aged British men.	0
+322	Our results suggested that the Asp298 of @GENE$ is a potent, independent risk factor for @DISEASE$.	0
+323	C allele homozygosity in position 786 of the @GENE$ promoter seems to be an independent risk factor for the development of moderate to severe ICA @DISEASE$, especially ulcerative lesions.	0
+324	The (-)786T-C @DISEASE$ of the @GENE$ gene is associated with insulin resistance in both Japanese non-diabetic subjects and Type II diabetic patients.	0
+325	For patients with heart failure caused by systolic function, the Asp298 variant of @GENE$ is associated with poorer event-free survival, particularly in patients with nonischemic @DISEASE$.	0
+326	Our findings argue against an association between @GENE$ polymorphism and @DISEASE$ and support the hypothesis for a different pathogenesis of GH in respect to EH.	0
+327	The authors suggest that genetic variants of @GENE$ are not associated with susceptibility to @DISEASE$, although the genotypes may lead to differences in disease severity and progression.	0
+328	These data suggest a role of the @GENE$ gene in the @DISEASE$ of metabolic syndrome in hypertensive patients.	0
+329	Our data suggest that @GENE$ gene polymorphisms may play an important role in the @DISEASE$ of vessel stenosis in Korean population.	0
+330	This study suggested that G894T @DISEASE$ in @GENE$ gene might serve as a major risk factor to the pathogenesis of P-CHD in this study population.	0
+331	The results of the present study lend support to the concept that all patients with @DISEASE$ @GENE$ gene have abnormalities of thyroid function tests.	0
+332	This study has shown that the position of the @GENE$ @DISEASE$ is significantly associated with earlier ESRD and questions whether PKD1 mutations simply inactivate all products of the gene.	0
+333	As uPA can be involved in @DISEASE$ invasion and metastasis, @GENE$ genotype in exon 6 of uPA gene can be further considered as being related to colorectal cancer progression.	0
+334	We concluded that urokinase gene 3'-@GENE$ C/T polymorphism is not a suitable marker for predicting susceptibility and severity to @DISEASE$ for preterm infants of Taiwanese.	0
+335	it is likely that @GENE$ gene does not have a major role in @DISEASE$ and CHD in our populations, although we can not exclude a minor contribution of the PPARalpha gene to the risk of CHD associated with Type 2 diabetes through a modulation of atherogenic plasma lipids.	0
+336	We demonstrate that variation in the @GENE$ gene influences human left ventricular growth in response to exercise and @DISEASE$, indicating that maladaptive cardiac substrate utilization can play a causative role in the pathogenesis of LVH.	0
+337	Thus, the @GENE$-1alpha gene locus influences carbohydrate metabolism and contributes to @DISEASE$ in the population studied.	0
+338	These data indicate that @GENE$ gene variation influences the onset and @DISEASE$ of type 2 diabetes.	0
+339	These results show that association of the LMP 2 locus with @DISEASE$ is due to linkage disequilibrium with the associated HLA haplotype @GENE$*0304-DQB1*02-DQA1*0501.	0
+340	Our data suggest that the @GENE$ -13T allele, rather than SAA1 exon 3 haplotypes, is primarily associated with @DISEASE$ risk.	0
+341	Determination of genotypes at @GENE$ locus can play a key role in conferring genetic susceptibility and patient's prognosis to @DISEASE$.	0
+342	We conclude that  variability at the @GENE$ locus is associated with obesity and other features of the @DISEASE$, but given the nature of the two SNPs, the risk haplotype is most probably a marker in linkage disequilibrium with an as yet unidentified polymorphism that affects plasma adiponectin levels and insulin sensitivity.	0
+343	These results indicate that a genetic association exists between @GENE$ gene locus and severe @DISEASE$.	0
+344	Although some molecular variants within the SLC3A1 gene were associated with clinical @GENE$ in @DISEASE$ patients, the low detection rate of mutations in this gene strongly suggests that variation of the SLC3A1 is not the major genetic factor contributing to cystinuria in this Mediterranean population.	0
+345	Thus, we have identified a new polymorphism in the 5' untranslated region of the SREBP-@GENE$ gene, and demonstrated its association with an atherogenic lipid profile and echographic @DISEASE$.	0
+346	Our results indicate a role of the @GENE$ gene in genetic predisposition of @DISEASE$ such as obesity, type 2 diabetes, and dyslipidemia.	0
+347	Variants in @GENE$ are unlikely to be a major risk factor for the most common form of human NTDs, lumbosacral @DISEASE$.	0
+348	We conclude that  hTERC gene mutations do not contribute to @DISEASE$ in @GENE$.	0
+349	These results warrant further large-scale clinical study of the role of the TS genotyping for the prediction of efficacy using 5-@GENE$-based chemotherapy and prognosis in @DISEASE$.	0
+350	These results suggest an important role for @DISEASE$ and impaired @GENE$ activity in the etiology of ESCC and GCA.	0
+351	Our findings suggest that the @GENE$ 3'UTR del/del genotype is a significant determinant of elevated RBC folate concentration in a non-smoking population of northwestern European adults and that this genotype confers protection against @DISEASE$ for which a low folate/high homocysteine phenotype appears to be an etiologic component.	0
+352	The results are supportive of @GENE$ involvement in the neurodevelopmental origin of schizophrenia and contribute in delineating etiological and pathogenetic mechanism of the schizophrenia subtype related to @DISEASE$.	0
+353	This @DISEASE$ suggests that @GENE$ is a potential suicide susceptibility gene and implies that dysregulation of neurogenesis may be involved in suicide.	0
+354	In conclusion, TSER genotype is not an efficacious marker for @DISEASE$ sensitivity to 5-@GENE$-based oral adjuvant chemotherapy for Japanese colorectal cancer patients after curative resection.	0
+355	Our results demonstrate for the first time that the @GENE$ polymorphism is a genetic susceptibility factor for the occurrence and @DISEASE$ of ESCC.	0
+356	@GENE$ gene polymorphism at codon 54 was not associated with the clearance of @DISEASE$ virus infection nor progression of disease in chronic hepatitis B virus infection.	0
+357	Our findings indicate that @GENE$ gene may be a candidate susceptibility gene for schizophrenia in Chinese Han population, and also provide further support for the potential importance of NMDAR-mediated glutamatergic @DISEASE$ in the etiology of schizophrenia.	0
+358	Genetic polymorphism in @GENE$ is associated with the development of @DISEASE$ in the Chinese Hans.	0
+359	Our results provide no evidence that genetic variation of the @GENE$ gene confers susceptibility to JME-related IGE @DISEASE$.	0
+360	A significant difference in one haplotype was observed in @DISEASE$ patients without the @GENE$ epsilon4 allele.	0
+361	These results @DISEASE$ further support for the hypothesis that SNPs in energy-regulating genes affect risk of @GENE$.	0
+362	These data suggest that variations in the @GENE$ gene contribute to @DISEASE$ and may modulate glucose-induced insulin secretion.	0
+363	Variation in the preproghrelin gene is not associated with juvenile-onset @DISEASE$, @GENE$ 2 diabetes or related phenotypes among the examined Danish Caucasian subjects.	0
+364	The data from the current study show that the @GENE$ gene has several low-frequency missense polymorphisms and that the codon 139 polymorphism is an independent risk factor for orolaryngeal @DISEASE$ in blacks.	0
+365	These data suggest that genetic polymorphisms in @GENE$, UGT1A6 and in UGT1A8 do not predispose to the development of @DISEASE$ in Caucasians.	0
+366	The significant association of hepatocellular carcinoma with the @GENE$*3 allele encoding a low detoxification activity protein is identified and implicates UGT1A7 as a risk gene of @DISEASE$ in addition to a role as potential marker for cancer risk assessment in chronic liver disease.	0
+367	We identify the significant association of the @GENE$*3 allele encoding a low catalytic activity protein as a risk gene in proximal digestive tract @DISEASE$ and as a potential marker for cancer susceptibility.	0
+368	In conclusion, carriage of the @GENE$*3 allele, as well as variant-211 UGT1A1 allele represents a risk factor for the development of, and a determinant for, @DISEASE$ associated with CRC patients.	0
+369	Most patients with @DISEASE$, in addition to their reduced B-@GENE$ enzyme activity, may have abnormalities in the glucuronidation of aspirin or coumarin- and dopamine-derivatives, due to this combination of UGT1A1*28 and UGT1A6*2 genotypes.	0
+370	Our results indicate that homozygosity and compound heterozygosity for mutations in the @GENE$ gene promoter (T-3263G and A[TA](7)@DISEASE$) and/or exon 1 of the gene (G211A) could explain the hyperbilirubinemia seen in the majority of individuals with Gilbert's syndrome.	0
+371	The results presented do not support a strong association between the @GENE$ promoter polymorphism and the risk of @DISEASE$.	0
+372	These observations suggest that lower expression of UGT1A1 decreases the risk of @DISEASE$ by reducing the excretion of 2-hydroxyestradiol, the antiproliferative metabolite of @GENE$), in the endometrium.	0
+373	No significant associations were observed with *28 allele and @DISEASE$ risk by @GENE$/progesterone receptor status.	0
+374	These results confirm that the (TA)7/(TA)7 @GENE$ genotype is one of the factors accounting for the @DISEASE$ observed in beta-thalassemia major, intermedia, and heterozygous individuals.	0
+375	The results indicate that carriage of the homozygous 211 G to A variation within the coding region in the @GENE$ gene is an additive risk factor for @DISEASE$ in G6PD-deficient Taiwanese male neonates.	0
+376	The role of the @GENE$ genotype as a predictor of toxicity in @DISEASE$ patients receiving irinotecan demands the performance of a randomized trial to ascertain whether genotype-adjusted dosages of the drug can help to establish safe and effective doses not only for patients with the UGT1A1(*)28 homozygous genotype but also for those with the most common UGT1A1 6/6 or 6/7 genotype.	0
+377	The results further strengthen the causative role of the @GENE$ gene in non-syndromic @DISEASE$ and add new insights into espin structure and function.	0
+378	Since none of these variations appear to be pathogenically relevant, our results suggest that @DISEASE$ of @GENE$ plays little or no role in the development of EOP.	0
+379	The common @GENE$ 2992T allele, in the mother or offspring or both, may confer reduced fetal growth restraint, as indicated by associations with larger offspring birth size, higher cord @DISEASE$ IGF-II levels, and lower compensatory early postnatal catch-up weight gain, that are more evident among mother's smaller first-born infants.	0
+380	Our results suggest that the @GENE$ locus harbours a @DISEASE$ susceptibility gene for developing MG, though we cannot rule out linkage disequilibrium with another major gene locus on chromosome 2.	0
+381	Our results indicate that the contribution of HLA class @GENE$ alleles to primary @DISEASE$ incidence is not significant in the Spanish population.	0
+382	The biallelic nonsense @DISEASE$ encoding truncated @GENE$ proteins lost almost all functions examined and may play a role in leukemogenesis leading to acute myeloblastic leukemia.	0
+383	Overall, we observed no strong evidence for an association between @GENE$ or related enzyme polymorphisms and @DISEASE$ risk.	0
+384	Heterozygosis for @GENE$ mutations is a novel risk factor for both hepatic iron accumulation and the @DISEASE$ to fibrosis in patients with CHC.	0
+385	Common polymorphisms on @GENE$ and CYP3A5 genes do not modify the risk of developing @DISEASE$ in Western Europe.	0
+386	This study confirms the importance of correct matching in genetic analysis in @DISEASE$ association studies, and provides further evidence supporting the involvement of genes other than the @GENE$ class I locus in the pathogenesis and features of AS.	0
+387	No functional sequence polymorphisms were found within the promoter, the exons, or the introns of any of these genes or within the @GENE$/GM-CSF enhancer, suggesting that the primary @DISEASE$ in FE is not caused by a mutation in any one of these genes but, rather, is caused by another gene in the area.	0
+388	Two novel mutations in @GENE$ may be mutations characterized to @DISEASE$ of Chinese Shanghai population.	0
+389	The current results taken together suggest that, aside from other known causes of lung cancer, such as tobacco smoke, the existence of polymorphisms in the @GENE$ gene and, specifically, the presence of the G2677T @DISEASE$ can be crucial in conferring susceptibility to lung cancer.	0
+390	Although @GENE$ genetic variability is not related to the development of @DISEASE$, identification of variant haplotypes may, after larger prospective studies have been performed, provide clinicians with a tool for methadone dosage individualization.	0
+391	The effect of RLX on @GENE$ in postmenopausal women with @DISEASE$ is regulated by the polymorphisms of Fok I of VDR gene and Pvu II of ESR1 gene.	0
+392	suggest that variations in the @GENE$ gene may confer susceptibility to @DISEASE$ in patients of European descent.	0
+393	@GENE$ 6235C allele might play an important role in fighting against colorectal @DISEASE$.	0
+394	we report a strikingly high prevalence of @DISEASE$ of @GENE$ in Thai lung adenocarcinoma, which may explain the high response rate to the treatment with TKI among Asian populations.	0
+395	The I/D polymorphism of @GENE$ gene may be one of the risk factors and susceptible genetic markers for @DISEASE$ with essential hypertension in Chinese.	0
+396	In this study, we identified SNPs in @GENE$, ERCC2, and CYP2D6 genes as putative markers to predict individuals at risk for @DISEASE$ arising from radiation therapy in prostate cancer.	0
+397	An interaction between the E298D and T-786C polymorphisms in @GENE$, cigarette smoking, and risk of incident coronary heart disease and @DISEASE$ events appears to exist, suggesting a potential complex interplay between genetic and environmental factors and cardiovascular disease risk.	0
+398	The results of this study suggest that the investigated G-protein @GENE$ subunit seems to be a susceptibility factor for @DISEASE$ and maybe even for bipolar disorder, but not for schizophrenia	0
+399	In this sample, MPO @GENE$, associated with decreased production of myeloperoxidase, was found to be a risk factor for @DISEASE$.	0
+400	Considering the combined @GENE$ of @DISEASE$ and hypertension on the development of cardiovascular and cerebrovascular disorders, T allele carriers might represent elective targets for therapy to lower their body weight.	0
+401	The @DISEASE$ of a relation between mGPD genotype and @GENE$ is in accordance with the view that DM is a complex phenotype in which increased plasma FFA or glycerol concentrations result from metabolic alterations which might obscure the effect of the mGPD polymorphism.	0
+402	In Taiwanese children sensitized to Der f, the @GENE$(+)/LTalphaNcoI*1 haplotype was associated with a much higher risk of having clinical @DISEASE$ than any other DR13/LTalphaNcoI haplotype.	0
+403	Simultaneous @DISEASE$ in codons 12 and @GENE$ of the K-ras gene appears to be a positive prognostic indicator in colorectal cancer.	0
+404	The Lys412Glu polymorphism of the @GENE$ gene in a hypertensive candidate chromosomal region is associated with @DISEASE$ in Han Chinese.	0
+405	Although @GENE$ promoter activity and the binding of the AP-1 transcription factor were clearly different between T-138 and C-138 MGP promoter polymorphism in vitro, T-138C polymorphism was, statistically, not an independent factor of @DISEASE$ or atherosclerotic vascular calcification in the abdominal aorta.	0
+406	These data support the hypothesis that @GENE$ may mediate not only @DISEASE$, but may also modulate more common age-related disorders and, perhaps, a basic aging process.	0
+407	These results suggest that TCF7L2 variants may act through @GENE$ secretion to increase the risk of @DISEASE$.	0
+408	Together with the @DISEASE$ of the expression of the @GENE$ mouse homolog in both fetal and adult kidney, our observations suggest that the gene is a tumor suppressor and is involved in hereditary predisposition to WT.	0
+409	Our results support the hypothesis that certain genetic variations contained within the @GENE$ gene family contribute to the @DISEASE$ of dementia.	0
+410	@GENE$ GGN and CAG allele combinations are strongly associated with @DISEASE$ indices in older adults, particularly in women.	0
+411	Our study of a larger number of @GENE$ dependent diabetics in Scotland makes the claim that macrosomia @DISEASE$ is associated with PGM1 phenotype unlikely to be of general significance.	0
+412	The significant relations observed between the @GENE$ M235T variant, its protein product, and the @DISEASE$ phenotypes provide evidence for a possible role of elevated circulating AGT in the pathogenesis of coronary artery disease.	0
+413	We conclude that  there is no significant association between the @DISEASE$ associated @GENE$ gene polymorphism and diabetic nephropathy in patients with IDDM in the UK.	0
+414	We conclude that  a different distribution of BMI could influence the results of analyses of @GENE$ gene polymorphisms in @DISEASE$-control studies.	0
+415	Our results may suggest that @GENE$-K is not a definitive risk factor for @DISEASE$ in the elderly, although further study with larger samples is necessary to confirm this.	0
+416	The data are not in favor of a significant contribution of the C/T exchange at position -344 in the @GENE$ transcriptional regulatory region to the variability of serum aldosterone levels, @DISEASE$ pressure, or cardiac size or function as found in 2 white population-based samples.	0
+417	These data suggest that the molecular mechanisms by which the young individuals with no risk factors had altered @GENE$ function in oral @DISEASE$ may differ from those of the more typical population of individuals who have this malignancy develop.	0
+418	Our results reveal that the allele @GENE$ is strongly associated with @DISEASE$ but not with withdrawal symptoms or daily alcohol intake.	0
+419	7216A/G polymorphism of @GENE$ gene may be one of the genetic factors that determine the presence of anti-@DISEASE$-A/Ro52 antibody in patients with primary SS.	0
+420	The results of this study suggest that a polymorphism in the Homer1 gene, rs6871510, is a potential risk factor for the development of @DISEASE$ in an African American population, whereas polymorphisms in the @GENE$ gene are not.	0
+421	These results suggest that the @GENE$ gene is intimately involved in the @DISEASE$ of diabetic neuropathy.	0
+422	The results of this study demonstrate the functional significance of the @GENE$ haplotype and reveal a significant association of genotypes containing this haplotype with extended @DISEASE$.	0
+423	The findings of the case-control and family-based studies demonstrate clearly that DNA sequence differences in @GENE$ influence the risk of advanced @DISEASE$ in type 1 diabetes.	0
+424	This @GENE$ VNTR gene polymorphism may be a protective factor for severe joint destruction in RA that could be used as a prognostic marker early in the course of the @DISEASE$.	0
+425	The high expression level of @GENE$ in HCC, especially in @DISEASE$ with metastasis, suggests that the over-expression of hTcf-4 gene may be closely associated with development and progression of HCC, but the mutation of this gene seemed to play less important role in this respect.	0
+426	This study reports that the functional polymorphism (Pro198Leu) in the @GENE$ gene might be associated with openness to experience among the @DISEASE$ traits.	0
+427	The results suggest that @GENE$ located at 2q33 is a determinant of UC and responsible for @DISEASE$ formation in CD in the Japanese.	0
+428	This is the first report that @GENE$ is associated with the occurrence of @DISEASE$ and suggests that the P582S HIF-1alpha mutation should be assessed in larger studies as a risk factor for type 2 diabetes.	0
+429	Results from the 89 @GENE$ families showed no deviation from the expected @DISEASE$ frequency of 0.5, from parents heterozygous for the A253 allele to either Graves' or unaffected offspring (Fisher's exact test p = 0.22) and, therefore, confirmed a lack of evidence of linkage disequilibrium between the A253 allele and GD.	0
+430	These data indicate that TGF-beta 1 and @GENE$ genes are not loci influencing @DISEASE$ susceptibility, either RR/SPMS or PPMS, in this population.	0
+431	A common variant of @GENE$, previously associated with a lower AHSG protein level, is thus more common among lean than obese and @DISEASE$ men, supporting the results from Ahsg knock-out mice, namely, that AHSG modulates body mass.	0
+432	The @GENE$ polymorphism is attributable to the hereditary variation of AHSG and phosphate serum levels, which may affect skeletal development and @DISEASE$ such as vascular calcification.	0
+433	Our results suggest that @GENE$ is one of the genes that contributes to susceptibility to @DISEASE$, and that the association of the TNF/LTA haplotypes to asthma may be defined by the polymorphism in the LTA promoter region in the Japanese population.	0
+434	We conclude that  genetic variation in the @GENE$ gene influences @DISEASE$ glucose levels in nondiabetic British subjects and that this is due, at least in part, to the effects of calpain-10 on the early insulin secretory response.	0
+435	It was demonstrated that the @GENE$ gene polymorphism UCSNP-44 was associated with @DISEASE$ and Fins and P2hIns in newly diagnosed T2DM, although Calpain-10 doesn't appear as a major diabetes susceptible gene in this population.	0
+436	The C allele at the UCSNP45 locus in @GENE$ is associated with @DISEASE$, and UCSNP43 influences the hirsutism score.	0
+437	These results demonstrate that @GENE$ A/G polymorphism is associated with the susceptibility to @DISEASE$ in a Japanese population.	0
+438	These findings suggest that immunogenetic factors for susceptibility to gastric adenocarcinoma are present in the host, the @GENE$*04051 allele is a host genetic risk factor for gastric adenocarcinoma, and that this genetic risk is independent of @DISEASE$.	0
+439	Unlike previously reported positive association, in this population, there is no evidence that susceptibility to @DISEASE$ is associated with HLA-@GENE$.	0
+440	By showing a graded risk relation to the number of @GENE$ 2 alleles in Type I and Type II diabetic subjects, these studies further support our hypothesis that the haptoglobin phenotype is a major susceptibility gene for the development of @DISEASE$.	0
+441	There were no association between @GENE$ gene polymorphisms and @DISEASE$ liver disease	0
+442	The increased sepsis rate of homozygous @GENE$-174G carriers was especially related to an increase in Gram-positive @DISEASE$, and was not observed in VLBW infants who received prophylaxis with teicoplanin (frequency of Gram-positive sepsis in homozygous IL6-174G carriers without prophylaxis 16.5% versus 2.4% in homozygous IL6-174G carriers with prophylaxis; p = 0.033).	0
+443	These results indicated that @GENE$ @DISEASE$ is commonly present in Japanese and Dutch, suggesting that NKG2C is not essential for survival and reproduction, and is not associated with rheumatic diseases.	0
+444	The @GENE$ genotype at the lymphotoxin-alpha+250 site is associated with higher serum @DISEASE$ factor-alpha levels and a higher mortality in children with bacteremia.	0
+445	These findings suggest a possible role for @GENE$ and other MHC genes in the @DISEASE$ of psoriasis.	0
+446	These findings specify the role of @GENE$ with lower molecular weight in MND @DISEASE$ and make expedient antioxidants administration to MND patients homozygous for S-allele of NF-H gene.	0
+447	In asymptomatic carriers of a single @GENE$ @DISEASE$ with an apparently normal allele, we found a mild but statistically significant decrease of mean FDOPA uptake compared to control subjects in all striatal regions.	0
+448	The associated allele is previously shown to alter a transcription factor-binding site (@GENE$/AML1), and the results of this study suggest that this allele could act as an additional susceptibility allele to @DISEASE$.	0
+449	Our results suggest that this @GENE$ polymorphism may be a risk marker for genetic susceptibility to @DISEASE$.	0
+450	Our results suggest that latitude has a role in the influence of @GENE$ gene polymorphism on @DISEASE$ and confirm previous data showing its association with morningness-eveningness tendencies.	0
+451	The @GENE$-132G/A promoter polymorphism is not associated with T2DM, a requirement for insulin therapy or with the degree of islet @DISEASE$ in cohorts from the UK or Finland.	0
+452	The @GENE$ Asp allele may be a genetic risk factor for @DISEASE$, and might influence the course of Alzheimer disease, even though effects vary in different studies.	0
+453	Our data suggest that the @GENE$ R497K and EGFR intron 1 (CA)(n) repeat polymorphisms may be potential indicators of radiosensitivity in patients with @DISEASE$ treated with chemoradiation.	0
+454	No evidence was obtained that the studied polymorphism in @GENE$ is a determinant of the coumarin-associated @DISEASE$.	0
+455	The RsaI @GENE$ promoter gene polymorphism is associated with reduced BMD and predisposes women to @DISEASE$ at the lumbar spine.	0
+456	Our data suggested that a C to T substitution at the 5671 locus of the @GENE$ gene may be associated with @DISEASE$ during alcohol withdrawal.	0
+457	The results suggest that @GENE$ may play a role in @DISEASE$ probably through increasing insulin resistance.	0
+458	Initial functional relevance for @DISEASE$ predisposition was suggested by the expression analysis: The transcript levels of @GENE$ showed correlation with the copy number of the Finnish and Canadian "risk" haplotypes in CD4-negative mononuclear cells of five Finnish multiplex families and in lymphoblast cell lines of 11 Centre d'Etude du Polymorphisme Humain (CEPH) individuals of European origin.	0
+459	@GENE$ is significantly overexpressed in the @DISEASE$ of RA patients but genetic variation within PADI4 is not a major risk factor for RA in Caucasians.	0
+460	a genetic polymorphism links MPO expression to Alzheimer's risk, in that a higher expressing SpSp MPO genotype was associated with increased incidence of @DISEASE$ in females, and decreased incidence in males (@GENE$.006)	0
+461	These findings suggest that @GENE$, MMP-3, and MMP-9 gene polymorphisms account for some of the variability in the @DISEASE$ of HCV-related chronic liver diseases.	0
+462	No polymorphism in promoters I, III and @GENE$ of CIITA gene exists in @DISEASE$ patients, ABH patients and normal controls, suggesting that the promoter of CIITA gene might be a conserved domain.	0
+463	Considering the statistical power of the experimental design, these results exclude the @GENE$ gene as an @DISEASE$ susceptibility factor with an odds ratio (OR) equal or higher than 1.3.	0
+464	This confirms our prediction and represents an additional level of correlation between thymic @GENE$ and @DISEASE$ susceptibility, which supports a thymic enhancer effect of the INS variable number of tandem repeats as the mechanism of IDDM2 and refines the contribution of IDDM2 genotyping to diabetes risk assessment.	0
+465	Thus, these polymorphisms may play a role in the @DISEASE$ of @GENE$ and asthma.	0
+466	Polymorphism of @GENE$ is not an inherited risk factor and is not associated with Chinese arterial thrombotic @DISEASE$, such as AMI and AIS.	0
+467	Pathogenic roles of genotypic combinations of specific HLA-DQ haplotypes in a homozygous manner are suggested as causative mechanisms of @DISEASE$ beta-@GENE$ damage in a subtype of autoantibody-negative type 1 diabetes with fulminant clinical features.	0
+468	We confirmed increased occurence of @DISEASE$ in patients with @GENE$, what stress importance of routine screening for OSA in patients with LADA.	0
+469	Our results suggest that @DISEASE$ of the @GENE$ gene is unlikely to play an important role in the mechanism of resistance to paclitaxel in breast cancer.	0
+470	These results strongly suggest that the S89N polymorphism in the @GENE$ gene is associated with the development of Type 2 diabetes, via @DISEASE$, in Japanese subjects.	0
+471	The TaqI t allele of the @GENE$ gene may be a risk factor for severe stone @DISEASE$ and recurrent stones.	0
+472	We conclude that  there is a significant relationship between RFLPs of BsmI @GENE$ and the annual rates of @DISEASE$ during early and late postmenopausal periods in the Japanese population.	0
+473	We speculate that @GENE$ may interact with dopaminergic @DISEASE$ and dopamine receptor stimulation in the frontostriatal circuitry, with subsequent consequences on cognition in Parkinson's disease.	0
+474	The @GENE$ Glu298-->Asp polymorphism may be related to early @DISEASE$.	0
+475	We conclude that  1) the genetic analyses of @GENE$ and SP-A locus should be performed separately for black and white populations and 2) SP-A alleles/genotypes and SP-B variant may contribute to the etiology of RDS and/or may serve as markers for @DISEASE$ subgroups.	0
+476	We conclude that  the @GENE$ locus is not related to the BP phenotype while expanded alleles at the CTG18.1 locus cannot be excluded as a vulnerability factor for BP @DISEASE$.	0
+477	These data suggest that SNP276 of the @GENE$ gene is not an independent risk factor for @DISEASE$ in Japanese type 2 diabetic patients.	0
+478	These results indicate that @DISEASE$ with C pneumoniae leads mainly to the development and progression of severe @GENE$ in patients with variation in the MBL gene.	0
+479	@DISEASE$ analyses identified five missense mutations in @GENE$ that cosegregated with epilepsy or EEG polyspike wave in affected members of six unrelated families with JME and did not occur in 382 control individuals	0
+480	We conclude that  the @GENE$ polymorphism as well as the ACE polymorphism may explain a part of the risk related to a family history of @DISEASE$.	0
+481	The results indicate that the increase in allelic frequency of 1166C is a risk factor and hence suggest that the change in the @GENE$ type I receptor gene is associated with @DISEASE$.	0
+482	These findings may be helpful in conducting further molecular and biological studies on the relationship among the effects of alcohol, the beta-@GENE$-Gs protein system, and @DISEASE$.	0
+483	The data suggest that the genotype at intron 1 of @GENE$ might affect susceptibility to @DISEASE$ in HEV infection, which warrants further elucidation in a larger sample and also functional studies.	0
+484	The present findings show that the preferential Th2-@GENE$ response to @DISEASE$ was associated with a poorer prognosis and suggest that polymorphisms of the IL-4Ralpha gene may serve as useful genetic markers for assessing the risk of the development and progression of RCC.	0
+485	Herein the six different @GENE$ gene polymorphisms were not associated with destructive @DISEASE$.	0
+486	This study suggests that the @GENE$/W genotype of the MGMT gene may contribute to the de novo occurrence of @DISEASE$.	0
+487	This association supports a role for @GENE$/P2X(7)-mediated host regulation of Mycobacterium @DISEASE$.	0
+488	Both analyses support (@GENE$.046 for the proposed test, p = 0.028 for the case-control analysis) an association of the homozygous GSTM1 @DISEASE$ genotype with autism.	0
+489	Our results suggest that the @GENE$ +49 alone is not associated with overall susceptibility to @DISEASE$, but may be important in clinical subsets of patients and/or may interact epistatically with other gene polymorphisms.	0
+490	These results do not support @GENE$ as a prominent low-penetrance @DISEASE$ susceptibility gene, but indicate that CDH1 mutations contribute to the progression of both lobular and ductal tumors.	0
+491	Our results do not indicate an effect of @GENE$-64I on perinatal @DISEASE$ transmission and survival in Kenyan children.	0
+492	The @GENE$ allele incidence (19%) in patients with squamous lung cancer was significantly higher than in the control cohorts (11%) which is consistent with the leading role of PAH in the etiology of this @DISEASE$.	0
+493	These preliminary data suggest a modest positive association of caffeine and coffee @DISEASE$ with the OR for ovarian cancer that may be modified by @GENE$ genotype and exposures, such as cruciferous vegetable consumption, that influence CYP1A2 expression.	0
+494	Our results demonstrate that the @GENE$ @DISEASE$ is associated with an increased risk of lung and esophageal cancer but not with a reduced tendency to smoke.	0
+495	The incidence of @DISEASE$ complications in @GENE$*2 and CYP2C9*3 carriers was significantly higher than that in noncarriers and interacted with the presence of local bleeding sources.	0
+496	Given the relatively high frequency and the functional consequences of the @GENE$*2 allele, associations between CYP4B1 polymorphism and certain @DISEASE$ should be considered.	0
+497	Our study provides the first evidence that @GENE$ polymorphism participates in the development of THS, and sheds light on the genetic causes of this @DISEASE$ and genetic differences between tamoxifen-treated individuals.	0
+498	Our findings suggest that the CYP17 @GENE$ allele is associated with hormone levels, and interacts with insulin levels and diet to affect breast density levels and potentially @DISEASE$ risk.	0
+499	It is concluded that T-->C polymorphism of @GENE$ gene is not associated with steroid hormone synthesis in PCOS and is not the primary genetic @DISEASE$ in this disease.	0
+500	Our data indicate that @GENE$ is not associated with the genetic risk factors of @DISEASE$ (VD) that were studied, and that additional factors may contribute to the pathogenesis of PSD.	0
+501	@GENE$ D allele increases the risk of SI in @DISEASE$.	0
+502	The present study suggested that the @GENE$ @DISEASE$ genotype was associated with the systolic BP response to HCTZ, and that the subjects with the combination of ACE DD and CYP11B2 CC genotypes might have a better BP response to HCTZ than the other genotypic combinations of these 2 genes.	0
+503	We conclude that  no association exists between genetic variation at the @GENE$ locus and alcoholism in Chinese Han, Atayal, and @DISEASE$ males.	0
+504	We conclude that  the Gly40Ser polymorphism of the @GENE$ gene is associated with higher risk of @DISEASE$ and with enhanced proximal tubular sodium reabsorption, a factor possibly contributing to hypertension in this group.	0
+505	The results indicate that @GENE$*0301 and *0401 alleles are associated with both @DISEASE$ and adenomyosis, and there is perhaps common mechanism involved in both endometriosis and adenomyosis based on HLA-DQA1 and HLA-DRB1 allele frequencies.	0
+506	These data suggest that this IL-1beta promoter polymorphism does not act as a strong susceptibility factor for @DISEASE$+@GENE$ in a population of individuals of European ancestry.	0
+507	Our data suggest that @GENE$ and/or IgE play a regulatory role in the @DISEASE$ of severe or complicated malaria.	0
+508	The -2849 IL-10 promoter polymorphism is associated with autoantibody production and subsequent joint @GENE$ in @DISEASE$.	0
+509	These results suggest that the @GENE$/PLA2 polymorphism of the platelet glycoprotein IIIa gene does not substantially contribute to the development of @DISEASE$ or the genetic susceptibility to premature myocardial infarction.	0
+510	@GENE$ polymorphism (Gln223 Arg) has association with peak bone mass in young women, which may be used as genetic marker in predicting the risk of developing @DISEASE$ in Chinese women of Han nationality.	0
+511	Our findings thus suggest a link between the @GENE$ cascade and the @DISEASE$ of MI.	0
+512	Further studies are needed to determine whether polymorphisms in the @GENE$ gene or other leukotriene-forming enzymes are involved in the @DISEASE$ of the different subsets of NSAID sensitivity.	0
+513	MMP-1 and @GENE$ promoter polymorphism is not associated with the susceptibility to @DISEASE$.	0
+514	The observation that polymorphism for the cytosine to thymine @DISEASE$ at nucleotide 677 in the gene encoding for @GENE$ is associated with repeated early fetal losses rather than with anembryonic gestations strengthens the argument for the role of hypercoagulability and abnormal uteroplacental vasculature in recurrent spontaneous abortion.	0
+515	We conclude that the presence of the Glu298Asp @GENE$ gene could be a marker of increased risk of developing @DISEASE$.	0
+516	In contrast to mouse models, in humans @GENE$ does not seem to modulate onset and @DISEASE$.	0
+517	Our findings support the idea that the 4G allele of the 4G/5G polymorphism in the @GENE$ gene may be a risk factor for @DISEASE$ and allergic diseases.	0
+518	Our results indicate that @GENE$ and PAX4 are not a common cause of either @DISEASE$ or late-onset Type II diabetes in the French Caucasian population.	0
+519	In summary, our data suggest that common alleles at the @GENE$ locus modulate @DISEASE$ and metabolic variables in humans.	0
+520	A frameshifting 2-@GENE$ pair insertion at codon 99 of the RPGR gene produced typical @DISEASE$ and carrier findings (but no tapetallike reflex) in this family.	0
+521	@GENE$ -308A polymorphism was significantly related to @DISEASE$ with the H pylori cagA subtype in Korean patients with gastric disease.	0
+522	Given the lines of evidence from different genetic studies, we suggest that TNFalpha may play a role in @DISEASE$ of @GENE$.	0
+523	Our data indicate that both @GENE$ mutations, G62C and Y54H, do not play a relevant pathogenic role in @DISEASE$.	0
+524	Thus, in addition to the antigen-driven excess Th2 response, increased T-bet (and subsequent @GENE$) production in human airways of individuals with the -1993T-->C polymorphism could contribute to the development of certain @DISEASE$-related phenotypes, such as AIA.	0
+525	@GENE$ gene is well correlated with @DISEASE$.	0
+526	We concluded that @GENE$ polymorphism was not associated with the @DISEASE$ of prostate cancer in Caucasian patients.	0
+527	Our data suggest that @GENE$ @DISEASE$ is a typical feature of certain subtypes of ovarian carcinoma.	0
+528	These results demonstrate that a polymorphism within the @GENE$ gene, probably through its effect on TS expression levels, can influence the survival benefit obtained by @DISEASE$ patients from 5-FU-based chemotherapy.	0
+529	The @GENE$ intron 2 polymorphism may not be associated with the risk of @DISEASE$, but AA genotype or A allele of ABCA1 gene may have a protective effect for AD in Han Chinese.	0
+530	In the population studied, @GENE$ plays an important role in the @DISEASE$ of arCRD.	0
+531	Our findings suggest that the @GENE$ 2677G>T and 3435C>T polymorphisms can be used for predicting treatment response to etoposide-cisplatin chemotherapy in @DISEASE$ patients.	0
+532	These results indicate that @GENE$ sequence variants are associated with a small increase in the risk of developing UC and may influence @DISEASE$ behavior.	0

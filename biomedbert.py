@@ -8,14 +8,16 @@ Usage:
   biomedbert gcp vm stop <vm-instance>
   biomedbert gcp vm notebook <vm-instance>
   biomedbert gcp vm connect <vm-instance>
-  biomedbert gcp vm create compute tpu <vm-instance> <project-zone>
+  biomedbert gcp vm create compute <vm-instance> [project-zone]
+  biomedbert gcp vm create tpu <vm-instance> [project-zone]
+  biomedbert gcp vm delete tpu <vm-instance> [project-zone]
   biomedbert code train vocab <data_path> <prefix>
   biomedbert code train model (base|large) <model_dir> <pretraining_dir> <bucket_name>
   biomedbert code extract embeddings <input_txt> <voc_fname> <config_fname> <init_checkpoint>
   biomedbert code shard data <number_of_shards> <shard_path> <prc_data_path>
   biomedbert code make pretrain data <pre_trained_dir> <voc_filename> <shard_path>
-  biomedbert glue finetune <dataset> <biomedbert_gcs_path>
-  biomedbert glue predict <dataset> <biomedbert_gcs_path>
+  biomedbert glue finetune <dataset> <model_dir> <checkpoint_name> <vocab_file>
+  biomedbert glue predict <dataset> <model_dir> <checkpoint_name> <vocab_file>
   biomedbert glue download dataset
   biomedbert squad v1 <biomedbert_gcs_path> <biomedbert_model_type>
   biomedbert squad v2 <biomedbert_gcs_path> <biomedbert_model_type>
@@ -35,7 +37,7 @@ from docopt import docopt
 from biomedbert_impl.modules import train_vocabulary, generate_pre_trained_data, shard_dataset, \
     extract_embeddings, train_biomedbert_base
 from biomedbert_impl.gcp_helpers import set_gcp_project, start_vm, stop_vm, \
-    launch_notebook, connect_vm, create_compute_tpu_vm
+    launch_notebook, connect_vm, create_compute_vm, create_tpu_vm, delete_tpu_vm
 from biomedbert_impl.glue_helpers import fine_tune_classification_glue, download_glue_data, \
     predict_classification_glue
 from biomedbert_impl.squad_modules import run_squad_v11, run_squad_v2
@@ -209,12 +211,14 @@ def glue_commands(args: dict):
         download_glue_data()
 
     # predict glue
-    if args['glue'] and args['predict']:
-        predict_classification_glue(args['<dataset>'], args['<biomedbert_gcs_path>'])
+    if args['glue'] and args['predict'] and args['checkpoint_name'] and args['vocab_file']:
+        predict_classification_glue(args['<dataset>'], args['<biomedbert_gcs_path>'],
+                                    args['checkpoint_name'], args['vocab_file'])
 
     # finetune glue
-    if args['glue'] and args['finetune']:
-        fine_tune_classification_glue(args['<dataset>'], args['<biomedbert_gcs_path>'])
+    if args['glue'] and args['finetune'] and args['checkpoint_name'] and args['vocab_file']:
+        fine_tune_classification_glue(args['<dataset>'], args['<biomedbert_gcs_path>'],
+                                      args['checkpoint_name'], args['vocab_file'])
 
 
 def code_commands(args: dict):
@@ -264,10 +268,37 @@ def gcp_commands(args: dict):
         # call set project
         set_gcp_project(args['<project-id>'], args['<project-zone>'])
 
-    # create compute and tpu VM
-    if args['gcp'] and args['vm'] and args['create'] and args['compute'] and args['tpu']:
-        # start vm
-        create_compute_tpu_vm(args['<vm-instance>'], args['<project-zone>'])
+    # create compute VM
+    if args['gcp'] and args['vm'] and args['create'] and args['compute']:
+        # create vm
+        if args['<project-zone>'] is None:
+            # read configurations
+            config.read('config/gcp_config.ini')
+            zone = config['PROJECT']['zone']
+            create_compute_vm(args['<vm-instance>'], zone)
+        else:
+            create_compute_vm(args['<vm-instance>'], args['<project-zone>'])
+
+    # create tpu
+    if args['gcp'] and args['vm'] and args['create'] and args['tpu']:
+        if args['<project-zone>'] is None:
+            # read configurations
+            config.read('config/gcp_config.ini')
+            zone = config['PROJECT']['zone']
+            create_tpu_vm(args['<vm-instance>'], zone)
+        else:
+            create_tpu_vm(args['<vm-instance>'], args['<project-zone>'])
+
+    # delete tpu
+    if args['gcp'] and args['vm'] and args['delete'] and args['tpu']:
+        # read configurations
+        config.read('config/gcp_config.ini')
+        project_id = config['PROJECT']['name']
+        if args['<project-zone>'] is None:
+            zone = config['PROJECT']['zone']
+            delete_tpu_vm(args['<vm-instance>'], project_id, zone)
+        else:
+            delete_tpu_vm(args['<vm-instance>'], project_id, args['<project-zone>'])
 
     # start VM
     if args['gcp'] and args['vm'] and args['start']:
