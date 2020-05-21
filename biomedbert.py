@@ -24,6 +24,7 @@ Usage:
   biomedbert ner finetune <ner_dataset> <model_dir> <init_checkpoint> <vocab_file> <tpu_name>
   biomedbert re finetune <re_dataset> <re_dataset_no> <model_dir> <init_checkpoint> <vocab_file> <tpu_name>
   biomedbert bioasq finetune <train_file> <predict_file> <model_dir> <init_checkpoint> <vocab_file> <tpu_name>
+  biomedbert bioasq evaluate <model_dir> <train_file>
 
   biomedbert -h | --help
   biomedbert --version
@@ -44,7 +45,7 @@ from biomedbert_impl.gcp_helpers import set_gcp_project, start_vm, stop_vm, \
 from biomedbert_impl.glue_modules import fine_tune_classification_glue, download_glue_data, \
     predict_classification_glue
 from biomedbert_impl.squad_modules import fine_tune_squad, evaluate_squad
-from biomedbert_impl.bioasq_modules import fine_tune_bioasq
+from biomedbert_impl.bioasq_modules import fine_tune_bioasq, evaluate_bioasq
 from biomedbert_impl.ner_modules import fine_tune_ner
 from biomedbert_impl.re_modules import fine_tune_re
 
@@ -94,6 +95,9 @@ def bioasq_commands(args: dict):
         fine_tune_bioasq(args['<train_file>'], args['<predict_file>'], args['<model_dir>'],
                          args['<init_checkpoint>'], args['<vocab_file>'], args['<tpu_name>'], zone, project_id)
 
+    # evaluate bioasq
+    if args['bioasq'] and args['evaluate']:
+        evaluate_bioasq(args['<model_dir>'], args['<train_file>'])
 
 def squad_commands(args: dict):
     """Command to run SQuAD question answering benchmark dataset"""
