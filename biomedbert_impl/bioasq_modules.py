@@ -20,7 +20,7 @@ def fine_tune_bioasq(train_file: str, predict_file: str, model_dir: str, init_ch
         run('python3 biobert/run_qa.py  --vocab_file={}/{}   '
             '--bert_config_file={}/bert_config.json   '
             '--init_checkpoint={}/{}   --do_train=true --do_predict=true  '
-            '--max_seq_length=384   --train_batch_size=16   --learning_rate=5e-6   '
+            '--max_seq_length=384   --train_batch_size=128   --learning_rate=5e-6   '
             '--doc_stride=128   --num_train_epochs=5.0   --do_lower_case=False   '
             '--train_file=gs://ekaba-assets/datasets/QA/BioASQ/{}   '
             '--predict_file=gs://ekaba-assets/datasets/QA/BioASQ/{}   '
