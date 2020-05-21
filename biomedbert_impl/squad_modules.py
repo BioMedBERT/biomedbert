@@ -36,9 +36,16 @@ def fine_tune_squad(v1: bool, model_dir: str, train_file: str, predict_file: str
         print('Cannot fine tune SQuAD')
 
 
-def evaluate_squad(evaluate_file: str, predict_file: str, output_dir: str):
+def evaluate_squad(evaluate_file: str, predict_file: str, prediction_json: str):
     """evaluate squad"""
+
     try:
-        run('python {} {} {}/predictions.json'.format(evaluate_file, predict_file, output_dir))
+        run('mkdir squad_evaluate')
+        run('gsutil cp {} ./squad_evaluate/'.format(evaluate_file))
+        run('gsutil cp {} ./squad_evaluate/'.format(predict_file))
+        run('gsutil cp {} ./squad_evaluate/'.format(prediction_json))
+        run('python ./squad_evaluate/{} ./squad_evaluate/{} ./squad_evaluate/predictions.json'.format(
+            evaluate_file.split('/')[-1],
+            predict_file.split('/')[-1]))
     except exceptions.UnexpectedExit:
         print('Cannot evaluate SQuAD')

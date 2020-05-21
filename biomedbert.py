@@ -20,7 +20,7 @@ Usage:
   biomedbert glue predict <dataset> <model_dir> <trained_classifier> <vocab_file> [<tpu_name>]
   biomedbert glue download dataset
   biomedbert squad finetune (v1|v2) <model_dir> <train_file> <predict_file> <vocab_file> <init_checkpoint> <tpu_name>
-  biomedbert squad evaluate <evaluate_file> <predict_file> <output_dir>
+  biomedbert squad evaluate <evaluate_file> <predict_file> <prediction_json>
   biomedbert ner finetune <ner_dataset> <model_dir> <init_checkpoint> <vocab_file> <tpu_name>
   biomedbert re finetune <re_dataset> <re_dataset_no> <model_dir> <init_checkpoint> <vocab_file> <tpu_name>
   biomedbert bioasq finetune <train_file> <predict_file> <model_dir> <init_checkpoint> <vocab_file> <tpu_name>
@@ -109,7 +109,7 @@ def squad_commands(args: dict):
 
     # evaluate squad
     if args['squad'] and args['evaluate']:
-        evaluate_squad(args['<evaluate_file>'], args['<predict_file>'], args['<output_dir>'])
+        evaluate_squad(args['<evaluate_file>'], args['<predict_file>'], args['<prediction_json>'])
 
 
 def glue_commands(args: dict):
