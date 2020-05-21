@@ -17,7 +17,7 @@ Usage:
   biomedbert code shard data <number_of_shards> <shard_path> <prc_data_path>
   biomedbert code make pretrain data <pre_trained_dir> <voc_filename> <shard_path>
   biomedbert glue finetune <dataset> <model_dir> <checkpoint_name> <vocab_file> [<tpu_name>]
-  biomedbert glue predict <dataset> <model_dir> <checkpoint_name> <vocab_file> [<tpu_name>]
+  biomedbert glue predict <dataset> <model_dir> <trained_classifier> <vocab_file> [<tpu_name>]
   biomedbert glue download dataset
   biomedbert squad v1 <biomedbert_gcs_path> <biomedbert_model_type>
   biomedbert squad v2 <biomedbert_gcs_path> <biomedbert_model_type>
@@ -219,7 +219,7 @@ def glue_commands(args: dict):
     # predict glue
     if args['glue'] and args['predict'] and args['<checkpoint_name>'] and args['<vocab_file>']:
         predict_classification_glue(args['<dataset>'], args['<model_dir>'],
-                                    args['<checkpoint_name>'], args['<vocab_file>'],
+                                    args['<trained_classifier>'], args['<vocab_file>'],
                                     args['<tpu_name>'], zone, project_id)
 
     # finetune glue
