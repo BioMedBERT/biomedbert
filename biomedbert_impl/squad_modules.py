@@ -5,7 +5,7 @@ from subprocess import call, CalledProcessError
 from invoke import run, exceptions
 
 
-def fine_tune_squad(type_: str, model_dir: str, train_file: str, predict_file: str,
+def fine_tune_squad(v1: bool, model_dir: str, train_file: str, predict_file: str,
                     tpu_name: str, tpu_zone: str, gcp_project: str, vocab_file: str,
                     init_checkpoint: str):
     """fine tune squad"""
@@ -17,7 +17,7 @@ def fine_tune_squad(type_: str, model_dir: str, train_file: str, predict_file: s
         tpu_name = 'false'
         use_tpu = False
 
-    if type_ == 'v1':
+    if v1:
         version_2_with_negative = False
         output_dir = 'squad_v1/'
 
