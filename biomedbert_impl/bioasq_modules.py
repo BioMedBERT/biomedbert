@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import os
 import sys
 from invoke import run, exceptions
 
@@ -37,10 +38,16 @@ def fine_tune_bioasq(train_file: str, predict_file: str, model_dir: str, init_ch
 def evaluate_bioasq(model_dir: str, train_file: str):
     """evaluate bioasq"""
 
-    output_dir = '{}/BioASQ_outputs/{}/'.format(model_dir, train_file.split('.')[0])
     # convert results to BioASQ JSON format
     try:
-        run('python3 ./biobert/biocodes/transform_nbset2bioasqform.py   '
+        output_dir = 'bioasq_evaluate/{}'.format(train_file.split('.')[0])
+
+        if not os.path.exists(output_dir):
+            run('mkdir -p {}'.format(output_dir))
+
+        run('gsutil cp {}/BioASQ_outputs/BioASQ-train-factoid-4b/'
+            'nbest_predictions.json ./{}'.format(model_dir, output_dir))
+        run('python3 biobert/biocodes/transform_nbset2bioasqform.py   '
             '--nbest_path={}/nbest_predictions.json --output_path={}'.format(output_dir, output_dir))
     except exceptions.UnexpectedExit:
         print('Cannot convert results to BioASQ JSON format')
@@ -48,12 +55,14 @@ def evaluate_bioasq(model_dir: str, train_file: str):
 
     # run BioAsq evaluation script
     try:
-        run('git clone https://github.com/BioASQ/Evaluation-Measures.git')
+        if not os.path.exists('Evaluation-Measures'):
+            run('git clone https://github.com/BioASQ/Evaluation-Measures.git')
+        run('gsutil cp gs://ekaba-assets/datasets/QA/BioASQ/4B1_golden.json ./{}'.format(output_dir))
         run('cd Evaluation-Measures')
         run('java -Xmx10G '
-            '-cp $CLASSPATH:./flat/BioASQEvaluation/dist/BioASQEvaluation.jar evaluation.EvaluatorTask1b '
-            '-phaseB -e 5 gs://ekaba-assets/datasets/QA/BioASQ/4B1_golden.json '
-            '{}/BioASQform_BioASQ-answer.json'.format(output_dir))
+            '-cp $CLASSPATH:Evaluation-Measures/flat/BioASQEvaluation/dist/BioASQEvaluation.jar '
+            'evaluation.EvaluatorTask1b -phaseB -e 5 {}/4B1_golden.json '
+            '{}/BioASQform_BioASQ-answer.json'.format(output_dir, output_dir))
     except exceptions.UnexpectedExit:
         print('Cannot evaluate BioASQ')
         sys.exit(1)
