@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import os
 from invoke import run, exceptions
 
 
@@ -40,7 +41,8 @@ def evaluate_squad(evaluate_file: str, predict_file: str, prediction_json: str):
     """evaluate squad"""
 
     try:
-        run('mkdir squad_evaluate')
+        if not os.path.exists('squad_evaluate'):
+            run('mkdir squad_evaluate')
         run('gsutil cp {} ./squad_evaluate/'.format(evaluate_file))
         run('gsutil cp {} ./squad_evaluate/'.format(predict_file))
         run('gsutil cp {} ./squad_evaluate/'.format(prediction_json))
