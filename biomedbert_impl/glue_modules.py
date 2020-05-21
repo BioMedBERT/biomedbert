@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from subprocess import call, CalledProcessError
 from invoke import run, exceptions
 
 
@@ -18,8 +17,8 @@ def fine_tune_classification_glue(glue_dataset: str, model_dir: str,
         run('python3 bert/run_classifier.py  --task_name={}  --do_train=true  --do_eval=true   '
             '--data_dir=glue_data/{}   --vocab_file={}/{}   '
             '--bert_config_file={}/bert_config.json   '
-            '--init_checkpoint={}/{}   --max_seq_length=128   --train_batch_size=128   '
-            '--learning_rate=2e-5   --num_train_epochs=1.0   --output_dir={}/{}_output   '
+            '--init_checkpoint={}/{}   --max_seq_length=128   --train_batch_size=32   '
+            '--learning_rate=2e-5   --num_train_epochs=3.0   --output_dir={}/{}_output   '
             '--num_tpu_cores=128   --use_tpu={}   --tpu_name={}   --tpu_zone={}   '
             '--gcp_project={}'.format(
             glue_dataset, glue_dataset, model_dir, vocab_file, model_dir, model_dir, init_checkpoint,
@@ -42,8 +41,8 @@ def predict_classification_glue(glue_dataset: str, model_dir: str,
             '--data_dir=glue_data/{}   --vocab_file={}/{}   '
             '--bert_config_file={}/bert_config.json   '
             '--init_checkpoint={}/{}   --max_seq_length=128   --train_batch_size=128   '
-            '--output_dir={}/{}_output   --use_tpu={}   --tpu_name={}   --tpu_zone={}   '
-            '--gcp_project={}'.format(
+            '--output_dir={}/{}_output  --num_tpu_cores=128   --use_tpu={}   --tpu_name={}   '
+            '--tpu_zone={}   --gcp_project={}'.format(
             glue_dataset, glue_dataset, model_dir, vocab_file, model_dir, model_dir, init_checkpoint,
             model_dir, glue_dataset, use_tpu, tpu_name, tpu_zone, gcp_project))
     except exceptions.UnexpectedExit:
