@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from subprocess import call, CalledProcessError
 from invoke import run, exceptions
 
 

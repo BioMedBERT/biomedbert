@@ -21,6 +21,9 @@ Usage:
   biomedbert glue download dataset
   biomedbert squad finetune (v1|v2) <model_dir> <train_file> <predict_file> <vocab_file> <init_checkpoint> <tpu_name>
   biomedbert squad evaluate <evaluate_file> <predict_file> <output_dir>
+  biomedbert ner finetune <ner_dataset> <model_dir> <init_checkpoint> <vocab_file> <tpu_name>
+  biomedbert re finetune <re_dataset> <re_dataset_no> <model_dir> <init_checkpoint> <vocab_file> <tpu_name>
+  biomedbert bioasq finetune <train_file> <predict_file> <model_dir> <init_checkpoint> <vocab_file> <tpu_name>
 
   biomedbert -h | --help
   biomedbert --version
@@ -41,13 +44,9 @@ from biomedbert_impl.gcp_helpers import set_gcp_project, start_vm, stop_vm, \
 from biomedbert_impl.glue_modules import fine_tune_classification_glue, download_glue_data, \
     predict_classification_glue
 from biomedbert_impl.squad_modules import fine_tune_squad, evaluate_squad
-from biomedbert_impl.bioasq_modules import run_bioasq_4b, run_bioasq_5b, run_bioasq_6b
-from biomedbert_impl.ner_modules import run_ner_bc2gm, run_ner_bc4chemd, run_ner_bc5cdr_chem, \
-    run_ner_bc5cdr_disease, run_ner_jnlpba, run_ner_ncbi_disease, run_ner_linnaeus, run_ner_s800
-from biomedbert_impl.re_modules import run_re_gad_1, run_re_gad_2, run_re_gad_3, run_re_gad_4, \
-    run_re_gad_5, run_re_gad_6, run_re_gad_7, run_re_gad_8, run_re_gad_9, run_re_gad_10, \
-    run_re_euadr_1, run_re_euadr_2, run_re_euadr_3, run_re_euadr_4, run_re_euadr_5, \
-    run_re_euadr_6, run_re_euadr_7, run_re_euadr_8, run_re_euadr_9, run_re_euadr_10
+from biomedbert_impl.bioasq_modules import fine_tune_bioasq
+from biomedbert_impl.ner_modules import fine_tune_ner
+from biomedbert_impl.re_modules import fine_tune_re
 
 __version__ = "0.1.0"
 __author__ = "AI vs COVID-19 Team"
@@ -60,137 +59,40 @@ config = configparser.ConfigParser()
 def re_commands(args: dict):
     """Command to run Relation Extraction benchmark datasets"""
 
-    # run gad 1
-    if args['re'] and args['gad_1']:
-        run_re_gad_1(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
+    config.read('config/gcp_config.ini')
+    zone = config['PROJECT']['zone']
+    project_id = config['PROJECT']['name']
 
-    # run gad 2
-    if args['re'] and args['gad_2']:
-        run_re_gad_2(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
-
-    # run gad 3
-    if args['re'] and args['gad_3']:
-        run_re_gad_3(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
-
-    # run gad 4
-    if args['re'] and args['gad_4']:
-        run_re_gad_4(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
-
-    # run gad 5
-    if args['re'] and args['gad_5']:
-        run_re_gad_5(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
-
-    # run gad 6
-    if args['re'] and args['gad_6']:
-        run_re_gad_6(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
-
-    # run gad 7
-    if args['re'] and args['gad_7']:
-        run_re_gad_7(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
-
-    # run gad 8
-    if args['re'] and args['gad_8']:
-        run_re_gad_8(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
-
-    # run gad 9
-    if args['re'] and args['gad_9']:
-        run_re_gad_9(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
-
-    # run gad 10
-    if args['re'] and args['gad_10']:
-        run_re_gad_10(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
-
-    # run euadr 1
-    if args['re'] and args['euadr_1']:
-        run_re_euadr_1(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
-
-    # run euadr 2
-    if args['re'] and args['euadr_2']:
-        run_re_euadr_2(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
-
-    # run euadr 3
-    if args['re'] and args['euadr_3']:
-        run_re_euadr_3(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
-
-    # run euadr 4
-    if args['re'] and args['euadr_4']:
-        run_re_euadr_4(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
-
-    # run euadr 5
-    if args['re'] and args['euadr_5']:
-        run_re_euadr_5(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
-
-    # run euadr 6
-    if args['re'] and args['euadr_6']:
-        run_re_euadr_6(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
-
-    # run euadr 7
-    if args['re'] and args['euadr_7']:
-        run_re_euadr_7(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
-
-    # run euadr 8
-    if args['re'] and args['euadr_8']:
-        run_re_euadr_8(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
-
-    # run euadr 9
-    if args['re'] and args['euadr_9']:
-        run_re_euadr_9(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
-
-    # run euadr 10
-    if args['re'] and args['euadr_10']:
-        run_re_euadr_10(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
+    # fine tune ner
+    if args['re'] and args['finetune']:
+        fine_tune_re(args['<re_dataset>'], args['<re_dataset_no>'], args['<model_dir>'],
+                     args['<init_checkpoint>'], args['<vocab_file>'], args['<tpu_name>'], zone, project_id)
 
 
 def ner_commands(args: dict):
     """Command to run Named Entity recognition benchmark datasets"""
 
-    # run ner bc2gm
-    if args['ner'] and args['bc2gm']:
-        run_ner_bc2gm(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
+    config.read('config/gcp_config.ini')
+    zone = config['PROJECT']['zone']
+    project_id = config['PROJECT']['name']
 
-    # run ner bc4chemd
-    if args['ner'] and args['bc4chemd']:
-        run_ner_bc4chemd(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
-
-    # run ner bc5cdr_chem
-    if args['ner'] and args['bc5cdr_chem']:
-        run_ner_bc5cdr_chem(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
-
-    # run ner bc5cdr_disease
-    if args['ner'] and args['bc5cdr_disease']:
-        run_ner_bc5cdr_disease(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
-
-    # run ner jnlpba
-    if args['ner'] and args['jnlpba']:
-        run_ner_jnlpba(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
-
-    # run ner ncbi_disease
-    if args['ner'] and args['ncbi_disease']:
-        run_ner_ncbi_disease(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
-
-    # run ner linnaeus
-    if args['ner'] and args['linnaeus']:
-        run_ner_linnaeus(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
-
-    # run ner s800
-    if args['ner'] and args['s800']:
-        run_ner_s800(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
+    # fine tune ner
+    if args['ner'] and args['finetune']:
+        fine_tune_ner(args['<ner_dataset>'], args['<model_dir>'], args['<init_checkpoint>'],
+                      args['<vocab_file>'], args['<tpu_name>'], zone, project_id)
 
 
 def bioasq_commands(args: dict):
     """Command to run BIOASQ question answering benchmark datasets"""
 
-    # run bioasq 4b
-    if args['bioasq'] and args['4b']:
-        run_bioasq_4b(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
+    config.read('config/gcp_config.ini')
+    zone = config['PROJECT']['zone']
+    project_id = config['PROJECT']['name']
 
-    # run bioasq 5b
-    if args['bioasq'] and args['5b']:
-        run_bioasq_5b(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
-
-    # run bioasq 6b
-    if args['bioasq'] and args['6b']:
-        run_bioasq_6b(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
+    # fine tune bioasq
+    if args['bioasq'] and args['finetune']:
+        fine_tune_bioasq(args['<train_file>'], args['<predict_file>'], args['<model_dir>'],
+                         args['<init_checkpoint>'], args['<vocab_file>'], args['<tpu_name>'], zone, project_id)
 
 
 def squad_commands(args: dict):
@@ -357,6 +259,15 @@ def main():
 
     if args['squad']:
         squad_commands(args)
+
+    if args['re']:
+        re_commands(args)
+
+    if args['ner']:
+        ner_commands(args)
+
+    if args['bioasq']:
+        bioasq_commands(args)
 
 
 if __name__ == '__main__':
