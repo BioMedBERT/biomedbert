@@ -19,7 +19,7 @@ def fine_tune_classification_glue(glue_dataset: str, model_dir: str,
             '--data_dir=glue_data/{}   --vocab_file={}/{}   '
             '--bert_config_file={}/bert_config.json   '
             '--init_checkpoint={}/{}   --max_seq_length=128   --train_batch_size=128   '
-            '--learning_rate=2e-5   --num_train_epochs=3.0   --output_dir={}/{}_output   '
+            '--learning_rate=2e-5   --num_train_epochs=1.0   --output_dir={}/{}_output   '
             '--num_tpu_cores=128   --use_tpu={}   --tpu_name={}   --tpu_zone={}   '
             '--gcp_project={}'.format(
             glue_dataset, glue_dataset, model_dir, vocab_file, model_dir, model_dir, init_checkpoint,
@@ -32,14 +32,22 @@ def predict_classification_glue(glue_dataset: str, model_dir: str,
                                 init_checkpoint: str, vocab_file: str,
                                 tpu_name: str, tpu_zone: str, gcp_project: str):
     """predict classification tasks from the GLUE dataset"""
+    use_tpu = True
     if tpu_name is None:
         tpu_name = 'false'
+        use_tpu = False
 
     try:
-        call(['bash', './bash/predict_classification_glue.sh', glue_dataset,
-              model_dir, init_checkpoint, vocab_file, tpu_name, tpu_zone, gcp_project])
-    except CalledProcessError:
-        print('Cannot predict {} model'.format(glue_dataset))
+        run('python3 bert/run_classifier.py  --task_name={}  --do_predict=true   '
+            '--data_dir=glue_data/{}   --vocab_file={}/{}   '
+            '--bert_config_file={}/bert_config.json   '
+            '--init_checkpoint={}/{}   --max_seq_length=128   --train_batch_size=128   '
+            '--output_dir={}/{}_output   --use_tpu={}   --tpu_name={}   --tpu_zone={}   '
+            '--gcp_project={}'.format(
+            glue_dataset, glue_dataset, model_dir, vocab_file, model_dir, model_dir, init_checkpoint,
+            model_dir, glue_dataset, use_tpu, tpu_name, tpu_zone, gcp_project))
+    except exceptions.UnexpectedExit:
+        print('Bad command')
 
 
 def download_glue_data():
