@@ -38,7 +38,7 @@ from biomedbert_impl.modules import train_vocabulary, generate_pre_trained_data,
     extract_embeddings, train_biomedbert_base
 from biomedbert_impl.gcp_helpers import set_gcp_project, start_vm, stop_vm, \
     launch_notebook, connect_vm, create_compute_vm, create_tpu_vm, delete_tpu_vm
-from biomedbert_impl.glue_helpers import fine_tune_classification_glue, download_glue_data, \
+from biomedbert_impl.glue_modules import fine_tune_classification_glue, download_glue_data, \
     predict_classification_glue
 from biomedbert_impl.squad_modules import run_squad_v11, run_squad_v2
 from biomedbert_impl.bioasq_modules import run_bioasq_4b, run_bioasq_5b, run_bioasq_6b
