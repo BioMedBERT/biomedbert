@@ -217,13 +217,13 @@ def glue_commands(args: dict):
         download_glue_data()
 
     # predict glue
-    if args['glue'] and args['predict'] and args['<checkpoint_name>'] and args['<vocab_file>']:
+    if args['glue'] and args['predict']:
         predict_classification_glue(args['<dataset>'], args['<model_dir>'],
                                     args['<trained_classifier>'], args['<vocab_file>'],
                                     args['<tpu_name>'], zone, project_id)
 
     # finetune glue
-    if args['glue'] and args['finetune'] and args['<checkpoint_name>'] and args['<vocab_file>']:\
+    if args['glue'] and args['finetune']:
         fine_tune_classification_glue(args['<dataset>'], args['<model_dir>'],
                                       args['<checkpoint_name>'], args['<vocab_file>'],
                                       args['<tpu_name>'], zone, project_id)
