@@ -25,8 +25,8 @@ def fine_tune_squad(v1: bool, model_dir: str, train_file: str, predict_file: str
         run('python3 bert/run_squad.py  --vocab_file={}/{}   '
             '--bert_config_file={}/bert_config.json   '
             '--init_checkpoint={}/{}   --do_train=true --train_file={}  '
-            '--do_predict=True  --predict_file={}   --train_batch_size=32   '
-            '--predict_batch_size=32  --learning_rate=3e-5  --num_train_epochs=2.0  '
+            '--do_predict=True  --predict_file={}   --train_batch_size=16   '
+            '--predict_batch_size=16  --learning_rate=3e-5  --num_train_epochs=2.0  '
             '--max_seq_length=384  --doc_stride=128  --output_dir={}/{}  '
             '--num_tpu_cores=128   --use_tpu={}   --tpu_name={}   --tpu_zone={}   '
             '--gcp_project={}  --version_2_with_negative={}'.format(
