@@ -19,8 +19,7 @@ Usage:
   biomedbert glue finetune <dataset> <model_dir> <checkpoint_name> <vocab_file> [<tpu_name>]
   biomedbert glue predict <dataset> <model_dir> <trained_classifier> <vocab_file> [<tpu_name>]
   biomedbert glue download dataset
-  biomedbert squad v1 <biomedbert_gcs_path> <biomedbert_model_type>
-  biomedbert squad v2 <biomedbert_gcs_path> <biomedbert_model_type>
+  biomedbert squad finetune (v1|v2) <model_dir> <train_file> <predict_file> <vocab_file> <init_checkpoint> <tpu_name>
 
   biomedbert -h | --help
   biomedbert --version
@@ -40,7 +39,7 @@ from biomedbert_impl.gcp_helpers import set_gcp_project, start_vm, stop_vm, \
     launch_notebook, connect_vm, create_compute_vm, create_tpu_vm, delete_tpu_vm
 from biomedbert_impl.glue_modules import fine_tune_classification_glue, download_glue_data, \
     predict_classification_glue
-from biomedbert_impl.squad_modules import run_squad_v11, run_squad_v2
+from biomedbert_impl.squad_modules import fine_tune_squad
 from biomedbert_impl.bioasq_modules import run_bioasq_4b, run_bioasq_5b, run_bioasq_6b
 from biomedbert_impl.ner_modules import run_ner_bc2gm, run_ner_bc4chemd, run_ner_bc5cdr_chem, \
     run_ner_bc5cdr_disease, run_ner_jnlpba, run_ner_ncbi_disease, run_ner_linnaeus, run_ner_s800
@@ -196,13 +195,14 @@ def bioasq_commands(args: dict):
 def squad_commands(args: dict):
     """Command to run SQuAD question answering benchmark dataset"""
 
-    # run squad v1.1
-    if args['squad'] and args['v1']:
-        run_squad_v11(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
+    config.read('config/gcp_config.ini')
+    zone = config['PROJECT']['zone']
+    project_id = config['PROJECT']['name']
 
-    # run squad v2.0
-    if args['squad'] and args['v2']:
-        run_squad_v2(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
+    # fine tune squad
+    if args['squad'] and args['finetune']:
+        fine_tune_squad(args['v1'], args['<model_dir>'], args['<train_file>'], args['<predict_file>'],
+                        args['<tpu_name>'], zone, project_id, args['<vocab_file>'], args['<init_checkpoint>'])
 
 
 def glue_commands(args: dict):
