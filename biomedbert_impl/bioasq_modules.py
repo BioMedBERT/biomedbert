@@ -40,7 +40,7 @@ def evaluate_bioasq(model_dir: str, train_file: str):
     output_dir = '{}/BioASQ_outputs/{}/'.format(model_dir, train_file.split('.')[0])
     # convert results to BioASQ JSON format
     try:
-        run('python3 biobert/biocodes/transform_nbset2bioasqform.py   '
+        run('python3 ./biobert/biocodes/transform_nbset2bioasqform.py   '
             '--nbest_path={}/nbest_predictions.json --output_path={}'.format(output_dir, output_dir))
     except exceptions.UnexpectedExit:
         print('Cannot convert results to BioASQ JSON format')
