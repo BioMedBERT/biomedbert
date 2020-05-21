@@ -8,16 +8,16 @@ Usage:
   biomedbert gcp vm stop <vm-instance>
   biomedbert gcp vm notebook <vm-instance>
   biomedbert gcp vm connect <vm-instance>
-  biomedbert gcp vm create compute <vm-instance> [project-zone]
-  biomedbert gcp vm create tpu <vm-instance> [project-zone]
-  biomedbert gcp vm delete tpu <vm-instance> [project-zone]
+  biomedbert gcp vm create compute <vm-instance> [<project-zone>]
+  biomedbert gcp vm create tpu <vm-instance> [<project-zone>]
+  biomedbert gcp vm delete tpu <vm-instance> [<project-zone>]
   biomedbert code train vocab <data_path> <prefix>
   biomedbert code train model (base|large) <model_dir> <pretraining_dir> <bucket_name>
   biomedbert code extract embeddings <input_txt> <voc_fname> <config_fname> <init_checkpoint>
   biomedbert code shard data <number_of_shards> <shard_path> <prc_data_path>
   biomedbert code make pretrain data <pre_trained_dir> <voc_filename> <shard_path>
-  biomedbert glue finetune <dataset> <model_dir> <checkpoint_name> <vocab_file>
-  biomedbert glue predict <dataset> <model_dir> <checkpoint_name> <vocab_file>
+  biomedbert glue finetune <dataset> <model_dir> <checkpoint_name> <vocab_file> [<tpu_name>]
+  biomedbert glue predict <dataset> <model_dir> <checkpoint_name> <vocab_file> [<tpu_name>]
   biomedbert glue download dataset
   biomedbert squad v1 <biomedbert_gcs_path> <biomedbert_model_type>
   biomedbert squad v2 <biomedbert_gcs_path> <biomedbert_model_type>
@@ -49,10 +49,12 @@ from biomedbert_impl.re_modules import run_re_gad_1, run_re_gad_2, run_re_gad_3,
     run_re_euadr_1, run_re_euadr_2, run_re_euadr_3, run_re_euadr_4, run_re_euadr_5, \
     run_re_euadr_6, run_re_euadr_7, run_re_euadr_8, run_re_euadr_9, run_re_euadr_10
 
-
 __version__ = "0.1.0"
 __author__ = "AI vs COVID-19 Team"
 __license__ = "MIT"
+
+# Configurations
+config = configparser.ConfigParser()
 
 
 def re_commands(args: dict):
@@ -137,7 +139,7 @@ def re_commands(args: dict):
     # run euadr 10
     if args['re'] and args['euadr_10']:
         run_re_euadr_10(args['<biomedbert_gcs_path>'], args['<biomedbert_model_type>'])
-    
+
 
 def ner_commands(args: dict):
     """Command to run Named Entity recognition benchmark datasets"""
@@ -206,19 +208,25 @@ def squad_commands(args: dict):
 def glue_commands(args: dict):
     """Command to run GLUE classification"""
 
+    config.read('config/gcp_config.ini')
+    zone = config['PROJECT']['zone']
+    project_id = config['PROJECT']['name']
+
     # download glue dataset
     if args['glue'] and args['download'] and args['dataset']:
         download_glue_data()
 
     # predict glue
-    if args['glue'] and args['predict'] and args['checkpoint_name'] and args['vocab_file']:
-        predict_classification_glue(args['<dataset>'], args['<biomedbert_gcs_path>'],
-                                    args['checkpoint_name'], args['vocab_file'])
+    if args['glue'] and args['predict'] and args['<checkpoint_name>'] and args['<vocab_file>']:
+        predict_classification_glue(args['<dataset>'], args['<model_dir>'],
+                                    args['<checkpoint_name>'], args['<vocab_file>'],
+                                    args['<tpu_name>'], zone, project_id)
 
     # finetune glue
-    if args['glue'] and args['finetune'] and args['checkpoint_name'] and args['vocab_file']:
-        fine_tune_classification_glue(args['<dataset>'], args['<biomedbert_gcs_path>'],
-                                      args['checkpoint_name'], args['vocab_file'])
+    if args['glue'] and args['finetune'] and args['<checkpoint_name>'] and args['<vocab_file>']:\
+        fine_tune_classification_glue(args['<dataset>'], args['<model_dir>'],
+                                      args['<checkpoint_name>'], args['<vocab_file>'],
+                                      args['<tpu_name>'], zone, project_id)
 
 
 def code_commands(args: dict):
@@ -250,9 +258,6 @@ def code_commands(args: dict):
 
 def gcp_commands(args: dict):
     """GCP commands for biomedber CLI."""
-
-    # Configurations
-    config = configparser.ConfigParser()
 
     # setup GCP project
     if args['gcp'] and args['project'] and args['set']:
