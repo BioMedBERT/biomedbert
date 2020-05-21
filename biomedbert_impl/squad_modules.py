@@ -21,7 +21,6 @@ def fine_tune_squad(v1: bool, model_dir: str, train_file: str, predict_file: str
         version_2_with_negative = False
         output_dir = 'squad_v1/'
 
-
     try:
         run('python3 bert/run_squad.py  --vocab_file={}/{}   '
             '--bert_config_file={}/bert_config.json   '
@@ -38,24 +37,9 @@ def fine_tune_squad(v1: bool, model_dir: str, train_file: str, predict_file: str
         print('Cannot fine tune SQuAD')
 
 
-'''declare -r BERT_BASE_DIR="${BERT_BASE_DIR:-$1}"
-declare -r MODEL_TYPE="${MODEL_TYPE:-$2}"  # base or large
-declare -r SQUAD_DIR="${SQUAD_DIR:-squad_data/v1.1}"
-
-python3 bert/run_squad.py \
-  --vocab_file="$BERT_BASE_DIR"/biomedbert-8M.txt \
-  --bert_config_file="$BERT_BASE_DIR"/bert_config.json \
-  --init_checkpoint="$BERT_BASE_DIR"/model.ckpt-1000000 \
-  --do_train=True \
-  --train_file="$SQUAD_DIR"/train-v1.1.json \
-  --do_predict=True \
-  --predict_file="$SQUAD_DIR"/dev-v1.1.json \
-  --train_batch_size=256 \
-  --predict_batch_size=256 \
-  --learning_rate=3e-5 \
-  --num_train_epochs=2.0 \
-  --max_seq_length=384 \
-  --doc_stride=128 \
-  --output_dir="$BERT_BASE_DIR"/squad_"$2"_v11/ \
-  --use_tpu=True \
-  --tpu_name="$TPU_NAME"'''
+def evaluate_squad(evaluate_file: str, predict_file: str, output_dir: str):
+    """evaluate squad"""
+    try:
+        run('python {} {} {}/predictions.json'.format(evaluate_file, predict_file, output_dir))
+    except exceptions.UnexpectedExit:
+        print('Cannot evaluate SQuAD')
