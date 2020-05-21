@@ -22,7 +22,7 @@ def fine_tune_bioasq(train_file: str, predict_file: str, model_dir: str, init_ch
             '--doc_stride=128   --num_train_epochs=5.0   --do_lower_case=False   '
             '--train_file=gs://ekaba-assets/datasets/QA/BioASQ/{}   '
             '--predict_file=gs://ekaba-assets/datasets/QA/BioASQ/{}   '
-            '--output_dir={}/QA_outputs/{}/{}  --num_tpu_cores=128   --use_tpu={}   '
+            '--output_dir={}/QA_outputs/{}/  --num_tpu_cores=128   --use_tpu={}   '
             '--tpu_name={}   --tpu_zone={}  --gcp_project={}'.format(
             model_dir, vocab_file, model_dir, model_dir, init_checkpoint,
             train_file, predict_file, model_dir, train_file.split('.')[0],
