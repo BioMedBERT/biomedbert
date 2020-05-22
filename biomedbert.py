@@ -41,7 +41,7 @@ Options:
   --version         Show version.
   <model_type>      Use 'base' or 'large' network architecture.
 """
-# GCP helper commands:
+
 from __future__ import unicode_literals, print_function
 
 import configparser
