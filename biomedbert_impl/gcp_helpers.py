@@ -76,9 +76,10 @@ def create_tpu_vm(tpu_name: str, zone: str, preempt: str):
         preempt = "no"
     else:
         preempt = "yes"
+
     try:
         # run works to print output to console
-        run('bash ./bash/create_tpu_vm.sh {} {}'.format(tpu_name, zone, preempt))
+        run('bash ./bash/create_tpu_vm.sh {} {} {}'.format(tpu_name, zone, preempt))
     except exceptions.UnexpectedExit:
         print('Bad command')
 
