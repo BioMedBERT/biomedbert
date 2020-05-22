@@ -56,6 +56,9 @@ def train_biomedbert(model_type: str, model_dir: str, pretraining_dir: str, buck
     output_dir = 'gs://{}/{}'.format(bucket_name, model_dir)
     bert_base_dir = 'gs://{}/{}'.format(bucket_name, model_dir)
 
+    if init_checkpoint is None:
+        init_checkpoint = False
+
     # training procedure config
     train_batch_size = 256
     eval_batch_size = 256
