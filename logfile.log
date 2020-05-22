@@ -293,3 +293,7 @@ nohup: ignoring input
 Pseudo-terminal will not be allocated because stdin is not a terminal.
 nohup: ignoring input
 Pseudo-terminal will not be allocated because stdin is not a terminal.
+tcsetattr: Interrupted system call
+Connection to 34.90.152.134 closed by remote host.
+Connection to 34.90.152.134 closed.
+ERROR: (gcloud.compute.ssh) [/usr/bin/ssh] exited with return code [255].

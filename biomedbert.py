@@ -3,6 +3,7 @@
 """biomedbert
 
 Usage:
+GCP helper commands:
   biomedbert gcp project set <project-id> <project-zone>
   biomedbert gcp vm start <vm-instance>
   biomedbert gcp vm stop <vm-instance>
@@ -11,27 +12,32 @@ Usage:
   biomedbert gcp vm create compute <vm-instance> [<project-zone>]
   biomedbert gcp vm create tpu <vm-instance> [<project-zone>]
   biomedbert gcp vm delete tpu <vm-instance> [<project-zone>]
+Model/ dataset development commands:
   biomedbert code train vocab <data_path> <prefix>
-  biomedbert code train model (base|large) <model_dir> <pretraining_dir> <bucket_name>
+  biomedbert code train model <model_type> <model_dir> <pretraining_dir> <bucket_name> <tpu_name>
   biomedbert code extract embeddings <input_txt> <voc_fname> <config_fname> <init_checkpoint>
   biomedbert code shard data <number_of_shards> <shard_path> <prc_data_path>
   biomedbert code make pretrain data <pre_trained_dir> <voc_filename> <shard_path>
+Glue classification commands:
   biomedbert glue finetune <dataset> <model_dir> <checkpoint_name> <vocab_file> [<tpu_name>]
   biomedbert glue predict <dataset> <model_dir> <trained_classifier> <vocab_file> [<tpu_name>]
   biomedbert glue download dataset
+SQuAD question answering commands:
   biomedbert squad finetune (v1|v2) <model_dir> <train_file> <predict_file> <vocab_file> <init_checkpoint> <tpu_name>
   biomedbert squad evaluate <evaluate_file> <predict_file> <prediction_json>
+Named Entity Recognition commands:
   biomedbert ner finetune <ner_dataset> <model_dir> <init_checkpoint> <vocab_file> <tpu_name>
+Relation Extraction commands:
   biomedbert re finetune <re_dataset> <re_dataset_no> <model_dir> <init_checkpoint> <vocab_file> <tpu_name>
+BioAsq question answering commands:
   biomedbert bioasq finetune <train_file> <predict_file> <model_dir> <init_checkpoint> <vocab_file> <tpu_name>
   biomedbert bioasq evaluate <model_dir> <train_file>
-
+Options:
   biomedbert -h | --help
   biomedbert --version
-
-Options:
-  -h, --help    Show this screen.
-  --version     Show version.
+  -h, --help        Show this screen.
+  --version         Show version.
+  <model_type>      Use 'base' or 'large' network architecture.
 """
 
 from __future__ import unicode_literals, print_function
@@ -39,7 +45,7 @@ from __future__ import unicode_literals, print_function
 import configparser
 from docopt import docopt
 from biomedbert_impl.modules import train_vocabulary, generate_pre_trained_data, shard_dataset, \
-    extract_embeddings, train_biomedbert_base
+    extract_embeddings, train_biomedbert
 from biomedbert_impl.gcp_helpers import set_gcp_project, start_vm, stop_vm, \
     launch_notebook, connect_vm, create_compute_vm, create_tpu_vm, delete_tpu_vm
 from biomedbert_impl.glue_modules import fine_tune_classification_glue, download_glue_data, \
@@ -99,6 +105,7 @@ def bioasq_commands(args: dict):
     if args['bioasq'] and args['evaluate']:
         evaluate_bioasq(args['<model_dir>'], args['<train_file>'])
 
+
 def squad_commands(args: dict):
     """Command to run SQuAD question answering benchmark dataset"""
 
@@ -143,10 +150,14 @@ def glue_commands(args: dict):
 def code_commands(args: dict):
     """Command to train BioMedBert model"""
 
-    # train biomedbert-base
+    config.read('config/gcp_config.ini')
+    zone = config['PROJECT']['zone']
+    project_id = config['PROJECT']['name']
+
+    # train biomedbert
     if args['code'] and args['train'] and args['model']:
-        if args['base']:
-            train_biomedbert_base(args['<model_dir>'], args['<pretraining_dir>'], args['<bucket_name>'])
+        train_biomedbert(args['<model_type>'], args['<model_dir>'], args['<pretraining_dir>'],
+                         args['<bucket_name>'], args['<tpu_name>'], project_id, zone)
 
     # extract contextual embeddings
     if args['code'] and args['extract'] and args['embeddings']:
