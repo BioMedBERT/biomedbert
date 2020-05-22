@@ -3,6 +3,7 @@
 """biomedbert
 
 Usage:
+  biomedbert
 GCP helper commands:
   biomedbert gcp project set <project-id> <project-zone>
   biomedbert gcp vm start <vm-instance>
@@ -32,14 +33,15 @@ Relation Extraction commands:
 BioAsq question answering commands:
   biomedbert bioasq finetune <train_file> <predict_file> <model_dir> <init_checkpoint> <vocab_file> <tpu_name>
   biomedbert bioasq evaluate <model_dir> <train_file>
-Options:
+Info:
   biomedbert -h | --help
   biomedbert --version
+Options:
   -h, --help        Show this screen.
   --version         Show version.
   <model_type>      Use 'base' or 'large' network architecture.
 """
-
+# GCP helper commands:
 from __future__ import unicode_literals, print_function
 
 import configparser
