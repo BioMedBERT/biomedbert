@@ -13,26 +13,27 @@ from bert import modeling, optimization, tokenization
 from bert.run_pretraining import input_fn_builder, model_fn_builder
 
 # global parameters
-voc_size = 28996 # 32000
+voc_size = 28996  # 32000
 
 log = logging.getLogger('biomedbert')
 log.setLevel(logging.INFO)
 
 
-def train_biomedbert(type: str, model_dir: str, pretraining_dir: str, bucket_name: str, tpu_name: str, project_id: str, zone: str):
+def train_biomedbert(model_type: str, model_dir: str, pretraining_dir: str, bucket_name: str, tpu_name: str, project_id: str,
+                     zone: str):
     """Method to train BioMedBERT"""
 
     tf.io.gfile.mkdir(model_dir)
     config = ''
 
-    if type == 'base':
+    if model_type == 'base':
         # bert base
         try:
             run('cp config/base_bert_config.json {}'.format(model_dir))
             config = 'base_bert_config.json'
         except exceptions.UnexpectedExit:
             log.info('Bert Base moved to model directory')
-    elif type == 'large':
+    elif model_type == 'large':
         # bert large
         try:
             run('cp config/large_bert_config.json {}'.format(model_dir))
@@ -51,13 +52,13 @@ def train_biomedbert(type: str, model_dir: str, pretraining_dir: str, bucket_nam
             print('Could not upload {} to GCS'.format(model_dir))
 
     init_checkpoint = tf.train.latest_checkpoint('gs://{}/{}'.format(bucket_name, model_dir))
-    input_file='gs://{}/{}/shard_*'.format(bucket_name, pretraining_dir)
-    output_dir='gs://{}/{}'.format(bucket_name, model_dir)
-    bert_base_dir='gs://{}/{}'.format(bucket_name, model_dir)
+    input_file = 'gs://{}/{}/shard_*'.format(bucket_name, pretraining_dir)
+    output_dir = 'gs://{}/{}'.format(bucket_name, model_dir)
+    bert_base_dir = 'gs://{}/{}'.format(bucket_name, model_dir)
 
     # training procedure config
-    train_batch_size = 128
-    eval_batch_size = 128
+    train_batch_size = 256
+    eval_batch_size = 256
     max_seq_length = 128
     max_predictions = 20
     train_steps = 1000000  # 1M
@@ -67,7 +68,11 @@ def train_biomedbert(type: str, model_dir: str, pretraining_dir: str, bucket_nam
 
     # train biomedbert
     try:
-        run('python3 bert/run_pretraining.py   --input_file={}   --output_dir={}   --do_train=True   --do_eval=True   --bert_config_file={}/{}   --init_checkpoint={}   --train_batch_size={}   --eval_batch_size={}   --max_seq_length={}   --max_predictions_per_seq={}   --num_train_steps={}   --num_warmup_steps={}   --learning_rate={}   --use_tpu=true   --tpu_name={}   --tpu_zone={}   --gcp_project={}   --num_tpu_cores={}'.format(
+        run('python3 bert/run_pretraining.py   --input_file={}   --output_dir={}   --do_train=True   --do_eval=True   '
+            '--bert_config_file={}/{}   --init_checkpoint={}   --train_batch_size={}   --eval_batch_size={}   '
+            '--max_seq_length={}   --max_predictions_per_seq={}   --num_train_steps={}   --num_warmup_steps={}   '
+            '--learning_rate={}   --use_tpu=true   --tpu_name={}   --tpu_zone={}   --gcp_project={}   '
+            '--num_tpu_cores={}'.format(
             input_file, output_dir, bert_base_dir, config, init_checkpoint, train_batch_size,
             eval_batch_size, max_seq_length, max_predictions, train_steps, num_warmup_steps,
             learning_rate, tpu_name, zone, project_id, num_tpu_cores

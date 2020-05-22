@@ -10,9 +10,9 @@ GCP helper commands:
   biomedbert gcp vm stop <vm-instance>
   biomedbert gcp vm notebook <vm-instance>
   biomedbert gcp vm connect <vm-instance>
-  biomedbert gcp vm create compute <vm-instance> [<project-zone>]
-  biomedbert gcp vm create tpu <vm-instance> [<project-zone>]
-  biomedbert gcp vm delete tpu <vm-instance> [<project-zone>]
+  biomedbert gcp vm create compute <vm-instance>
+  biomedbert gcp vm create tpu <vm-instance> [preemptible]
+  biomedbert gcp vm delete tpu <vm-instance>
 Model/ dataset development commands:
   biomedbert code train vocab <data_path> <prefix>
   biomedbert code train model <model_type> <model_dir> <pretraining_dir> <bucket_name> <tpu_name>
@@ -37,9 +37,8 @@ Info:
   biomedbert -h | --help
   biomedbert --version
 Options:
-  -h, --help        Show this screen.
-  --version         Show version.
-  <model_type>      Use 'base' or 'large' network architecture.
+  -h, --help                Show this screen.
+  --version                 Show version.
 """
 
 from __future__ import unicode_literals, print_function
@@ -200,34 +199,24 @@ def gcp_commands(args: dict):
     # create compute VM
     if args['gcp'] and args['vm'] and args['create'] and args['compute']:
         # create vm
-        if args['<project-zone>'] is None:
-            # read configurations
-            config.read('config/gcp_config.ini')
-            zone = config['PROJECT']['zone']
-            create_compute_vm(args['<vm-instance>'], zone)
-        else:
-            create_compute_vm(args['<vm-instance>'], args['<project-zone>'])
+        config.read('config/gcp_config.ini')
+        zone = config['PROJECT']['zone']
+        create_compute_vm(args['<vm-instance>'], zone)
 
     # create tpu
     if args['gcp'] and args['vm'] and args['create'] and args['tpu']:
-        if args['<project-zone>'] is None:
-            # read configurations
-            config.read('config/gcp_config.ini')
-            zone = config['PROJECT']['zone']
-            create_tpu_vm(args['<vm-instance>'], zone)
-        else:
-            create_tpu_vm(args['<vm-instance>'], args['<project-zone>'])
+        # read configurations
+        config.read('config/gcp_config.ini')
+        zone = config['PROJECT']['zone']
+        create_tpu_vm(args['<vm-instance>'], zone, args['preemptible'])
 
     # delete tpu
     if args['gcp'] and args['vm'] and args['delete'] and args['tpu']:
         # read configurations
         config.read('config/gcp_config.ini')
         project_id = config['PROJECT']['name']
-        if args['<project-zone>'] is None:
-            zone = config['PROJECT']['zone']
-            delete_tpu_vm(args['<vm-instance>'], project_id, zone)
-        else:
-            delete_tpu_vm(args['<vm-instance>'], project_id, args['<project-zone>'])
+        zone = config['PROJECT']['zone']
+        delete_tpu_vm(args['<vm-instance>'], project_id, zone)
 
     # start VM
     if args['gcp'] and args['vm'] and args['start']:

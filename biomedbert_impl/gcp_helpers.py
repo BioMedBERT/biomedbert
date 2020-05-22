@@ -70,11 +70,15 @@ def create_compute_vm(compute_instance: str, zone: str):
         print('Bad command')
 
 
-def create_tpu_vm(tpu_name: str, zone: str):
+def create_tpu_vm(tpu_name: str, zone: str, preempt: str):
     """Create TPU VM"""
+    if preempt is False:
+        preempt = "no"
+    else:
+        preempt = "yes"
     try:
         # run works to print output to console
-        run('bash ./bash/create_tpu_vm.sh {} {}'.format(tpu_name, zone))
+        run('bash ./bash/create_tpu_vm.sh {} {}'.format(tpu_name, zone, preempt))
     except exceptions.UnexpectedExit:
         print('Bad command')
 
