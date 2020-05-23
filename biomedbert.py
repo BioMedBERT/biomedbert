@@ -3,8 +3,6 @@
 """biomedbert
 
 Usage:
-  biomedbert
-GCP helper commands:
   biomedbert gcp project set <project-id> <project-zone>
   biomedbert gcp vm start <vm-instance>
   biomedbert gcp vm stop <vm-instance>
@@ -13,27 +11,20 @@ GCP helper commands:
   biomedbert gcp vm create compute <vm-instance>
   biomedbert gcp vm create tpu <vm-instance> [preemptible]
   biomedbert gcp vm delete tpu <vm-instance>
-Model/ dataset development commands:
   biomedbert code train vocab <data_path> <prefix>
-  biomedbert code train model <model_type> <model_dir> <pretraining_dir> <bucket_name> <tpu_name>
-  biomedbert code extract embeddings <input_txt> <voc_fname> <config_fname> <init_checkpoint>
   biomedbert code shard data <number_of_shards> <shard_path> <prc_data_path>
   biomedbert code make pretrain data <pre_trained_dir> <voc_filename> <shard_path>
-Glue classification commands:
+  biomedbert code train model <model_type> <model_dir> <pretraining_dir> <bucket_name> <tpu_name>
+  biomedbert code extract embeddings <input_txt> <voc_fname> <config_fname> <init_checkpoint>
+  biomedbert glue download dataset
   biomedbert glue finetune <dataset> <model_dir> <checkpoint_name> <vocab_file> [<tpu_name>]
   biomedbert glue predict <dataset> <model_dir> <trained_classifier> <vocab_file> [<tpu_name>]
-  biomedbert glue download dataset
-SQuAD question answering commands:
-  biomedbert squad finetune (v1|v2) <model_dir> <train_file> <predict_file> <vocab_file> <init_checkpoint> <tpu_name>
   biomedbert squad evaluate <evaluate_file> <predict_file> <prediction_json>
-Named Entity Recognition commands:
+  biomedbert squad finetune (v1|v2) <model_dir> <train_file> <predict_file> <vocab_file> <init_checkpoint> <tpu_name>
   biomedbert ner finetune <ner_dataset> <model_dir> <init_checkpoint> <vocab_file> <tpu_name>
-Relation Extraction commands:
   biomedbert re finetune <re_dataset> <re_dataset_no> <model_dir> <init_checkpoint> <vocab_file> <tpu_name>
-BioAsq question answering commands:
-  biomedbert bioasq finetune <train_file> <predict_file> <model_dir> <init_checkpoint> <vocab_file> <tpu_name>
   biomedbert bioasq evaluate <model_dir> <train_file>
-Info:
+  biomedbert bioasq finetune <train_file> <predict_file> <model_dir> <init_checkpoint> <vocab_file> <tpu_name>
   biomedbert -h | --help
   biomedbert --version
 Options:
