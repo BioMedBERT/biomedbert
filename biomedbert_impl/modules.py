@@ -20,8 +20,7 @@ log.setLevel(logging.INFO)
 
 
 def train_biomedbert(model_type: str, model_dir: str, pretraining_dir: str, bucket_name: str, tpu_name: str,
-                     project_id: str,
-                     zone: str):
+                     project_id: str, zone: str, tpu_cores: int):
     """Method to train BioMedBERT"""
 
     tf.io.gfile.mkdir(model_dir)
@@ -65,7 +64,7 @@ def train_biomedbert(model_type: str, model_dir: str, pretraining_dir: str, buck
     train_steps = 1000000  # 1M
     num_warmup_steps = 10000
     learning_rate = 1e-5  # 2e-5
-    num_tpu_cores = 128
+    num_tpu_cores = int(tpu_cores)
 
     # train biomedbert
     if init_checkpoint is None:
