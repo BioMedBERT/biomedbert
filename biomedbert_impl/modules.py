@@ -63,7 +63,7 @@ def train_biomedbert(model_type: str, model_dir: str, pretraining_dir: str, buck
     max_seq_length = 128
     max_predictions = 20
     train_steps = 1000000  # 1M
-    num_warmup_steps = 1000
+    num_warmup_steps = 10000
     learning_rate = 1e-5  # 2e-5
     num_tpu_cores = 128
 
