@@ -213,3 +213,87 @@ tcsetattr: Interrupted system call
 packet_write_wait: Connection to 34.91.88.67 port 22: Broken pipe
 ERROR: (gcloud.compute.ssh) [/usr/bin/ssh] exited with return code [255].
 tcsetattr: Interrupted system call
+nohup: ignoring input
+WARNING: The public SSH key file for gcloud does not exist.
+WARNING: The private SSH key file for gcloud does not exist.
+WARNING: You do not have an SSH key for gcloud.
+WARNING: SSH keygen will be executed to generate a key.
+This tool needs to create the directory [/home/dvdbisong/.ssh] before 
+being able to generate SSH keys.
+
+Do you want to continue (Y/n)?  
+ERROR: gcloud crashed (IOError): [Errno 9] Bad file descriptor
+
+If you would like to report this issue, please run the following command:
+  gcloud feedback
+
+To check gcloud for common problems, please run the following command:
+  gcloud info --run-diagnostics
+nohup: ignoring input
+WARNING: The public SSH key file for gcloud does not exist.
+WARNING: The private SSH key file for gcloud does not exist.
+WARNING: You do not have an SSH key for gcloud.
+WARNING: SSH keygen will be executed to generate a key.
+This tool needs to create the directory [/home/dvdbisong/.ssh] before 
+being able to generate SSH keys.
+
+Do you want to continue (Y/n)?  
+ERROR: gcloud crashed (IOError): [Errno 9] Bad file descriptor
+
+If you would like to report this issue, please run the following command:
+  gcloud feedback
+
+To check gcloud for common problems, please run the following command:
+  gcloud info --run-diagnostics
+nohup: ignoring input
+WARNING: The public SSH key file for gcloud does not exist.
+WARNING: The private SSH key file for gcloud does not exist.
+WARNING: You do not have an SSH key for gcloud.
+WARNING: SSH keygen will be executed to generate a key.
+This tool needs to create the directory [/home/dvdbisong/.ssh] before 
+being able to generate SSH keys.
+
+Do you want to continue (Y/n)?  
+ERROR: gcloud crashed (IOError): [Errno 9] Bad file descriptor
+
+If you would like to report this issue, please run the following command:
+  gcloud feedback
+
+To check gcloud for common problems, please run the following command:
+  gcloud info --run-diagnostics
+nohup: ignoring input
+WARNING: The public SSH key file for gcloud does not exist.
+WARNING: The private SSH key file for gcloud does not exist.
+WARNING: You do not have an SSH key for gcloud.
+WARNING: SSH keygen will be executed to generate a key.
+This tool needs to create the directory [/home/dvdbisong/.ssh] before 
+being able to generate SSH keys.
+
+Do you want to continue (Y/n)?  
+ERROR: gcloud crashed (IOError): [Errno 9] Bad file descriptor
+
+If you would like to report this issue, please run the following command:
+  gcloud feedback
+
+To check gcloud for common problems, please run the following command:
+  gcloud info --run-diagnostics
+nohup: ignoring input
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+nohup: ignoring input
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+nohup: ignoring input
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+nohup: ignoring input
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+nohup: ignoring input
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+nohup: ignoring input
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+nohup: ignoring input
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+nohup: ignoring input
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+tcsetattr: Interrupted system call
+Connection to 34.90.152.134 closed by remote host.
+Connection to 34.90.152.134 closed.
+ERROR: (gcloud.compute.ssh) [/usr/bin/ssh] exited with return code [255].

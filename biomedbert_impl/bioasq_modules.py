@@ -1,27 +1,68 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from subprocess import call, CalledProcessError
+import os
+import sys
+from invoke import run, exceptions
 
 
-def run_bioasq_4b(biomedbert_gcs_dir: str, biomedbert_model_type: str):
-    """run bioasq 4b"""
+def fine_tune_bioasq(train_file: str, predict_file: str, model_dir: str, init_checkpoint: str,
+                     vocab_file: str, tpu_name: str, tpu_zone: str, gcp_project: str):
+    """fine tune bioasq"""
+    use_tpu = True
+
+    if tpu_name is None:
+        tpu_name = 'false'
+        use_tpu = False
+
+    p_model_dir = '/'.join(model_dir.split('/')[:-1])
+
     try:
-        call(['bash', './bash/run_bioasq_4b.sh', biomedbert_gcs_dir, biomedbert_model_type])
-    except CalledProcessError:
-        print('Cannot run BIOASQ 4b')
+        # TODO: parameterize bioasq dataset on gcs
+        run('python3 biobert/run_qa.py  --vocab_file={}/{}   '
+            '--bert_config_file={}/bert_config.json   --predict_batch_size=128   '
+            '--init_checkpoint={}/{}   --do_train=true --do_predict=true  '
+            '--max_seq_length=384   --train_batch_size=128   --learning_rate=5e-6   '
+            '--doc_stride=128   --num_train_epochs=5.0   --do_lower_case=False   '
+            '--train_file=gs://ekaba-assets/datasets/QA/BioASQ/{}   '
+            '--predict_file=gs://ekaba-assets/datasets/QA/BioASQ/{}   '
+            '--output_dir={}/BioASQ_outputs/{}/  --num_tpu_cores=128   --use_tpu={}   '
+            '--tpu_name={}   --tpu_zone={}  --gcp_project={}'.format(
+            p_model_dir, vocab_file, p_model_dir, model_dir, init_checkpoint,
+            train_file, predict_file, p_model_dir, train_file.split('.')[0],
+            use_tpu, tpu_name, tpu_zone, gcp_project))
+    except exceptions.UnexpectedExit:
+        print('Cannot fine tune BioASQ - {}'.format(train_file))
 
 
-def run_bioasq_5b(biomedbert_gcs_dir: str, biomedbert_model_type: str):
-    """run bioasq 5b"""
+def evaluate_bioasq(model_dir: str, train_file: str):
+    """evaluate bioasq"""
+
+    # convert results to BioASQ JSON format
     try:
-        call(['bash', './bash/run_bioasq_5b.sh', biomedbert_gcs_dir, biomedbert_model_type])
-    except CalledProcessError:
-        print('Cannot run BIOASQ 5b')
+        output_dir = 'bioasq_evaluate/{}'.format(train_file.split('.')[0])
 
-def run_bioasq_6b(biomedbert_gcs_dir: str, biomedbert_model_type: str):
-    """run bioasq 6b"""
+        if not os.path.exists(output_dir):
+            run('mkdir -p {}'.format(output_dir))
+
+        run('gsutil cp {}/BioASQ_outputs/BioASQ-train-factoid-4b/'
+            'nbest_predictions.json ./{}'.format(model_dir, output_dir))
+        run('python3 biobert/biocodes/transform_nbset2bioasqform.py   '
+            '--nbest_path={}/nbest_predictions.json --output_path={}'.format(output_dir, output_dir))
+    except exceptions.UnexpectedExit:
+        print('Cannot convert results to BioASQ JSON format')
+        sys.exit(1)
+
+    # run BioAsq evaluation script
     try:
-        call(['bash', './bash/run_bioasq_6b.sh', biomedbert_gcs_dir, biomedbert_model_type])
-    except CalledProcessError:
-        print('Cannot run BIOASQ 6b')
+        if not os.path.exists('Evaluation-Measures'):
+            run('git clone https://github.com/BioASQ/Evaluation-Measures.git')
+        run('gsutil cp gs://ekaba-assets/datasets/QA/BioASQ/4B1_golden.json ./{}'.format(output_dir))
+        run('cd Evaluation-Measures')
+        run('java -Xmx10G '
+            '-cp $CLASSPATH:Evaluation-Measures/flat/BioASQEvaluation/dist/BioASQEvaluation.jar '
+            'evaluation.EvaluatorTask1b -phaseB -e 5 {}/4B1_golden.json '
+            '{}/BioASQform_BioASQ-answer.json'.format(output_dir, output_dir))
+    except exceptions.UnexpectedExit:
+        print('Cannot evaluate BioASQ')
+        sys.exit(1)

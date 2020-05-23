@@ -953,7 +953,8 @@ def main(_):
     tpu_cluster_resolver = tf.contrib.cluster_resolver.TPUClusterResolver(
         FLAGS.tpu_name, zone=FLAGS.tpu_zone, project=FLAGS.gcp_project)
 
-  is_per_host = tf.contrib.tpu.InputPipelineConfig.PER_HOST_V2
+  # is_per_host = tf.contrib.tpu.InputPipelineConfig.PER_HOST_V2
+  is_per_host = tf.contrib.tpu.InputPipelineConfig.BROADCAST
   run_config = tf.contrib.tpu.RunConfig(
       cluster=tpu_cluster_resolver,
       master=FLAGS.master,
@@ -1036,7 +1037,8 @@ def main(_):
     # number of steps.
     if FLAGS.use_tpu:
       assert len(eval_examples) % FLAGS.eval_batch_size == 0
-      eval_steps = int(len(eval_examples) // FLAGS.eval_batch_size)
+      eval_steps = int(len(eval_examples) / FLAGS.eval_batch_size)
+      tf.logging.info("  Eval steps: {}".format(eval_steps))
 
     eval_drop_remainder = True if FLAGS.use_tpu else False
     eval_input_fn = file_based_input_fn_builder(

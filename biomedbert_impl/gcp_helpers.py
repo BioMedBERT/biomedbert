@@ -61,10 +61,33 @@ def launch_notebook(project_id: str, zone: str, vm_instance: str):
         print('Bad command')
 
 
-def create_compute_tpu_vm(vm_instance: str, zone: str):
-    """Create Compute and TPU VM"""
+def create_compute_vm(compute_instance: str, zone: str):
+    """Create Compute VM"""
     try:
         # run works to print output to console
-        run('bash ./bash/create_compute_tpu_vm.sh {} {}'.format(vm_instance, zone))
+        run('bash ./bash/create_compute_vm.sh {} {}'.format(compute_instance, zone))
+    except exceptions.UnexpectedExit:
+        print('Bad command')
+
+
+def create_tpu_vm(tpu_name: str, zone: str, preempt: str):
+    """Create TPU VM"""
+    if preempt is False:
+        preempt = "no"
+    else:
+        preempt = "yes"
+
+    try:
+        # run works to print output to console
+        run('bash ./bash/create_tpu_vm.sh {} {} {}'.format(tpu_name, zone, preempt))
+    except exceptions.UnexpectedExit:
+        print('Bad command')
+
+
+def delete_tpu_vm(tpu_name: str, project_id: str, zone: str):
+    """Create TPU VM"""
+    try:
+        # run works to print output to console
+        run('gcloud compute tpus delete {} --project={} --zone={}'.format(tpu_name, project_id, zone))
     except exceptions.UnexpectedExit:
         print('Bad command')

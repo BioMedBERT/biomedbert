@@ -70,7 +70,7 @@ $ export OUTPUT_DIR=./ner_outputs
 ```
 Following command runs fine-tuining code on NER with default arguments.
 ```bash
-$ mkdir -p $OUTPUT_DIR
+$ mkdir -p "$OUTPUT_DIR"
 $ python run_ner.py --do_train=true --do_eval=true --vocab_file=$BIOBERT_DIR/vocab.txt --bert_config_file=$BIOBERT_DIR/bert_config.json --init_checkpoint=$BIOBERT_DIR/model.ckpt-1000000 --num_train_epochs=10.0 --data_dir=$NER_DIR --output_dir=$OUTPUT_DIR
 ```
 You can change the arguments as you want. Once you have trained your model, you can use it in inference mode by using `--do_train=false --do_predict=true` for evaluating `test.tsv`.
