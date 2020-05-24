@@ -1,0 +1,19 @@
+63418e42362d989d10abd802baf8958f9b593b2a  BioASQ-train-factoid-4b.json
+595d452ece80854f357d0baef978e75c776bd682  BioASQ-train-factoid-5b.json
+44f3156841eb3534fab703e043124d85a4c87101  BioASQ-train-factoid-6b.json
+
+a87a8867047ad0f60366f0916eb552a6f4124731 *BioASQ-test-factoid-4b-1.json
+637929aa17b7a3a8f87b40f4b408ce8cf64e318b *BioASQ-test-factoid-4b-2.json
+e4f2dbdc4715bdf083ce18e60d897b7f93ccf56f *BioASQ-test-factoid-4b-3.json
+92385ff10153f365451e206cfd8a38b09c72804a *BioASQ-test-factoid-4b-4.json
+3827950398681eb1cc52b5b941f55ebcfd482efe *BioASQ-test-factoid-4b-5.json
+9879aa6efc1b3387db8b8da2d1ebec58dd8a5a1c *BioASQ-test-factoid-5b-1.json
+908bdb6459161d741f0f77b10542eaac2285bea7 *BioASQ-test-factoid-5b-2.json
+99b63c362c1d701bdf564667562d2e9a9732448e *BioASQ-test-factoid-5b-3.json
+49ed150224ab254a05fed8781df13ca8f00b8c53 *BioASQ-test-factoid-5b-4.json
+2a05a09a051c278cf26deb2b1122683850ce0548 *BioASQ-test-factoid-5b-5.json
+f94ac71d56bd6df4bab5d69884f2594d1c2400ec *BioASQ-test-factoid-6b-1.json
+4abc72c6fba9b5793e2c39557a30ffbdd3663858 *BioASQ-test-factoid-6b-2.json
+7fb187cfa3f8367f5a1737a12da3ba3d10c62b44 *BioASQ-test-factoid-6b-3.json
+0021eaa70f167abd3489284ddf5e402c9238821a *BioASQ-test-factoid-6b-4.json
+2ae0667282d039ab29cf4c04cbf98f6ad71e2f06 *BioASQ-test-factoid-6b-5.json
