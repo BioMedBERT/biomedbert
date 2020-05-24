@@ -37,6 +37,23 @@ def fine_tune_ner(ner_dataset: str, model_dir: str, model_type: str, bucket_name
     output_dir = 'gs://{}/{}/NER_outputs/{}'.format(bucket_name, model_dir, ner_dataset)
     data_dir = 'gs://{}/datasets/NER/{}'.format(bucket_name, ner_dataset)
 
+    '''
+    python3 biobert/run_ner.py  \
+    --vocab_file=gs://ekaba-assets/biomedbert_base_bert_weights_and_vocab/vocab.txt \
+    --bert_config_file=gs://ekaba-assets/biomedbert_base_bert_weights_and_vocab/large_bert_config.json \
+    --init_checkpoint=gs://ekaba-assets/biomedbert_base_bert_weights_and_vocab/model.ckpt-1000000  \
+    --do_train=true --do_eval=true \
+    --num_train_epochs=10.0   \
+    --data_dir=gs://ekaba-assets/datasets/NER/NCBI-disease \
+    --output_dir=gs://ekaba-assets/biomedbert_base_bert_weights_and_vocab/NER_outputs/NCBI-disease  \
+    --num_tpu_cores=128   \
+    --use_tpu=true \
+    --tpu_name=biomedbert-base   \
+    --tpu_zone=europe-west4-a  \
+    --gcp_project=ai-vs-covid19  \
+    --num_tpu_cores=128
+    '''
+
     try:
         run('python3 biobert/run_ner.py  --vocab_file={}   '
             '--bert_config_file={}    --init_checkpoint={}   --do_train=true --do_eval=true  '
