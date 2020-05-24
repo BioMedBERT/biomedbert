@@ -24,6 +24,7 @@ Usage:
   biomedbert ner finetune <model_type> <ner_dataset> <model_dir> <bucket_name> <tpu_name> <tpu_cores>
   biomedbert ner evaluate token level <model_type> <ner_dataset> <model_dir> <bucket_name> <tpu_name> <tpu_cores>
   biomedbert re finetune <model_type> <re_dataset> <re_dataset_no> <model_dir> <bucket_name> <tpu_name> <tpu_cores>
+  biomedbert re evaluate <re_dataset> <re_dataset_no> <model_dir> <bucket_name>
   biomedbert bioasq evaluate <model_dir> <train_file>
   biomedbert bioasq finetune <train_file> <predict_file> <model_dir> <init_checkpoint> <vocab_file> <tpu_name>
   biomedbert -h | --help
@@ -46,7 +47,7 @@ from biomedbert_impl.glue_modules import fine_tune_classification_glue, download
 from biomedbert_impl.squad_modules import fine_tune_squad, evaluate_squad
 from biomedbert_impl.bioasq_modules import fine_tune_bioasq, evaluate_bioasq
 from biomedbert_impl.ner_modules import fine_tune_ner, token_level_evaluation
-from biomedbert_impl.re_modules import fine_tune_re
+from biomedbert_impl.re_modules import fine_tune_re, evaluate_re
 
 __version__ = "0.1.0"
 __author__ = "AI vs COVID-19 Team"
@@ -67,6 +68,10 @@ def re_commands(args: dict):
     if args['re'] and args['finetune']:
         fine_tune_re(args['<re_dataset>'], args['<re_dataset_no>'], args['<model_dir>'], args['<model_type>'],
                      args['<bucket_name>'], args['<tpu_name>'], zone, project_id, args['<tpu_cores>'])
+
+    # fine tune ner
+    if args['re'] and args['evaluate']:
+        evaluate_re(args['<re_dataset>'], args['<re_dataset_no>'], args['<model_dir>'], args['<bucket_name>'])
 
 
 def ner_commands(args: dict):

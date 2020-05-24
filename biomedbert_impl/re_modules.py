@@ -48,3 +48,15 @@ def fine_tune_re(re_dataset: str, re_dataset_no: str, model_dir: str, model_type
             data_dir, output_dir, use_tpu, tpu_name, tpu_zone, gcp_project, num_tpu_cores))
     except exceptions.UnexpectedExit:
         print('Cannot fine tune RE - {}'.format(re_dataset))
+
+
+def evaluate_re(re_dataset: str, re_dataset_no: str, model_dir: str, bucket_name: str):
+    """evaluate re"""
+    output_dir = 'gs://{}/{}/RE_outputs/{}/{}'.format(bucket_name, model_dir, re_dataset, re_dataset_no)
+    data_dir = 'gs://{}/datasets/RE/{}/{}'.format(bucket_name, re_dataset, re_dataset_no)
+    try:
+        run('python3 biobert/biocodes/re_eval.py --output_path={}/test_results.tsv --answer_path={}/test.tsv'.format(
+            output_dir, data_dir
+        ))
+    except exceptions.UnexpectedExit:
+        print('Cannot evaluate RE - {}',format(re_dataset))
