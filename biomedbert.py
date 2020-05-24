@@ -82,7 +82,7 @@ def ner_commands(args: dict):
                       args['<tpu_name>'], zone, project_id, args['<tpu_cores>'])
 
     # token-level evaluation
-    if args['ner'] and args['finetune']:
+    if args['ner'] and args['evaluate'] and args['token'] and args['level']:
         token_level_evaluation(args['<ner_dataset>'], args['<model_dir>'], args['<model_type>'], args['<bucket_name>'],
                                args['<tpu_name>'], zone, project_id, args['<tpu_cores>'])
 
