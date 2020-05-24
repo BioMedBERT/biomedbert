@@ -34,8 +34,8 @@ def fine_tune_re(re_dataset: str, re_dataset_no: str, model_dir: str, model_type
     init_checkpoint = tf.train.latest_checkpoint('gs://{}/{}'.format(bucket_name, model_dir))
     vocab_file = 'gs://{}/{}/vocab.txt'.format(bucket_name, model_dir)
     bert_config_file = 'gs://{}/{}/{}'.format(bucket_name, model_dir, config)
-    output_dir = 'gs://{}/{}/RE_outputs/{}'.format(bucket_name, model_dir, re_dataset)  # , re_dataset_no)
-    data_dir = 'gs://{}/datasets/RE/{}'.format(bucket_name, re_dataset)  # , re_dataset_no)
+    output_dir = 'gs://{}/{}/RE_outputs/{}/{}'.format(bucket_name, model_dir, re_dataset, re_dataset_no)
+    data_dir = 'gs://{}/datasets/RE/{}/{}'.format(bucket_name, re_dataset, re_dataset_no)
 
     try:
         run('python3 biobert/run_re.py  --task_name={}  --vocab_file={}   '
@@ -52,11 +52,11 @@ def fine_tune_re(re_dataset: str, re_dataset_no: str, model_dir: str, model_type
 
 def evaluate_re(re_dataset: str, re_dataset_no: str, model_dir: str, bucket_name: str):
     """evaluate re"""
-    output_dir = 'gs://{}/{}/RE_outputs/{}'.format(bucket_name, model_dir, re_dataset)  # , re_dataset_no)
-    data_dir = 'gs://{}/datasets/RE/{}'.format(bucket_name, re_dataset)  # , re_dataset_no)
+    output_dir = 'gs://{}/{}/RE_outputs/{}/{}'.format(bucket_name, model_dir, re_dataset, re_dataset_no)
+    data_dir = 'gs://{}/datasets/RE/{}/{}'.format(bucket_name, re_dataset, re_dataset_no)
     try:
         run('python3 biobert/biocodes/re_eval.py --output_path={}/test_results.tsv --answer_path={}/test.tsv'.format(
             output_dir, data_dir
         ))
     except exceptions.UnexpectedExit:
-        print('Cannot evaluate RE - {}', format(re_dataset))
+        print('Cannot evaluate RE - {}',format(re_dataset))
