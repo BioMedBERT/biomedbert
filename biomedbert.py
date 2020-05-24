@@ -23,7 +23,7 @@ Usage:
   biomedbert squad finetune (v1|v2) <model_dir> <train_file> <predict_file> <vocab_file> <init_checkpoint> <tpu_name>
   biomedbert ner finetune <model_type> <ner_dataset> <model_dir> <bucket_name> <tpu_name> <tpu_cores>
   biomedbert ner evaluate token level <model_type> <ner_dataset> <model_dir> <bucket_name> <tpu_name>
-  biomedbert re finetune <re_dataset> <re_dataset_no> <model_dir> <model_type> <bucket_name> <tpu_name> <tpu_cores>
+  biomedbert re finetune <model_type> <re_dataset> <re_dataset_no> <model_dir> <bucket_name> <tpu_name> <tpu_cores>
   biomedbert bioasq evaluate <model_dir> <train_file>
   biomedbert bioasq finetune <train_file> <predict_file> <model_dir> <init_checkpoint> <vocab_file> <tpu_name>
   biomedbert -h | --help
