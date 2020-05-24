@@ -34,8 +34,8 @@ def fine_tune_re(re_dataset: str, re_dataset_no: str, model_dir: str, model_type
     init_checkpoint = tf.train.latest_checkpoint('gs://{}/{}'.format(bucket_name, model_dir))
     vocab_file = 'gs://{}/{}/vocab.txt'.format(bucket_name, model_dir)
     bert_config_file = 'gs://{}/{}/{}'.format(bucket_name, model_dir, config)
-    output_dir = 'gs://{}/{}/NER_outputs/{}'.format(bucket_name, model_dir, re_dataset)
-    data_dir = 'gs://{}/datasets/RE/{}/{}'.format(bucket_name, re_dataset_no, re_dataset)
+    output_dir = 'gs://{}/{}/RE_outputs/{}/{}'.format(bucket_name, model_dir, re_dataset, re_dataset_no)
+    data_dir = 'gs://{}/datasets/RE/{}/{}'.format(bucket_name, re_dataset, re_dataset_no)
 
     '''python run_re.py --task_name=$TASK_NAME --do_train=true --do_eval=true --do_predict=true 
     --vocab_file=$BIOBERT_DIR/vocab.txt --bert_config_file=$BIOBERT_DIR/bert_config.json 
