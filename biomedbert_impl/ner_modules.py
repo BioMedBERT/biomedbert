@@ -15,7 +15,10 @@ def fine_tune_ner(ner_dataset: str, model_dir: str, model_type: str, bucket_name
     """fine tune ner"""
     use_tpu = True
     config = 'large_bert_config.json'
-    num_tpu_cores = int(tpu_cores)
+
+    num_tpu_cores = tpu_cores
+    if tpu_cores is not None:
+        num_tpu_cores = int(tpu_cores)
 
     if tpu_name is None:
         tpu_name = 'false'
