@@ -509,8 +509,12 @@ def main(_):
         vocab_file=FLAGS.vocab_file, do_lower_case=FLAGS.do_lower_case)
     tpu_cluster_resolver = None
     if FLAGS.use_tpu and FLAGS.tpu_name:
-        tpu_cluster_resolver = tf.contrib.cluster_resolver.TPUClusterResolver(
-            FLAGS.tpu_name, zone=FLAGS.tpu_zone, project=FLAGS.gcp_project)
+
+        # tpu_cluster_resolver = tf.contrib.cluster_resolver.TPUClusterResolver(
+        #     tpu=FLAGS.tpu_name, zone=FLAGS.tpu_zone, project=FLAGS.gcp_project)
+
+        tpu_cluster_resolver =  tf.distribute.cluster_resolver.TPUClusterResolver(
+            tpu=FLAGS.tpu_name, zone=FLAGS.tpu_zone, project=FLAGS.gcp_project)
 
     # is_per_host = tf.contrib.tpu.InputPipelineConfig.PER_HOST_V2
     is_per_host = tf.contrib.tpu.InputPipelineConfig.BROADCAST
