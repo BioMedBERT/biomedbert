@@ -240,7 +240,7 @@ class NerProcessor(DataProcessor):
 def write_tokens(tokens,mode):
     if mode=="test":
         path = os.path.join(FLAGS.output_dir, "token_"+mode+".txt")
-        wf = open(path,'a')
+        wf = tf.gfile.Open(path,'a')
         for token in tokens:
             if token!="[PAD]":
                 wf.write(token+'\n')
