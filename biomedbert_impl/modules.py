@@ -20,7 +20,7 @@ log.setLevel(logging.INFO)
 
 
 def train_biomedbert(model_type: str, model_dir: str, pretraining_dir: str, bucket_name: str, tpu_name: str,
-                     project_id: str, zone: str, tpu_cores: int):
+                     project_id: str, zone: str, train_steps: int, tpu_cores: int):
     """Method to train BioMedBERT"""
 
     tf.io.gfile.mkdir(model_dir)
@@ -61,7 +61,7 @@ def train_biomedbert(model_type: str, model_dir: str, pretraining_dir: str, buck
     eval_batch_size = 256
     max_seq_length = 128
     max_predictions = 20
-    train_steps = 1000000  # 1M
+    # train_steps = 1000000  # 1M
     num_warmup_steps = 10000
     learning_rate = 1e-5  # 2e-5
     num_tpu_cores = int(tpu_cores)
@@ -89,7 +89,7 @@ def train_biomedbert(model_type: str, model_dir: str, pretraining_dir: str, buck
                 '--num_warmup_steps={}  --learning_rate={}   --use_tpu=true   --tpu_name={}   --tpu_zone={}   '
                 '--gcp_project={}  --num_tpu_cores={}'.format(
                 input_file, output_dir, bert_base_dir, config, init_checkpoint, train_batch_size,
-                eval_batch_size, max_seq_length, max_predictions, train_steps, num_warmup_steps,
+                eval_batch_size, max_seq_length, max_predictions, int(train_steps), num_warmup_steps,
                 learning_rate, tpu_name, zone, project_id, num_tpu_cores
             ))
         except exceptions.UnexpectedExit:
