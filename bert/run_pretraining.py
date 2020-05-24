@@ -253,10 +253,10 @@ def model_fn_builder(bert_config, init_checkpoint, learning_rate,
 #       tf.compat.v2.summary.scalar('masked_lm_loss', eval_metrics['masked_lm_loss'], step=writer_steps, description='Masked lm loss')
 #       tf.compat.v2.summary.scalar('next_sentence_accuracy', eval_metrics['next_sentence_accuracy'], step=writer_steps, description='Next sentence accuracy')
 #       tf.compat.v2.summary.scalar('next_sentence_loss', eval_metrics['next_sentence_loss'], step=writer_steps, description='Next sentence loss')
-      tf.compat.v1.logging.info("  Masked LM Accuracy: {}".format(eval_metrics['masked_lm_accuracy']))
-      tf.compat.v1.logging.info("  Masked LM loss: {}".format(eval_metrics['masked_lm_loss']))
-      tf.compat.v1.logging.info("  Next sentence accuracy: {}".format(eval_metrics['next_sentence_accuracy']))
-      tf.compat.v1.logging.info("  Next sentence loss: {}".format(eval_metrics['next_sentence_loss']))
+#       tf.compat.v1.logging.info("  Masked LM Accuracy: {}".format(eval_metrics['masked_lm_accuracy']))
+#       tf.compat.v1.logging.info("  Masked LM loss: {}".format(eval_metrics['masked_lm_loss']))
+#       tf.compat.v1.logging.info("  Next sentence accuracy: {}".format(eval_metrics['next_sentence_accuracy']))
+#       tf.compat.v1.logging.info("  Next sentence loss: {}".format(eval_metrics['next_sentence_loss']))
         
 #       with open("masked_lm_accuracy.txt", "w+a") as file_object:
 #         file_object.write(eval_metrics['masked_lm_accuracy'])
