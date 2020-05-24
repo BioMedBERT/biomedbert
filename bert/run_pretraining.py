@@ -465,6 +465,7 @@ def main(_):
         FLAGS.tpu_name, zone=FLAGS.tpu_zone, project=FLAGS.gcp_project)
 
   is_per_host = tf.contrib.tpu.InputPipelineConfig.PER_HOST_V2
+  is_per_host = tf.contrib.tpu.InputPipelineConfig.BROADCAST
   run_config = tf.contrib.tpu.RunConfig(
       cluster=tpu_cluster_resolver,
       master=FLAGS.master,
