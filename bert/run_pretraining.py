@@ -189,15 +189,9 @@ def model_fn_builder(bert_config, init_checkpoint, learning_rate,
           loss=total_loss,
           train_op=train_op,
           scaffold_fn=scaffold_fn)
-
-        
-      writer_steps = num_train_steps // 10
-#       with summary_writer.as_default():
       
       tf.compat.v1.logging.info("  total_loss = {}".format(total_loss))
       tf.compat.v1.logging.info("  learning_rate = {}".format(learning_rate))
-#       tf.compat.v2.summary.scalar('total_loss', total_loss, step=writer_steps, description='Training total loss')
-#       tf.compat.v2.summary.scalar('learning_rate', learning_rate, step=writer_steps, description='Training learning rate')
         
     elif mode == tf.estimator.ModeKeys.EVAL:
 
@@ -246,26 +240,6 @@ def model_fn_builder(bert_config, init_checkpoint, learning_rate,
           loss=total_loss,
           eval_metrics=eval_metrics,
           scaffold_fn=scaffold_fn)
-      
-      writer_steps = num_train_steps // 10
-#       with summary_writer.as_default():
-#       tf.compat.v2.summary.scalar('masked_lm_accuracy', eval_metrics['masked_lm_accuracy'], step=writer_steps, description='Masked lm accuracy')
-#       tf.compat.v2.summary.scalar('masked_lm_loss', eval_metrics['masked_lm_loss'], step=writer_steps, description='Masked lm loss')
-#       tf.compat.v2.summary.scalar('next_sentence_accuracy', eval_metrics['next_sentence_accuracy'], step=writer_steps, description='Next sentence accuracy')
-#       tf.compat.v2.summary.scalar('next_sentence_loss', eval_metrics['next_sentence_loss'], step=writer_steps, description='Next sentence loss')
-#       tf.compat.v1.logging.info("  Masked LM Accuracy: {}".format(eval_metrics['masked_lm_accuracy']))
-#       tf.compat.v1.logging.info("  Masked LM loss: {}".format(eval_metrics['masked_lm_loss']))
-#       tf.compat.v1.logging.info("  Next sentence accuracy: {}".format(eval_metrics['next_sentence_accuracy']))
-#       tf.compat.v1.logging.info("  Next sentence loss: {}".format(eval_metrics['next_sentence_loss']))
-        
-#       with open("masked_lm_accuracy.txt", "w+a") as file_object:
-#         file_object.write(eval_metrics['masked_lm_accuracy'])
-      
-#       masked_lm_accuracy_file = os.path.join(FLAGS.output_dir, "masked_lm_accuracy.txt")
-#       with tf.gfile.GFile(masked_lm_accuracy_file, "w") as writer:
-#         tf.compat.v1.logging.info("***** Masked lm accuracy *****")
-#         tf.compat.v1.logging.info("Masked LM Accuracy: {}".format(eval_metrics['masked_lm_accuracy']))
-#         writer.write("Masked LM Accuracy: {}".format(eval_metrics['masked_lm_accuracy']))
     else:
       raise ValueError("Only TRAIN and EVAL modes are supported: %s" % (mode))
 

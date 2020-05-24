@@ -21,7 +21,8 @@ Usage:
   biomedbert glue predict <dataset> <model_dir> <trained_classifier> <vocab_file> [<tpu_name>]
   biomedbert squad evaluate <evaluate_file> <predict_file> <prediction_json>
   biomedbert squad finetune (v1|v2) <model_dir> <train_file> <predict_file> <vocab_file> <init_checkpoint> <tpu_name>
-  biomedbert ner finetune <ner_dataset> <model_dir> <init_checkpoint> <vocab_file> <tpu_name>
+  biomedbert ner finetune <model_type> <ner_dataset> <model_dir> <bucket_name> <tpu_name>
+  biomedbert ner evaluate token level <model_type> <ner_dataset> <model_dir> <bucket_name> <tpu_name>
   biomedbert re finetune <re_dataset> <re_dataset_no> <model_dir> <init_checkpoint> <vocab_file> <tpu_name>
   biomedbert bioasq evaluate <model_dir> <train_file>
   biomedbert bioasq finetune <train_file> <predict_file> <model_dir> <init_checkpoint> <vocab_file> <tpu_name>
@@ -44,7 +45,7 @@ from biomedbert_impl.glue_modules import fine_tune_classification_glue, download
     predict_classification_glue
 from biomedbert_impl.squad_modules import fine_tune_squad, evaluate_squad
 from biomedbert_impl.bioasq_modules import fine_tune_bioasq, evaluate_bioasq
-from biomedbert_impl.ner_modules import fine_tune_ner
+from biomedbert_impl.ner_modules import fine_tune_ner, token_level_evaluation
 from biomedbert_impl.re_modules import fine_tune_re
 
 __version__ = "0.1.0"
@@ -77,8 +78,13 @@ def ner_commands(args: dict):
 
     # fine tune ner
     if args['ner'] and args['finetune']:
-        fine_tune_ner(args['<ner_dataset>'], args['<model_dir>'], args['<init_checkpoint>'],
-                      args['<vocab_file>'], args['<tpu_name>'], zone, project_id)
+        fine_tune_ner(args['<ner_dataset>'], args['<model_dir>'], args['<model_type>'], args['<bucket_name>'],
+                      args['<tpu_name>'], zone, project_id)
+
+    # token-level evaluation
+    if args['ner'] and args['finetune']:
+        token_level_evaluation(args['<ner_dataset>'], args['<model_dir>'], args['<model_type>'], args['<bucket_name>'],
+                               args['<tpu_name>'], zone, project_id)
 
 
 def bioasq_commands(args: dict):

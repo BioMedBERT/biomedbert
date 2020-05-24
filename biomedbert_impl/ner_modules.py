@@ -1,27 +1,86 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import sys
+import logging
+import tensorflow as tf
 from invoke import run, exceptions
 
+log = logging.getLogger('biomedbert')
+log.setLevel(logging.INFO)
 
-def fine_tune_ner(ner_dataset: str, model_dir: str, init_checkpoint: str, vocab_file: str,
+
+def fine_tune_ner(ner_dataset: str, model_dir: str, model_type: str, bucket_name: str,
                   tpu_name: str, tpu_zone: str, gcp_project: str):
     """fine tune ner"""
     use_tpu = True
+    config = 'large_bert_config.json'
 
     if tpu_name is None:
         tpu_name = 'false'
         use_tpu = False
 
+    if model_type == 'base':
+        # bert base
+        config = 'base_bert_config.json'
+    elif model_type == 'large':
+        # bert large
+        config = 'large_bert_config.json'
+    else:
+        log.info('No config file')
+        sys.exit(1)
+
+    init_checkpoint = tf.train.latest_checkpoint('gs://{}/{}'.format(bucket_name, model_dir))
+    vocab_file = 'gs://{}/{}/vocab.txt'.format(bucket_name, model_dir)
+    bert_config_file = 'gs://{}/{}/{}'.format(bucket_name, model_dir, config)
+    output_dir = 'gs://{}/{}/NER_outputs/{}'.format(bucket_name, model_dir, ner_dataset)
+    data_dir = 'gs://{}/datasets/NER/{}'.format(bucket_name, ner_dataset)
+
     try:
-        # TODO: parameterize ner dataset on gcs
-        run('python3 biobert/run_ner.py  --vocab_file={}/{}   '
-            '--bert_config_file={}/bert_config.json   '
-            '--init_checkpoint={}/{}   --do_train=true --do_eval=true  '
-            '--num_train_epochs=10.0   --data_dir=gs://ekaba-assets/datasets/NER/{}   '
-            '--output_dir={}/NER_outputs/{}  --num_tpu_cores=128   --use_tpu={}   '
+        run('python3 biobert/run_ner.py  --vocab_file={}   '
+            '--bert_config_file={}    --init_checkpoint={}   --do_train=true --do_eval=true  '
+            '--num_train_epochs=10.0   --data_dir={}   '
+            '--output_dir={}  --num_tpu_cores=128   --use_tpu={}   '
             '--tpu_name={}   --tpu_zone={}  --gcp_project={}'.format(
-            model_dir, vocab_file, model_dir, model_dir, init_checkpoint,
-            ner_dataset, model_dir, ner_dataset, use_tpu, tpu_name, tpu_zone, gcp_project))
+            vocab_file, bert_config_file, init_checkpoint, data_dir,
+            output_dir, use_tpu, tpu_name, tpu_zone, gcp_project))
     except exceptions.UnexpectedExit:
         print('Cannot fine tune NER - {}'.format(ner_dataset))
+
+
+def token_level_evaluation(ner_dataset: str, model_dir: str, model_type: str, bucket_name: str,
+                  tpu_name: str, tpu_zone: str, gcp_project: str):
+    """token-level evaluation ner"""
+    use_tpu = True
+    config = 'large_bert_config.json'
+
+    if tpu_name is None:
+        tpu_name = 'false'
+        use_tpu = False
+
+    if model_type == 'base':
+        # bert base
+        config = 'base_bert_config.json'
+    elif model_type == 'large':
+        # bert large
+        config = 'large_bert_config.json'
+    else:
+        log.info('No config file')
+        sys.exit(1)
+
+    init_checkpoint = tf.train.latest_checkpoint('gs://{}/{}'.format(bucket_name, model_dir))
+    vocab_file = 'gs://{}/{}/vocab.txt'.format(bucket_name, model_dir)
+    bert_config_file = 'gs://{}/{}/{}'.format(bucket_name, model_dir, config)
+    output_dir = 'gs://{}/{}/NER_outputs/{}'.format(bucket_name, model_dir, ner_dataset)
+    data_dir = 'gs://{}/datasets/NER/{}'.format(bucket_name, ner_dataset)
+
+    try:
+        run('python3 biobert/run_ner.py  --vocab_file={}   '
+            '--bert_config_file={}    --init_checkpoint={}   --do_train=false --do_predict=true  '
+            '--num_train_epochs=10.0   --data_dir={}   '
+            '--output_dir={}  --num_tpu_cores=128   --use_tpu={}   '
+            '--tpu_name={}   --tpu_zone={}  --gcp_project={}'.format(
+            vocab_file, bert_config_file, init_checkpoint, data_dir,
+            output_dir, use_tpu, tpu_name, tpu_zone, gcp_project))
+    except exceptions.UnexpectedExit:
+        print('Cannot evaluate NER - {}'.format(ner_dataset))
