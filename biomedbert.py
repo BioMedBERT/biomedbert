@@ -23,7 +23,7 @@ Usage:
   biomedbert squad finetune (v1|v2) <model_dir> <train_file> <predict_file> <vocab_file> <init_checkpoint> <tpu_name>
   biomedbert ner finetune <model_type> <ner_dataset> <model_dir> <bucket_name> <tpu_name> <tpu_cores>
   biomedbert ner evaluate token level <model_type> <ner_dataset> <model_dir> <bucket_name> <tpu_name>
-  biomedbert re finetune <re_dataset> <re_dataset_no> <model_dir> <init_checkpoint> <vocab_file> <tpu_name>
+  biomedbert re finetune <re_dataset> <re_dataset_no> <model_dir> <model_type> <bucket_name> <tpu_name> <tpu_cores>
   biomedbert bioasq evaluate <model_dir> <train_file>
   biomedbert bioasq finetune <train_file> <predict_file> <model_dir> <init_checkpoint> <vocab_file> <tpu_name>
   biomedbert -h | --help
@@ -65,8 +65,8 @@ def re_commands(args: dict):
 
     # fine tune ner
     if args['re'] and args['finetune']:
-        fine_tune_re(args['<re_dataset>'], args['<re_dataset_no>'], args['<model_dir>'],
-                     args['<init_checkpoint>'], args['<vocab_file>'], args['<tpu_name>'], zone, project_id)
+        fine_tune_re(args['<re_dataset>'], args['<re_dataset_no>'], args['<model_dir>'], args['<model_type>'],
+                     args['<bucket_name>'], args['<tpu_name>'], zone, project_id, args['<tpu_cores>'])
 
 
 def ner_commands(args: dict):
