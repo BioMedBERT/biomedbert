@@ -606,7 +606,7 @@ def main(_):
             drop_remainder=eval_drop_remainder)
         result = estimator.evaluate(input_fn=eval_input_fn, steps=eval_steps)
         output_eval_file = os.path.join(FLAGS.output_dir, "eval_results.txt")
-        with open(output_eval_file, "w") as writer:
+        with tf.gfile.Open(output_eval_file, "w") as writer:
             tf.logging.info("***** Eval results *****")
             for key in sorted(result.keys()):
                 tf.logging.info("  %s = %s", key, str(result[key]))
@@ -614,7 +614,7 @@ def main(_):
     if FLAGS.do_predict:
         label2idPath = os.path.join(FLAGS.output_dir, 'label2id.pkl')
         if os.path.exists(label2idPath):
-            with open(label2idPath,'rb') as rf:
+            with tf.gfile.Open(label2idPath,'rb') as rf:
                 label2id = pickle.load(rf)
                 id2label = {value:key for key,value in label2id.items()}
         else:
@@ -624,7 +624,7 @@ def main(_):
             for i, label in enumerate(label_list):
                 label2id[label] = i
                 id2label = {value:key for key,value in label2id.items()}
-            with open(label2idPath,'wb') as w:
+            with tf.gfile.Open(label2idPath,'wb') as w:
                 pickle.dump(label2id,w)
                 
         token_path = os.path.join(FLAGS.output_dir, "token_test.txt")
@@ -664,7 +664,7 @@ def main(_):
             tf.logging.info("  %s = %s", key, str(prf[key]))
         
         output_predict_file = os.path.join(FLAGS.output_dir, "label_test.txt")
-        with open(output_predict_file,'w') as writer:
+        with tf.gfile.Open(output_predict_file,'w') as writer:
             for resultIdx, prediction in enumerate(result):
                 # Fix for "padding occurrence amid sentence" error 
                 # (which occasionally cause mismatch between the number of predicted tokens and labels.)
