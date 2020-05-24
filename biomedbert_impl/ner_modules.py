@@ -38,12 +38,12 @@ def fine_tune_ner(ner_dataset: str, model_dir: str, model_type: str, bucket_name
     data_dir = 'gs://{}/datasets/NER/{}'.format(bucket_name, ner_dataset)
 
     try:
-        run('python3 biobert/run_ner.py  --task_name={}   --vocab_file={}   '
+        run('python3 biobert/run_ner.py  --vocab_file={}   '
             '--bert_config_file={}    --init_checkpoint={}   --do_train=true --do_eval=true  '
             '--num_train_epochs=10.0   --data_dir={}   '
             '--output_dir={}  --num_tpu_cores=128   --use_tpu={}   '
             '--tpu_name={}   --tpu_zone={}  --gcp_project={},  --num_tpu_cores={}'.format(
-            ner_dataset, vocab_file, bert_config_file, init_checkpoint, data_dir,
+            vocab_file, bert_config_file, init_checkpoint, data_dir,
             output_dir, use_tpu, tpu_name, tpu_zone, gcp_project, num_tpu_cores))
     except exceptions.UnexpectedExit:
         print('Cannot fine tune NER - {}'.format(ner_dataset))
@@ -77,12 +77,12 @@ def token_level_evaluation(ner_dataset: str, model_dir: str, model_type: str, bu
     data_dir = 'gs://{}/datasets/NER/{}'.format(bucket_name, ner_dataset)
 
     try:
-        run('python3 biobert/run_ner.py  --task_name={}   --vocab_file={}   '
+        run('python3 biobert/run_ner.py  --vocab_file={}   '
             '--bert_config_file={}    --init_checkpoint={}   --do_train=false --do_predict=true  '
             '--num_train_epochs=10.0   --data_dir={}   '
             '--output_dir={}  --num_tpu_cores=128   --use_tpu={}   '
             '--tpu_name={}   --tpu_zone={}  --gcp_project={},  --num_tpu_cores={}'.format(
-            ner_dataset, vocab_file, bert_config_file, init_checkpoint, data_dir,
+            vocab_file, bert_config_file, init_checkpoint, data_dir,
             output_dir, use_tpu, tpu_name, tpu_zone, gcp_project, num_tpu_cores))
     except exceptions.UnexpectedExit:
         print('Cannot evaluate NER - {}'.format(ner_dataset))
