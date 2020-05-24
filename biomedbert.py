@@ -21,7 +21,7 @@ Usage:
   biomedbert glue predict <dataset> <model_dir> <trained_classifier> <vocab_file> [<tpu_name>]
   biomedbert squad evaluate <evaluate_file> <predict_file> <prediction_json>
   biomedbert squad finetune (v1|v2) <model_dir> <train_file> <predict_file> <vocab_file> <init_checkpoint> <tpu_name>
-  biomedbert ner finetune <model_type> <ner_dataset> <model_dir> <bucket_name> <tpu_name>
+  biomedbert ner finetune <model_type> <ner_dataset> <model_dir> <bucket_name> <tpu_name> <tpu_cores>
   biomedbert ner evaluate token level <model_type> <ner_dataset> <model_dir> <bucket_name> <tpu_name>
   biomedbert re finetune <re_dataset> <re_dataset_no> <model_dir> <init_checkpoint> <vocab_file> <tpu_name>
   biomedbert bioasq evaluate <model_dir> <train_file>
@@ -79,12 +79,12 @@ def ner_commands(args: dict):
     # fine tune ner
     if args['ner'] and args['finetune']:
         fine_tune_ner(args['<ner_dataset>'], args['<model_dir>'], args['<model_type>'], args['<bucket_name>'],
-                      args['<tpu_name>'], zone, project_id)
+                      args['<tpu_name>'], zone, project_id, args['<tpu_cores>'])
 
     # token-level evaluation
     if args['ner'] and args['finetune']:
         token_level_evaluation(args['<ner_dataset>'], args['<model_dir>'], args['<model_type>'], args['<bucket_name>'],
-                               args['<tpu_name>'], zone, project_id)
+                               args['<tpu_name>'], zone, project_id, args['<tpu_cores>'])
 
 
 def bioasq_commands(args: dict):

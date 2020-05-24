@@ -11,10 +11,11 @@ log.setLevel(logging.INFO)
 
 
 def fine_tune_ner(ner_dataset: str, model_dir: str, model_type: str, bucket_name: str,
-                  tpu_name: str, tpu_zone: str, gcp_project: str):
+                  tpu_name: str, tpu_zone: str, gcp_project: str, tpu_cores: str):
     """fine tune ner"""
     use_tpu = True
     config = 'large_bert_config.json'
+    num_tpu_cores = int(tpu_cores)
 
     if tpu_name is None:
         tpu_name = 'false'
@@ -41,9 +42,9 @@ def fine_tune_ner(ner_dataset: str, model_dir: str, model_type: str, bucket_name
             '--bert_config_file={}    --init_checkpoint={}   --do_train=true --do_eval=true  '
             '--num_train_epochs=10.0   --data_dir={}   '
             '--output_dir={}  --num_tpu_cores=128   --use_tpu={}   '
-            '--tpu_name={}   --tpu_zone={}  --gcp_project={}'.format(
+            '--tpu_name={}   --tpu_zone={}  --gcp_project={},  --num_tpu_cores={}'.format(
             vocab_file, bert_config_file, init_checkpoint, data_dir,
-            output_dir, use_tpu, tpu_name, tpu_zone, gcp_project))
+            output_dir, use_tpu, tpu_name, tpu_zone, gcp_project, num_tpu_cores))
     except exceptions.UnexpectedExit:
         print('Cannot fine tune NER - {}'.format(ner_dataset))
 
