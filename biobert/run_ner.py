@@ -250,7 +250,8 @@ def convert_single_example(ex_index, example, label_list, max_seq_length, tokeni
     label_map = {}
     for i, label in enumerate(label_list):
         label_map[label] = i
-    with open(os.path.join(FLAGS.output_dir,'label2id.pkl'),'wb') as w:
+    # with open(os.path.join(FLAGS.output_dir,'label2id.pkl'),'wb') as w:
+    with tf.gfile.Open(os.path.join(FLAGS.output_dir, 'label2id.pkl'), 'wb') as w:
         pickle.dump(label_map,w)
 
     textlist = example.text.split()
