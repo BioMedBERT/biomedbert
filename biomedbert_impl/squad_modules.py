@@ -47,7 +47,7 @@ def fine_tune_squad(v1: bool, model_type: str, bucket_name: str, model_dir: str,
     vocab_file = 'gs://{}/{}/vocab.txt'.format(bucket_name, model_dir)
     bert_config_file = 'gs://{}/{}/{}'.format(bucket_name, model_dir, config)
     output_dirs = 'gs://{}/{}/{}'.format(bucket_name, model_dir, output_dir)
-    train_file_path = 'gs://{}/squad_data/{}'.format(bucket_name, train_file)
+    train_file_path = 'gs://{}/squad_data/{}/{}'.format(bucket_name, sub_folder, train_file)
     predict_file_path = 'gs://{}/squad_data/{}/{}'.format(bucket_name, sub_folder, predict_file)
 
     try:
