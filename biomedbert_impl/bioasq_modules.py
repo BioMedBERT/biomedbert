@@ -46,13 +46,13 @@ def fine_tune_bioasq(model_type: str, bucket_name: str, train_file: str, predict
         run('python3 biobert/run_qa.py  --vocab_file={}   '
             '--bert_config_file={}   --predict_batch_size=128   '
             '--init_checkpoint={}   --do_train=true --do_predict=true  '
-            '--max_seq_length=384   --train_batch_size=128   --learning_rate=5e-6   '
+            '--max_seq_length=384   --train_batch_size=32   --learning_rate=5e-6   '
             '--doc_stride=128   --num_train_epochs=5.0   --do_lower_case=False   '
             '--train_file={}  --predict_file={}   '
-            '--output_dir={}/  --num_tpu_cores=128   --use_tpu={}   '
+            '--output_dir={}/  --num_tpu_cores={}   --use_tpu={}   '
             '--tpu_name={}   --tpu_zone={}  --gcp_project={}'.format(
             vocab_file, bert_config_file, init_checkpoint,
-            train_file, predict_file, output_dir,
+            train_file, predict_file, output_dir, num_tpu_cores,
             use_tpu, tpu_name, tpu_zone, gcp_project))
     except exceptions.UnexpectedExit:
         print('Cannot fine tune BioASQ - {}'.format(train_file))
@@ -67,7 +67,7 @@ def evaluate_bioasq(bucket_name: str, model_dir: str, train_file: str, eval_file
 
         if not os.path.exists(output_dir):
             run('mkdir -p {}'.format(output_dir))
-        
+
         run('gsutil cp gs://{}/{}/{}/nbest_predictions.json {}'.format(
             bucket_name, model_dir, output_dir, output_dir))
         run('python3 biobert/biocodes/transform_nbset2bioasqform.py   '
