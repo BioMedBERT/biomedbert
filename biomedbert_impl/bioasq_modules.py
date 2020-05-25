@@ -63,7 +63,7 @@ def evaluate_bioasq(model_dir: str, train_file: str, eval_file: str):
 
     # convert results to BioASQ JSON format
     try:
-        output_dir = 'bioasq_evaluate/{}'.format(train_file.split('.')[0])
+        output_dir = train_file.split('.')[0]
 
         if not os.path.exists(output_dir):
             run('mkdir -p {}'.format(output_dir))
