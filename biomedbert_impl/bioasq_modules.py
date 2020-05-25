@@ -16,6 +16,7 @@ def fine_tune_bioasq(model_type: str, bucket_name: str, train_file: str, predict
     """fine tune bioasq"""
     use_tpu = True
     config = 'large_bert_config.json'
+    max_seq_length = 128  # 384
 
     num_tpu_cores = 8
     if tpu_cores is not None:
@@ -46,12 +47,12 @@ def fine_tune_bioasq(model_type: str, bucket_name: str, train_file: str, predict
         run('python3 biobert/run_qa.py  --vocab_file={}   '
             '--bert_config_file={}   --predict_batch_size=128   '
             '--init_checkpoint={}   --do_train=true --do_predict=true  '
-            '--max_seq_length=384   --train_batch_size=32   --learning_rate=5e-6   '
+            '--max_seq_length={}   --train_batch_size=32   --learning_rate=5e-6   '
             '--doc_stride=128   --num_train_epochs=5.0   --do_lower_case=False   '
             '--train_file={}  --predict_file={}   '
             '--output_dir={}/  --num_tpu_cores={}   --use_tpu={}   '
             '--tpu_name={}   --tpu_zone={}  --gcp_project={}'.format(
-            vocab_file, bert_config_file, init_checkpoint,
+            vocab_file, bert_config_file, init_checkpoint, max_seq_length,
             train_file, predict_file, output_dir, num_tpu_cores,
             use_tpu, tpu_name, tpu_zone, gcp_project))
     except exceptions.UnexpectedExit:
