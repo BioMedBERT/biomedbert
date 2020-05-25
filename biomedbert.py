@@ -118,9 +118,14 @@ def squad_commands(args: dict):
 
     # fine tune squad
     if args['squad'] and args['finetune']:
-        fine_tune_squad(args['<v1>'], args['<model_type>'], args['<bucket_name>'], args['<model_dir>'],
-                        args['<train_file>'], args['<predict_file>'], args['<tpu_name>'],
-                        zone, project_id, args['<tpu_cores>'])
+        if args['v1']:
+            fine_tune_squad(args['v1'], args['<model_type>'], args['<bucket_name>'], args['<model_dir>'],
+                            args['<train_file>'], args['<predict_file>'], args['<tpu_name>'],
+                            zone, project_id, args['<tpu_cores>'])
+        else:
+            fine_tune_squad(args['v2'], args['<model_type>'], args['<bucket_name>'], args['<model_dir>'],
+                            args['<train_file>'], args['<predict_file>'], args['<tpu_name>'],
+                            zone, project_id, args['<tpu_cores>'])
 
     # evaluate squad
     if args['squad'] and args['evaluate']:
