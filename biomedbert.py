@@ -25,7 +25,7 @@ Usage:
   biomedbert ner evaluate token level <model_type> <ner_dataset> <model_dir> <bucket_name> [<tpu_name> <tpu_cores>]
   biomedbert re finetune <model_type> <re_dataset> <re_dataset_no> <model_dir> <bucket_name> <tpu_name> <tpu_cores>
   biomedbert re evaluate <re_dataset> <re_dataset_no> <model_dir> <bucket_name>
-  biomedbert bioasq evaluate <model_dir> <train_file>
+  biomedbert bioasq evaluate <model_dir> <train_file> <eval_file>
   biomedbert bioasq finetune <model_type> <train_file> <predict_file> <bucket_name> <model_dir> [<tpu_name> <tpu_cores>]
   biomedbert -h | --help
   biomedbert --version
@@ -106,7 +106,7 @@ def bioasq_commands(args: dict):
 
     # evaluate bioasq
     if args['bioasq'] and args['evaluate']:
-        evaluate_bioasq(args['<model_dir>'], args['<train_file>'])
+        evaluate_bioasq(args['<model_dir>'], args['<train_file>'], args['<eval_file>'])
 
 
 def squad_commands(args: dict):
