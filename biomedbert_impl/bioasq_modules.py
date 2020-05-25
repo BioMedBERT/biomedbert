@@ -58,7 +58,7 @@ def fine_tune_bioasq(model_type: str, bucket_name: str, train_file: str, predict
         print('Cannot fine tune BioASQ - {}'.format(train_file))
 
 
-def evaluate_bioasq(model_dir: str, train_file: str, eval_file: str):
+def evaluate_bioasq(bucket_name: str, model_dir: str, train_file: str, eval_file: str):
     """evaluate bioasq"""
 
     # convert results to BioASQ JSON format
@@ -68,8 +68,8 @@ def evaluate_bioasq(model_dir: str, train_file: str, eval_file: str):
         if not os.path.exists(output_dir):
             run('mkdir -p {}'.format(output_dir))
 
-        run('gsutil cp gs://{}/BioASQ_outputs/{}/'
-            'nbest_predictions.json ./BioASQ_outputs/{}'.format(model_dir, output_dir, output_dir))
+        run('gsutil cp gs://{}/{}/BioASQ_outputs/{}/'
+            'nbest_predictions.json ./BioASQ_outputs/{}'.format(bucket_name, model_dir, output_dir, output_dir))
         run('python3 biobert/biocodes/transform_nbset2bioasqform.py   '
             '--nbest_path=BioASQ_outputs/{}/nbest_predictions.json '
             '--output_path=BioASQ_outputs/{}'.format(output_dir, output_dir))
