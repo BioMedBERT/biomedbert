@@ -1,0 +1,862 @@
+{
+  "questions": [
+    {
+      "type": "factoid",
+      "id": "56c073fcef6e394741000020",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "Spermidine protects"
+        ],
+        [
+          "Spermidine protects against \u03b1-synuclein neurotoxicity."
+        ],
+        [
+          "Spermidine"
+        ],
+        [
+          "Spermidine protects against"
+        ],
+        [
+          "protects"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56b76d916e3f8eaf4c000001",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "Flaviviridae"
+        ],
+        [
+          "Flaviviridae)"
+        ],
+        [
+          "Zika virus (ZIKV; genus Flavivirus, family Flaviviridae"
+        ],
+        [
+          "family Flaviviridae"
+        ],
+        [
+          "Flavivirus, family Flaviviridae"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56afe6d40a360a5e45000017",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "CAGEr"
+        ],
+        [
+          "CAGEr: precise TSS"
+        ],
+        [
+          "r"
+        ],
+        [
+          "CAGEr: precise TSS data retrieval and high-resolution promoterome mining"
+        ],
+        [
+          "CAGE"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56c3184050c68dd416000003",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "antihypertensive"
+        ],
+        [
+          "antihypertensive drug in blacks with essential hypertension"
+        ],
+        [
+          "antihypertensive treatment"
+        ],
+        [
+          "antihypertensive therapy."
+        ],
+        [
+          "antihypertensive therapy"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56b397a98525abca1e000003",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "energy reserve"
+        ],
+        [
+          "growth and fission"
+        ],
+        [
+          "adipocytes"
+        ],
+        [
+          "contribute to diverse cellular functions"
+        ],
+        [
+          "regulating storage and mobilization of lipids in response to metabolic demands"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56c1f00cef6e39474100003e",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "peroxisome proliferator-activated"
+        ],
+        [
+          "peroxisome proliferator-activated receptors"
+        ],
+        [
+          "peroxisome proliferator-activated receptor-\u03b1/\u03b3"
+        ],
+        [
+          "dual peroxisome proliferator-activated receptor \u03b1/\u03b3"
+        ],
+        [
+          "peroxisome proliferator-activated receptor \u03b1/\u03b3"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56b330bb39c782df06000001",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "Sushi.R"
+        ],
+        [
+          "Sushi"
+        ],
+        [
+          "Bioconductor"
+        ],
+        [
+          "Sushi.R: flexible"
+        ],
+        [
+          "Sushi."
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56cafa845795f9a73e00002e",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "mTOR"
+        ],
+        [
+          "mTORC1"
+        ],
+        [
+          "mTOR pathway"
+        ],
+        [
+          "The mTOR"
+        ],
+        [
+          "mTORC1, in coordination with mTORC2"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56b76f496e3f8eaf4c000002",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "Spt-Ada-Gcn5-acetyltransferase"
+        ],
+        [
+          "Spt-Ada-Gcn5 acetyltransferase"
+        ],
+        [
+          "Spt-Ada-Gcn5 acetyltransferase)"
+        ],
+        [
+          "(Spt-Ada-Gcn5 Acetyltransferase"
+        ],
+        [
+          "Spt-Ada-Gcn5"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56c1f00def6e39474100003f",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "sPLA2"
+        ],
+        [
+          "secretory phospholipase A2"
+        ],
+        [
+          "sPLA(2)"
+        ],
+        [
+          "(such as varespladib"
+        ],
+        [
+          "varespladib"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56c85ed65795f9a73e000012",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "inhibition"
+        ],
+        [
+          "inhibits"
+        ],
+        [
+          "inhibit"
+        ],
+        [
+          "inhibited"
+        ],
+        [
+          "inhibits T-cell activation and proliferation."
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56c1f010ef6e394741000041",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "meningioma"
+        ],
+        [
+          "olfactory groove meningiomas"
+        ],
+        [
+          "atypical meningioma"
+        ],
+        [
+          "Meningiomas"
+        ],
+        [
+          "Spinal Atypical (World Health Organization Grade II) Meningiomas"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56cf36263975bb303a000007",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "."
+        ],
+        [
+          "chondrosarcoma"
+        ],
+        [
+          "Scleraxis"
+        ],
+        [
+          "Emx2"
+        ],
+        [
+          "Cart1"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56c1f01aef6e394741000043",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "PD-1"
+        ],
+        [
+          "programmed cell death-1"
+        ],
+        [
+          "programmed death 1 immune checkpoint"
+        ],
+        [
+          "programmed death 1"
+        ],
+        [
+          "anti programmed cell death-1"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56cae60f5795f9a73e00002b",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "Ataxin-2"
+        ],
+        [
+          "ataxin-2 are not necessary for SCA2 pathogenesis in mouse or human. Instability of CAG"
+        ],
+        [
+          "ataxin-2 are not necessary for SCA2"
+        ],
+        [
+          "SCA2 pathogenesis in mouse or human. Instability of CAG"
+        ],
+        [
+          "SCA2"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56cf3f4f3975bb303a000008",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "Xp21-p11"
+        ],
+        [
+          "(Xp21-p11"
+        ],
+        [
+          "Xp21"
+        ],
+        [
+          "MAOA): chromosome position (Xp21-p11"
+        ],
+        [
+          "Xp21-p11)"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56c58ceeb04e159d0e000004",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "form a covalently closed continuous loop"
+        ],
+        [
+          "biogenesis"
+        ],
+        [
+          "stable molecules"
+        ],
+        [
+          "regulation of post transcriptional gene expression"
+        ],
+        [
+          "Circular RNA may be an ancient, conserved feature of eukaryotic gene expression programs."
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56caea805795f9a73e00002c",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "SLC38A9"
+        ],
+        [
+          "SLC38A9 expression impaired amino-acid-induced mTORC1 activation. Thus SLC38A9"
+        ],
+        [
+          "SLC38A9 as an integral part of the Ragulator-RAG GTPases machinery. Gain of SLC38A9"
+        ],
+        [
+          "mTORC1 activation. Thus SLC38A9"
+        ],
+        [
+          "SLC38A9 as a novel component of the Rag-Ragulator complex. SLC38A9"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56c5fd325795f9a73e000005",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "SMN1"
+        ],
+        [
+          "SMN"
+        ],
+        [
+          "Autosomal dominant"
+        ],
+        [
+          "VRK1"
+        ],
+        [
+          "proximal spinal muscular atrophy"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56d1e23c67f0cb3d66000009",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "YAP"
+        ],
+        [
+          "TAZ"
+        ],
+        [
+          "Yap and Taz,"
+        ],
+        [
+          "YAP and TAZ"
+        ],
+        [
+          "(1) YAP and its paralog TAZ;"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56bb68f9ac7ad1001900000b",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "phthirus pubis"
+        ],
+        [
+          "blepharoconjunctivitis"
+        ],
+        [
+          "ectoparasitosis"
+        ],
+        [
+          "chronic conjunctivitis"
+        ],
+        [
+          "tick and louse"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56c8274f5795f9a73e00000d",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "motoneuronal"
+        ],
+        [
+          "microglia"
+        ],
+        [
+          "embryonic stem cells"
+        ],
+        [
+          "motor neurons"
+        ],
+        [
+          "muscle"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56cae3eb5795f9a73e000021",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "pediatric"
+        ],
+        [
+          "15 to 25 years"
+        ],
+        [
+          "Fifteen percent of incident Crohn's disease (CD) cases are diagnosed at older ages"
+        ],
+        [
+          "20"
+        ],
+        [
+          "40 years and older"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56d3346cf22319765a000008",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "an autosomal recessive congenital defect"
+        ],
+        [
+          "dextrocardia"
+        ],
+        [
+          "SIT"
+        ],
+        [
+          "congenital anomaly"
+        ],
+        [
+          "Situs inversus totalis (SIT) is an uncommon congenital syndrome"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56bc751eac7ad10019000013",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "Bazex syndrome"
+        ],
+        [
+          "Bazex"
+        ],
+        [
+          "upper aerodigestive tract squamous cell carcinoma"
+        ],
+        [
+          "Acrokeratosis paraneoplastica Bazex"
+        ],
+        [
+          "pyriform sinus tumour"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56cb9b065795f9a73e000032",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "aurora A"
+        ],
+        [
+          "aurora A kinase,"
+        ],
+        [
+          "aurora A kinase"
+        ],
+        [
+          "Aurora A kinase activity in vitro. In human cells however, only Tripolin A acted as an Aurora A"
+        ],
+        [
+          "Tripolin A, a novel small-molecule inhibitor of aurora A"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56c865d25795f9a73e000016",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "GKT136901"
+        ],
+        [
+          "GKT137831"
+        ],
+        [
+          "GKT"
+        ],
+        [
+          "GKT136901,"
+        ],
+        [
+          "GKT13"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56c83f365795f9a73e000011",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "prion domain"
+        ],
+        [
+          "prion-like domain"
+        ],
+        [
+          "prion-like domains"
+        ],
+        [
+          "PrLDs"
+        ],
+        [
+          "prion domain. Indeed, of 210 human RRM-bearing proteins, 29 have a putative prion domain"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56af9f130a360a5e45000015",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "membrane"
+        ],
+        [
+          "zebrafish retina"
+        ],
+        [
+          "."
+        ],
+        [
+          "Cx43"
+        ],
+        [
+          "extracellular space"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56bc7d71ac7ad10019000018",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "MDR-Tb"
+        ],
+        [
+          "MDR-TB."
+        ],
+        [
+          "Tb"
+        ],
+        [
+          "MDR-TB patients. In addition, decreased mortality was observed in MDR-TB"
+        ],
+        [
+          "MDR-TB in combination with other anti-TB"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56d19a363975bb303a000017",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "MTBP"
+        ],
+        [
+          "MDM two binding protein (MTBP"
+        ],
+        [
+          "MTBP)"
+        ],
+        [
+          "(MTBP"
+        ],
+        [
+          "MTBP) as a factor that interacts with Treslin/TICRR throughout the cell cycle."
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56c86aa95795f9a73e000018",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "PGI(2)"
+        ],
+        [
+          "PGI"
+        ],
+        [
+          "I2"
+        ],
+        [
+          "Prostaglandin I2"
+        ],
+        [
+          "PGI(2"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56bc9268ac7ad1001900001b",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "IL-17"
+        ],
+        [
+          "interleukin-17"
+        ],
+        [
+          "IL17A"
+        ],
+        [
+          "interleukin-17 receptor A"
+        ],
+        [
+          "IL17A inhibitors secukinumab and ixekizumab, the IL17A"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56c3320a50c68dd416000008",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "one tenth"
+        ],
+        [
+          "1 in 2000 live births"
+        ],
+        [
+          "1:30,000"
+        ],
+        [
+          "."
+        ],
+        [
+          "1:3300"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56bc932aac7ad1001900001c",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "CD38"
+        ],
+        [
+          "IgG1\u03ba monoclonal antibody that recognizes CD38"
+        ],
+        [
+          "CD38 on myeloma cells."
+        ],
+        [
+          "IgG1\u03ba"
+        ],
+        [
+          "CD38, has been of great interest in the treatment of CD38"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "569e7721ceceede94d000001",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "to better understand the transcriptional network that regulates macrophage differentiation"
+        ],
+        [
+          "to uncover novel components of the transcriptome"
+        ],
+        [
+          "better understand the transcriptional network that regulates macrophage differentiation"
+        ],
+        [
+          "uncover novel components of the transcriptome"
+        ],
+        [
+          "set out to better understand the transcriptional network that regulates macrophage differentiation"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56c341acfedd0b786b000001",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "structural arrangement"
+        ],
+        [
+          "hypersensitivity"
+        ],
+        [
+          "diadduct forming"
+        ],
+        [
+          "rate of relaxation of superhelical turns"
+        ],
+        [
+          "(omega-diethyl aminopropyloxy)psoralen hydrochloride"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56a39d60496b62f23f000006",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "r3Cseq"
+        ],
+        [
+          "r3Cseq:"
+        ],
+        [
+          "r3Cseq: an R/Bioconductor"
+        ],
+        [
+          "r3Cseq,"
+        ],
+        [
+          "r3Cseq: an R/Bioconductor package for the discovery of long-range genomic interactions"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56b7083376d8bf8d13000001",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "Fusarium oxysporum"
+        ],
+        [
+          "fungi"
+        ],
+        [
+          "Fusarium oxysporum f. sp. cubense"
+        ],
+        [
+          "Fusarium oxysporum f.sp. cubense"
+        ],
+        [
+          "fungus Fusarium oxysporum"
+        ]
+      ]
+    }
+  ]
+}
