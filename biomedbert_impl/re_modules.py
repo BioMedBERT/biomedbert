@@ -40,7 +40,7 @@ def fine_tune_re(re_dataset: str, re_dataset_no: str, model_dir: str, model_type
     try:
         run('python3 biobert/run_re.py  --task_name={}  --vocab_file={}   '
             '--bert_config_file={}  --init_checkpoint={}   --do_train=true --do_predict=true  '
-            '--max_seq_length=128   --train_batch_size=32   --learning_rate=1e-5   '
+            '--max_seq_length=128   --train_batch_size=32   --learning_rate=2e-5   '
             '--do_lower_case=false  --predict_batch_size=32  --num_train_epochs=10.0   --data_dir={}   '
             '--output_dir={}  --use_tpu={}  --tpu_name={}   --tpu_zone={}  '
             '--gcp_project={}   --num_tpu_cores={}'.format(
