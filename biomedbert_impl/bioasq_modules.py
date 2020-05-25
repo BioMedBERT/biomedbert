@@ -68,7 +68,7 @@ def evaluate_bioasq(model_dir: str, train_file: str, eval_file: str):
         if not os.path.exists(output_dir):
             run('mkdir -p {}'.format(output_dir))
 
-        run('gsutil cp {}/BioASQ_outputs/{}/'
+        run('gsutil cp gs://{}/BioASQ_outputs/{}/'
             'nbest_predictions.json ./BioASQ_outputs/{}'.format(model_dir, output_dir, output_dir))
         run('python3 biobert/biocodes/transform_nbset2bioasqform.py   '
             '--nbest_path=BioASQ_outputs/{}/nbest_predictions.json '
