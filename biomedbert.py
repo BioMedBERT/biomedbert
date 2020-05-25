@@ -20,7 +20,7 @@ Usage:
   biomedbert glue finetune <dataset> <model_dir> <checkpoint_name> <vocab_file> [<tpu_name>]
   biomedbert glue predict <dataset> <model_dir> <trained_classifier> <vocab_file> [<tpu_name>]
   biomedbert squad evaluate <evaluate_file> <predict_file> <prediction_json>
-  biomedbert squad finetune (v1|v2) <model_dir> <train_file> <predict_file> <vocab_file> <init_checkpoint> <tpu_name>
+  biomedbert squad finetune (v1|v2) <model_type> <bucket_name> <model_dir> <train_file> <predict_file> <tpu_name> <tpu_cores>
   biomedbert ner finetune <model_type> <ner_dataset> <model_dir> <bucket_name> [<tpu_name> <tpu_cores>]
   biomedbert ner evaluate token level <model_type> <ner_dataset> <model_dir> <bucket_name> [<tpu_name> <tpu_cores>]
   biomedbert re finetune <model_type> <re_dataset> <re_dataset_no> <model_dir> <bucket_name> <tpu_name> <tpu_cores>
@@ -118,8 +118,9 @@ def squad_commands(args: dict):
 
     # fine tune squad
     if args['squad'] and args['finetune']:
-        fine_tune_squad(args['v1'], args['<model_dir>'], args['<train_file>'], args['<predict_file>'],
-                        args['<tpu_name>'], zone, project_id, args['<vocab_file>'], args['<init_checkpoint>'])
+        fine_tune_squad(args['<v1>'], args['<model_type>'], args['<bucket_name>'], args['<model_dir>'],
+                        args['<train_file>'], args['<predict_file>'], args['<tpu_name>'],
+                        zone, project_id, args['<tpu_cores>'])
 
     # evaluate squad
     if args['squad'] and args['evaluate']:

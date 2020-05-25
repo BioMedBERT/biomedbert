@@ -1,0 +1,686 @@
+{
+  "questions": [
+    {
+      "type": "factoid",
+      "id": "5a6a3335b750ff4455000025",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "emMAW"
+        ],
+        [
+          "three"
+        ],
+        [
+          "three minimal absent words of the human genome were found in Ebola virus"
+        ],
+        [
+          "three minimal absent words of the human genome were found in Ebola virus genomes."
+        ],
+        [
+          "Ebola virus"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a87d73861bb38fb2400000b",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "Clostridium difficile ribotype 027"
+        ],
+        [
+          "Clostridium difficile infection"
+        ],
+        [
+          "surface-layer protein A sequence typing (slpAST)"
+        ],
+        [
+          "Clostridium difficile infection (CDI)"
+        ],
+        [
+          "Clostridium difficile"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "58eb99f3eda5a57672000009",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "centromeres"
+        ],
+        [
+          "mat1"
+        ],
+        [
+          "S phase"
+        ],
+        [
+          "telomeres"
+        ],
+        [
+          "chromosome III"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a87ea1861bb38fb2400000d",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "RNA polymerase III"
+        ],
+        [
+          "RNA polymerase III (Pol III"
+        ],
+        [
+          "RNA"
+        ],
+        [
+          "RNA polymerase"
+        ],
+        [
+          "RNA polymerase III."
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a67b2f7b750ff445500000f",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "transobturator tape"
+        ],
+        [
+          "stress urinary incontinence"
+        ],
+        [
+          "Valsalva leak point pressure"
+        ],
+        [
+          "ultrasonography"
+        ],
+        [
+          "stress urinary incontinence (SUI)"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "58edf567eda5a57672000011",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "tuberculosis"
+        ],
+        [
+          "tuberculosis infection and have been associated with immunity against latent M. tuberculosis"
+        ],
+        [
+          "hypoxia. DosR/DevR of M. tuberculosis"
+        ],
+        [
+          "Non-replicating persistence (NRP)"
+        ],
+        [
+          "Mycobacterium tuberculosis"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a7610af83b0d9ea6600001a",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "janus kinase 3"
+        ],
+        [
+          "janus kinase"
+        ],
+        [
+          "3"
+        ],
+        [
+          "VX-509 (decernotinib) is a potent and selective janus kinase 3"
+        ],
+        [
+          "j"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a6e2b1bb750ff445500003e",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "psygenet2r"
+        ],
+        [
+          "PsyGeNET"
+        ],
+        [
+          "psygenet2"
+        ],
+        [
+          "Psygenet2r is especially suited for network medicine analysis of psychiatric"
+        ],
+        [
+          "r"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a88370c61bb38fb24000014",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "SUMO E3 ligase"
+        ],
+        [
+          "Melanoma differentiation-associated gene 5"
+        ],
+        [
+          "mitochondrial antiviral signaling protein"
+        ],
+        [
+          "Caliciviridae"
+        ],
+        [
+          "RNA"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "58ee2515eda5a57672000016",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "Prevotellamassilia timonensis"
+        ],
+        [
+          "probiotic fermented milk"
+        ],
+        [
+          "Methanobacteriales"
+        ],
+        [
+          "6"
+        ],
+        [
+          "6p21."
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a885daa61bb38fb24000018",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "eight"
+        ],
+        [
+          "DEAD box motif maps to the same chromosome band as MYCN at 2p24"
+        ],
+        [
+          "(DDX1"
+        ],
+        [
+          "DEAD box"
+        ],
+        [
+          "DEAD box gene (DDX1"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a7237672dc08e987e000008",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "andexanet"
+        ],
+        [
+          "Dabigatran"
+        ],
+        [
+          "apixaban,"
+        ],
+        [
+          "apixaban, and edoxaban."
+        ],
+        [
+          "andexanet and ciraparantag, currently under development for the reversal of rivaroxaban, apixaban,"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "58f89eb270f9fc6f0f00001a",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "RNA polymerase II"
+        ],
+        [
+          "MED12 gene"
+        ],
+        [
+          "X-linked Ohdo syndrome"
+        ],
+        [
+          "X-linked Ohdo syndrome. Ohdo syndrome"
+        ],
+        [
+          "MED12"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a6e472ab750ff4455000048",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "cohesin domain"
+        ],
+        [
+          "five conserved domains including three tandem immunoglobulin domains, and a cohesin domain"
+        ],
+        [
+          "three tandem immunoglobulin domains, and a cohesin domain"
+        ],
+        [
+          "five"
+        ],
+        [
+          "cohesin"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a7d4721faa1ab7d2e000012",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "eight"
+        ],
+        [
+          "eight amino acid snippet derived from activity-dependent neuroprotective protein (ADNP)"
+        ],
+        [
+          "davunetide)"
+        ],
+        [
+          "eight amino acid snippet derived from activity-dependent neuroprotective protein (ADNP"
+        ],
+        [
+          "microtubule-deficiency including tauopathy"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "590af75d70f9fc6f0f00001c",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "UCSC Genome Browser"
+        ],
+        [
+          "Genome Browser"
+        ],
+        [
+          "The UCSC Genome Browser"
+        ],
+        [
+          "UCSC Genome Browser. The University of California Santa Cruz (UCSC) Genome Browser"
+        ],
+        [
+          "Genome Browser. The University of California Santa Cruz (UCSC) Genome Browser"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a8941c5bc7bade53a000002",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "Stabilizor T1"
+        ],
+        [
+          "Alzheimer's disease (AD"
+        ],
+        [
+          "Alzheimer's disease (AD), and evidence suggests that CREB signaling may be disrupted in human AD"
+        ],
+        [
+          "Alzheimer's disease"
+        ],
+        [
+          "AD"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "590c74d170f9fc6f0f00001e",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "zinc cluster"
+        ],
+        [
+          "zinc cluster proteins Upc2 and Ecm22 promote filamentation"
+        ],
+        [
+          "Upc2 and Ecm22 promote filamentation"
+        ],
+        [
+          "filamentation"
+        ],
+        [
+          "Ecm22 promote filamentation"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a7d51dafaa1ab7d2e000017",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "Alzheimer's disease"
+        ],
+        [
+          "Alzheimer's disease (AD"
+        ],
+        [
+          "Alzheimer's disease (AD)"
+        ],
+        [
+          "antioxidant and neuropreservatory effects in preclinical models of Alzheimer's disease"
+        ],
+        [
+          "AD"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a89800efcd1d6a10c00000c",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "adipocytes"
+        ],
+        [
+          "uncoupling protein 1 (UCP1)"
+        ],
+        [
+          "uncoupling protein 1"
+        ],
+        [
+          "uncoupling protein 1 (UCP1"
+        ],
+        [
+          "mitochondrial"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a7d5ce0faa1ab7d2e00001b",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "Growth differentiation factor 15"
+        ],
+        [
+          "Growth differentiation factor 15 (GDF15), a distant member of the transforming growth factor (TGF)-\u03b2"
+        ],
+        [
+          "RET"
+        ],
+        [
+          "Growth differentiation factor 15 (GDF15"
+        ],
+        [
+          "RET."
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a7617b183b0d9ea66000022",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "MET Inhibitor Onartuzumab in Patients with Metastatic Colorectal Cancer"
+        ],
+        [
+          "Mammalian target of rapamycin (MTOR"
+        ],
+        [
+          "gastric cancer"
+        ],
+        [
+          "hepatocyte growth factor"
+        ],
+        [
+          "MET receptor"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "593fe5c270f9fc6f0f000021",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "nuclear"
+        ],
+        [
+          "p53"
+        ],
+        [
+          "Arsenic"
+        ],
+        [
+          "HAUSP"
+        ],
+        [
+          "herpes simplex virus type 1"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a7d6287faa1ab7d2e00001c",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "Growth differentiation factor 15"
+        ],
+        [
+          "Growth differentiation factor 15 (GDF15; also known as MIC-1) is a divergent member of the TGF-\u03b2"
+        ],
+        [
+          "Growth differentiation factor 15 (GDF15"
+        ],
+        [
+          "TGF-\u03b2"
+        ],
+        [
+          "obesity, the anti-obesity"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "593fe7f970f9fc6f0f000022",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "PML"
+        ],
+        [
+          "Arsenic"
+        ],
+        [
+          "Six"
+        ],
+        [
+          "retinoic receptor alpha"
+        ],
+        [
+          "retinoic receptor alpha (RAR\u03b1"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "593ff22b70f9fc6f0f000023",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "Groucho"
+        ],
+        [
+          "corepressor"
+        ],
+        [
+          "four"
+        ],
+        [
+          "Enhancer of split"
+        ],
+        [
+          "Q domain"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a39453d966455904c000006",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "samExploreR"
+        ],
+        [
+          "nuclear"
+        ],
+        [
+          "subSeq R"
+        ],
+        [
+          "Bar-seq analysis of the Saccharomyces cerevisiae yeast deletion library"
+        ],
+        [
+          "ER) and 0.92 (Her2"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a3e8683966455904c000007",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "grapheme-colour synaesthesia"
+        ],
+        [
+          "left-lateralized"
+        ],
+        [
+          "Synesthesia"
+        ],
+        [
+          "Synesthesia Battery"
+        ],
+        [
+          "color-taste synesthesia. This is a report on a case of color-taste synesthesia"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a43a139966455904c000008",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "NOMe-Seq"
+        ],
+        [
+          "H3K27"
+        ],
+        [
+          "autosomal dominant"
+        ],
+        [
+          "TEPIC"
+        ],
+        [
+          "enhancers"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a4df811966455904c00000e",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "TFIIS"
+        ],
+        [
+          "RNA polymerase II"
+        ],
+        [
+          "transcription factor IIS"
+        ],
+        [
+          "transcription factor II"
+        ],
+        [
+          "RNA polymerase II. The eukaryotic transcription factor TFIIS"
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a4e50b242878bf97d000001",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "topoisomerase II"
+        ],
+        [
+          "topoisomerase 2"
+        ],
+        [
+          "topoisomerases"
+        ],
+        [
+          "topoisomerase"
+        ],
+        [
+          "Topoisomerase II (Topo II"
+        ]
+      ]
+    }
+  ]
+}

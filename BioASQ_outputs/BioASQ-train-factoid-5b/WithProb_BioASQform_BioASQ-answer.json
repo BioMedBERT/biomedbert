@@ -1,0 +1,2111 @@
+{
+  "questions": [
+    {
+      "type": "factoid",
+      "id": "58a95c711978bbde22000001",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "Alzheimer's disease",
+          1.1234962251152232
+        ],
+        [
+          "Apolipoprotein E4",
+          0.792915300741567
+        ],
+        [
+          "amyloid-\u03b2",
+          0.5462861013474282
+        ],
+        [
+          "Alzheimer's disease. Alzheimer's disease",
+          0.2682675174970808
+        ],
+        [
+          "Alzheimer's disease (AD)",
+          0.14198697870060223
+        ],
+        [
+          "-amyloid-\u03b2",
+          0.1042277200326224
+        ],
+        [
+          "Alzheimer's disease. Alzheimer's disease (AD)",
+          0.062729751482444
+        ],
+        [
+          "A\u03b2",
+          0.051413093851617006
+        ],
+        [
+          "A\u03b242",
+          0.037516770750565316
+        ],
+        [
+          "A\u03b2 plaques in Alzheimer's disease. Alzheimer's disease",
+          0.026628374252857336
+        ],
+        [
+          "Aducanumab is an anti-amyloid-\u03b2",
+          0.025716580132579207
+        ],
+        [
+          "Alzheimer's disease compared with amyloid burden alone. SIGNIFICANCE STATEMENT: Alzheimer's disease",
+          0.023834788188117392
+        ],
+        [
+          "Alzheimer's disease (AD) is characterized by deposition of amyloid-\u03b2",
+          0.022330381339969285
+        ],
+        [
+          "APP gene in Down's syndrome",
+          0.02185953936819995
+        ],
+        [
+          "A\u03b2 plaques in Alzheimer's disease",
+          0.019688026937875188
+        ],
+        [
+          "APP",
+          0.0155742301554864
+        ],
+        [
+          "E4",
+          0.013881441107008848
+        ],
+        [
+          "Alzheimer's disease. Alzheimer's disease (AD) is characterized by deposition of amyloid-\u03b2",
+          0.013422054395340291
+        ],
+        [
+          "\u03b2",
+          0.011958125767600174
+        ],
+        [
+          "Down's syndrome",
+          0.011930194959578994
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "587f760792a5b8ad44000005",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "JAMM",
+          0.4311313270089417
+        ],
+        [
+          "JAMM is a universal peak finder that is applicable to different types of datasets. We show that JAMM",
+          0.12012524887770125
+        ],
+        [
+          "JAMM is available for free and can run on Linux",
+          0.06785301199343188
+        ],
+        [
+          "Linux",
+          0.048354213336002
+        ],
+        [
+          "JAMM: a peak finder",
+          0.046285004659367183
+        ],
+        [
+          "JAMM is a universal peak finder",
+          0.034966851176573895
+        ],
+        [
+          "JAMM: a peak finder for joint analysis of NGS",
+          0.028650186082256394
+        ],
+        [
+          "JAMM:",
+          0.0252993512618192
+        ],
+        [
+          "JAMM is among the best performing peak finders",
+          0.024081430115762362
+        ],
+        [
+          "JAMM is among the best performing peak finders in terms of site detection accuracy",
+          0.02212086845567792
+        ],
+        [
+          "peak finder that is applicable to different types of datasets. We show that JAMM",
+          0.021115655225572075
+        ],
+        [
+          "JAMM: a peak finder for joint analysis of NGS replicates.",
+          0.019570802350232896
+        ],
+        [
+          "JAMM is a universal peak finder that is applicable to different types of datasets.",
+          0.016386249993350213
+        ],
+        [
+          "enrichment site widths accurately and resolve neighboring narrow peaks. JAMM",
+          0.014777663880515888
+        ],
+        [
+          "JAMM: a peak",
+          0.012466587139956433
+        ],
+        [
+          "peak finder",
+          0.012114088381252833
+        ],
+        [
+          "Linux machines through the command line: http://code.google.com/p/jamm",
+          0.011946903072553503
+        ],
+        [
+          "JAMM: a peak finder for joint analysis of NGS replicates. MOTIVATION: Although peak finding",
+          0.01160750084138685
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "58a9bbe81978bbde22000007",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "the",
+          0.941668163918588
+        ],
+        [
+          "Lgr5",
+          0.615372727319912
+        ],
+        [
+          "Paneth cells",
+          0.36502808403935655
+        ],
+        [
+          "pneumatosis intestinalis",
+          0.3041718394312634
+        ],
+        [
+          "Wnt",
+          0.3025978866611378
+        ],
+        [
+          "male",
+          0.29950912723835826
+        ],
+        [
+          "Crohn's disease",
+          0.22309594438309596
+        ],
+        [
+          "Paneth cell-containing adenomas, as 23 of 26 (88.5%) of these adenomas occurred in male",
+          0.1937497735449318
+        ],
+        [
+          "crypt base",
+          0.180387230652325
+        ],
+        [
+          "Wnt pathway",
+          0.177030253604045
+        ],
+        [
+          "Paneth",
+          0.15783912638047207
+        ],
+        [
+          "male sex and Paneth cell-containing adenomas, as 23 of 26 (88.5%) of these adenomas occurred in male",
+          0.14395171382895794
+        ],
+        [
+          "Paneth cells (PCs) in the intestinal crypts",
+          0.13996438236262987
+        ],
+        [
+          "Paneth cell",
+          0.11165545585953394
+        ],
+        [
+          "Wnt pathway transcription factor TCF7L2",
+          0.07031191139203644
+        ],
+        [
+          "stem cells. These stem cells reside at the crypt base",
+          0.06975718451060293
+        ],
+        [
+          "the crypt base",
+          0.06790848680216158
+        ],
+        [
+          "crypt",
+          0.06589851619870557
+        ],
+        [
+          "male sex",
+          0.05460943229508241
+        ],
+        [
+          "Paneth cell,",
+          0.05394917094869581
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "58a2df9c60087bc10a000006",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "beta-thalassaemia",
+          0.5038472887656786
+        ],
+        [
+          "S-beta thalassemia.",
+          0.3370851893356821
+        ],
+        [
+          "beta-thalassaemia trait carriers. The frequency of beta-thalassaemia",
+          0.24450569556603646
+        ],
+        [
+          "S-beta thalassemia",
+          0.22871650230226095
+        ],
+        [
+          "beta thalassemia.",
+          0.12388023526441125
+        ],
+        [
+          "beta thalassemia",
+          0.08405428363641876
+        ],
+        [
+          "beta-thalassemia trait being 8",
+          0.06306517241698913
+        ],
+        [
+          "beta-thalassemia trait",
+          0.051286397103754516
+        ],
+        [
+          "beta-thalassemia",
+          0.027231678677023988
+        ],
+        [
+          "heterozygosity for beta-thalassaemia",
+          0.027142445091925396
+        ],
+        [
+          "beta-thalassaemia trait carriers. The frequency of beta-thalassaemia trait was estimated in 209",
+          0.026178754825103696
+        ],
+        [
+          "beta-thalassaemia trait",
+          0.024771033122833342
+        ],
+        [
+          "beta-thalassaemia trait carriers. The frequency of beta-thalassaemia trait",
+          0.022069955832791553
+        ],
+        [
+          "beta-thalassaemia trait was estimated in 209",
+          0.021861182444244516
+        ],
+        [
+          "beta-thalassaemia trait (4.31%), as compared with the mean incidence of heterozygosity",
+          0.019159440833379397
+        ],
+        [
+          "beta-thalassemia trait being 8% and that of sickle cell trait ranging from 1",
+          0.013258492587404089
+        ],
+        [
+          "beta-",
+          0.013165911008449748
+        ],
+        [
+          "sickle cell disease (SCD) is mainly represented by S-beta thalassemia.",
+          0.012940789928389382
+        ],
+        [
+          "beta-thalassaemia trait (4.31%), as compared with the mean incidence of heterozygosity for beta-",
+          0.012075570038209499
+        ],
+        [
+          "beta-thalassemia trait being 8%",
+          0.011461135994136878
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "58a32edd60087bc10a000012",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "Naltrexone",
+          0.5087331345715684
+        ],
+        [
+          "Naltrexone/bupropion for the treatment of obesity and obesity with Type 2 diabetes",
+          0.19141857432894527
+        ],
+        [
+          "Type 2 diabetes. Contrave(\u00ae) is a combination of naltrexone",
+          0.04491920351777963
+        ],
+        [
+          "Naltrexone/bupropion",
+          0.03018386961992067
+        ],
+        [
+          "Type 2 diabetes",
+          0.02986022504250955
+        ],
+        [
+          "naltrexone hydrochloride extended release and bupropion",
+          0.02822959601858021
+        ],
+        [
+          "obesity and obesity with Type 2 diabetes. Contrave(\u00ae) is a combination of naltrexone",
+          0.026528876126312814
+        ],
+        [
+          "Naltrexone/bupropion for the treatment of obesity",
+          0.021774063402603787
+        ],
+        [
+          "naltrexone hydrochloride",
+          0.017918501431228705
+        ],
+        [
+          "obesity and obesity with Type 2 diabetes",
+          0.017635179371402094
+        ],
+        [
+          "naltrexone hydrochloride extended release and bupropion hydrochloride",
+          0.01555714822156497
+        ],
+        [
+          "bupropion for the treatment of obesity and obesity with Type 2 diabetes",
+          0.014062361020112414
+        ],
+        [
+          "diabetes. Contrave(\u00ae) is a combination of naltrexone",
+          0.008409500052599203
+        ],
+        [
+          "obesity with Type 2 diabetes. Contrave(\u00ae) is a combination of naltrexone",
+          0.006283884969606243
+        ],
+        [
+          "bupropion",
+          0.005826862135841102
+        ],
+        [
+          "diabetes",
+          0.005590249701694187
+        ],
+        [
+          "naltrexone hydrochloride extended release",
+          0.005324318070117172
+        ],
+        [
+          "Naltrexone/bupropion for the treatment of obesity and obesity",
+          0.005258791147376046
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5880a8ec0a76a87357000001",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "CAFE",
+          0.7537654207464218
+        ],
+        [
+          "CAFE: an R package for the detection of gross chromosomal abnormalities",
+          0.03717419250930716
+        ],
+        [
+          "CAFE: an R",
+          0.0219309629469426
+        ],
+        [
+          "chromosomal abnormalities from DNA microarray expression data are cumbersome and inflexible. CAFE",
+          0.021573436699196084
+        ],
+        [
+          "CAFE: an R package for the detection of gross chromosomal",
+          0.012346331514932609
+        ],
+        [
+          "Linux",
+          0.011480938043307522
+        ],
+        [
+          "Affymetrix",
+          0.010434530165058551
+        ],
+        [
+          "chromosomal abnormalities from gene expression microarray data. SUMMARY",
+          0.009306842390163939
+        ],
+        [
+          "CAFE has been developed to alleviate these issues. It is implemented as an R",
+          0.007291391173524365
+        ],
+        [
+          "E",
+          0.006355783967732641
+        ],
+        [
+          "CAFE has been developed to alleviate these issues.",
+          0.005869498623092697
+        ],
+        [
+          "chromosomal abnormalities",
+          0.004738922244059501
+        ],
+        [
+          "chromosomal abnormalities from gene expression microarray",
+          0.004019474549505059
+        ],
+        [
+          "cob87icW6z/cafe/ as both source and compiled packages for Linux",
+          0.0036970299182387564
+        ],
+        [
+          "Linux and Windows",
+          0.003405925780924565
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "58a877cf38c171fb5b000004",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "black",
+          0.3173420268965856
+        ],
+        [
+          "pale typica form by a previously unknown black",
+          0.13970178544541761
+        ],
+        [
+          "black (carbonaria) form, driven by the interaction between bird predation and coal",
+          0.08557916461582259
+        ],
+        [
+          "Biston betularia)",
+          0.04077443115192224
+        ],
+        [
+          "coal",
+          0.027097229823698023
+        ],
+        [
+          "peppered moth",
+          0.02427132154451796
+        ],
+        [
+          "black (carbonaria",
+          0.019031908840817964
+        ],
+        [
+          "industrial melanism in the peppered moth",
+          0.015991250634823193
+        ],
+        [
+          "melanism in the peppered moth",
+          0.010825398912255368
+        ],
+        [
+          "Biston betularia): the replacement, during the Industrial Revolution, of the common pale",
+          0.009987476285055556
+        ],
+        [
+          "Biston betularia",
+          0.009849139511424784
+        ],
+        [
+          "peppered moth (Biston betularia)",
+          0.009095574079140434
+        ],
+        [
+          "pale typica form by a previously unknown black (carbonaria",
+          0.008378315571681706
+        ],
+        [
+          "moth",
+          0.007692642155271224
+        ],
+        [
+          "pale",
+          0.006605942825484388
+        ],
+        [
+          "typica form by a previously unknown black",
+          0.006569639264768421
+        ],
+        [
+          "Biston betularia): the replacement, during the Industrial Revolution, of the common pale typica",
+          0.006325940956234481
+        ],
+        [
+          "industrial melanism in the peppered moth (Biston betularia)",
+          0.005992652872253171
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5880aef4c872c95565000001",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "CD38",
+          3.916918050152705
+        ],
+        [
+          "RANKL",
+          0.024736383689802514
+        ],
+        [
+          "CD38 antibody or CD38",
+          0.015321983593270139
+        ],
+        [
+          "CD38 and SLAMF7 in multiple myeloma",
+          0.011350106974950704
+        ],
+        [
+          "CD38 IgG1-\u03ba",
+          0.008848868121695325
+        ],
+        [
+          "CD",
+          0.003037253758920515
+        ],
+        [
+          "38",
+          0.0026670191479919126
+        ],
+        [
+          "-CD38",
+          0.0019849208573246378
+        ],
+        [
+          "CD38 IgG1",
+          0.0016427047770075209
+        ],
+        [
+          "CD38-",
+          0.001146890719140061
+        ],
+        [
+          "CD38) and elotuzumab (anti-CS1",
+          0.0009404556634495048
+        ],
+        [
+          "SLAMF7",
+          0.0009090805271464794
+        ],
+        [
+          "denosumab (anti-RANKL",
+          0.0006959790541110774
+        ],
+        [
+          "CD38 and SLAMF7",
+          0.0006518916780577058
+        ],
+        [
+          "CD38 IgG1-",
+          0.00025591686001251907
+        ],
+        [
+          "CD38 and",
+          0.0002438915382808768
+        ],
+        [
+          ", CD38",
+          0.00023092077248345306
+        ],
+        [
+          "anti-CD38",
+          0.0002117542484622909
+        ],
+        [
+          "daratumumab (anti-CD38",
+          0.00019785689564018078
+        ],
+        [
+          "CD38 and SLAMF7,",
+          0.00018722154923016398
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5884c72fe56acf517600000f",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "PD-1",
+          1.249204428919174
+        ],
+        [
+          "PD-L1",
+          0.8223127480559419
+        ],
+        [
+          "programmed death-ligand 1",
+          0.5709816675362868
+        ],
+        [
+          "PD-1/PD-L1",
+          0.3024938898282309
+        ],
+        [
+          "programed death-1",
+          0.2784777814066621
+        ],
+        [
+          "programmed death receptor 1",
+          0.23226050138975976
+        ],
+        [
+          "programmed death-ligand 1 (PD-L1",
+          0.22885554434367578
+        ],
+        [
+          "PD-L1/PD-1 pathway. We assessed treatment with avelumab, an anti-PD-L1",
+          0.16451664544252878
+        ],
+        [
+          "programed death-ligand 1",
+          0.15934032875759235
+        ],
+        [
+          "PD-1/PD-L1 interaction by two cancer therapeutic monoclonal antibodies. Antibody-based PD-1",
+          0.14193944637780795
+        ],
+        [
+          "programmed death receptor 1 (PD-1",
+          0.12971225882645288
+        ],
+        [
+          "death-ligand 1",
+          0.12364965950106142
+        ],
+        [
+          "programmed death receptor 1 (PD-1) and its ligand programmed death ligand 1 (PD-L1",
+          0.11345410692942375
+        ],
+        [
+          "programmed death ligand 1 (PD-L1",
+          0.10908423484543768
+        ],
+        [
+          "Avelumab (MSB0010718C) on Human Tumor Cells. Several anti-PD-1",
+          0.0953978758210194
+        ],
+        [
+          "programmed death receptor 1 (PD-1) and its ligand programmed death ligand 1",
+          0.08840846778551864
+        ],
+        [
+          "programmed death ligand 1",
+          0.08500326980882271
+        ],
+        [
+          "programed death-ligand 1 (Avelumab). OBJECTIVE: The programed death-1",
+          0.08290108291279186
+        ],
+        [
+          "programed death-1 (PD1)",
+          0.06458636811436624
+        ],
+        [
+          "death-ligand 1 (Avelumab). OBJECTIVE: The programed death-1",
+          0.06433205425370092
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5891f9e549702f2e01000002",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "iron",
+          0.9890956163876882
+        ],
+        [
+          "restless legs syndrome",
+          0.7677404174916205
+        ],
+        [
+          "Willis-Ekbom disease/restless legs syndrome",
+          0.28179400096034196
+        ],
+        [
+          "genetic",
+          0.26163297781981265
+        ],
+        [
+          "restless legs syndrome/Willis-Ekbom disease",
+          0.1646621640748434
+        ],
+        [
+          "Willis-Ekbom disease",
+          0.12832837925473675
+        ],
+        [
+          "restless legs",
+          0.060954532599664074
+        ],
+        [
+          "restless legs syndrome/Willis-Ekbom",
+          0.05394402684022577
+        ],
+        [
+          "Willis-Ekbom",
+          0.03531936219597034
+        ],
+        [
+          "legs syndrome",
+          0.027545252327805577
+        ],
+        [
+          "Willis-Ekbom disease/restless legs",
+          0.025334804767824903
+        ],
+        [
+          "Ekbom disease/restless legs syndrome",
+          0.023226085862105235
+        ],
+        [
+          "Ekbom disease",
+          0.015925766574104643
+        ],
+        [
+          "sleep",
+          0.014758662516829491
+        ],
+        [
+          "BACKGROUND: Willis-Ekbom disease/restless legs syndrome",
+          0.014135100549215062
+        ],
+        [
+          "restless legs syndrome/Willis-Ekbom disease (RLS/WED)",
+          0.011062535247500225
+        ],
+        [
+          "tactile",
+          0.009960986976826718
+        ],
+        [
+          "restless legs syndrome (WED/RLS) seems to be a frequent cause of intractable chronic insomnia",
+          0.009390291386370608
+        ],
+        [
+          "restless legs syndrome/",
+          0.007623130854000437
+        ],
+        [
+          "genetic component",
+          0.007466892353276132
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5880be1dc872c95565000007",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "PARP",
+          5.577468082506375
+        ],
+        [
+          "poly(adenosine diphosphate [ADP]-ribose) polymerase",
+          0.8219361699460119
+        ],
+        [
+          "poly(ADP-ribose) polymerase",
+          0.52119155719779
+        ],
+        [
+          "poly (ADP) ribose polymerase (PARP",
+          0.3248860240657543
+        ],
+        [
+          "poly-ADP-ribose polymerase (PARP",
+          0.30033283938028243
+        ],
+        [
+          "ADP-ribose) polymerase",
+          0.2964589258494564
+        ],
+        [
+          "poly-ADP-ribose polymerase",
+          0.22507634430074513
+        ],
+        [
+          "ADP-ribose) polymerase (PARP",
+          0.20023762867893583
+        ],
+        [
+          "poly-ADP-ribose polymerase (PARP) inhibitors. PARP",
+          0.18482740798455008
+        ],
+        [
+          "poly(ADP-ribose) polymerase (PARP",
+          0.1430230722177791
+        ],
+        [
+          "poly (ADP) ribose polymerase",
+          0.12485102644010262
+        ],
+        [
+          "poly(adenosine diphosphate [ADP]-ribose) polymerase (PARP",
+          0.09935123436399226
+        ],
+        [
+          "PARP)",
+          0.09534228952529804
+        ],
+        [
+          "PARP) inhibitors. PARP",
+          0.09349337271109458
+        ],
+        [
+          "PARP Inhibitors Containing Planar Nicotinamide Bioisosteres. PARP",
+          0.08806443995097228
+        ],
+        [
+          "(ADP-ribose) polymerase",
+          0.052748562247807135
+        ],
+        [
+          "(ADP-ribose) polymerase (PARP",
+          0.04251155434761645
+        ],
+        [
+          "PARP-1/PARP",
+          0.038298400195422584
+        ],
+        [
+          "BRCA1 or BRCA2 genes, are sensitive to PARP",
+          0.029073150428903134
+        ],
+        [
+          "PARP1 and PARP2 to the sites of DNA damage. The PARP",
+          0.027901403178069235
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "58a8903b38c171fb5b000006",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "RACK1",
+          0.5417136774077539
+        ],
+        [
+          "Zinc finger",
+          0.43935852195365405
+        ],
+        [
+          "SAC",
+          0.4072996098771311
+        ],
+        [
+          "RACK1)",
+          0.36478424631915346
+        ],
+        [
+          "HMG-CoA reductase",
+          0.3421957800389215
+        ],
+        [
+          "spindle assembly checkpoint (SAC",
+          0.2574688268742142
+        ],
+        [
+          "mitosis. Here, we show that PML is phosphorylated at T409",
+          0.1625519527204815
+        ],
+        [
+          "HMG-CoA reductase inhibitor lovastatin",
+          0.13187083431771804
+        ],
+        [
+          "kinetochores",
+          0.12700608485166537
+        ],
+        [
+          "CDK1",
+          0.11981342383825849
+        ],
+        [
+          "spindle assembly checkpoint",
+          0.1159749050406658
+        ],
+        [
+          "SAC)",
+          0.11307693773012531
+        ],
+        [
+          "lovastatin",
+          0.10392338664251449
+        ],
+        [
+          "PML p409) in a mitosis-specific manner. More importantly, PML p409",
+          0.08508905126523558
+        ],
+        [
+          "PML p409)",
+          0.07979775299556201
+        ],
+        [
+          "spindle assembly checkpoint (SAC)",
+          0.07394802412176227
+        ],
+        [
+          "G phase using the HMG-CoA reductase",
+          0.0711242925006206
+        ],
+        [
+          "phosphorylated at T409",
+          0.06776027324259194
+        ],
+        [
+          "mitosis",
+          0.06063183565996585
+        ],
+        [
+          "PML p409",
+          0.059449251100999155
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "587e07023ec846c24f000001",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "phyluce",
+          0.32611591028567843
+        ],
+        [
+          "Python",
+          0.2848786729473972
+        ],
+        [
+          "phyluce)",
+          0.06146715956102572
+        ],
+        [
+          "phyluce) for the Anaconda Python",
+          0.04605100539382727
+        ],
+        [
+          "phyluce).",
+          0.03796384658290752
+        ],
+        [
+          "PHYLUCE is written for Python",
+          0.029764745441567275
+        ],
+        [
+          "phyluce). The software manual and a tutorial are available from http://phyluce",
+          0.028693886887102286
+        ],
+        [
+          "Python 2.7",
+          0.025130664631911173
+        ],
+        [
+          "PHYLUCE is also available as a package (https://binstar.org/faircloth-lab/phyluce",
+          0.024524037416749512
+        ],
+        [
+          "Anaconda Python",
+          0.01892391582252598
+        ],
+        [
+          "phyluce). The software manual and a tutorial are available from http://phyluce.",
+          0.015365999459933421
+        ],
+        [
+          "Python 2.7.",
+          0.015314240414477398
+        ],
+        [
+          "faircloth-lab/phyluce) for the Anaconda Python",
+          0.015050011183801455
+        ],
+        [
+          "OSX",
+          0.013438833266270883
+        ],
+        [
+          "PHYLUCE is a software package for the analysis of conserved genomic loci",
+          0.013261915829656232
+        ],
+        [
+          "BSD-style license from https://www.github.com/faircloth-lab/phyluce",
+          0.012544569038943965
+        ],
+        [
+          "Python 2",
+          0.011058055340410093
+        ],
+        [
+          "faircloth-lab/phyluce",
+          0.010432861780079508
+        ],
+        [
+          "iPlant Atmosphere (tag: phyluce",
+          0.01001966871573463
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "58a2e5f760087bc10a000007",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "alpha-synuclein",
+          3.976173312622212
+        ],
+        [
+          "\u03b1-synuclein",
+          1.9012791333619994
+        ],
+        [
+          "\u03b1-synuclein (\u03b1Syn",
+          0.054521219169245135
+        ],
+        [
+          "\u03b1Syn",
+          0.015781812664288398
+        ],
+        [
+          "\u03b1-synuclein (\u03b1Syn)",
+          0.003873544812147898
+        ],
+        [
+          "alpha-synuclein (AS",
+          0.0037060020297784786
+        ],
+        [
+          "synuclein",
+          0.003359556805339044
+        ],
+        [
+          "\u03b1-synuclein (AS",
+          0.003192010172675263
+        ],
+        [
+          "\u03b1-synuclein amyloid fibrils by solid-state NMR. Fibrillar \u03b1-synuclein",
+          0.003105532027749072
+        ],
+        [
+          "Aggregation of \u03b1-synuclein",
+          0.002833839339786332
+        ],
+        [
+          "Fibrillar \u03b1-synuclein",
+          0.0027660473602785225
+        ],
+        [
+          "Alpha-synuclein (alphaS",
+          0.0024480949918364264
+        ],
+        [
+          "\u03b1-synuclein (AS)",
+          0.0019385152650969008
+        ],
+        [
+          "-synuclein",
+          0.0017301016068000028
+        ],
+        [
+          "lein",
+          0.001565396115568347
+        ],
+        [
+          "\u03b1-synuclein and fibril formation rates by NMR and fluorescence. Aggregation of \u03b1-synuclein",
+          0.0014735248165658624
+        ],
+        [
+          "alpha-synuclein at low pH. Alpha-synuclein",
+          0.0013766966447325056
+        ],
+        [
+          "\u03b1Syn)",
+          0.0011212434260187642
+        ],
+        [
+          "Alpha-synuclein (alphaS)",
+          0.0010806048933526507
+        ],
+        [
+          "alpha",
+          0.0010454577313230378
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "589a246078275d0c4a00002a",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "multiple sclerosis",
+          0.8352625025736157
+        ],
+        [
+          "fingolimod",
+          0.5106219659312734
+        ],
+        [
+          "Teriflunomide Multiple Sclerosis Oral",
+          0.43044279395580176
+        ],
+        [
+          "fingolimod,",
+          0.40435849092264253
+        ],
+        [
+          "psoriasis",
+          0.26907466350321546
+        ],
+        [
+          "Dimethyl fumarate (DMF), fingolimod,",
+          0.1955076924797758
+        ],
+        [
+          "NCT00803049) of the pivotal phase 3 Teriflunomide Multiple Sclerosis Oral",
+          0.18843276568244396
+        ],
+        [
+          "relapsing forms of multiple sclerosis",
+          0.17227017705739847
+        ],
+        [
+          "Dimethyl fumarate",
+          0.15232840533407482
+        ],
+        [
+          "Teriflunomide Multiple Sclerosis",
+          0.12397570619225384
+        ],
+        [
+          "NCT00803049) of the pivotal phase 3 Teriflunomide Multiple Sclerosis",
+          0.05427221810487371
+        ],
+        [
+          "multiple",
+          0.05392342364356077
+        ],
+        [
+          "Dimethyl fumarate (DMF), fingolimod",
+          0.05032952410433281
+        ],
+        [
+          "Teriflunomide",
+          0.045012267951252856
+        ],
+        [
+          "Multiple Sclerosis Oral",
+          0.040231116541853684
+        ],
+        [
+          "interferon \u03b21a",
+          0.034665566726531184
+        ],
+        [
+          "fingolimod, teriflunomide",
+          0.03410452622732509
+        ],
+        [
+          "dimethyl fumarate, fingolimod,",
+          0.032771025547603604
+        ],
+        [
+          "(NCT00803049) of the pivotal phase 3 Teriflunomide Multiple Sclerosis Oral",
+          0.022995612834217374
+        ],
+        [
+          "oral disease-modifying therapies (dimethyl fumarate, fingolimod,",
+          0.017551382079083286
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "58a1c0f178275d0c4a000056",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "HIV",
+          0.5667646203941924
+        ],
+        [
+          "poliovirus",
+          0.2919247527382035
+        ],
+        [
+          "diphtheria-tetanus-pertussis",
+          0.1388978143387399
+        ],
+        [
+          "human immunodeficiency virus (HIV",
+          0.12715139712825183
+        ],
+        [
+          "poliomyelitis. Inactivated poliovirus",
+          0.12447576382211319
+        ],
+        [
+          "oral poliovirus",
+          0.0965654014949919
+        ],
+        [
+          "polio",
+          0.07659756085891999
+        ],
+        [
+          "poliovirus vaccine (OPV",
+          0.054364837181918806
+        ],
+        [
+          "diphtheria-tetanus",
+          0.051198133854456124
+        ],
+        [
+          "polio vaccine samples. It has been suggested that the human immunodeficiency virus (HIV",
+          0.05050007088331999
+        ],
+        [
+          "AIDS",
+          0.044620814805281545
+        ],
+        [
+          "oral poliovirus vaccine (OPV",
+          0.029942665612730634
+        ],
+        [
+          "polio incidence declined by more than 95 per cent. However, in 1962, when oral poliovirus",
+          0.02830550322499894
+        ],
+        [
+          "IPV",
+          0.024674405294636565
+        ],
+        [
+          "Inactivated poliovirus",
+          0.022582755643037876
+        ],
+        [
+          "oral polio vaccine samples. It has been suggested that the human immunodeficiency virus (HIV",
+          0.02139406626952075
+        ],
+        [
+          "diphtheria-tetanus-pertussis (DTP)",
+          0.019318292825521364
+        ],
+        [
+          "olio vaccine samples. It has been suggested that the human immunodeficiency virus (HIV",
+          0.019200604367481233
+        ],
+        [
+          "poliomyelitis",
+          0.01658072201559535
+        ],
+        [
+          "HIV), and thus the acquired immunodeficiency syndrome (AIDS",
+          0.015949646704037673
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "58aa0c6f396a458e50000008",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "oxytocin",
+          2.6481948127451895
+        ],
+        [
+          "love hormone",
+          0.2948460769931875
+        ],
+        [
+          "L. reuteri",
+          0.27279028938357075
+        ],
+        [
+          "Lactobacillus reuteri (L. reuteri",
+          0.2700896988876486
+        ],
+        [
+          "Lactobacillus reuteri",
+          0.21216744855673333
+        ],
+        [
+          "'love hormone",
+          0.13800607376656449
+        ],
+        [
+          "Oxytocin is known as the 'love hormone",
+          0.09728851361731979
+        ],
+        [
+          "oxytocin (OXT) and its receptor (OXTR)",
+          0.08989288146445355
+        ],
+        [
+          "L. reuteri)",
+          0.06971975201025701
+        ],
+        [
+          "Lactobacillus reuteri (L. reuteri)",
+          0.06902953499379937
+        ],
+        [
+          "love",
+          0.0626008400841201
+        ],
+        [
+          "love hormone'",
+          0.03246111914784287
+        ],
+        [
+          "'love",
+          0.02930103816405059
+        ],
+        [
+          "oxytocin (OXT) and its receptor (OXTR",
+          0.02795326851013677
+        ],
+        [
+          "OXTR)",
+          0.026629439992175055
+        ],
+        [
+          "oxytocin: implications for psychiatry. Oxytocin is known as the 'love hormone",
+          0.02611134090921665
+        ],
+        [
+          "Oxytocin is known as the 'love",
+          0.020656007178689022
+        ],
+        [
+          "the 'love hormone",
+          0.020243182869502028
+        ],
+        [
+          "(L. reuteri",
+          0.018708557137367743
+        ],
+        [
+          "love hormone' due its role in promoting mother",
+          0.018344431393022435
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "58a9c532396a458e50000002",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "three",
+          0.8144634895319126
+        ],
+        [
+          "six",
+          0.6040814950526825
+        ],
+        [
+          "Cynops fudingensis",
+          0.2668985572025116
+        ],
+        [
+          "six conserved cysteines whose three",
+          0.25151045477421385
+        ],
+        [
+          "six cysteines, which form three",
+          0.2211869221083283
+        ],
+        [
+          "alpha defensins",
+          0.18435662149471246
+        ],
+        [
+          "defensin",
+          0.17399176995544552
+        ],
+        [
+          "fish \u03b2-defensin",
+          0.11565974844033608
+        ],
+        [
+          "\u03b2-defensin",
+          0.11398308003143126
+        ],
+        [
+          "Defensins are small, multifunctional cationic peptides. They typically contain six",
+          0.0993777371351792
+        ],
+        [
+          "Alpha defensins contain six",
+          0.08986217059914266
+        ],
+        [
+          "fish \u03b2-defensin. As far as we know, CFBD is the first \u03b2-defensin",
+          0.08527444475826804
+        ],
+        [
+          "Alpha defensins contain six cysteines, which form three",
+          0.08165008034841838
+        ],
+        [
+          "three subfamilies of defensins",
+          0.0688655088063686
+        ],
+        [
+          "\u03b2-defensin. As far as we know, CFBD is the first \u03b2-defensin",
+          0.06661567607468315
+        ],
+        [
+          "three subfamilies of defensins in primates: \u03b1, \u03b2 and \u03b8-defensins",
+          0.06425255083193905
+        ],
+        [
+          "six conserved cysteines whose three intramolecular disulfides stabilize a largely \u03b2-sheet",
+          0.059535138949537623
+        ],
+        [
+          "salamander, Cynops fudingensis",
+          0.05301978279078108
+        ],
+        [
+          "three subfamilies of defensins in primates: \u03b1, \u03b2 and \u03b8-defensins. \u03b1-defensins",
+          0.04101205825240847
+        ],
+        [
+          "six cysteines",
+          0.023800508148012336
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "58a3428d60087bc10a00001b",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "huntingtin",
+          0.9990078303300877
+        ],
+        [
+          "Huntington's disease",
+          0.4816562623300394
+        ],
+        [
+          "HTT gene",
+          0.37953287354104215
+        ],
+        [
+          "Huntington disease",
+          0.3101563412585658
+        ],
+        [
+          "HTT",
+          0.2367775341889262
+        ],
+        [
+          "huntingtin protein (HTT) gene underlie both adult-onset and juvenile forms of Huntington's disease",
+          0.1652743741412074
+        ],
+        [
+          "Huntington's disease (HD)",
+          0.156453811187828
+        ],
+        [
+          "N-terminal regions of huntingtin",
+          0.05509819409917019
+        ],
+        [
+          "CAG (polyQ) motif in the HTT gene",
+          0.02790844027618233
+        ],
+        [
+          "huntingtin protein (HTT) gene",
+          0.024724195699886136
+        ],
+        [
+          "CAG (polyQ) motif in the HTT",
+          0.017350775356769717
+        ],
+        [
+          "HD)",
+          0.009368257859217924
+        ],
+        [
+          "Huntington's disease (HD) is caused by a genetic mutation that results in polyglutamine",
+          0.00848255133664289
+        ],
+        [
+          "Huntington's disease and therapy. Huntington's disease",
+          0.008241290119825826
+        ],
+        [
+          "Huntington",
+          0.007406074019254136
+        ],
+        [
+          "Mutations of the huntingtin",
+          0.005823613862285824
+        ],
+        [
+          "CAG (polyQ",
+          0.005149554827355
+        ],
+        [
+          "CAG",
+          0.004312830078003756
+        ],
+        [
+          "Huntington's disease and therapy. Huntington's disease (HD)",
+          0.0034348207270711068
+        ],
+        [
+          "huntingtin protein",
+          0.0032192365404919705
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "58a872bd38c171fb5b000002",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "SMIM1",
+          0.6214288029652808
+        ],
+        [
+          "Vel blood group antigen, and homozygosity for a 17 bp deletion in the coding region of the SMIM1",
+          0.3808292811057279
+        ],
+        [
+          "Vel",
+          0.1798551429470459
+        ],
+        [
+          "small integral membrane protein 1 (SMIM1",
+          0.16870520235708172
+        ],
+        [
+          "Vel blood group",
+          0.11951190765564992
+        ],
+        [
+          "Vel blood group antigen",
+          0.07544880221101424
+        ],
+        [
+          "SMIM",
+          0.03344243585592059
+        ],
+        [
+          "17 bp deletion in the coding region of the SMIM1",
+          0.032942231870916446
+        ],
+        [
+          "Vel blood group antigen. A cohort of 70 Vel- individuals was found to be uniformly homozygous",
+          0.03197814127970247
+        ],
+        [
+          "homozygosity for a 17 bp deletion in the coding region of the SMIM1",
+          0.02418471993886261
+        ],
+        [
+          "small integral membrane protein 1",
+          0.02243134424931025
+        ],
+        [
+          "SMIM1 gene",
+          0.02178287084056299
+        ],
+        [
+          "SMIM1 encoded the Vel",
+          0.020616687296583485
+        ],
+        [
+          "antigen, and homozygosity for a 17 bp deletion in the coding region of the SMIM1",
+          0.019937647931779896
+        ],
+        [
+          "small integral membrane",
+          0.01868906883451126
+        ],
+        [
+          "SMIM1 protein carries the Vel blood group antigen",
+          0.01705211084695812
+        ],
+        [
+          "Vel blood group antigen,",
+          0.016558706008699298
+        ],
+        [
+          "(SMIM1",
+          0.01640225967678438
+        ],
+        [
+          "Vel blood group antigen.",
+          0.014893272400904992
+        ],
+        [
+          "Vel blood group antigen, and homozygosity for a 17 bp deletion in the coding region of the SMIM",
+          0.014305240035358161
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5895bc397d9090f35300000b",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "Christianson syndrome",
+          3.350510111783909
+        ],
+        [
+          "X-linked Christianson syndrome",
+          0.7624764260556702
+        ],
+        [
+          "Christianson syndrome: spectrum of neuroimaging findings. Christianson syndrome",
+          0.47719761848585285
+        ],
+        [
+          "Christianson syndrome. OBJECTIVE: Recently, Christianson syndrome",
+          0.3579902909414669
+        ],
+        [
+          "X-linked clinical syndrome first described by Christianson in 1999",
+          0.153504453271904
+        ],
+        [
+          "felbamate",
+          0.1011164118293809
+        ],
+        [
+          "1999",
+          0.0968256908412983
+        ],
+        [
+          "Mutations of SLC9A6 may cause an X-linked clinical syndrome first described by Christianson in 1999",
+          0.09094331564323799
+        ],
+        [
+          "SLC9A6 may cause an X-linked clinical syndrome first described by Christianson in 1999",
+          0.08262548509913709
+        ],
+        [
+          "Christianson in 1999",
+          0.07231345673594124
+        ],
+        [
+          "Felbamate in a Patient With SLC9A6",
+          0.04569596794395658
+        ],
+        [
+          "Felbamate in a Patient With SLC9A6 Mutation. BACKGROUND: Mutations",
+          0.042552476253104654
+        ],
+        [
+          "Mutations",
+          0.03781128504215866
+        ],
+        [
+          "SLC9A6",
+          0.033185174170353826
+        ],
+        [
+          "Mutations of SLC9A6",
+          0.03138523645041105
+        ],
+        [
+          "SLC9A6 Mutation. BACKGROUND: Mutations",
+          0.03089863688467703
+        ],
+        [
+          "X-linked clinical syndrome first described by Christianson in 1999 in which affected males",
+          0.02977032154361043
+        ],
+        [
+          "sleep",
+          0.027089103641251715
+        ],
+        [
+          "SLC9A6 Mutation. BACKGROUND: Mutations of SLC9A6",
+          0.02564739663144802
+        ],
+        [
+          "1999 in which affected males",
+          0.018778164988619627
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "58a8045860087bc10a000035",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "trichotillomania",
+          0.5997317710423332
+        ],
+        [
+          "Hair pulling disorder",
+          0.4514660250619268
+        ],
+        [
+          "inhibitory control",
+          0.3974072053530792
+        ],
+        [
+          "Trichotillomania (hair pulling disorder",
+          0.18841039833381515
+        ],
+        [
+          "trichotillomani",
+          0.14864465991647224
+        ],
+        [
+          "stop-signal task (SST)--assessing inhibitory control",
+          0.12915085987194488
+        ],
+        [
+          "hair pulling disorder. Hair pulling disorder",
+          0.127111154861723
+        ],
+        [
+          "pediatric trichotillomania",
+          0.09456511616535011
+        ],
+        [
+          "Hair pulling disorder (HPD; trichotillomania)",
+          0.0919445608809869
+        ],
+        [
+          "Hair pulling disorder (HPD; trichotillomania",
+          0.06478540598014093
+        ],
+        [
+          "inhibitory control. Youth with HPD",
+          0.06343306559867297
+        ],
+        [
+          "HPD",
+          0.048027030145625246
+        ],
+        [
+          "Hair pulling disorder (HPD",
+          0.03777933113512145
+        ],
+        [
+          "Hair pulling",
+          0.0347413723911556
+        ],
+        [
+          "trichotillomania)",
+          0.02997321053083183
+        ],
+        [
+          "hair pulling disorder. Hair pulling disorder (HPD; trichotillomania)",
+          0.028508525903200625
+        ],
+        [
+          "trichotillomania (hair pulling",
+          0.024624379877972134
+        ],
+        [
+          "pediatric trichotillomani",
+          0.023045571147930606
+        ],
+        [
+          "Hair",
+          0.02067509324533407
+        ],
+        [
+          "stop-signal task (SST)--assessing inhibitory control. Youth with HPD",
+          0.02061471170132276
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "58a9c152396a458e50000001",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "the",
+          1.9897352381887066
+        ],
+        [
+          "Human papillomavirus",
+          0.5862654189556741
+        ],
+        [
+          "Crohn's disease",
+          0.42094899225389876
+        ],
+        [
+          "neonatal sepsis (LOS)",
+          0.33856284184531055
+        ],
+        [
+          "\u03b1-defensin 5",
+          0.28179822260005516
+        ],
+        [
+          "defensin 5",
+          0.2648348840842652
+        ],
+        [
+          "\u03b1-defensins",
+          0.23978043685011824
+        ],
+        [
+          "six",
+          0.20156055935159536
+        ],
+        [
+          "six cysteines, which form three",
+          0.18731807616251822
+        ],
+        [
+          "human papillomavirus 16 L2 to block infection. UNLABELLED: Human papillomavirus",
+          0.17738623378826152
+        ],
+        [
+          "late-onset neonatal sepsis (LOS)",
+          0.17123565826934092
+        ],
+        [
+          "Alpha defensins contain six",
+          0.16441412259521326
+        ],
+        [
+          "Alpha defensins contain six cysteines, which form three",
+          0.15279644607832849
+        ],
+        [
+          "defensin 5. Human \u03b1-defensin 5",
+          0.14280921382883527
+        ],
+        [
+          "alpha defensins",
+          0.12364751447417224
+        ],
+        [
+          "enteric \u03b1-defensins",
+          0.11524609539643314
+        ],
+        [
+          "neonatal sepsis",
+          0.10524390770379422
+        ],
+        [
+          "three",
+          0.09314147807853575
+        ],
+        [
+          "human defensin 5",
+          0.08895029626494368
+        ],
+        [
+          "Human papillomavirus (HPV",
+          0.05973179699945178
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5891c90949702f2e01000001",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "Win32",
+          0.28081713410673764
+        ],
+        [
+          "synonymous codon usage analysis and clustering by means of self-organizing map",
+          0.1270718231165904
+        ],
+        [
+          "AVAILABILITY: INCA is available for the Win32",
+          0.05838875970011858
+        ],
+        [
+          "INCA",
+          0.050016338781542095
+        ],
+        [
+          "INCA: synonymous codon usage analysis and clustering by means of self-organizing map",
+          0.046838280106739766
+        ],
+        [
+          "synonymous codon usage analysis and clustering by means of self-organizing map.",
+          0.04253171292389697
+        ],
+        [
+          "INteractive Codon usage Analysis (INCA",
+          0.04219991982771658
+        ],
+        [
+          "INCA is available for the Win32",
+          0.034931189223849676
+        ],
+        [
+          "INteractive Codon usage Analysis",
+          0.03296089052641101
+        ],
+        [
+          "synonymous codon usage",
+          0.028481006156553426
+        ],
+        [
+          "32",
+          0.027005819200631376
+        ],
+        [
+          "synonymous",
+          0.023356590126824783
+        ],
+        [
+          "Win",
+          0.021619364476105702
+        ],
+        [
+          "INCA: synonymous codon usage analysis and clustering by means of self-organizing map.",
+          0.01567705754501638
+        ],
+        [
+          "codons. AVAILABILITY: INCA is available for the Win32",
+          0.013454022398498487
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "58a2ced760087bc10a000004",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "attention deficit hyperactivity disorder (ADHD",
+          0.5238174098659069
+        ],
+        [
+          "attention-deficit/hyperactivity disorder (ADHD",
+          0.4532425878721049
+        ],
+        [
+          "attention-deficit/hyperactivity disorder",
+          0.45316392596056804
+        ],
+        [
+          "attention deficit hyperactivity disorder",
+          0.41742993363882674
+        ],
+        [
+          "15",
+          0.4074313903317105
+        ],
+        [
+          "VNTR",
+          0.1297824856271977
+        ],
+        [
+          "VNTR)",
+          0.09462481152568553
+        ],
+        [
+          "ADHD",
+          0.08517589378568026
+        ],
+        [
+          "variable number of tandem repeat (VNTR",
+          0.07584325893915131
+        ],
+        [
+          "variable number of tandem repeat (VNTR)",
+          0.05529755458087012
+        ],
+        [
+          "variable number of tandem repeat",
+          0.02420498778971171
+        ],
+        [
+          "VNTR polymorphism in 12 Indian populations. The dopamine transporter (DAT1",
+          0.021751525551376227
+        ],
+        [
+          "DAT1 consists of 15",
+          0.020244336336110887
+        ],
+        [
+          "attention-deficit/hyperactivity disorder (ADHD); linkage to chromosome 5p13",
+          0.01881671602042555
+        ],
+        [
+          "DAT1",
+          0.018616073180844486
+        ],
+        [
+          "attention-deficit/hyperactivity",
+          0.0173413561145987
+        ],
+        [
+          "number of tandem repeat (VNTR",
+          0.017269463333662187
+        ],
+        [
+          "15 exons spanning 60 kb on chromosome 5p15.32",
+          0.016202941229509618
+        ],
+        [
+          "15 exons spanning 60 kb on chromosome 5p15.",
+          0.015367410666284402
+        ],
+        [
+          "number of tandem repeat (VNTR)",
+          0.012591219109422487
+        ]
+      ]
+    }
+  ]
+}
