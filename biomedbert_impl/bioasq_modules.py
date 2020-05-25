@@ -3,33 +3,56 @@
 
 import os
 import sys
+import logging
+import tensorflow as tf
 from invoke import run, exceptions
 
+log = logging.getLogger('biomedbert')
+log.setLevel(logging.INFO)
 
-def fine_tune_bioasq(train_file: str, predict_file: str, model_dir: str, init_checkpoint: str,
-                     vocab_file: str, tpu_name: str, tpu_zone: str, gcp_project: str):
+
+def fine_tune_bioasq(model_type: str, bucket_name: str, train_file: str, predict_file: str, model_dir: str,
+                     tpu_name: str, tpu_zone: str, gcp_project: str, tpu_cores: int):
     """fine tune bioasq"""
     use_tpu = True
+    config = 'large_bert_config.json'
+
+    num_tpu_cores = 8
+    if tpu_cores is not None:
+        num_tpu_cores = int(tpu_cores)
 
     if tpu_name is None:
         tpu_name = 'false'
         use_tpu = False
 
-    p_model_dir = '/'.join(model_dir.split('/')[:-1])
+    if model_type == 'base':
+        # bert base
+        config = 'base_bert_config.json'
+    elif model_type == 'large':
+        # bert large
+        config = 'large_bert_config.json'
+    else:
+        log.info('No config file')
+        sys.exit(1)
+
+    init_checkpoint = tf.train.latest_checkpoint('gs://{}/{}'.format(bucket_name, model_dir))
+    vocab_file = 'gs://{}/{}/vocab.txt'.format(bucket_name, model_dir)
+    bert_config_file = 'gs://{}/{}/{}'.format(bucket_name, model_dir, config)
+    output_dir = 'gs://{}/{}/BioASQ_outputs/{}'.format(bucket_name, model_dir, train_file.split('.')[0])
+    train_file = 'gs://{}/datasets/QA/BioASQ/{}'.format(bucket_name, train_file)
+    predict_file = 'gs://{}/datasets/QA/BioASQ/{}'.format(bucket_name, predict_file)
 
     try:
-        # TODO: parameterize bioasq dataset on gcs
-        run('python3 biobert/run_qa.py  --vocab_file={}/{}   '
-            '--bert_config_file={}/bert_config.json   --predict_batch_size=128   '
-            '--init_checkpoint={}/{}   --do_train=true --do_predict=true  '
+        run('python3 biobert/run_qa.py  --vocab_file={}   '
+            '--bert_config_file={}   --predict_batch_size=128   '
+            '--init_checkpoint={}   --do_train=true --do_predict=true  '
             '--max_seq_length=384   --train_batch_size=128   --learning_rate=5e-6   '
             '--doc_stride=128   --num_train_epochs=5.0   --do_lower_case=False   '
-            '--train_file=gs://ekaba-assets/datasets/QA/BioASQ/{}   '
-            '--predict_file=gs://ekaba-assets/datasets/QA/BioASQ/{}   '
-            '--output_dir={}/BioASQ_outputs/{}/  --num_tpu_cores=128   --use_tpu={}   '
+            '--train_file={}  --predict_file={}   '
+            '--output_dir={}/  --num_tpu_cores=128   --use_tpu={}   '
             '--tpu_name={}   --tpu_zone={}  --gcp_project={}'.format(
-            p_model_dir, vocab_file, p_model_dir, model_dir, init_checkpoint,
-            train_file, predict_file, p_model_dir, train_file.split('.')[0],
+            vocab_file, bert_config_file, init_checkpoint,
+            train_file, predict_file, output_dir,
             use_tpu, tpu_name, tpu_zone, gcp_project))
     except exceptions.UnexpectedExit:
         print('Cannot fine tune BioASQ - {}'.format(train_file))
