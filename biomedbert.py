@@ -26,7 +26,7 @@ Usage:
   biomedbert re finetune <model_type> <re_dataset> <re_dataset_no> <model_dir> <bucket_name> <tpu_name> <tpu_cores>
   biomedbert re evaluate <re_dataset> <re_dataset_no> <model_dir> <bucket_name>
   biomedbert bioasq evaluate <bucket_name> <model_dir> <train_file> <eval_file>
-  biomedbert bioasq finetune <model_type> <train_file> <predict_file> <bucket_name> <model_dir> [<tpu_name> <tpu_cores>]
+  biomedbert bioasq finetune <model_type> <train_file> <predict_file> <bucket_name> <model_dir> <squad_folder> [<tpu_name> <tpu_cores>]
   biomedbert -h | --help
   biomedbert --version
 Options:
@@ -102,7 +102,8 @@ def bioasq_commands(args: dict):
     # fine tune bioasq
     if args['bioasq'] and args['finetune']:
         fine_tune_bioasq(args['<model_type>'], args['<bucket_name>'], args['<train_file>'], args['<predict_file>'],
-                         args['<model_dir>'], args['<tpu_name>'], zone, project_id, args['<tpu_cores>'])
+                         args['<model_dir>'], args['<tpu_name>'], zone, project_id, args['<tpu_cores>'],
+                         args['<squad_folder>'])
 
     # evaluate bioasq
     if args['bioasq'] and args['evaluate']:

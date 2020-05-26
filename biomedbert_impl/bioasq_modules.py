@@ -12,7 +12,7 @@ log.setLevel(logging.INFO)
 
 
 def fine_tune_bioasq(model_type: str, bucket_name: str, train_file: str, predict_file: str, model_dir: str,
-                     tpu_name: str, tpu_zone: str, gcp_project: str, tpu_cores: int):
+                     tpu_name: str, tpu_zone: str, gcp_project: str, tpu_cores: int, squad_folder: str):
     """fine tune bioasq"""
     use_tpu = True
     config = 'large_bert_config.json'
@@ -36,7 +36,7 @@ def fine_tune_bioasq(model_type: str, bucket_name: str, train_file: str, predict
         log.info('No config file')
         sys.exit(1)
 
-    init_checkpoint = tf.train.latest_checkpoint('gs://{}/{}'.format(bucket_name, model_dir))
+    init_checkpoint = tf.train.latest_checkpoint('gs://{}/{}/{}'.format(bucket_name, model_dir, squad_folder))
     vocab_file = 'gs://{}/{}/vocab.txt'.format(bucket_name, model_dir)
     bert_config_file = 'gs://{}/{}/{}'.format(bucket_name, model_dir, config)
     output_dir = 'gs://{}/{}/BioASQ_outputs/{}'.format(bucket_name, model_dir, train_file.split('.')[0])
