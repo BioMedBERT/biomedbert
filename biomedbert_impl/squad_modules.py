@@ -39,7 +39,6 @@ def fine_tune_squad(v1: bool, model_type: str, bucket_name: str, model_dir: str,
         sys.exit(1)
 
     if v1:
-        version_2_with_negative = False
         output_dir = 'squad_v1/'
         sub_folder = 'v1.1'
 
