@@ -18,6 +18,7 @@ def fine_tune_squad(v1: bool, model_type: str, bucket_name: str, model_dir: str,
     sub_folder = 'v2.0'
     output_dir = 'squad_v2/'
     config = 'large_bert_config.json'
+    version_2_with_negative = True
 
     num_tpu_cores = 8
     if tpu_cores is not None:
@@ -38,6 +39,7 @@ def fine_tune_squad(v1: bool, model_type: str, bucket_name: str, model_dir: str,
         sys.exit(1)
 
     if v1:
+        version_2_with_negative = False
         output_dir = 'squad_v1/'
         sub_folder = 'v1.1'
 
@@ -56,9 +58,10 @@ def fine_tune_squad(v1: bool, model_type: str, bucket_name: str, model_dir: str,
             '--predict_batch_size=16  --learning_rate=3e-5  --num_train_epochs=2.0  '
             '--max_seq_length=384  --doc_stride=128  --output_dir={}  '
             '--num_tpu_cores=128   --use_tpu={}   --tpu_name={}   --tpu_zone={}   '
-            '--gcp_project={} '.format(
+            '--gcp_project={} --version_2_with_negative={}'.format(
             vocab_file, bert_config_file, init_checkpoint, train_file_path,
-            predict_file_path, output_dirs, use_tpu, tpu_name, tpu_zone, gcp_project))
+            predict_file_path, output_dirs, use_tpu, tpu_name, tpu_zone, gcp_project,
+            version_2_with_negative))
     except exceptions.UnexpectedExit:
         print('Cannot fine tune SQuAD')
 
@@ -80,7 +83,12 @@ def evaluate_squad(v1: bool, bucket_name: str, model_dir: str, evaluate_file: st
         run('gsutil cp gs://{}/squad_data/{}/{} ./squad_evaluate/'.format(bucket_name, sub_folder, predict_file))
         run('gsutil cp gs://{}/{}/{}/{} ./squad_evaluate/'.format(bucket_name, model_dir, output_dir, prediction_json))
 
-        run('python3 ./squad_evaluate/{} ./squad_evaluate/{} ./squad_evaluate/predictions.json'.format(
-            evaluate_file, predict_file))
+        if v1:
+            run('python3 ./squad_evaluate/{} ./squad_evaluate/{} ./squad_evaluate/{}'.format(
+                evaluate_file, predict_file, prediction_json))
+        else:
+            run('gsutil cp gs://{}/{}/{}/null_odds.json ./squad_evaluate/'.format(bucket_name, model_dir, output_dir))
+            run('python3 ./squad_evaluate/{} ./squad_evaluate/{} ./squad_evaluate/{} '
+                './squad_evaluate/null_odds.json'.format(evaluate_file, predict_file, prediction_json))
     except exceptions.UnexpectedExit:
         print('Cannot evaluate SQuAD')
