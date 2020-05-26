@@ -88,7 +88,7 @@ def evaluate_squad(v1: bool, bucket_name: str, model_dir: str, evaluate_file: st
                 evaluate_file, predict_file))
         else:
             run('gsutil cp gs://{}/{}/{}/null_odds.json ./squad_evaluate/'.format(bucket_name, model_dir, output_dir))
-            run('python3 ./squad_evaluate/{} ./squad_evaluate/{} ./squad_evaluate/predictions.json '
+            run('python3 ./squad_evaluate/{} ./squad_evaluate/{} ./squad_evaluate/predictions.json --na-prob-file '
                 './squad_evaluate/null_odds.json'.format(evaluate_file, predict_file))
     except exceptions.UnexpectedExit:
         print('Cannot evaluate SQuAD')
