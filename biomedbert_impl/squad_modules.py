@@ -15,7 +15,6 @@ def fine_tune_squad(v1: bool, model_type: str, bucket_name: str, model_dir: str,
                     tpu_name: str, tpu_zone: str, gcp_project: str, tpu_cores: str):
     """fine tune squad"""
     use_tpu = True
-    version_2_with_negative = True
     sub_folder = 'v2.0'
     output_dir = 'squad_v2/'
     config = 'large_bert_config.json'
@@ -57,10 +56,9 @@ def fine_tune_squad(v1: bool, model_type: str, bucket_name: str, model_dir: str,
             '--predict_batch_size=16  --learning_rate=3e-5  --num_train_epochs=2.0  '
             '--max_seq_length=384  --doc_stride=128  --output_dir={}  '
             '--num_tpu_cores=128   --use_tpu={}   --tpu_name={}   --tpu_zone={}   '
-            '--gcp_project={}  --version_2_with_negative={}'.format(
+            '--gcp_project={} '.format(
             vocab_file, bert_config_file, init_checkpoint, train_file_path,
-            predict_file_path, output_dirs, use_tpu, tpu_name, tpu_zone, gcp_project,
-            version_2_with_negative))
+            predict_file_path, output_dirs, use_tpu, tpu_name, tpu_zone, gcp_project))
     except exceptions.UnexpectedExit:
         print('Cannot fine tune SQuAD')
 
