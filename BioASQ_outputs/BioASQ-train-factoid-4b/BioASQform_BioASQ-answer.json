@@ -6,19 +6,19 @@
       "ideal_answer": "Dummy",
       "exact_answer": [
         [
+          "Alleviation of PD-related neurodegeneration"
+        ],
+        [
+          "Alleviation of PD-related neurodegeneration by spermidine was accompanied by induction of autophagy"
+        ],
+        [
           "Spermidine protects"
-        ],
-        [
-          "Spermidine protects against \u03b1-synuclein neurotoxicity."
-        ],
-        [
-          "Spermidine"
         ],
         [
           "Spermidine protects against"
         ],
         [
-          "protects"
+          "spermidine, which declines continuously during aging"
         ]
       ]
     },
@@ -31,16 +31,16 @@
           "Flaviviridae"
         ],
         [
-          "Flaviviridae)"
-        ],
-        [
-          "Zika virus (ZIKV; genus Flavivirus, family Flaviviridae"
+          "Flavivirus, family Flaviviridae"
         ],
         [
           "family Flaviviridae"
         ],
         [
-          "Flavivirus, family Flaviviridae"
+          "Flaviviridae)"
+        ],
+        [
+          "Zika virus (ZIKV; genus Flavivirus, family Flaviviridae"
         ]
       ]
     },
@@ -53,16 +53,16 @@
           "CAGEr"
         ],
         [
-          "CAGEr: precise TSS"
+          "FANTOM5"
         ],
         [
-          "r"
+          "Cap analysis of gene expression"
         ],
         [
-          "CAGEr: precise TSS data retrieval and high-resolution promoterome mining"
+          "Cap analysis of gene expression (CAGE)"
         ],
         [
-          "CAGE"
+          "CAGE)"
         ]
       ]
     },
@@ -75,16 +75,16 @@
           "antihypertensive"
         ],
         [
-          "antihypertensive drug in blacks with essential hypertension"
+          "antihypertensive therapy"
         ],
         [
           "antihypertensive treatment"
         ],
         [
-          "antihypertensive therapy."
+          "improved left ventricular function"
         ],
         [
-          "antihypertensive therapy"
+          "antihypertensive drug in blacks with essential hypertension"
         ]
       ]
     },
@@ -97,16 +97,16 @@
           "energy reserve"
         ],
         [
-          "growth and fission"
+          "lipids storage"
         ],
         [
-          "adipocytes"
+          "growth"
         ],
         [
           "contribute to diverse cellular functions"
         ],
         [
-          "regulating storage and mobilization of lipids in response to metabolic demands"
+          "regulating storage and mobilization of lipids"
         ]
       ]
     },
@@ -116,19 +116,19 @@
       "ideal_answer": "Dummy",
       "exact_answer": [
         [
-          "peroxisome proliferator-activated"
-        ],
-        [
           "peroxisome proliferator-activated receptors"
         ],
         [
-          "peroxisome proliferator-activated receptor-\u03b1/\u03b3"
+          "peroxisome proliferator-activated"
         ],
         [
           "dual peroxisome proliferator-activated receptor \u03b1/\u03b3"
         ],
         [
-          "peroxisome proliferator-activated receptor \u03b1/\u03b3"
+          "peroxisome proliferator-activated receptor-\u03b1/\u03b3"
+        ],
+        [
+          "peroxisome proliferator-activated receptors \u03b1 and \u03b3"
         ]
       ]
     },
@@ -138,19 +138,19 @@
       "ideal_answer": "Dummy",
       "exact_answer": [
         [
-          "Sushi.R"
-        ],
-        [
-          "Sushi"
-        ],
-        [
           "Bioconductor"
         ],
         [
-          "Sushi.R: flexible"
+          "Sushi.R"
         ],
         [
-          "Sushi."
+          "Bioconductor (http://bioconductor"
+        ],
+        [
+          "Sushi) and Bioconductor"
+        ],
+        [
+          "Sushi"
         ]
       ]
     },
@@ -160,19 +160,19 @@
       "ideal_answer": "Dummy",
       "exact_answer": [
         [
+          "mTOR pathway"
+        ],
+        [
           "mTOR"
         ],
         [
-          "mTORC1"
-        ],
-        [
-          "mTOR pathway"
+          "The mTOR pathway"
         ],
         [
           "The mTOR"
         ],
         [
-          "mTORC1, in coordination with mTORC2"
+          "mTOR pathway controls cell proliferation by regulating the FoxO3a"
         ]
       ]
     },
@@ -191,7 +191,7 @@
           "Spt-Ada-Gcn5 acetyltransferase)"
         ],
         [
-          "(Spt-Ada-Gcn5 Acetyltransferase"
+          "(Spt-Ada-Gcn5 acetyltransferase"
         ],
         [
           "Spt-Ada-Gcn5"
@@ -213,10 +213,10 @@
           "sPLA(2)"
         ],
         [
-          "(such as varespladib"
+          "secretory phospholipase A2 (sPLA2"
         ],
         [
-          "varespladib"
+          "IL-6"
         ]
       ]
     },
@@ -232,13 +232,13 @@
           "inhibits"
         ],
         [
-          "inhibit"
-        ],
-        [
           "inhibited"
         ],
         [
-          "inhibits T-cell activation and proliferation."
+          "inhibited antigen-specific proliferation"
+        ],
+        [
+          "dasatinib inhibits"
         ]
       ]
     },
@@ -248,19 +248,19 @@
       "ideal_answer": "Dummy",
       "exact_answer": [
         [
+          "meningiomas"
+        ],
+        [
           "meningioma"
+        ],
+        [
+          "Olfactory groove meningioma"
         ],
         [
           "olfactory groove meningiomas"
         ],
         [
-          "atypical meningioma"
-        ],
-        [
-          "Meningiomas"
-        ],
-        [
-          "Spinal Atypical (World Health Organization Grade II) Meningiomas"
+          "meningiomas. BACKGROUND: The relevance of the Simpson grading system as a predictor of meningioma"
         ]
       ]
     },
@@ -270,19 +270,19 @@
       "ideal_answer": "Dummy",
       "exact_answer": [
         [
-          "."
+          "Scleraxis"
         ],
         [
           "chondrosarcoma"
         ],
         [
-          "Scleraxis"
+          "teratogenicity"
         ],
         [
-          "Emx2"
+          "beak shape diversity"
         ],
         [
-          "Cart1"
+          "Scapula"
         ]
       ]
     },
@@ -295,13 +295,13 @@
           "PD-1"
         ],
         [
-          "programmed cell death-1"
-        ],
-        [
           "programmed death 1 immune checkpoint"
         ],
         [
-          "programmed death 1"
+          "cytotoxic T lymphocyte-associated antigen 4"
+        ],
+        [
+          "programmed death protein 1"
         ],
         [
           "anti programmed cell death-1"
@@ -317,16 +317,16 @@
           "Ataxin-2"
         ],
         [
-          "ataxin-2 are not necessary for SCA2 pathogenesis in mouse or human. Instability of CAG"
+          "ataxin-1[Q80] transgenic lines, ataxin-2"
         ],
         [
-          "ataxin-2 are not necessary for SCA2"
+          "ataxin-1"
         ],
         [
-          "SCA2 pathogenesis in mouse or human. Instability of CAG"
+          "ataxin"
         ],
         [
-          "SCA2"
+          "ataxin-1[Q80] transgenic lines, ataxin"
         ]
       ]
     },
@@ -342,13 +342,13 @@
           "(Xp21-p11"
         ],
         [
+          "Xp21-p11)"
+        ],
+        [
           "Xp21"
         ],
         [
           "MAOA): chromosome position (Xp21-p11"
-        ],
-        [
-          "Xp21-p11)"
         ]
       ]
     },
@@ -367,10 +367,10 @@
           "stable molecules"
         ],
         [
-          "regulation of post transcriptional gene expression"
+          "."
         ],
         [
-          "Circular RNA may be an ancient, conserved feature of eukaryotic gene expression programs."
+          "Circular RNA may be an ancient, conserved feature of eukaryotic gene expression programs"
         ]
       ]
     },
@@ -383,16 +383,16 @@
           "SLC38A9"
         ],
         [
+          "SLC38A9 as a novel component of the Rag-Ragulator complex. SLC38A9"
+        ],
+        [
+          "mTORC1"
+        ],
+        [
           "SLC38A9 expression impaired amino-acid-induced mTORC1 activation. Thus SLC38A9"
         ],
         [
-          "SLC38A9 as an integral part of the Ragulator-RAG GTPases machinery. Gain of SLC38A9"
-        ],
-        [
-          "mTORC1 activation. Thus SLC38A9"
-        ],
-        [
-          "SLC38A9 as a novel component of the Rag-Ragulator complex. SLC38A9"
+          "SLC38A9 function rendered cells resistant to amino acid withdrawal, whereas loss of SLC38A9"
         ]
       ]
     },
@@ -405,16 +405,16 @@
           "SMN1"
         ],
         [
-          "SMN"
+          "recessive"
+        ],
+        [
+          "."
         ],
         [
           "Autosomal dominant"
         ],
         [
-          "VRK1"
-        ],
-        [
-          "proximal spinal muscular atrophy"
+          "SMN"
         ]
       ]
     },
@@ -424,19 +424,19 @@
       "ideal_answer": "Dummy",
       "exact_answer": [
         [
-          "YAP"
+          "YAP and TAZ"
         ],
         [
           "TAZ"
         ],
         [
-          "Yap and Taz,"
+          "."
         ],
         [
-          "YAP and TAZ"
+          "YAP)/TAZ"
         ],
         [
-          "(1) YAP and its paralog TAZ;"
+          "Yap and Taz, which bind to and activate Teads."
         ]
       ]
     },
@@ -474,10 +474,10 @@
           "microglia"
         ],
         [
-          "embryonic stem cells"
+          "motor neurons"
         ],
         [
-          "motor neurons"
+          "spinal motor neurons"
         ],
         [
           "muscle"
@@ -493,16 +493,16 @@
           "pediatric"
         ],
         [
+          "32.3 \u00b1 12.2 years"
+        ],
+        [
           "15 to 25 years"
         ],
         [
-          "Fifteen percent of incident Crohn's disease (CD) cases are diagnosed at older ages"
-        ],
-        [
-          "20"
-        ],
-        [
           "40 years and older"
+        ],
+        [
+          "40 years or older"
         ]
       ]
     },
@@ -512,19 +512,19 @@
       "ideal_answer": "Dummy",
       "exact_answer": [
         [
-          "an autosomal recessive congenital defect"
+          "Situs inversus totalis"
         ],
         [
           "dextrocardia"
         ],
         [
-          "SIT"
+          "."
         ],
         [
-          "congenital anomaly"
+          "totalis"
         ],
         [
-          "Situs inversus totalis (SIT) is an uncommon congenital syndrome"
+          "dextrocardia situs inversus totalis"
         ]
       ]
     },
@@ -537,16 +537,16 @@
           "Bazex syndrome"
         ],
         [
-          "Bazex"
-        ],
-        [
-          "upper aerodigestive tract squamous cell carcinoma"
-        ],
-        [
           "Acrokeratosis paraneoplastica Bazex"
         ],
         [
+          "squamous cell carcinoma"
+        ],
+        [
           "pyriform sinus tumour"
+        ],
+        [
+          "Bazex"
         ]
       ]
     },
@@ -559,16 +559,16 @@
           "aurora A"
         ],
         [
-          "aurora A kinase,"
-        ],
-        [
           "aurora A kinase"
         ],
         [
-          "Aurora A kinase activity in vitro. In human cells however, only Tripolin A acted as an Aurora A"
+          "Tripolin A, a novel small-molecule inhibitor of aurora A"
         ],
         [
-          "Tripolin A, a novel small-molecule inhibitor of aurora A"
+          "aurora A kinase,"
+        ],
+        [
+          "Tripolin A, a novel small-molecule inhibitor of aurora A kinase"
         ]
       ]
     },
@@ -587,10 +587,10 @@
           "GKT"
         ],
         [
-          "GKT136901,"
+          "GKT1378"
         ],
         [
-          "GKT13"
+          "GKT136901,"
         ]
       ]
     },
@@ -609,10 +609,10 @@
           "prion-like domains"
         ],
         [
-          "PrLDs"
+          "'prion domain"
         ],
         [
-          "prion domain. Indeed, of 210 human RRM-bearing proteins, 29 have a putative prion domain"
+          "prion-like domain (PrLD"
         ]
       ]
     },
@@ -622,19 +622,19 @@
       "ideal_answer": "Dummy",
       "exact_answer": [
         [
+          "extracellular"
+        ],
+        [
           "membrane"
         ],
         [
-          "zebrafish retina"
-        ],
-        [
-          "."
-        ],
-        [
-          "Cx43"
-        ],
-        [
           "extracellular space"
+        ],
+        [
+          "the outer retina"
+        ],
+        [
+          "the extracellular space"
         ]
       ]
     },
@@ -650,13 +650,13 @@
           "MDR-TB."
         ],
         [
-          "Tb"
+          "."
+        ],
+        [
+          "multidrug-resistant tuberculosis (MDR-TB"
         ],
         [
           "MDR-TB patients. In addition, decreased mortality was observed in MDR-TB"
-        ],
-        [
-          "MDR-TB in combination with other anti-TB"
         ]
       ]
     },
@@ -666,19 +666,19 @@
       "ideal_answer": "Dummy",
       "exact_answer": [
         [
+          "TopBP1"
+        ],
+        [
+          "TopBP1-interacting, replication stimulating protein/TopBP1"
+        ],
+        [
           "MTBP"
         ],
         [
-          "MDM two binding protein (MTBP"
+          "Treslin/TICRR (TopBP1-interacting, replication stimulating protein/TopBP1"
         ],
         [
-          "MTBP)"
-        ],
-        [
-          "(MTBP"
-        ],
-        [
-          "MTBP) as a factor that interacts with Treslin/TICRR throughout the cell cycle."
+          "TopBP1-interacting, checkpoint, and replication regulator), the human ortholog of the yeast Sld3"
         ]
       ]
     },
@@ -688,19 +688,19 @@
       "ideal_answer": "Dummy",
       "exact_answer": [
         [
+          "iloprost"
+        ],
+        [
+          "PGI(2) analogues (iloprost,"
+        ],
+        [
           "PGI(2)"
         ],
         [
-          "PGI"
+          "PGI2"
         ],
         [
-          "I2"
-        ],
-        [
-          "Prostaglandin I2"
-        ],
-        [
-          "PGI(2"
+          "Prostaglandin I(2)"
         ]
       ]
     },
@@ -713,13 +713,13 @@
           "IL-17"
         ],
         [
-          "interleukin-17"
+          "interleukin-17 receptor A"
         ],
         [
           "IL17A"
         ],
         [
-          "interleukin-17 receptor A"
+          "interleukin-17"
         ],
         [
           "IL17A inhibitors secukinumab and ixekizumab, the IL17A"
@@ -738,13 +738,13 @@
           "1 in 2000 live births"
         ],
         [
-          "1:30,000"
-        ],
-        [
           "."
         ],
         [
-          "1:3300"
+          "1:30,000"
+        ],
+        [
+          "1:10,000 to 1:40,000"
         ]
       ]
     },
@@ -760,13 +760,13 @@
           "IgG1\u03ba monoclonal antibody that recognizes CD38"
         ],
         [
-          "CD38 on myeloma cells."
+          "CD38, has been of great interest in the treatment of CD38"
+        ],
+        [
+          "CD38."
         ],
         [
           "IgG1\u03ba"
-        ],
-        [
-          "CD38, has been of great interest in the treatment of CD38"
         ]
       ]
     },
@@ -776,19 +776,19 @@
       "ideal_answer": "Dummy",
       "exact_answer": [
         [
-          "to better understand the transcriptional network that regulates macrophage differentiation"
-        ],
-        [
           "to uncover novel components of the transcriptome"
         ],
         [
-          "better understand the transcriptional network that regulates macrophage differentiation"
+          "to better understand the transcriptional network that regulates macrophage differentiation"
         ],
         [
           "uncover novel components of the transcriptome"
         ],
         [
-          "set out to better understand the transcriptional network that regulates macrophage differentiation"
+          "better understand the transcriptional network that regulates macrophage differentiation"
+        ],
+        [
+          "to uncover novel components of the transcriptome employing a series of high-throughput experiments."
         ]
       ]
     },
@@ -798,19 +798,19 @@
       "ideal_answer": "Dummy",
       "exact_answer": [
         [
+          "antiviral agent"
+        ],
+        [
+          "interstrand cross-links"
+        ],
+        [
+          "Cross-linking and relaxation"
+        ],
+        [
+          "bind very efficiently to DNA"
+        ],
+        [
           "structural arrangement"
-        ],
-        [
-          "hypersensitivity"
-        ],
-        [
-          "diadduct forming"
-        ],
-        [
-          "rate of relaxation of superhelical turns"
-        ],
-        [
-          "(omega-diethyl aminopropyloxy)psoralen hydrochloride"
         ]
       ]
     },
@@ -823,16 +823,16 @@
           "r3Cseq"
         ],
         [
-          "r3Cseq:"
-        ],
-        [
-          "r3Cseq: an R/Bioconductor"
+          "r3Cseq, an R/Bioconductor package designed to perform 3C-seq"
         ],
         [
           "r3Cseq,"
         ],
         [
-          "r3Cseq: an R/Bioconductor package for the discovery of long-range genomic interactions"
+          "3C-seq"
+        ],
+        [
+          "r3Cseq, an R/Bioconductor"
         ]
       ]
     },
@@ -845,13 +845,13 @@
           "Fusarium oxysporum"
         ],
         [
-          "fungi"
-        ],
-        [
           "Fusarium oxysporum f. sp. cubense"
         ],
         [
           "Fusarium oxysporum f.sp. cubense"
+        ],
+        [
+          "Fusarium oxysporum f. sp. cubense (Foc), the causal agent of Fusarium wilt"
         ],
         [
           "fungus Fusarium oxysporum"
