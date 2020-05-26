@@ -70,10 +70,10 @@ def evaluate_squad(v1: bool, bucket_name: str, model_dir: str, evaluate_file: st
                    predict_file: str, prediction_json: str):
     """evaluate squad"""
     sub_folder = 'v2.0'
-    output_dir = 'squad_v2/'
+    output_dir = 'squad_v2'
 
     if v1:
-        output_dir = 'squad_v1/'
+        output_dir = 'squad_v1'
         sub_folder = 'v1.1'
 
     try:

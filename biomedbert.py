@@ -19,7 +19,7 @@ Usage:
   biomedbert glue download dataset
   biomedbert glue finetune <dataset> <model_dir> <checkpoint_name> <vocab_file> [<tpu_name>]
   biomedbert glue predict <dataset> <model_dir> <trained_classifier> <vocab_file> [<tpu_name>]
-  biomedbert squad evaluate (v1/v2) <bucket_name> <model_dir> <evaluate_file> <predict_file> <prediction_json>
+  biomedbert squad evaluate (v1|v2) <bucket_name> <model_dir> <evaluate_file> <predict_file> <prediction_json>
   biomedbert squad finetune (v1|v2) <model_type> <bucket_name> <model_dir> <train_file> <predict_file> <tpu_name> <tpu_cores>
   biomedbert ner finetune <model_type> <ner_dataset> <model_dir> <bucket_name> [<tpu_name> <tpu_cores>]
   biomedbert ner evaluate token level <model_type> <ner_dataset> <model_dir> <bucket_name> [<tpu_name> <tpu_cores>]
@@ -129,8 +129,12 @@ def squad_commands(args: dict):
 
     # evaluate squad
     if args['squad'] and args['evaluate']:
-        evaluate_squad(args['v1'], args['<bucket_name>'], args['<model_dir>'], args['<evaluate_file>'],
-                       args['<predict_file>'], args['<prediction_json>'])
+        if args['v1']:
+            evaluate_squad(args['v1'], args['<bucket_name>'], args['<model_dir>'], args['<evaluate_file>'],
+                           args['<predict_file>'], args['<prediction_json>'])
+        else:
+            evaluate_squad(args['v2'], args['<bucket_name>'], args['<model_dir>'], args['<evaluate_file>'],
+                           args['<predict_file>'], args['<prediction_json>'])
 
 
 def glue_commands(args: dict):
