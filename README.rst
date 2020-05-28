@@ -14,7 +14,9 @@ BioMedBERT
 
 A Natural Language Processing and Understanding (NLP/NLU) tool for biomedical research
 
-
+.. toctree::
+   :maxdepth: 3
+   :caption: Table of Contents
 
 Usage
 -----
