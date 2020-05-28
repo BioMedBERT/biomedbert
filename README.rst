@@ -17,12 +17,22 @@ A Natural Language Processing and Understanding (NLP/NLU) tool for biomedical re
 Usage
 -----
 
+:Clone repo: ``git clone https://github.com/aivscovid19/covid-19_research_collaboration.git``
 :Install BioMedBERT:
    ``pip install .``
 
-what
-  Definition lists associate a term with
-  a definition.
+Models repository
+-----------------
+BioMedBERT-Large from BERT weights:
+  ```gs://ekaba-assets/biomedbert_base_bert_weights_and_vocab```
+
+BioMedBERT-Large from scratch:
+  ```gs://ekaba-assets/biomedbert_base_scratch_breathe_bert_vocab```
+
+Fine-tune SQuAD
+-----------------
+Syntax:
+  ```biomedbert squad finetune (v1|v2) <model_type> <bucket_name> <model_dir> <train_file> <predict_file> <tpu_name> <tpu_cores>```
 
 how
   The term is a one-line phrase, and the
@@ -31,8 +41,7 @@ how
   term. Blank lines are not allowed
   between term and definition.
 
-Fine-tuning GLUE
------------------
+
 
 * biomedbert glue finetune MRPC gs://ekaba-assets/biomedbert_base_bert_weights_and_vocab model.ckpt-68000 vocab.txt biomedbert-tpu
 
