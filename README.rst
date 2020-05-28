@@ -14,8 +14,9 @@ BioMedBERT
 
 A Natural Language Processing and Understanding (NLP/NLU) tool for biomedical research
 
-.. contents:: Table of Contents
-   :depth: 2
+Table of Contents
+-----------------
+.. contents:: :depth: 2
 
 Usage
 -----
@@ -54,11 +55,21 @@ Fine-tune SQuAD
 Syntax:
   ``biomedbert squad finetune (v1|v2) <model_type> <bucket_name> <model_dir> <train_file> <predict_file> <tpu_name> <tpu_cores>``
 
-Finetune SQuAD with BERT:
-  v1:
-    ``biomedbert squad finetune v1 large ekaba-assets biomedbert_base_bert_weights_and_vocab train-v1.1.json dev-v1.1.json biomedbert 128``
-  v2:
-    ``biomedbert squad finetune v2 large ekaba-assets biomedbert_base_bert_weights_and_vocab train-v2.0.json dev-v2.0.json biomedbert 128``
+Finetune SQuAD with BERT
+^^^^^^^^^^^^^^^^^^^^^^^^^
+From Scratch:
+"""""""""""""
+v1:
+  ``biomedbert squad finetune v1 large ekaba-assets biomedbert_base_bert_weights_and_vocab train-v1.1.json dev-v1.1.json biomedbert 128``
+v2:
+  ``biomedbert squad finetune v2 large ekaba-assets biomedbert_base_bert_weights_and_vocab train-v2.0.json dev-v2.0.json biomedbert 128``
+
+Evaluate SQuAD with BERT
+^^^^^^^^^^^^^^^^^^^^^^^^^
+v1:
+  ``biomedbert squad finetune v1 large ekaba-assets biomedbert_base_bert_weights_and_vocab train-v1.1.json dev-v1.1.json biomedbert 128``
+v2:
+  ``biomedbert squad finetune v2 large ekaba-assets biomedbert_base_bert_weights_and_vocab train-v2.0.json dev-v2.0.json biomedbert 128``
 
 
 
