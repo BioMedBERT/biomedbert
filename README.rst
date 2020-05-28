@@ -14,6 +14,8 @@ BioMedBERT
 
 A Natural Language Processing and Understanding (NLP/NLU) tool for biomedical research
 
+
+
 Usage
 -----
 
@@ -36,10 +38,12 @@ First set the GCP zone to `europe-west4-a`
 
 Syntax:
   ``biomedbert gcp vm create tpu <vm-instance> [preemptible]``
+
   ``biomedbert gcp vm delete tpu <vm-instance>``
 
 Creating TPUs:
   ``biomedbert gcp vm create tpu biomedbert``
+
   ``biomedbert gcp vm create tpu biomedbert-preempt``
 
 Deleting TPUs:
@@ -47,7 +51,7 @@ Deleting TPUs:
 Fine-tune SQuAD
 -----------------
 Syntax:
-  ```biomedbert squad finetune (v1|v2) <model_type> <bucket_name> <model_dir> <train_file> <predict_file> <tpu_name> <tpu_cores>```
+  ``biomedbert squad finetune (v1|v2) <model_type> <bucket_name> <model_dir> <train_file> <predict_file> <tpu_name> <tpu_cores>``
 
 Finetune SQuAD with BERT:
   v1:
