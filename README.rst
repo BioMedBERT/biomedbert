@@ -39,14 +39,18 @@ First set the GCP zone to `europe-west4-a`
   ``biomedbert gcp project set ai-vs-covid19 europe-west4-a``
 
 Syntax:
-  ``biomedbert gcp vm create tpu <vm-instance> [preemptible]``
-  ``biomedbert gcp vm delete tpu <vm-instance>``
+  Create TPU:
+    ``biomedbert gcp vm create tpu <vm-instance> [preemptible]``
+  Delete TPU:
+    ``biomedbert gcp vm delete tpu <vm-instance>``
 
-Creating TPUs:
+Create TPUs:
   ``biomedbert gcp vm create tpu biomedbert``
-  ``biomedbert gcp vm create tpu biomedbert-preempt``
+Create Preemptible TPUs:
+  ``biomedbert gcp vm create tpu biomedbert-preempt preemptible``
 
-Deleting TPUs:
+Delete TPUs:
+  ``biomedbert gcp vm delete tpu <vm-instance>``
 
 
 Fine-tune and Evaluate SQuAD
@@ -78,7 +82,7 @@ Evaluate SQuAD
 with BERT weights:
 """"""""""""""""""
 v1:
-  biomedbert squad evaluate v1 ekaba-assets biomedbert_base_bert_weights_and_vocab evaluate-v1.1.py dev-v1.1.json predictions.json``
+  ``biomedbert squad evaluate v1 ekaba-assets biomedbert_base_bert_weights_and_vocab evaluate-v1.1.py dev-v1.1.json predictions.json``
 v2:
   ``biomedbert squad evaluate v2 ekaba-assets biomedbert_base_bert_weights_and_vocab evaluate-v2.0.py dev-v2.0.json``
 
@@ -99,12 +103,7 @@ Evaluate BioASQ Syntax:
 
 Finetune BioASQ
 ^^^^^^^^^^^^^^^
-Change the ``<train_file>`` and ``<predict_file>`` accordingly:
-
-- 4b: BioASQ-train-factoid-4b.json
-      BioASQ-test-factoid-4b-1.json
-- 5b: BioASQ-train-factoid-5b.json
-- 6b: BioASQ-train-factoid-6b.json
+Change the ``<train_file>`` (BioASQ-train-factoid-4b.json)  and ``<predict_file>`` (BioASQ-test-factoid-4b-1.json) accordingly.
 
 with BERT weights:
 """"""""""""""""""
