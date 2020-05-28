@@ -14,10 +14,27 @@ BioMedBERT
 
 A Natural Language Processing and Understanding (NLP/NLU) tool for biomedical research
 
-Features
---------
+Usage
+-----
 
-* TODO
+:Install BioMedBERT:
+   ``pip install .``
+
+what
+  Definition lists associate a term with
+  a definition.
+
+how
+  The term is a one-line phrase, and the
+  definition is one or more paragraphs or
+  body elements, indented relative to the
+  term. Blank lines are not allowed
+  between term and definition.
+
+Fine-tuning GLUE
+-----------------
+
+* biomedbert glue finetune MRPC gs://ekaba-assets/biomedbert_base_bert_weights_and_vocab model.ckpt-68000 vocab.txt biomedbert-tpu
 
 Requirements
 ------------
@@ -27,4 +44,4 @@ Requirements
 License
 -------
 
-MIT licensed. See the bundled `LICENSE <https://github.com/dvdbisong/biomedbert/blob/master/LICENSE>`_ file for more details.
+MIT licensed. See the bundled `LICENSE <https://github.com/aivscovid19/covid-19_research_collaboration/blob/master/LICENSE>`_ file for more details.

@@ -1,0 +1,3305 @@
+{
+  "questions": [
+    {
+      "type": "factoid",
+      "id": "56c073fcef6e394741000020",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          ".",
+          0.9750582131862578
+        ],
+        [
+          "thought to be the principal toxic trigger of PD.",
+          0.008304379336010664
+        ],
+        [
+          ". In this line, administration of spermidine rescued",
+          0.006708019332928171
+        ],
+        [
+          "PD.",
+          0.0024232266794449765
+        ],
+        [
+          "spermidine, which declines continuously during aging",
+          0.001355637065392139
+        ],
+        [
+          "\u03b1-synuclein, which is thought to be the principal toxic trigger of PD.",
+          0.0013419797182432497
+        ],
+        [
+          "protects against \u03b1-synuclein neurotoxicity.",
+          0.0005436375461855983
+        ],
+        [
+          "Alleviation of PD-related neurodegeneration by spermidine was accompanied by induction of autophagy",
+          0.00043824071101164854
+        ],
+        [
+          ". In this line, administration of spermidine",
+          0.0004106230519427095
+        ],
+        [
+          "Alleviation of PD-related neurodegeneration",
+          0.0003991354583774673
+        ],
+        [
+          "Spermidine protects against \u03b1-synuclein neurotoxicity.",
+          0.00035892027123470607
+        ],
+        [
+          "toxic trigger of PD.",
+          0.0003493250326800893
+        ],
+        [
+          "spermidine",
+          0.0003299120701776233
+        ],
+        [
+          "spermidine,",
+          0.00032137148786451163
+        ],
+        [
+          ". In this line,",
+          0.00023972408547076512
+        ],
+        [
+          "Alleviation of PD-related neurodegeneration by spermidine was accompanied by induction of autophagy,",
+          0.00023720223398050971
+        ],
+        [
+          "declines continuously during aging",
+          0.00017570979454884902
+        ],
+        [
+          "induction of autophagy",
+          0.00014981582295839962
+        ],
+        [
+          "protects",
+          0.00013401014277303623
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56b76d916e3f8eaf4c000001",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "Flaviviridae",
+          0.9631706663400388
+        ],
+        [
+          "family Flaviviridae",
+          0.011812016349174038
+        ],
+        [
+          "Flavivirus, family Flaviviridae",
+          0.011584448870060264
+        ],
+        [
+          "Flaviviridae)",
+          0.010075233607487336
+        ],
+        [
+          "Zika virus (ZIKV; genus Flavivirus, family Flaviviridae",
+          0.0013475151180539658
+        ],
+        [
+          "(ZIKV; genus Flavivirus, family Flaviviridae",
+          0.0008080233960655711
+        ],
+        [
+          "genus Flavivirus, family Flaviviridae",
+          0.0006135178317435973
+        ],
+        [
+          "Flaviviri",
+          0.00013868680123366915
+        ],
+        [
+          "family Flaviviridae)",
+          0.00012355943578058797
+        ],
+        [
+          "Flavivirus, family Flaviviridae)",
+          0.00012117896927172856
+        ],
+        [
+          "dae",
+          5.3201818121443774e-05
+        ],
+        [
+          "Flav",
+          3.7434590596914054e-05
+        ],
+        [
+          "ZIKV; genus Flavivirus, family Flaviviridae",
+          2.8079652022414345e-05
+        ],
+        [
+          "F",
+          1.9379505329426556e-05
+        ],
+        [
+          "virus (ZIKV; genus Flavivirus, family Flaviviridae",
+          1.720811558639419e-05
+        ],
+        [
+          "Zika virus (ZIKV; genus Flavivirus, family Flaviviridae)",
+          1.409566349814635e-05
+        ],
+        [
+          "Flavivirus",
+          9.758378096959185e-06
+        ],
+        [
+          "BACKGROUND: Zika virus (ZIKV; genus Flavivirus, family Flaviviridae",
+          9.340774335970068e-06
+        ],
+        [
+          "(ZIKV; genus Flavivirus, family Flaviviridae)",
+          8.452317704619316e-06
+        ],
+        [
+          "Flaviv",
+          8.202465797512846e-06
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56afe6d40a360a5e45000017",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "CAGEr",
+          0.6059717464834219
+        ],
+        [
+          "Cap analysis of gene expression",
+          0.07301799486156255
+        ],
+        [
+          "FANTOM5",
+          0.05431419985312759
+        ],
+        [
+          "Cap analysis of gene expression (CAGE)",
+          0.008858576315094135
+        ],
+        [
+          "Cap analysis of gene expression (CAGE",
+          0.004274589394512302
+        ],
+        [
+          "CAGE)",
+          0.001937815989048446
+        ],
+        [
+          "FANTOM",
+          0.0017542862667453436
+        ],
+        [
+          "CAGE",
+          0.0009350675978473899
+        ],
+        [
+          "analysis of gene expression",
+          0.0006512708484224681
+        ],
+        [
+          "CAGEr:",
+          0.0004743782136881162
+        ],
+        [
+          "CAGEr: precise TSS data retrieval and high-resolution promoterome mining for integrative analyses.",
+          0.00041098141184438573
+        ],
+        [
+          "CAGEr: precise TSS data retrieval and high-resolution promoterome mining for integrative analyses",
+          0.00037872775448448653
+        ],
+        [
+          "CAGEr: precise TSS",
+          0.0003769658615741879
+        ],
+        [
+          "high-resolution promoterome mining for integrative analyses. Cap analysis of gene expression",
+          0.00036262148951421544
+        ],
+        [
+          "Cap analysis of gene",
+          0.00036065524442790574
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56c3184050c68dd416000003",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "antihypertensive",
+          0.6757506420189888
+        ],
+        [
+          "improved left ventricular function",
+          0.5329790139613221
+        ],
+        [
+          "antihypertensive therapy",
+          0.35453451766320815
+        ],
+        [
+          ".",
+          0.28313370952209377
+        ],
+        [
+          "antihypertensive treatment",
+          0.23024879558570163
+        ],
+        [
+          "antihypertensive therapy.",
+          0.17705771169286127
+        ],
+        [
+          "improved left ventricular function.",
+          0.13912660740339702
+        ],
+        [
+          "essential hypertension (WHO classification I or II).",
+          0.0957072845808543
+        ],
+        [
+          "antihypertensive drug in blacks with essential hypertension",
+          0.08683856840741654
+        ],
+        [
+          "left ventricular function",
+          0.07520960678849543
+        ],
+        [
+          "essential hypertension",
+          0.06742441550710736
+        ],
+        [
+          "hyperlipidemia or NIDDM.",
+          0.03688515930238807
+        ],
+        [
+          "left ventricular function.",
+          0.019632400455801453
+        ],
+        [
+          "antihypertensive therapy leads to regression of LV hypertrophy",
+          0.01959747354444779
+        ],
+        [
+          "hypertension",
+          0.015277959122610686
+        ],
+        [
+          "hypertension (WHO classification I or II).",
+          0.013967141319276021
+        ],
+        [
+          "hypertensive patients with either hyperlipidemia or NIDDM.",
+          0.01315472974165
+        ],
+        [
+          "mild or moderately severe essential hypertension",
+          0.01057742550888387
+        ],
+        [
+          "hyperlipidemia or NIDDM",
+          0.010061912174225623
+        ],
+        [
+          "left ventricular hypertrophy with isradipine antihypertensive therapy",
+          0.007942509606303327
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56b397a98525abca1e000003",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "energy reserve",
+          0.7070547750379305
+        ],
+        [
+          ".",
+          0.6869256351674037
+        ],
+        [
+          "lipids storage",
+          0.5710447808715068
+        ],
+        [
+          "clustering",
+          0.5684570683957523
+        ],
+        [
+          "contribute to diverse cellular functions",
+          0.3221321459201878
+        ],
+        [
+          "regulating storage and mobilization of lipids in response to metabolic demands",
+          0.2709173523075422
+        ],
+        [
+          "regulating storage and mobilization of lipids",
+          0.26956489440738074
+        ],
+        [
+          "clustering, inhibited droplet mobility",
+          0.22931967993712898
+        ],
+        [
+          "regulating storage and mobilization",
+          0.2275902237600252
+        ],
+        [
+          "contribute to diverse cellular functions.",
+          0.2059646172778453
+        ],
+        [
+          "adipocytes.",
+          0.10504281350058754
+        ],
+        [
+          ". LDs are highly dynamic and contribute to diverse cellular functions",
+          0.10212421343289553
+        ],
+        [
+          "energy reserve.",
+          0.0998641669650534
+        ],
+        [
+          "lipids storage.",
+          0.09962384449317199
+        ],
+        [
+          "growth",
+          0.08477599727942017
+        ],
+        [
+          "storage",
+          0.07870157294636472
+        ],
+        [
+          ". LDs are highly dynamic and contribute to diverse cellular functions.",
+          0.06529610534342245
+        ],
+        [
+          "clustering,",
+          0.060551106020055
+        ],
+        [
+          "regulating storage and mobilization of lipids in response to metabolic demands.",
+          0.055890982743882746
+        ],
+        [
+          "storage pool of FAs that can be used for energy reserve",
+          0.05337640200554996
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56c1f00cef6e39474100003e",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "peroxisome proliferator-activated receptors",
+          0.9604372363427445
+        ],
+        [
+          "dual peroxisome proliferator-activated receptor \u03b1/\u03b3",
+          0.8991339299401356
+        ],
+        [
+          "peroxisome proliferator-activated receptors \u03b1 and \u03b3",
+          0.5757882229702772
+        ],
+        [
+          "dual peroxisome proliferator-activated receptor-\u03b1/\u03b3",
+          0.48487365201712196
+        ],
+        [
+          "peroxisome proliferator-activated receptor-\u03b1/\u03b3",
+          0.4356318019744374
+        ],
+        [
+          "peroxisome proliferator-activated",
+          0.24457324368205074
+        ],
+        [
+          "peroxisome proliferator-activated receptors \u03b1 and \u03b3;",
+          0.10239260182068506
+        ],
+        [
+          "\u03b1/\u03b3",
+          0.05740915565794556
+        ],
+        [
+          "peroxisome proliferator-activated receptors \u03b1",
+          0.05286187264771375
+        ],
+        [
+          "dual peroxisome proliferator-activated receptor",
+          0.0417894238681442
+        ],
+        [
+          "peroxisome proliferator-activated receptor \u03b1/\u03b3",
+          0.038226820959137084
+        ],
+        [
+          "\u03b1 and \u03b3",
+          0.020169606818417417
+        ],
+        [
+          "dual peroxisome proliferator-activated",
+          0.011461870274550418
+        ],
+        [
+          "proliferator-activated receptors \u03b1 and \u03b3",
+          0.01060696990433353
+        ],
+        [
+          "aleglitazar, a balanced peroxisome proliferator-activated receptor-\u03b1/\u03b3",
+          0.0057165930443358335
+        ],
+        [
+          "Aleglitazar is a dual agonist of peroxisome proliferator-activated receptors",
+          0.005417396570970046
+        ],
+        [
+          "peroxisome proliferator-activated receptor",
+          0.005258678397791088
+        ],
+        [
+          "proliferator-activated receptors",
+          0.005074539751914672
+        ],
+        [
+          "proliferator-activated receptor-\u03b1/\u03b3",
+          0.003961490416269781
+        ],
+        [
+          "peroxisome proliferator-activated receptors with insulin",
+          0.003744044791086575
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56b330bb39c782df06000001",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "Sushi.R",
+          0.7632982860136256
+        ],
+        [
+          "Bioconductor",
+          0.18634644729659183
+        ],
+        [
+          "Sushi",
+          0.020914403176467068
+        ],
+        [
+          "Sushi.R,",
+          0.010985899615835437
+        ],
+        [
+          "Sushi) and Bioconductor",
+          0.010436433989724934
+        ],
+        [
+          "Bioconductor (http://bioconductor",
+          0.004635567333188817
+        ],
+        [
+          "GitHub (https://github.com/dphansti/Sushi) and Bioconductor",
+          0.0011234859595327187
+        ],
+        [
+          "Sushi.",
+          0.0006692363910508712
+        ],
+        [
+          "dphansti/Sushi) and Bioconductor",
+          0.00046641699174482964
+        ],
+        [
+          "Sushi) and Bioconductor (http://bioconductor",
+          0.0002596174661744419
+        ],
+        [
+          "Sushi)",
+          0.00015321209363578905
+        ],
+        [
+          "Sushi.R, an R/Bioconductor",
+          0.0001270416596899822
+        ],
+        [
+          "Sushi.html",
+          9.347014661939794e-05
+        ],
+        [
+          "bioc/html/Sushi",
+          9.084391846223262e-05
+        ],
+        [
+          "Su",
+          7.796195389551663e-05
+        ],
+        [
+          "(https://github.com/dphansti/Sushi) and Bioconductor",
+          7.669864325573823e-05
+        ],
+        [
+          "R",
+          7.26342004508069e-05
+        ],
+        [
+          "github.com/dphansti/Sushi) and Bioconductor",
+          6.374019778067114e-05
+        ],
+        [
+          "Sushi.html).",
+          6.292255523539387e-05
+        ],
+        [
+          "GitHub (https://github.com/dphansti/Sushi",
+          4.568039703788402e-05
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56cafa845795f9a73e00002e",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "mTOR pathway",
+          0.41125197598635876
+        ],
+        [
+          "mTOR",
+          0.3202501454061308
+        ],
+        [
+          "The mTOR pathway",
+          0.1498243500839344
+        ],
+        [
+          "The mTOR",
+          0.11667122032588259
+        ],
+        [
+          "pathway",
+          0.00038130066875735407
+        ],
+        [
+          "mTOR pathway controls cell proliferation by regulating the FoxO3a",
+          0.000264404099069446
+        ],
+        [
+          "mTO",
+          0.00025005628712786756
+        ],
+        [
+          "The mTOR pathway controls cell proliferation by regulating the FoxO3a",
+          9.632579201010809e-05
+        ],
+        [
+          "The mTO",
+          9.10987007745761e-05
+        ],
+        [
+          "mTORC1 and mTORC2",
+          4.998109976787625e-05
+        ],
+        [
+          "m",
+          4.345863394447553e-05
+        ],
+        [
+          "mTOR pathway controls cell proliferation",
+          4.083629729323258e-05
+        ],
+        [
+          "R pathway",
+          4.00256811410201e-05
+        ],
+        [
+          "mTORC1",
+          3.887033083553455e-05
+        ],
+        [
+          "mTOR pathway controls cell proliferation by regulating the FoxO3a transcription factor via SGK1",
+          3.276288763423516e-05
+        ],
+        [
+          "R",
+          3.116879906691633e-05
+        ],
+        [
+          "mTOR) functions as a component of two large complexes, mTORC",
+          2.8322127534478276e-05
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56b76f496e3f8eaf4c000002",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "Spt-Ada-Gcn5-acetyltransferase",
+          2.7584688902398526
+        ],
+        [
+          "Spt-Ada-Gcn5 acetyltransferase",
+          2.6641872180070205
+        ],
+        [
+          "Spt-Ada-Gcn5 Acetyltransferase)",
+          0.11323779952561033
+        ],
+        [
+          "Spt-Ada",
+          0.07150707679520478
+        ],
+        [
+          "(Spt-Ada-Gcn5 acetyltransferase",
+          0.0633193026328152
+        ],
+        [
+          "Spt-Ada-Gcn5",
+          0.050818367483053906
+        ],
+        [
+          "DUBm",
+          0.03914532553019555
+        ],
+        [
+          "Ada-Gcn5 acetyltransferase",
+          0.03681499910822501
+        ],
+        [
+          "DUBm)",
+          0.02620202194375934
+        ],
+        [
+          "(Spt-Ada-Gcn5-acetyltransferase",
+          0.022243228708433548
+        ],
+        [
+          "Ada-Gcn5-acetyltransferase",
+          0.018715510899994174
+        ],
+        [
+          "Spt-Ada-Gcn5-acetyltransferase (SAGA",
+          0.015712821367729373
+        ],
+        [
+          "SAGA (Spt-Ada-Gcn5 Acetyltransferase",
+          0.013298450291658364
+        ],
+        [
+          "The molecular organization of the yeast transcriptional coactivator Spt-Ada-Gcn5 acetyltransferase",
+          0.011977957519833847
+        ],
+        [
+          "Spt-Ada-Gcn5-acetyltransferase (SAGA)",
+          0.011585756572102245
+        ],
+        [
+          "acetyltransferase",
+          0.009859241971296598
+        ],
+        [
+          "SAGA (Spt-Ada-Gcn5-acetyltransferase",
+          0.009798753646796714
+        ],
+        [
+          "Spt-Ada-Gcn5-acetyltransferase)",
+          0.00726113951139406
+        ],
+        [
+          "Spt-Ada-Gcn5-acetyltransferase (SAGA). The yeast Spt-Ada",
+          0.0072060192324712394
+        ],
+        [
+          "(DUBm",
+          0.0049277269844545816
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56c1f00def6e39474100003f",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "sPLA2",
+          1.234054516748079
+        ],
+        [
+          "IL-6",
+          0.7081590448091458
+        ],
+        [
+          "sPLA(2)",
+          0.5247039770265739
+        ],
+        [
+          "secretory phospholipase A2",
+          0.49939691897366534
+        ],
+        [
+          "Secretory phospholipase A2 (sPLA2",
+          0.42353465262861895
+        ],
+        [
+          "secretory phospholipase A2 (sPLA2)",
+          0.1776490050899671
+        ],
+        [
+          "sPLA",
+          0.1398898501761258
+        ],
+        [
+          "sPLA2) generates bioactive phospholipid products implicated in atherosclerosis. The sPLA2",
+          0.12382903943538087
+        ],
+        [
+          "sPLA(2",
+          0.12100671553841508
+        ],
+        [
+          "sPLA2)",
+          0.11945111799249736
+        ],
+        [
+          "phospholipase A2",
+          0.0987185367822164
+        ],
+        [
+          "phospholipase A2 (sPLA2",
+          0.08358882741049212
+        ],
+        [
+          "sPLA(2) inhibitor, and darapladib, a selective Lp-PLA(2)",
+          0.07920029871162568
+        ],
+        [
+          "IL-6-dependent pathways (such as varespladib",
+          0.06445470748879853
+        ],
+        [
+          "IL-6-dependent pathways (such as varespladib and darapladib)",
+          0.05901092646162553
+        ],
+        [
+          "varespladib), a broad sPLA2",
+          0.05094525189034864
+        ],
+        [
+          "sPLA(2) inhibitor,",
+          0.03969596374286488
+        ],
+        [
+          "varespladib",
+          0.03606324656993381
+        ],
+        [
+          "phospholipase A2 (sPLA2)",
+          0.035373077144259975
+        ],
+        [
+          "varespladib and darapladib)",
+          0.032723751232910867
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56c85ed65795f9a73e000012",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "inhibition",
+          0.5944195834337453
+        ],
+        [
+          ".",
+          0.3898338590053038
+        ],
+        [
+          "inhibited antigen-specific proliferation",
+          0.33847520689209426
+        ],
+        [
+          "inhibitory effects",
+          0.1972860858262768
+        ],
+        [
+          "inhibited",
+          0.16954137743956096
+        ],
+        [
+          "inhibits",
+          0.16601146175219136
+        ],
+        [
+          "Dasatinib inhibited antigen-specific proliferation",
+          0.165418545079387
+        ],
+        [
+          "inhibitory",
+          0.13956713441346144
+        ],
+        [
+          "dasatinib inhibits",
+          0.09710173907390345
+        ],
+        [
+          "inhibits T-cell activation and proliferation.",
+          0.0860111812601337
+        ],
+        [
+          "inhibition of antigen-specific T-cell effector functions",
+          0.08298218370053342
+        ],
+        [
+          "Dasatinib inhibited",
+          0.08106836038264477
+        ],
+        [
+          "inhibitor",
+          0.046839357738680976
+        ],
+        [
+          "inhibition of antigen-specific T-cell effector functions by dasatinib.",
+          0.0381530959568717
+        ],
+        [
+          "dasatinib-mediated inhibition",
+          0.02822125867339343
+        ],
+        [
+          "inhibition of antigen-specific T-cell proliferation",
+          0.021416317387932756
+        ],
+        [
+          "inhibit",
+          0.016073650318363424
+        ],
+        [
+          "inhibitory effects of dasatinib",
+          0.012299322333527466
+        ],
+        [
+          "inhibits T-cell activation and proliferation",
+          0.011585300129311684
+        ],
+        [
+          "inhibits recombinant viral antigen-specific murine CD4+ and CD8+ T-cell responses",
+          0.010091860899911343
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56c1f010ef6e394741000041",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "meningiomas",
+          0.8337221238410721
+        ],
+        [
+          "meningioma",
+          0.7541908857516694
+        ],
+        [
+          "olfactory groove meningiomas",
+          0.5693431504089344
+        ],
+        [
+          "spinal meningioma",
+          0.5598447425395057
+        ],
+        [
+          "meningiomas. BACKGROUND: The relevance of the Simpson grading system as a predictor of meningioma",
+          0.3631496749806428
+        ],
+        [
+          "Olfactory groove meningioma",
+          0.17743179069323153
+        ],
+        [
+          "olfactory groove",
+          0.16721673102746037
+        ],
+        [
+          "atypical meningioma",
+          0.10881287532132672
+        ],
+        [
+          "Spinal Atypical (World Health Organization Grade II) Meningiomas",
+          0.06842830052530917
+        ],
+        [
+          "atypical meningiomas",
+          0.060019230343785965
+        ],
+        [
+          "Spinal Atypical",
+          0.021827635131579266
+        ],
+        [
+          "groove meningiomas",
+          0.020677591988570325
+        ],
+        [
+          "meningiomas.",
+          0.0203132934480104
+        ],
+        [
+          "Simpson grade I-II",
+          0.014553661766119464
+        ],
+        [
+          "Atypical (World Health Organization Grade II) Meningiomas",
+          0.011832776708227568
+        ],
+        [
+          "groove meningioma",
+          0.00911121586057629
+        ],
+        [
+          "spinal atypical meningiomas",
+          0.005279068817408055
+        ],
+        [
+          "II",
+          0.005120489350668593
+        ],
+        [
+          "groove",
+          0.005105462397869118
+        ],
+        [
+          "subtotal",
+          0.004164392245943694
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56cf36263975bb303a000007",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "Scleraxis",
+          0.9795127396683121
+        ],
+        [
+          "beak shape diversity",
+          0.828289673402783
+        ],
+        [
+          "chondrosarcoma",
+          0.6934328373240648
+        ],
+        [
+          ".",
+          0.5102112890527926
+        ],
+        [
+          "meroanencephaly",
+          0.41993111354684504
+        ],
+        [
+          "ALX-related frontonasal dysplasia",
+          0.4088441860991274
+        ],
+        [
+          "acrania and meroanencephaly",
+          0.3764832566360074
+        ],
+        [
+          "rat chondrosarcoma",
+          0.2944934671288891
+        ],
+        [
+          "autosomal-recessive ALX-related frontonasal dysplasia",
+          0.27831617838181905
+        ],
+        [
+          "teratogenicity.",
+          0.24158578468054623
+        ],
+        [
+          "Potocki-Shaffer syndrome",
+          0.2205133465266289
+        ],
+        [
+          "aristaless",
+          0.20410722043770568
+        ],
+        [
+          "acrania",
+          0.19546626870001832
+        ],
+        [
+          "teratogenicity",
+          0.15833726610174473
+        ],
+        [
+          "neuroepithelium.",
+          0.15636832756991792
+        ],
+        [
+          "neural tube defects",
+          0.11330552258913502
+        ],
+        [
+          "Potocki-Shaffer syndrome (PSS)",
+          0.09452627815880815
+        ],
+        [
+          "neural tube defects in mice.",
+          0.08796238794646027
+        ],
+        [
+          "neuroepithelium",
+          0.07825521642538154
+        ],
+        [
+          "scapula blade patterning, is absent in all compound mutants.",
+          0.07443983280784712
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56c1f01aef6e394741000043",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "PD-1",
+          0.9274726938816207
+        ],
+        [
+          "programmed death 1",
+          0.4517383996325855
+        ],
+        [
+          "cytotoxic T lymphocyte-associated antigen 4",
+          0.4414975369420436
+        ],
+        [
+          "anti programmed cell death-1",
+          0.4385896296600148
+        ],
+        [
+          "programmed death 1 immune checkpoint",
+          0.3930119180146475
+        ],
+        [
+          "programmed death protein 1",
+          0.36022320225976245
+        ],
+        [
+          "cytotoxic T lymphocyte-associated antigen 4 (CTLA-4)",
+          0.24546507259057043
+        ],
+        [
+          "anti programmed cell death-1 (PD-1)",
+          0.18146535158311658
+        ],
+        [
+          "anti programmed cell death-1 (PD-1",
+          0.15443306065346651
+        ],
+        [
+          "programmed death protein 1 (PD-1) pathway, both anti-PD-1",
+          0.1505414118206607
+        ],
+        [
+          "anti-PD-1",
+          0.13473032419642944
+        ],
+        [
+          "programmed death protein 1 (PD-1)",
+          0.10895030180589618
+        ],
+        [
+          "programmed death protein 1 (PD-1",
+          0.10787291592719706
+        ],
+        [
+          "programmed death",
+          0.09193022297743306
+        ],
+        [
+          "programmed cell death-1",
+          0.06861466152361911
+        ],
+        [
+          "cytotoxic T lymphocyte-associated antigen 4 (CTLA-4",
+          0.06257908180735493
+        ],
+        [
+          "PD-1)",
+          0.055552464123666614
+        ],
+        [
+          "cytotoxic T lymphocyte-associated antigen",
+          0.052992430696216265
+        ],
+        [
+          "T lymphocyte-associated antigen 4",
+          0.0521924716944845
+        ],
+        [
+          "CTLA-4)",
+          0.042361472263550415
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56cae60f5795f9a73e00002b",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "Ataxin-2",
+          1.3788009142162165
+        ],
+        [
+          ".",
+          0.14502618059393663
+        ],
+        [
+          "ataxin-1[Q80] transgenic lines, ataxin-2",
+          0.10850046303362361
+        ],
+        [
+          "ataxin",
+          0.09179838265365341
+        ],
+        [
+          "ataxin-2 with Q58",
+          0.0862472111539878
+        ],
+        [
+          "ataxin-1",
+          0.04591912432141517
+        ],
+        [
+          ". Our analysis of Ataxin-2",
+          0.034040506035176894
+        ],
+        [
+          "SCA2 is the expansion of a polyglutamine tract in Ataxin-2",
+          0.02270049136014149
+        ],
+        [
+          "ataxin-1[Q80] transgenic lines, ataxin",
+          0.014144991058090655
+        ],
+        [
+          ". The molecular basis of SCA2 is the expansion of a polyglutamine tract in Ataxin-2",
+          0.011527181623074988
+        ],
+        [
+          "SCA2",
+          0.010045977380780025
+        ],
+        [
+          "SCA2). The molecular basis of SCA2 is the expansion of a polyglutamine tract in Ataxin-2",
+          0.009358414701624419
+        ],
+        [
+          "Ataxin-2 proteins across eukaryotes. BACKGROUND: Ataxin-2",
+          0.005562223451490958
+        ],
+        [
+          ". The molecular basis of SCA2",
+          0.005101290717120087
+        ],
+        [
+          "SCA2). The molecular basis of SCA2",
+          0.004141514865072603
+        ],
+        [
+          "Ataxin-2,",
+          0.0038546275679768
+        ],
+        [
+          "ataxin-",
+          0.0030949566212070696
+        ],
+        [
+          "SCA2).",
+          0.0025633657213749352
+        ],
+        [
+          "SCA2 is the expansion of a polyglutamine tract in Ataxin-2,",
+          0.0016782957915685525
+        ],
+        [
+          "(SCA2). The molecular basis of SCA2 is the expansion of a polyglutamine tract in Ataxin-2",
+          0.0016686659211244254
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56cf3f4f3975bb303a000008",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "Xp21-p11",
+          0.9329830133631394
+        ],
+        [
+          "(Xp21-p11",
+          0.05039058320098587
+        ],
+        [
+          "Xp21-p11)",
+          0.00784316471742895
+        ],
+        [
+          "Xp21",
+          0.0032846298528469036
+        ],
+        [
+          "chromosome position (Xp21-p11",
+          0.0023628629524824513
+        ],
+        [
+          "MAOA): chromosome position (Xp21-p11",
+          0.0014086173386451929
+        ],
+        [
+          "(Xp21-p11)",
+          0.00042361076095906425
+        ],
+        [
+          "p11",
+          0.000246895374728568
+        ],
+        [
+          "(Xp21",
+          0.00017740345913447162
+        ],
+        [
+          "Xp21-p",
+          0.0001598977105941016
+        ],
+        [
+          "monoamine oxidase gene (MAOA): chromosome position (Xp21-p11",
+          0.00014687619981268625
+        ],
+        [
+          "11",
+          0.000126134743843684
+        ],
+        [
+          "X",
+          0.00012020467323923425
+        ],
+        [
+          "Xp21-p11.",
+          8.137447550088148e-05
+        ],
+        [
+          "Xp",
+          4.71116291911345e-05
+        ],
+        [
+          "X chromosome, we have mapped these fragments to the region Xp21-p11",
+          4.078738232142234e-05
+        ],
+        [
+          "between DXS14",
+          3.9614019005562305e-05
+        ],
+        [
+          "Human monoamine oxidase gene (MAOA): chromosome position (Xp21-p11",
+          3.955953451195862e-05
+        ],
+        [
+          "DXS14",
+          3.9341015293792e-05
+        ],
+        [
+          "between DXS14 and OTC",
+          3.831759633421806e-05
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56c58ceeb04e159d0e000004",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          ".",
+          1.3653676000384618
+        ],
+        [
+          "biogenesis",
+          0.8259050438135187
+        ],
+        [
+          "form a covalently closed continuous loop",
+          0.6468602259704869
+        ],
+        [
+          "Circular RNA is expressed across the eukaryotic tree of life.",
+          0.2127799313144263
+        ],
+        [
+          "Circular RNA may be an ancient, conserved feature of eukaryotic gene expression programs",
+          0.1421986819531736
+        ],
+        [
+          "expressed across the eukaryotic tree of life.",
+          0.13346888399550208
+        ],
+        [
+          "disease regulation.",
+          0.12794487675329128
+        ],
+        [
+          "disease regulation",
+          0.12773788874274564
+        ],
+        [
+          "Circular RNA may be an ancient, conserved feature of eukaryotic gene expression",
+          0.09269101369866503
+        ],
+        [
+          "sequestering the miRNAs.",
+          0.09039996829024585
+        ],
+        [
+          "sequestering the miRNAs",
+          0.08140577331322661
+        ],
+        [
+          "fine tuning the level of miRNA mediated regulation of gene expression by sequestering the miRNAs.",
+          0.07066914264558463
+        ],
+        [
+          "fine tuning the level of miRNA mediated regulation of gene expression by sequestering the miRNAs",
+          0.06363803345567404
+        ],
+        [
+          "regulation of post transcriptional gene expression",
+          0.06304059392364122
+        ],
+        [
+          "an ancient, conserved feature of eukaryotic gene expression programs",
+          0.051401795871565695
+        ],
+        [
+          "Circular RNA is expressed",
+          0.05128235835440176
+        ],
+        [
+          "conserved feature of eukaryotic gene expression programs",
+          0.04112392593776671
+        ],
+        [
+          "Circular RNA is expressed across the eukaryotic tree of life",
+          0.03722714189254505
+        ],
+        [
+          "an ancient, conserved feature of eukaryotic gene expression",
+          0.03350582790096632
+        ],
+        [
+          "expressed",
+          0.032167503278798915
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56caea805795f9a73e00002c",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "SLC38A9",
+          1.3630839824446777
+        ],
+        [
+          "SLC38A9 as a novel component of the Rag-Ragulator complex. SLC38A9",
+          0.37509686233577894
+        ],
+        [
+          "SLC38A9 expression impaired amino-acid-induced mTORC1 activation. Thus SLC38A9",
+          0.13596895599231262
+        ],
+        [
+          ".",
+          0.0561119713307247
+        ],
+        [
+          ". Depletion of SLC38A9",
+          0.02642474499915597
+        ],
+        [
+          "SLC38A9 function rendered cells resistant to amino acid withdrawal, whereas loss of SLC38A9",
+          0.02131987669008062
+        ],
+        [
+          "mTORC1",
+          0.004917992125910115
+        ],
+        [
+          "SLC38A",
+          0.003960063933455021
+        ],
+        [
+          "SLC38",
+          0.0031563484165370395
+        ],
+        [
+          "SLC38A9 function rendered cells resistant to amino acid withdrawal, whereas loss of SLC38A",
+          0.0007683221979726699
+        ],
+        [
+          "SLC",
+          0.0007643070911733097
+        ],
+        [
+          "Rag-Ragulator complex. SLC38A9",
+          0.0007278914122960255
+        ],
+        [
+          "11-pass transmembrane protein SLC38A9",
+          0.0006885692171761937
+        ],
+        [
+          "SLC38A9 as a novel component of the Rag-Ragulator complex.",
+          0.0006715250890968465
+        ],
+        [
+          "9",
+          0.0006205546064038731
+        ],
+        [
+          "SLC38A9 expression impaired amino-acid-induced mTORC1 activation. Thus SLC38A",
+          0.000600032326686794
+        ],
+        [
+          "SLC38A9 expression impaired amino-acid-induced mTORC1 activation. Thus SLC38",
+          0.0005196599679368656
+        ],
+        [
+          "mTORC1 activation. Thus SLC38A9",
+          0.0005063008089678611
+        ],
+        [
+          "SLC38A9 is a physical and functional component of the amino acid sensing machinery",
+          0.0003708725508317375
+        ],
+        [
+          "Ragulator complex, thereby controlling protein translation and cell growth.",
+          0.0003312885714488705
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56c5fd325795f9a73e000005",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          ".",
+          3.024170555839253
+        ],
+        [
+          "SMN1",
+          1.0851601868951017
+        ],
+        [
+          "recessive",
+          0.928654989966137
+        ],
+        [
+          "mutations in a gene encoding a novel protein, SMN",
+          0.4874875551656938
+        ],
+        [
+          "SMN1)",
+          0.38733749017206826
+        ],
+        [
+          "homozygous loss of SMN1",
+          0.36145172375330725
+        ],
+        [
+          "SMN",
+          0.32999608110810474
+        ],
+        [
+          "unknown.",
+          0.185745298149285
+        ],
+        [
+          "mutations of the SMN and NAIP genes",
+          0.1787671821224254
+        ],
+        [
+          "mutations of the SMN and NAIP",
+          0.16615298986743685
+        ],
+        [
+          "SMN1 gene.",
+          0.157962597177981
+        ],
+        [
+          "mutations of the SMN and NAIP genes on chromosome 5, in the region q11.2-13.3.",
+          0.15557710534007588
+        ],
+        [
+          "recessive autosomal",
+          0.15198098504734434
+        ],
+        [
+          "mutations",
+          0.1291794565509747
+        ],
+        [
+          "mutations of the survival of motor neuron gene (SMN1",
+          0.12744123511407918
+        ],
+        [
+          "loss of SMN1",
+          0.10695004388493114
+        ],
+        [
+          "SMN1 gene",
+          0.10312835317545145
+        ],
+        [
+          "loss of function of the survival motor neuron gene (SMN1",
+          0.09240077709354695
+        ],
+        [
+          "SMN and NAIP genes",
+          0.0854499923394336
+        ],
+        [
+          "mutations of the survival of motor neuron gene (SMN1)",
+          0.08527000715965549
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56d1e23c67f0cb3d66000009",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "YAP and TAZ",
+          0.8510145879542454
+        ],
+        [
+          "TAZ",
+          0.7985371829740049
+        ],
+        [
+          ".",
+          0.7240585571574905
+        ],
+        [
+          "TEAD",
+          0.30647540625306996
+        ],
+        [
+          "YAP and TAZ transcription coactivators. YAP and TAZ",
+          0.283965604727225
+        ],
+        [
+          "Yap and Taz, which bind to and activate Teads.",
+          0.27617526985823176
+        ],
+        [
+          "YAP)/TAZ",
+          0.2532326638644075
+        ],
+        [
+          "Vgll1-TEAD and the YAP-TEAD",
+          0.22411024237080668
+        ],
+        [
+          "YAP-TEAD",
+          0.2105417017097072
+        ],
+        [
+          "YAP and its paralog TAZ; (2) Vgll proteins; and (3) p160s.",
+          0.15922196604703798
+        ],
+        [
+          "YAP and its paralog TAZ",
+          0.12174440971940242
+        ],
+        [
+          "TAZ; (2) Vgll proteins; and (3) p160s.",
+          0.11382849718572366
+        ],
+        [
+          "YAP",
+          0.08825389941075558
+        ],
+        [
+          "Taz, which bind to and activate Teads.",
+          0.05365404937893687
+        ],
+        [
+          "TEAD and the YAP-TEAD",
+          0.0518329743749345
+        ],
+        [
+          "(1) YAP and its paralog TAZ; (2) Vgll proteins; and (3) p160s.",
+          0.0381738229738031
+        ],
+        [
+          "TAZ transcription coactivators",
+          0.03297870011900307
+        ],
+        [
+          "Vgll1 and the transcription factor TEAD4",
+          0.03177670893638629
+        ],
+        [
+          "YAP and TAZ transcription coactivators. YAP",
+          0.031237348510565303
+        ],
+        [
+          "(1) YAP and its paralog TAZ",
+          0.029188494904689555
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56bb68f9ac7ad1001900000b",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "phthirus pubis",
+          1.1808716619314332
+        ],
+        [
+          "blepharoconjunctivitis",
+          0.8878801305238108
+        ],
+        [
+          "chronic conjunctivitis",
+          0.6279653579313764
+        ],
+        [
+          "ectoparasitosis",
+          0.5710882474700038
+        ],
+        [
+          ".",
+          0.46681774606040743
+        ],
+        [
+          "ectoparasitosis in which Phthirus pubis infest the eyelashes",
+          0.25136091917146147
+        ],
+        [
+          "lice infestation of palpabrae",
+          0.24960326648072093
+        ],
+        [
+          "Phthirus pubis (pubic lice)",
+          0.233442075654157
+        ],
+        [
+          ". The similarities of the larval and nymph stages of the tick and louse",
+          0.19417856921605642
+        ],
+        [
+          "lice",
+          0.1692251815394362
+        ],
+        [
+          "conjunctivitis",
+          0.14881200759365484
+        ],
+        [
+          "Phthirus pubis (pubic lice) inoculating the eyelashes and surrounding tissues of the eye",
+          0.14810200659034833
+        ],
+        [
+          "tick larva infestation in an eyelid.",
+          0.11913706300298983
+        ],
+        [
+          "Phthirus pubis (pubic lice) inoculating the eyelashes and surrounding tissues of the eye.",
+          0.09748924104177614
+        ],
+        [
+          "Phthirus pubis (pubic lice",
+          0.09047775995564185
+        ],
+        [
+          "blepharoconjunctivitis in which Pthirus pubis infest the eyelashes",
+          0.061503885018330984
+        ],
+        [
+          "ectoparasitosis in which Phthirus pubis infest the eyelashes.",
+          0.043700451900068445
+        ],
+        [
+          "Phthirus pubis infest the eyelashes",
+          0.03621073918614277
+        ],
+        [
+          "an ectoparasitosis",
+          0.03425544650569028
+        ],
+        [
+          "pubic lice)",
+          0.0329321009935436
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56c8274f5795f9a73e00000d",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "motoneuronal",
+          0.994434671369682
+        ],
+        [
+          "microglia",
+          0.8010482185897063
+        ],
+        [
+          "motor neurons",
+          0.7617389074804256
+        ],
+        [
+          "spinal motor neurons",
+          0.4244794822424693
+        ],
+        [
+          "embryonic stem cells",
+          0.21709499448617495
+        ],
+        [
+          "satellite cells",
+          0.1950244972385969
+        ],
+        [
+          "SOD1-G93A satellite cells",
+          0.1523933950310187
+        ],
+        [
+          "motor neurons. In the ALS motor neurons",
+          0.10927568478164065
+        ],
+        [
+          "motor neurons.",
+          0.10633227043395982
+        ],
+        [
+          "myofiber-associated skeletal muscle satellite cells",
+          0.10239515472695108
+        ],
+        [
+          "myofiber-associated skeletal muscle",
+          0.09894059367633015
+        ],
+        [
+          "muscle",
+          0.09415569539471548
+        ],
+        [
+          "spinal motor neurons (sMNs",
+          0.0935007444073625
+        ],
+        [
+          "skeletal muscle satellite cells",
+          0.07463370829430085
+        ],
+        [
+          "skeletal muscle",
+          0.07211575026763034
+        ],
+        [
+          "human embryonic stem cells",
+          0.059990915831635176
+        ],
+        [
+          "spinal motor neurons (sMNs)",
+          0.05711093096247932
+        ],
+        [
+          "embryonic stem",
+          0.0471132683048176
+        ],
+        [
+          ". Despite evidence that microglia",
+          0.037145432504352434
+        ],
+        [
+          "microglia, CNS resident immune cells",
+          0.02983352124499543
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56cae3eb5795f9a73e000021",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "40 years or older",
+          0.7603197573543599
+        ],
+        [
+          ".",
+          0.5537126156995441
+        ],
+        [
+          "54.9 \u00b1 15.4 years",
+          0.4585677574785363
+        ],
+        [
+          "15 to 25 years",
+          0.4144258837202839
+        ],
+        [
+          "15 to 25",
+          0.3879413275938618
+        ],
+        [
+          "pediatric",
+          0.3636274843670018
+        ],
+        [
+          "<17 years",
+          0.3622806638561546
+        ],
+        [
+          "10-19",
+          0.28565294668535623
+        ],
+        [
+          "17 years",
+          0.24260915848842043
+        ],
+        [
+          "> 60 years.",
+          0.23425288009241554
+        ],
+        [
+          "10-19-year-old",
+          0.2117310741680551
+        ],
+        [
+          "10-19-year-old age group.",
+          0.2083661051344434
+        ],
+        [
+          "<40, > 40-59, and > 60 years.",
+          0.1848649543698837
+        ],
+        [
+          "17-40 years",
+          0.15525585696480185
+        ],
+        [
+          "32.3 \u00b1 12.2 years",
+          0.1475590448840497
+        ],
+        [
+          "> 60",
+          0.13465853055949772
+        ],
+        [
+          "60",
+          0.1300839362444694
+        ],
+        [
+          "younger than 20 years), compared with an older age (40 years or older",
+          0.12733490061185268
+        ],
+        [
+          "younger than 20 years",
+          0.12525424191381043
+        ],
+        [
+          "40 years and older",
+          0.11765640849120726
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56d3346cf22319765a000008",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          ".",
+          1.500224921514173
+        ],
+        [
+          "dextrocardia",
+          0.6780102030139101
+        ],
+        [
+          "an autosomal recessive congenital defect",
+          0.31015601213584193
+        ],
+        [
+          "Situs inversus totalis",
+          0.3038227077699476
+        ],
+        [
+          "dextrocardia situs inversus totalis",
+          0.2780276016461375
+        ],
+        [
+          "totalis",
+          0.22734039410761342
+        ],
+        [
+          "autosomal recessive congenital defect",
+          0.14100069068303084
+        ],
+        [
+          "Situs inversus totalis (SIT) is an uncommon congenital syndrome",
+          0.11576340173074444
+        ],
+        [
+          "an uncommon congenital syndrome",
+          0.1050228643148305
+        ],
+        [
+          "SIT) is an uncommon congenital syndrome",
+          0.0984625076382152
+        ],
+        [
+          "Situs inversus totalis (SIT",
+          0.09486747628393313
+        ],
+        [
+          "SIT",
+          0.08241026340755857
+        ],
+        [
+          "mirror image reversal of the normal positioning.",
+          0.05219509639110264
+        ],
+        [
+          "a reversal mirror-image of the normal thoracoabdominal organs position.",
+          0.042557644489754645
+        ],
+        [
+          "mirror image reversal of the normal positioning",
+          0.0368887399452048
+        ],
+        [
+          "SIT) represents a total vertical transposition of the thoracic and abdominal organs",
+          0.036847750046149395
+        ],
+        [
+          "reversal mirror-image of the normal thoracoabdominal organs position.",
+          0.036030948200342514
+        ],
+        [
+          "totalis, as in our patient, is never described.",
+          0.03602809218083442
+        ],
+        [
+          "totalis is a relatively rare condition and is an autosomal recessive congenital defect",
+          0.03595106800317628
+        ],
+        [
+          "a total vertical transposition of the thoracic and abdominal organs",
+          0.0345912624297982
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56bc751eac7ad10019000013",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "Bazex syndrome",
+          3.363329657105185
+        ],
+        [
+          "Bazex",
+          1.0989724224653685
+        ],
+        [
+          "pyriform sinus tumour",
+          0.47821458050949983
+        ],
+        [
+          "Acrokeratosis paraneoplastica Bazex",
+          0.27950548331118796
+        ],
+        [
+          "Acrokeratosis paraneoplastica of Bazex",
+          0.10380935266443736
+        ],
+        [
+          "Bazex?]. Acrokeratosis paraneoplastica Bazex",
+          0.0826387192443933
+        ],
+        [
+          "Acrokeratosis paraneoplastica Bazex syndrome",
+          0.07709983011276585
+        ],
+        [
+          "Bazex is a rare but important paraneoplastic dermatosis",
+          0.07434387285362225
+        ],
+        [
+          "upper aerodigestive tract squamous cell carcinoma",
+          0.06195162897568733
+        ],
+        [
+          "Acrokeratosis paraneoplastica of Bazex is a rare but important paraneoplastic dermatosis",
+          0.06091987036081864
+        ],
+        [
+          "Bazex syndrome associated with esophageal squamocellular carcinoma.",
+          0.045032534833760844
+        ],
+        [
+          "Bazex syndrome associated with esophageal squamocellular carcinoma",
+          0.03702301918446266
+        ],
+        [
+          "acrokeratosis neoplastica Bazex?]. Acrokeratosis paraneoplastica Bazex",
+          0.027345662255667837
+        ],
+        [
+          "squamous cell carcinoma",
+          0.02419547311844431
+        ],
+        [
+          "Acrokeratosis paraneoplastica (Bazex syndrome",
+          0.015486731784185285
+        ],
+        [
+          "paraneoplastic dermatosis",
+          0.014902600748316846
+        ],
+        [
+          "Bazex syndrome)",
+          0.012761682269219058
+        ],
+        [
+          "Acrokeratosis paraneoplastica Bazex (APB",
+          0.012666976412975331
+        ],
+        [
+          "Bazex (APB",
+          0.011302607023348439
+        ],
+        [
+          "dermatosis",
+          0.01073169649184355
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56cb9b065795f9a73e000032",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "aurora A",
+          0.652469864602296
+        ],
+        [
+          "aurora A kinase",
+          0.27397842859373545
+        ],
+        [
+          "aurora A kinase,",
+          0.03265037743688078
+        ],
+        [
+          "Tripolin A, a novel small-molecule inhibitor of aurora A",
+          0.012064727645751033
+        ],
+        [
+          "Tripolin A, a novel small-molecule inhibitor of aurora A kinase",
+          0.005863755438478777
+        ],
+        [
+          "aurora",
+          0.005204334589628436
+        ],
+        [
+          "Tripolin A and Tripolin B, inhibited Aurora A",
+          0.003791551776150809
+        ],
+        [
+          "Aurora A phosphorylation. Tripolin A is predicted to bind Aurora A",
+          0.0015587341303240528
+        ],
+        [
+          "pAurora A",
+          0.001368908300561826
+        ],
+        [
+          "aurora A kinase, reveals new regulation of HURP",
+          0.0012432757325058271
+        ],
+        [
+          "Aurora A kinase.",
+          0.0009225622002661064
+        ],
+        [
+          "Tripolin B, inhibited Aurora A",
+          0.0008191386064997293
+        ],
+        [
+          "Aurora A kinase activity in vitro.",
+          0.0007659647068236307
+        ],
+        [
+          "Tripolin A, a novel small-molecule inhibitor of aurora A kinase,",
+          0.0007172330674972281
+        ],
+        [
+          "Aurora A kinase activity",
+          0.0005447254608036459
+        ],
+        [
+          "inhibited Aurora A",
+          0.000454397869938322
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56c865d25795f9a73e000016",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "GKT136901",
+          1.9412344637830374
+        ],
+        [
+          "GKT137831",
+          0.9816881398691228
+        ],
+        [
+          "GKT136901,",
+          0.035859995618354734
+        ],
+        [
+          "GKT13690",
+          0.008742885014523211
+        ],
+        [
+          "GKT",
+          0.007730764136774522
+        ],
+        [
+          "Nox1/Nox4 inhibitor GKT137831",
+          0.0037492073590221562
+        ],
+        [
+          "GKT1378",
+          0.003328293172110842
+        ],
+        [
+          "GKT136901 (Nox1/4 inhibitor)",
+          0.0032178626410282207
+        ],
+        [
+          "GK",
+          0.0026416979807143016
+        ],
+        [
+          "GKT136901 (Nox1/4 inhibitor) and by Nox1 siRNA",
+          0.002440829393765081
+        ],
+        [
+          "GKT137831 on the manifestations of DN was studied in OVE26",
+          0.0019007420772676762
+        ],
+        [
+          "GKT13",
+          0.0014824114184447984
+        ],
+        [
+          "GKT136",
+          0.0012037795404949093
+        ],
+        [
+          "GKT137",
+          0.001045659442189298
+        ],
+        [
+          "G",
+          0.00057634026619473
+        ],
+        [
+          "136901",
+          0.00033382684097414006
+        ],
+        [
+          "GKT137831 on the manifestations of DN was studied in OVE",
+          0.00032818355904587536
+        ],
+        [
+          "the Nox1/Nox4 inhibitor GKT137831",
+          0.00028364862973970483
+        ],
+        [
+          "137831",
+          0.00023266007101613195
+        ],
+        [
+          "GKT136901, a specific inhibitor of Nox1- and Nox4-containing NADPH",
+          0.00020160828047081892
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56c83f365795f9a73e000011",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "prion domain",
+          1.1725417220002858
+        ],
+        [
+          "prion-like domain",
+          0.9597900435593665
+        ],
+        [
+          "prion-like domains",
+          0.8062684712145824
+        ],
+        [
+          "'prion domain",
+          0.4192057014043592
+        ],
+        [
+          "prion-like",
+          0.27606198704620993
+        ],
+        [
+          "N-terminal prion-like domain",
+          0.23662271853665387
+        ],
+        [
+          "prion-like domain (PrLD)",
+          0.20285225466035856
+        ],
+        [
+          "prion-like domain (PrLD",
+          0.15880999383536712
+        ],
+        [
+          "prion domain'",
+          0.13090361317529595
+        ],
+        [
+          "FUS N-terminal prion-like domain",
+          0.1064019596468955
+        ],
+        [
+          "PrLD)",
+          0.06315048106062009
+        ],
+        [
+          "a 'prion domain",
+          0.06048899500448642
+        ],
+        [
+          "prion",
+          0.0582307066093708
+        ],
+        [
+          "'prion domain'",
+          0.05420174658886859
+        ],
+        [
+          "PrLD",
+          0.04943956637173823
+        ],
+        [
+          "A distinctive and portable 'prion domain",
+          0.03548949961659897
+        ],
+        [
+          "N-terminal prion-like",
+          0.03088549758164268
+        ],
+        [
+          "'prion",
+          0.022067542450431514
+        ],
+        [
+          "prion domain' similar to those found in several yeast prion proteins.",
+          0.014421139375485245
+        ],
+        [
+          "FUS N-terminal prion-like",
+          0.013888258438072058
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56af9f130a360a5e45000015",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "membrane",
+          1.3562896264929711
+        ],
+        [
+          "extracellular",
+          0.8159163904004088
+        ],
+        [
+          "the extracellular space",
+          0.4664411090383201
+        ],
+        [
+          "outer retina",
+          0.44265585005278685
+        ],
+        [
+          "Cx43",
+          0.37563944538417227
+        ],
+        [
+          "extracellular space",
+          0.37055338505788127
+        ],
+        [
+          "the outer retina",
+          0.35687615281354224
+        ],
+        [
+          "the plasma membrane",
+          0.27120215040556905
+        ],
+        [
+          ".",
+          0.22813056733641293
+        ],
+        [
+          "Panx1,",
+          0.22714153374450496
+        ],
+        [
+          "myotubes and adult innervated skeletal myofibers",
+          0.22167841866941737
+        ],
+        [
+          "skeletal myofibers",
+          0.20028382417201016
+        ],
+        [
+          "extracellular nucleotides via pannexin1 channels",
+          0.18244610022666416
+        ],
+        [
+          "plasma membrane",
+          0.1752662904461704
+        ],
+        [
+          "channels",
+          0.16309991475335442
+        ],
+        [
+          "CNS including the inner and outer retinae",
+          0.15584552588623304
+        ],
+        [
+          "Cx43, one of the most similar being pannexin1, a vertebrate homolog of invertebrate gap junction",
+          0.15315778053373902
+        ],
+        [
+          "ubiquitous",
+          0.14917018477857372
+        ],
+        [
+          "CNS",
+          0.1374828697160614
+        ],
+        [
+          "myotubes",
+          0.13688425751063002
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56bc7d71ac7ad10019000018",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "MDR-Tb",
+          1.1057923581481648
+        ],
+        [
+          ".",
+          0.36941557394665936
+        ],
+        [
+          "MDR-TB.",
+          0.2576126774252024
+        ],
+        [
+          "multidrug-resistant tuberculosis",
+          0.20225526332527857
+        ],
+        [
+          "MDR-Tb when other alternatives fail.",
+          0.18237164313087348
+        ],
+        [
+          "pulmonary MDR-TB",
+          0.14806215950358304
+        ],
+        [
+          "MDR-TB patients. In addition, decreased mortality was observed in MDR-TB",
+          0.11986117443171795
+        ],
+        [
+          "tuberculosis",
+          0.1100284330064047
+        ],
+        [
+          "multidrug-resistant tuberculosis (MDR-TB",
+          0.07833814239607109
+        ],
+        [
+          "Tb",
+          0.06842878722056295
+        ],
+        [
+          "tuberculosis.",
+          0.03312537197041867
+        ],
+        [
+          "Tb (MDR/XDR-Tb) worsens the condition. Recently approved anti-Tb",
+          0.024910665598241965
+        ],
+        [
+          "tuberculosis (TB",
+          0.021203178888350688
+        ],
+        [
+          "delamanid) have the potential to induce arrhythmia and are recommended in patients with MDR-Tb",
+          0.02026156338942568
+        ],
+        [
+          "anti-Tb",
+          0.019705794004182615
+        ],
+        [
+          "TB.",
+          0.019365836019341054
+        ],
+        [
+          "MDR/XDR-Tb) worsens the condition. Recently approved anti-Tb",
+          0.01913433853899836
+        ],
+        [
+          "multi/extensively drug-resistant Tb (MDR/XDR-Tb) worsens the condition. Recently approved anti-Tb",
+          0.01858136808771794
+        ],
+        [
+          "multi/extensively drug-resistant Tb",
+          0.01602971061298888
+        ],
+        [
+          "tuberculosis (MDR-TB",
+          0.015399737190724587
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56d19a363975bb303a000017",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "MTBP",
+          0.4480036623030668
+        ],
+        [
+          "TopBP1",
+          0.13189346015123668
+        ],
+        [
+          "TopBP1-interacting, replication stimulating protein/TopBP1",
+          0.12105807162494991
+        ],
+        [
+          "MTBP)",
+          0.07034797653571552
+        ],
+        [
+          "TopBP1-interacting, checkpoint, and replication regulator), the human ortholog of the yeast Sld3",
+          0.03910954551116298
+        ],
+        [
+          "Treslin/TICRR (TopBP1",
+          0.03151722855242337
+        ],
+        [
+          "Treslin/TICRR (TopBP1-interacting, replication stimulating protein/TopBP1",
+          0.028928006795365058
+        ],
+        [
+          ".",
+          0.020559268150835204
+        ],
+        [
+          "Sld3",
+          0.01871611760790571
+        ],
+        [
+          "(TopBP1",
+          0.008577471870139863
+        ],
+        [
+          "TopBP",
+          0.008476751547560495
+        ],
+        [
+          "TICRR (TopBP1",
+          0.007945743816117616
+        ],
+        [
+          "(TopBP1-interacting, replication stimulating protein/TopBP1",
+          0.007872810394281315
+        ],
+        [
+          "TICRR (TopBP1-interacting, replication stimulating protein/TopBP1",
+          0.007292980432101054
+        ],
+        [
+          "replication stimulating protein/TopBP1",
+          0.0059999163907023855
+        ],
+        [
+          "Sld3 protein",
+          0.0048332990522376735
+        ],
+        [
+          "TopBP1-interacting, replication stimulating protein/TopBP",
+          0.004227755523014122
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56c86aa95795f9a73e000018",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "PGI2",
+          0.3944192772134825
+        ],
+        [
+          "iloprost",
+          0.3550052400246603
+        ],
+        [
+          "PGI(2)",
+          0.341776611764374
+        ],
+        [
+          "PGI(2) analogues (iloprost,",
+          0.28120770828832037
+        ],
+        [
+          "Prostaglandin I(2)",
+          0.23634177643087823
+        ],
+        [
+          "Prostaglandin I2",
+          0.17594754901008144
+        ],
+        [
+          "PGI(2",
+          0.14271839605480488
+        ],
+        [
+          "I2",
+          0.12288406363194775
+        ],
+        [
+          "(iloprost,",
+          0.10269733550833107
+        ],
+        [
+          "Prostaglandin I(2) (PGI(2))",
+          0.09762942129472464
+        ],
+        [
+          "iloprost,",
+          0.0809530869398992
+        ],
+        [
+          "PGI(2) analogs iloprost",
+          0.08049036810254445
+        ],
+        [
+          "treprostinil) and 1 new (ONO-1301) PGI2",
+          0.07327635084894576
+        ],
+        [
+          "Prostaglandin I",
+          0.07268334839232193
+        ],
+        [
+          "Prostaglandin I(2",
+          0.05926543058512617
+        ],
+        [
+          "beraprost, and treprostinil) and 1 new (ONO-1301) PGI2",
+          0.04592067781150844
+        ],
+        [
+          "PGI",
+          0.03273962868035221
+        ],
+        [
+          "iloprost and treprostinil",
+          0.030972238622371105
+        ],
+        [
+          "iloprost and",
+          0.026957558250995085
+        ],
+        [
+          "PGI2 analogs, on the expression of MIP-1\u03b1",
+          0.019902276595947496
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56bc9268ac7ad1001900001b",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "IL-17",
+          0.862182238783818
+        ],
+        [
+          "IL17A",
+          0.6356324733107794
+        ],
+        [
+          "interleukin-17",
+          0.4957920527580017
+        ],
+        [
+          "interleukin-17 receptor A",
+          0.4653735812389023
+        ],
+        [
+          "17",
+          0.2775586512510284
+        ],
+        [
+          "IL17A receptor",
+          0.20238074230015404
+        ],
+        [
+          "secukinumab,",
+          0.1931510202238487
+        ],
+        [
+          "IL-17 agents secukinumab,",
+          0.10905017731401509
+        ],
+        [
+          "17 antagonists, secukinumab,",
+          0.09729633823371293
+        ],
+        [
+          "secukinumab, brodalumab and ixekizumab; the IL-23",
+          0.09511652685382956
+        ],
+        [
+          "IL-23",
+          0.09408482600838414
+        ],
+        [
+          "IL17A inhibitors secukinumab and ixekizumab, the IL17A",
+          0.08693763741301513
+        ],
+        [
+          "brodalumab and ixekizumab; the IL-23",
+          0.07105206868126905
+        ],
+        [
+          "17 antagonists, secukinumab, brodalumab and ixekizumab; the IL-23",
+          0.05140589244506131
+        ],
+        [
+          "secukinumab, brodalumab and ixekizumab;",
+          0.03930297224464766
+        ],
+        [
+          "brodalumab and ixekizumab;",
+          0.029359329820738553
+        ],
+        [
+          "IL17A inhibitors secukinumab and ixekizumab, the IL17A receptor",
+          0.027680309506253276
+        ],
+        [
+          "interleukin-17 receptor",
+          0.025695064937748906
+        ],
+        [
+          "IL23",
+          0.024929062142366055
+        ],
+        [
+          "17 antagonists, secukinumab, brodalumab and ixekizumab;",
+          0.021241359738507343
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56c3320a50c68dd416000008",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          ".",
+          1.4294661835115705
+        ],
+        [
+          "one tenth",
+          0.8352798599954355
+        ],
+        [
+          "1 in 2000 live births",
+          0.7853079174023642
+        ],
+        [
+          "1:25,000 newborn",
+          0.741599153001137
+        ],
+        [
+          "1:30,000",
+          0.7283668593823346
+        ],
+        [
+          "1:10,000 to 1:40,000",
+          0.679275733581359
+        ],
+        [
+          "lower",
+          0.36633619652433896
+        ],
+        [
+          "1:4700",
+          0.3288327231307506
+        ],
+        [
+          "lower than the reported frequency among the Western Caucasian population",
+          0.2529725515302715
+        ],
+        [
+          "4 times more to 40 times less common",
+          0.2455347958132788
+        ],
+        [
+          "1:10,000 to 1:40,000.",
+          0.23145048508958022
+        ],
+        [
+          "4 times more to 40 times less common than the generally accepted figure of 1:2000.",
+          0.22504840582616756
+        ],
+        [
+          "lower than the reported frequency",
+          0.1966031438934633
+        ],
+        [
+          "about 1 in 2000 live births",
+          0.18176300384098695
+        ],
+        [
+          "around 1:30,000",
+          0.17546456439978908
+        ],
+        [
+          "4 times more to 40 times less common than the generally accepted figure of 1:2000",
+          0.1694661895608839
+        ],
+        [
+          "one tenth that in other Caucasian populations.",
+          0.12633610109104018
+        ],
+        [
+          "1:25,000 newborn, is one of the lowest in Caucasian populations.",
+          0.07962429607702469
+        ],
+        [
+          "1:4700,",
+          0.07799102026955403
+        ],
+        [
+          "from 4 times more to 40 times less common",
+          0.052848907954384065
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56bc932aac7ad1001900001c",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "CD38",
+          4.231361140257743
+        ],
+        [
+          "CD38, has been of great interest in the treatment of CD38",
+          0.24101153720137689
+        ],
+        [
+          "CD38 antigen",
+          0.0955825501725831
+        ],
+        [
+          "IgG1\u03ba monoclonal antibody that recognizes CD38",
+          0.08245654289585304
+        ],
+        [
+          "CD38 on myeloma cells.",
+          0.07940315360080342
+        ],
+        [
+          "CD38.",
+          0.07794994228326224
+        ],
+        [
+          "CD38,",
+          0.06776241635783654
+        ],
+        [
+          "the CD38",
+          0.02645123486957063
+        ],
+        [
+          "daratumumab which targets CD38",
+          0.01656991643291188
+        ],
+        [
+          "CS-1 mAb, elotuzumab, and the anti-CD38",
+          0.010985076897372357
+        ],
+        [
+          "anti-CD38",
+          0.010874988823402506
+        ],
+        [
+          "IgG1\u03ba monoclonal antibody that recognizes CD38 on myeloma cells.",
+          0.008033632421819103
+        ],
+        [
+          ".",
+          0.007741135216050056
+        ],
+        [
+          "Daratumumab, an investigated anti-cancer drug targeting CD38",
+          0.006371120070189304
+        ],
+        [
+          "38",
+          0.004727890761436793
+        ],
+        [
+          "CD38 epitope",
+          0.003178184235777575
+        ],
+        [
+          "the CD38 antigen",
+          0.0029164651854982297
+        ],
+        [
+          "recognizes CD38",
+          0.0025866686439227045
+        ],
+        [
+          "IgG1\u03ba",
+          0.002194594110809553
+        ],
+        [
+          "CS1",
+          0.0017585676609186529
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "569e7721ceceede94d000001",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "to better understand the transcriptional network that regulates macrophage differentiation",
+          0.1691973236896052
+        ],
+        [
+          "to uncover novel components of the transcriptome",
+          0.06836455522402456
+        ],
+        [
+          "uncover novel components of the transcriptome",
+          0.04230958839523757
+        ],
+        [
+          "better understand the transcriptional network that regulates macrophage differentiation",
+          0.04132859115709939
+        ],
+        [
+          "to better understand the transcriptional network",
+          0.007419421287341669
+        ],
+        [
+          "to uncover novel components of the transcriptome employing a series of high-throughput experiments.",
+          0.003794081727400158
+        ],
+        [
+          "uncover novel components of the transcriptome employing a series of high-throughput experiments.",
+          0.0023480886505903983
+        ],
+        [
+          "set out to better understand the transcriptional network that regulates macrophage differentiation",
+          0.0018778704956501626
+        ],
+        [
+          "better understand the transcriptional network",
+          0.0018122877024304982
+        ],
+        [
+          "to uncover novel components",
+          0.0014904296650488371
+        ],
+        [
+          "to better understand",
+          0.0011871050748768295
+        ],
+        [
+          "uncover novel components",
+          0.0009223999988536139
+        ],
+        [
+          "understand the transcriptional network that regulates macrophage differentiation",
+          0.00039361098032269603
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56c341acfedd0b786b000001",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "intercalate",
+          0.4054848181874938
+        ],
+        [
+          "bind very efficiently to DNA",
+          0.39316144953677856
+        ],
+        [
+          "Cross-linking and relaxation",
+          0.3836525983694633
+        ],
+        [
+          "relaxation",
+          0.3058904179715653
+        ],
+        [
+          "antiviral agent",
+          0.30369473000963865
+        ],
+        [
+          "provide an assay for Z-DNA",
+          0.21339795473337672
+        ],
+        [
+          "forms crosslinks",
+          0.18346789377170092
+        ],
+        [
+          "Both compounds bind very efficiently to DNA",
+          0.16253787245311163
+        ],
+        [
+          "hinder photobinding",
+          0.15789207081403203
+        ],
+        [
+          "occupancy of the major and minor groove as well as intercalation hinder photobinding",
+          0.15331814928826695
+        ],
+        [
+          "bind very efficiently to DNA,",
+          0.15203831909535737
+        ],
+        [
+          "Cross-linking",
+          0.12660929345034075
+        ],
+        [
+          "Both compounds intercalate",
+          0.1054491371173673
+        ],
+        [
+          "bind very efficiently",
+          0.0974893601248517
+        ],
+        [
+          "intercalation hinder photobinding",
+          0.08635094955754873
+        ],
+        [
+          "hypersensitivity",
+          0.08134551485151738
+        ],
+        [
+          "hinder photobinding of furocoumarins to DNA.",
+          0.07362734608687059
+        ],
+        [
+          "provide an assay for Z-DNA that is applicable in vivo",
+          0.07360424999806008
+        ],
+        [
+          "provide an assay",
+          0.06722928583804116
+        ],
+        [
+          "antiviral agent.",
+          0.06292451770164063
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56a39d60496b62f23f000006",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "r3Cseq",
+          0.8801782468754143
+        ],
+        [
+          ".",
+          0.08494179944728703
+        ],
+        [
+          "r3Cseq,",
+          0.023020343670866132
+        ],
+        [
+          "r3Cseq, an R/Bioconductor package designed to perform 3C-seq",
+          0.006821811292265276
+        ],
+        [
+          "3C-seq data analysis in a number of different experimental designs.",
+          0.0016674642719732807
+        ],
+        [
+          "r3Cseq, an R/Bioconductor",
+          0.0008196596264594998
+        ],
+        [
+          "We present r3Cseq",
+          0.0006397084465333901
+        ],
+        [
+          "3C-seq",
+          0.00037614812965286026
+        ],
+        [
+          "r3Cseq:",
+          0.00031802346586679383
+        ],
+        [
+          "r3Cse",
+          0.0001989513772747922
+        ],
+        [
+          "r3",
+          0.00017668172351395842
+        ],
+        [
+          "r3Cseq, an R/Bioconductor package designed to perform 3C-seq data analysis",
+          0.00016515794844683466
+        ],
+        [
+          "r3Cs",
+          0.00012137605377164549
+        ],
+        [
+          "Cseq",
+          0.00011528953891076386
+        ],
+        [
+          "q",
+          0.00010942571307621475
+        ],
+        [
+          "r3Cseq, an R/Bioconductor package",
+          8.448920123289107e-05
+        ],
+        [
+          "r3Cseq: an R/Bioconductor",
+          6.790149335015577e-05
+        ],
+        [
+          "viewpoint) and the rest of the genome. We present r3Cseq",
+          6.474661115395908e-05
+        ],
+        [
+          "r",
+          5.698237060396523e-05
+        ],
+        [
+          "next-generation sequencing data.",
+          5.579274234597359e-05
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "56b7083376d8bf8d13000001",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "Fusarium oxysporum",
+          3.467920074899449
+        ],
+        [
+          "Fusarium oxysporum f. sp. cubense",
+          1.239682087801561
+        ],
+        [
+          "Fusarium oxysporum f.sp. cubense",
+          0.7015946201953175
+        ],
+        [
+          "Fusarium oxysporum f. sp. cubense (Foc), the causal agent of Fusarium wilt",
+          0.3075963046871123
+        ],
+        [
+          "Fusarium oxysporum f. sp. cubense race 4",
+          0.2523417600424712
+        ],
+        [
+          "fungi",
+          0.19550934448051796
+        ],
+        [
+          "fungus Fusarium oxysporum",
+          0.12545641498649449
+        ],
+        [
+          "Fusarium wilt",
+          0.11214039670971307
+        ],
+        [
+          "Fusarium oxysporum f. sp. cubense race 4 (FOC)",
+          0.10390598403581054
+        ],
+        [
+          "fungus Fusarium oxysporum f. sp. cubense",
+          0.09961504700820843
+        ],
+        [
+          "Fusarium oxysporum f. sp. cubense race 4 (FOC",
+          0.052334092854037256
+        ],
+        [
+          "fungus",
+          0.041830092159260805
+        ],
+        [
+          "Fusarium oxysporum f.sp. cubense (FOC), Race 4, the causal agent of Panama disease.",
+          0.03946448228017467
+        ],
+        [
+          "Fusarium wilt of banana (also known as Panama disease) is caused by Fusarium oxysporum",
+          0.026103137565820705
+        ],
+        [
+          "Fusarium oxysporum f. sp. cubense.",
+          0.02524021639986909
+        ],
+        [
+          "Fusarium oxysporum f.sp. cubense, a causative agent of Panama disease.",
+          0.021875689422166084
+        ],
+        [
+          "Fusarium oxysporum f. sp. cubense (Foc1)",
+          0.019529250622298648
+        ],
+        [
+          "Fusarium",
+          0.016713491237065132
+        ],
+        [
+          "Fusarium oxysporum f.sp. cubense (FOC)",
+          0.015936305337039294
+        ],
+        [
+          "Fusarium oxysporum f.sp. cubense (FOC), Race 4",
+          0.014236287129812222
+        ]
+      ]
+    }
+  ]
+}

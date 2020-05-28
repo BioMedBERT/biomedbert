@@ -1,0 +1,2629 @@
+{
+  "questions": [
+    {
+      "type": "factoid",
+      "id": "5a6a3335b750ff4455000025",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "emMAW",
+          0.9709189956127708
+        ],
+        [
+          "emMAW,",
+          0.019537084512804788
+        ],
+        [
+          "emMAW, the first external-memory algorithm",
+          0.002773532959184584
+        ],
+        [
+          "emMAW: computing minimal absent words in external memory.",
+          0.0018048424027476365
+        ],
+        [
+          "We present emMAW",
+          0.0011712241410476553
+        ],
+        [
+          "emMAW, the first external-memory algorithm for computing minimal absent words",
+          0.000583997594861129
+        ],
+        [
+          "em",
+          0.0005402767834379849
+        ],
+        [
+          "emMAW: computing minimal absent words in external memory",
+          0.0004591934749766136
+        ],
+        [
+          "emMA",
+          0.00036848375410551075
+        ],
+        [
+          "W",
+          0.00021359523290175172
+        ],
+        [
+          "emMAW, the first external-memory",
+          0.0001965099482114757
+        ],
+        [
+          "emMAW, the first external-memory algorithm for computing minimal absent words.",
+          0.0001262716308760993
+        ],
+        [
+          "emMAW, the first external-memory algorithm for computing minimal absent words. A free open-source",
+          8.628204732610839e-05
+        ],
+        [
+          "Results: We present emMAW",
+          5.769841131198613e-05
+        ],
+        [
+          "solon.pissis",
+          5.16886030983495e-05
+        ],
+        [
+          "present emMAW",
+          4.68418566651515e-05
+        ],
+        [
+          "MAW",
+          3.346017498091734e-05
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a87d73861bb38fb2400000b",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "027",
+          4.000092776865163
+        ],
+        [
+          "Ribotype 027",
+          2.446609375866467
+        ],
+        [
+          "PCR",
+          0.5709481354841583
+        ],
+        [
+          "Clostridium difficile ribotype 027",
+          0.21750429708969476
+        ],
+        [
+          "PCR ribotype 027",
+          0.18790780852823422
+        ],
+        [
+          "027 (B1/NAP1)",
+          0.13813669903133766
+        ],
+        [
+          "NAP1/BI/027",
+          0.12197017268718847
+        ],
+        [
+          "027 (B1/NAP1",
+          0.11928601221665912
+        ],
+        [
+          "NAP1/BI/027 (C. difficile 027",
+          0.11206163169768868
+        ],
+        [
+          "ribotype 027 (B1/NAP1)",
+          0.07865115486025091
+        ],
+        [
+          "ribotype 027 (B1/NAP1",
+          0.06791810348230375
+        ],
+        [
+          "C.\u00a0difficile ribotype 027",
+          0.061332046801655285
+        ],
+        [
+          "027.",
+          0.0551436145111167
+        ],
+        [
+          "C. difficile ribotype 027",
+          0.03967270587584183
+        ],
+        [
+          "CDI ribotype 027",
+          0.03650894036078801
+        ],
+        [
+          "PCR ribotype 027 (65.8%). Other three dominating PCR",
+          0.030884342002876597
+        ],
+        [
+          "027 (C. difficile 027",
+          0.030833059130252267
+        ],
+        [
+          "Clostridium difficile NAP1/BI/027",
+          0.028917360847474878
+        ],
+        [
+          "B1/NAP1)",
+          0.02799225617670646
+        ],
+        [
+          "PCR ribotype",
+          0.026819912785225223
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "58eb99f3eda5a57672000009",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "first",
+          0.733480064707747
+        ],
+        [
+          "YAC",
+          0.5067853683868857
+        ],
+        [
+          "mat1 is preferentially replicated by a centromere-distal",
+          0.4608399840772377
+        ],
+        [
+          "ARSs), centromeres,",
+          0.236434394324116
+        ],
+        [
+          "YAC that had the same centromere and origin of replication as present on the linear YAC",
+          0.19894411913106042
+        ],
+        [
+          "early",
+          0.1888544283085225
+        ],
+        [
+          "centromeres,",
+          0.16316866838724048
+        ],
+        [
+          "centromeres or an origin of replication juxtaposed to a centromere rescue the rad53",
+          0.1369685550573157
+        ],
+        [
+          "ARSs),",
+          0.13055707642943878
+        ],
+        [
+          "rad53",
+          0.11984566422526914
+        ],
+        [
+          "mat1",
+          0.11745895114557793
+        ],
+        [
+          "centromere rescue the rad53",
+          0.10562762588587253
+        ],
+        [
+          "autonomously replicating sequences; ARSs), centromeres,",
+          0.09920878438945366
+        ],
+        [
+          "centromere-distal",
+          0.09001706313808214
+        ],
+        [
+          "(autonomously replicating sequences; ARSs), centromeres,",
+          0.0898130205396713
+        ],
+        [
+          "YAC.",
+          0.06794816570259828
+        ],
+        [
+          "mat1 is preferentially replicated by a centromere-distal origin(s).",
+          0.06746248404611861
+        ],
+        [
+          "distal",
+          0.06657560560400792
+        ],
+        [
+          "centromeres or an origin of replication juxtaposed to a centromere",
+          0.05836864627890636
+        ],
+        [
+          "Y",
+          0.05819340983971927
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a87ea1861bb38fb2400000d",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "circularized oligodeoxynucleotides",
+          0.870578352693172
+        ],
+        [
+          "Circularized oligonucleotides",
+          0.8641324049366089
+        ],
+        [
+          "oligodeoxynucleotides",
+          0.05007178861404798
+        ],
+        [
+          "oligonucleotides",
+          0.04927034007705831
+        ],
+        [
+          "circularized oligodeoxynucleotides (coligos)",
+          0.03484672735400622
+        ],
+        [
+          "Circularized oligonucleotides, or coligos",
+          0.032482045183944645
+        ],
+        [
+          "circularized oligodeoxynucleotides (coligos",
+          0.03008426584087329
+        ],
+        [
+          "Circularized oligonucleotides,",
+          0.028172110961386592
+        ],
+        [
+          "Circularized oligonucleotide",
+          0.010936387667566147
+        ],
+        [
+          "Circularized oligonucleotides, or coligos,",
+          0.005610586794035303
+        ],
+        [
+          "circularized oligodeoxynucleotide",
+          0.0055740977518830385
+        ],
+        [
+          "oligodeoxynucleotides (coligos)",
+          0.0020042285229852443
+        ],
+        [
+          "oligonucleotides, or coligos",
+          0.0018520326323472722
+        ],
+        [
+          "oligodeoxynucleotides (coligos",
+          0.0017303129524562622
+        ],
+        [
+          "oligonucleotides,",
+          0.00160629260033127
+        ],
+        [
+          "Circularized oligon",
+          0.0013066252808162954
+        ],
+        [
+          "Circularized",
+          0.0012592656955747418
+        ],
+        [
+          "circular",
+          0.0011795231270132172
+        ],
+        [
+          "coligos",
+          0.0009034771114903456
+        ],
+        [
+          "circularized oligodeoxynucleotides (coligos) containing certain sequences and secondary structures",
+          0.0008642574013093537
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a67b2f7b750ff445500000f",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "stress urinary incontinence",
+          2.4294195372693523
+        ],
+        [
+          "stress",
+          1.8656662821143608
+        ],
+        [
+          "stress urinary incontinence (SUI",
+          0.5034715209389248
+        ],
+        [
+          "stress urinary incontinence with hypermobile urethra",
+          0.19073431782934558
+        ],
+        [
+          "stress urinary incontinence (SUI)",
+          0.15917524399877495
+        ],
+        [
+          "urodynamic stress urinary incontinence",
+          0.08773733987475989
+        ],
+        [
+          "SUI",
+          0.0809856160383026
+        ],
+        [
+          "urethral hypermobility [UH, subdivided into anatomical incontinence",
+          0.06798896665057738
+        ],
+        [
+          "urethral hypermobility",
+          0.064831287674743
+        ],
+        [
+          "anatomical incontinence",
+          0.051848078329160406
+        ],
+        [
+          "urodynamic stress",
+          0.042216804014019976
+        ],
+        [
+          "stress urinary incontinence (SUI) symptoms and urodynamic SUI",
+          0.03884486395117598
+        ],
+        [
+          "simple stress urinary incontinence",
+          0.03739092838801174
+        ],
+        [
+          "stress urinary incontinence with hypermobile",
+          0.0303761232582811
+        ],
+        [
+          "anatomical incontinence (AI) and equivocal incontinence",
+          0.029893980601742507
+        ],
+        [
+          "hypermobile urethra",
+          0.02032581479128835
+        ],
+        [
+          "SUI)",
+          0.016843031153923337
+        ],
+        [
+          "clinical stress urinary incontinence",
+          0.016740553459230915
+        ],
+        [
+          "urethral hypermobility [UH",
+          0.015621680365291627
+        ],
+        [
+          "stress urinary",
+          0.014300359889751238
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "58edf567eda5a57672000011",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "48",
+          2.4875011784817924
+        ],
+        [
+          "four",
+          0.8333483654570346
+        ],
+        [
+          "48 genes",
+          0.4709174523528388
+        ],
+        [
+          "50",
+          0.4457077844976075
+        ],
+        [
+          "50 genes",
+          0.28462402853047597
+        ],
+        [
+          "at least 48 genes",
+          0.25421871531378337
+        ],
+        [
+          "at least 48",
+          0.2516854187960063
+        ],
+        [
+          "approximately 50",
+          0.15698200391886397
+        ],
+        [
+          "41 out of 48",
+          0.14630674672495778
+        ],
+        [
+          "approximately 50 genes",
+          0.10024695981591918
+        ],
+        [
+          "48 co-regulated genes",
+          0.09706172064044977
+        ],
+        [
+          "Rv3133",
+          0.0756487647534387
+        ],
+        [
+          "(Rv3133",
+          0.0701970475858689
+        ],
+        [
+          "47",
+          0.05565572085617368
+        ],
+        [
+          "four classes",
+          0.051746575529964374
+        ],
+        [
+          "DevR regulon. All the regulon promoters were assigned to four",
+          0.026754700989395953
+        ],
+        [
+          "3133",
+          0.02292135158592043
+        ],
+        [
+          "41",
+          0.022142992568486147
+        ],
+        [
+          "DosR (Rv3133",
+          0.016234433570385516
+        ],
+        [
+          "All the regulon promoters were assigned to four",
+          0.01503228891158574
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a7610af83b0d9ea6600001a",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "janus kinase 3",
+          0.5874644728020043
+        ],
+        [
+          "JAK3",
+          0.2932071214600801
+        ],
+        [
+          "janus kinase",
+          0.04989632828162982
+        ],
+        [
+          "JAK3 kinase activity and inhibition of JAK3",
+          0.020631831614217926
+        ],
+        [
+          "JAK3 kinase activity and inhibition of JAK3-mediated signaling in vitro and JAK3",
+          0.015881304236370214
+        ],
+        [
+          "JAK3-mediated signaling in vitro and JAK3",
+          0.009368381547460253
+        ],
+        [
+          "3",
+          0.006192610775161244
+        ],
+        [
+          "VX-509 (decernotinib) is a potent and selective janus kinase 3",
+          0.0025823400419188467
+        ],
+        [
+          "JAK",
+          0.0023114870579047796
+        ],
+        [
+          "(decernotinib) is a potent and selective janus kinase 3",
+          0.0022612590882366826
+        ],
+        [
+          "kinase 3",
+          0.0018404088838066064
+        ],
+        [
+          "JAKs",
+          0.001751114880859189
+        ],
+        [
+          "janus",
+          0.0016106114707655132
+        ],
+        [
+          "JAK isotypes or non-JAK",
+          0.0015273887372895425
+        ],
+        [
+          "decernotinib) is a potent and selective janus kinase 3",
+          0.0014137876403287476
+        ],
+        [
+          "j",
+          0.0004503722966415679
+        ],
+        [
+          "JAKs)",
+          0.0004429875512523917
+        ],
+        [
+          "JAK3 kinase activity and inhibition of JAK",
+          0.0003250039981024384
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a6e2b1bb750ff445500003e",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "Psygenet2r",
+          0.9881074595663314
+        ],
+        [
+          "Psygenet",
+          0.003978009276107152
+        ],
+        [
+          "psygenet2r: a R/Bioconductor package for the analysis of psychiatric disease genes.",
+          0.003585770814407901
+        ],
+        [
+          "psygenet2r:",
+          0.0012311228103869243
+        ],
+        [
+          "psygenet2r: a R/Bioconductor package for the analysis of psychiatric disease genes",
+          0.0010791130201446748
+        ],
+        [
+          "P",
+          0.00040812745397644237
+        ],
+        [
+          "Psy",
+          0.00025866694618693545
+        ],
+        [
+          "psygenet2",
+          0.00023780690915448582
+        ],
+        [
+          "Psygenet2r is especially suited for network medicine analysis of psychiatric disorders.",
+          0.00021813880858520643
+        ],
+        [
+          "ps",
+          0.00020908787156197388
+        ],
+        [
+          "r",
+          0.00019603764790039992
+        ],
+        [
+          "psygenet2r: a R/Bioconductor package",
+          0.00015913234930779786
+        ],
+        [
+          "Psygene",
+          0.00013213619476690864
+        ],
+        [
+          "psygenet2r: a R/Bioconductor",
+          0.0001143951124829252
+        ],
+        [
+          "Psygenet2r is especially suited for network medicine",
+          8.499521869866058e-05
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a88370c61bb38fb24000014",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "melanoma differentiation-associated gene 5 (MDA5) leads to innate antiviral response",
+          0.5192918662157461
+        ],
+        [
+          "pattern recognition receptor",
+          0.3784695866211244
+        ],
+        [
+          "Retinoic acid-inducible gene-I (RIG-I)-like receptors",
+          0.3281817964610286
+        ],
+        [
+          "RNA PRRs",
+          0.269809783442104
+        ],
+        [
+          "RNA PRRs are comprised of TLR3, TLR7, TLR8, RIG-I, MDA5,",
+          0.1998463239006875
+        ],
+        [
+          "immune response to RNA virus infection primarily involves pathogen-sensing toll-like receptors",
+          0.1694179800600929
+        ],
+        [
+          "pathogen-sensing toll-like receptors",
+          0.13954106029063182
+        ],
+        [
+          "immune response",
+          0.1352704876362235
+        ],
+        [
+          "pattern recognition receptor that recognizes cytoplasmic viral double-stranded RNA",
+          0.1315537430413627
+        ],
+        [
+          "melanoma differentiation-associated gene 5",
+          0.12883523874738517
+        ],
+        [
+          "RNA PRRs are comprised of TLR3, TLR7,",
+          0.11902042605005962
+        ],
+        [
+          "innate antiviral response",
+          0.11848816251168234
+        ],
+        [
+          "a pattern recognition receptor",
+          0.11691446623872767
+        ],
+        [
+          "RNA PRRs are comprised of TLR3, TLR7, TLR8,",
+          0.1064330248747595
+        ],
+        [
+          "RIG-I)-like receptors",
+          0.09278041607237389
+        ],
+        [
+          "RNA PRRs are comprised of TLR3,",
+          0.08987858785726785
+        ],
+        [
+          "antiviral response",
+          0.0758759507317016
+        ],
+        [
+          "melanoma differentiation associated gene 5",
+          0.0708884277126533
+        ],
+        [
+          "Retinoic acid-inducible gene-I (RIG-I)-like receptors (RLRs",
+          0.06346142015869465
+        ],
+        [
+          "RNA PRRs are comprised of TLR3, TLR7, TLR8, RIG-I,",
+          0.062203012961539315
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "58ee2515eda5a57672000016",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "healthy human subjects",
+          0.7064853185810552
+        ],
+        [
+          "healthy",
+          0.5818041347124534
+        ],
+        [
+          "carriers",
+          0.49918460305703705
+        ],
+        [
+          "adults",
+          0.44904069268889957
+        ],
+        [
+          "45-year-old patient",
+          0.39270437794808183
+        ],
+        [
+          "Paraprevotella xylaniphila sp. nov.",
+          0.35557877808114474
+        ],
+        [
+          "carriers than non-carriers",
+          0.314410668051648
+        ],
+        [
+          "obese individuals",
+          0.3117494406052364
+        ],
+        [
+          "healthy individuals",
+          0.3084913376148228
+        ],
+        [
+          "obese",
+          0.25844505053507866
+        ],
+        [
+          "Paraprevotella clara gen. nov., sp. nov.",
+          0.19476423962344952
+        ],
+        [
+          "human subjects",
+          0.18746080544206115
+        ],
+        [
+          "post-gastric-bypass individuals",
+          0.17179818997776858
+        ],
+        [
+          "subjects",
+          0.15372272535585058
+        ],
+        [
+          "a 45-year-old patient",
+          0.1518350738244985
+        ],
+        [
+          "adult humans",
+          0.14733318053713015
+        ],
+        [
+          "humans",
+          0.14246394557851702
+        ],
+        [
+          "Paraprevotella clara",
+          0.13274591981843462
+        ],
+        [
+          "patient",
+          0.13151254923208452
+        ],
+        [
+          "healthy adults",
+          0.1129924701422828
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a885daa61bb38fb24000018",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "Asp(D)-Glu-(E)-Ala(A)-Asp(D)",
+          0.9182152939054796
+        ],
+        [
+          "Asp(D)-Glu-(E)-Ala(A)-Asp(D",
+          0.04670348325881343
+        ],
+        [
+          "Asp(D)-Glu-(E)-Ala(A)-Asp",
+          0.01346822462957747
+        ],
+        [
+          "Asp(D)",
+          0.006670892650492332
+        ],
+        [
+          "Glu-(E)-Ala(A)-Asp(D)",
+          0.003641880264275727
+        ],
+        [
+          "Ala(A)-Asp(D)",
+          0.0036101486560321926
+        ],
+        [
+          "Asp(D)-Glu-(E)-Ala",
+          0.001520129580496214
+        ],
+        [
+          "(D)-Glu-(E)-Ala(A)-Asp(D)",
+          0.0014072955650389412
+        ],
+        [
+          "Asp(D)-Glu",
+          0.0008101825996561924
+        ],
+        [
+          "D)-Glu-(E)-Ala(A)-Asp(D)",
+          0.0007802630625305231
+        ],
+        [
+          "Asp(D)-Glu-(E)-Ala(A)",
+          0.000741110956066508
+        ],
+        [
+          "Asp(D",
+          0.00033930378342803046
+        ],
+        [
+          "Asp(D)-Glu-(E)",
+          0.0003389311774482608
+        ],
+        [
+          "A)-Asp(D)",
+          0.0003123173615831078
+        ],
+        [
+          "(E)-Ala(A)-Asp(D)",
+          0.0003112981506413057
+        ],
+        [
+          "D)",
+          0.00026551880098269094
+        ],
+        [
+          "Asp(D)-Glu-(E)-Ala(A",
+          0.0002330813174930866
+        ],
+        [
+          "Asp(D)-Glu-(E",
+          0.00021836781528167287
+        ],
+        [
+          ")",
+          0.00021324404001396295
+        ],
+        [
+          "E)-Ala(A)-Asp(D)",
+          0.00019903242466874586
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a7237672dc08e987e000008",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "dabigatran",
+          3.6558514206790074
+        ],
+        [
+          "apixaban",
+          0.32245793846840143
+        ],
+        [
+          "apixaban, rivaroxaban",
+          0.2488850986157927
+        ],
+        [
+          "rivaroxaban",
+          0.16350275334966258
+        ],
+        [
+          "dabigatran.",
+          0.07758622376516126
+        ],
+        [
+          "apixaban, rivaroxaban, or dabigatran",
+          0.06284274232041254
+        ],
+        [
+          "apixaban, rivaroxaban, or dabigatran may be preferred to vitamin K",
+          0.05627970314163193
+        ],
+        [
+          "dabigatran and two agents, andexanet",
+          0.05195773270343778
+        ],
+        [
+          "apixaban,",
+          0.03891865191959198
+        ],
+        [
+          "rivaroxaban, or dabigatran",
+          0.033896348177290175
+        ],
+        [
+          "apixaban, rivaroxaban,",
+          0.03136288001572155
+        ],
+        [
+          "rivaroxaban, or dabigatran may be preferred to vitamin K",
+          0.030356352103107345
+        ],
+        [
+          "rivaroxaban,",
+          0.02820526385597273
+        ],
+        [
+          "rivaroxaban, apixaban",
+          0.018184998924187193
+        ],
+        [
+          "andexanet and ciraparantag, currently under development for the reversal of rivaroxaban",
+          0.016228211756335684
+        ],
+        [
+          "dabigatran and two agents, andexanet and ciraparantag",
+          0.01276190746283
+        ],
+        [
+          "andexanet and ciraparantag, currently under development for the reversal of rivaroxaban, apixaban",
+          0.010086404048531948
+        ],
+        [
+          "vitamin K",
+          0.009982881846403693
+        ],
+        [
+          "dabigatran may be preferred to vitamin K",
+          0.00891455179401001
+        ],
+        [
+          "andexanet",
+          0.00840936623651559
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "58f89eb270f9fc6f0f00001a",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "MED12",
+          1.2139969476581245
+        ],
+        [
+          "Mutations in MED12",
+          0.4865277890582398
+        ],
+        [
+          "MED12 gene",
+          0.3392121600419384
+        ],
+        [
+          "MED12, which is located at Xq13",
+          0.26631167653583415
+        ],
+        [
+          "X-linked",
+          0.09085387610704937
+        ],
+        [
+          "Xq13",
+          0.07300425316137202
+        ],
+        [
+          "missense mutations of the MED12",
+          0.06017408675028333
+        ],
+        [
+          "MED12 are the underlying cause of this X-linked",
+          0.05229695655842683
+        ],
+        [
+          "MED12,",
+          0.04553474848288653
+        ],
+        [
+          "missense mutations of the MED12 gene",
+          0.043178570106168275
+        ],
+        [
+          "mutations in MED12 are the underlying cause of this X-linked",
+          0.037302413990352584
+        ],
+        [
+          "OSMKB",
+          0.03145394366461643
+        ],
+        [
+          "Mutations",
+          0.025047999566548754
+        ],
+        [
+          "MED12 gene frameshift mutation. FG syndrome,",
+          0.02159535451594705
+        ],
+        [
+          "Xq13. To date, these conditions include Opitz-Kaveggia (FG) syndrome,",
+          0.021459385959011534
+        ],
+        [
+          "mutations in MED12, which is located at Xq13",
+          0.018790154830173614
+        ],
+        [
+          "MED12, which is located at Xq13.",
+          0.013855671010152745
+        ],
+        [
+          "Mutations in MED12 cause X-linked Ohdo syndrome",
+          0.010732811015915123
+        ],
+        [
+          "mutations of the MED12",
+          0.010693092363862886
+        ],
+        [
+          "MED12 gene frameshift mutation. FG syndrome, Lujan syndrome,",
+          0.00989063386322361
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a6e472ab750ff4455000048",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "neural adhesion molecules",
+          0.299519402820197
+        ],
+        [
+          "cellular adhesion",
+          0.1664995132750647
+        ],
+        [
+          "neural adhesion",
+          0.12766870587529294
+        ],
+        [
+          "adhesion molecules",
+          0.06568109398319377
+        ],
+        [
+          "cell adhesion",
+          0.06438237972944798
+        ],
+        [
+          "connecting the extracellular medium with the intracellular actin cytoskeleton",
+          0.04380661896258794
+        ],
+        [
+          "cellular adhesion function",
+          0.029385644802742583
+        ],
+        [
+          "adhesion",
+          0.027996250628015737
+        ],
+        [
+          "neural adhesion molecules.",
+          0.023420309183595542
+        ],
+        [
+          "connecting the extracellular medium with the intracellular actin cytoskeleton.",
+          0.013298812466095171
+        ],
+        [
+          "immunoglobulin domains define a new family of neural adhesion molecules",
+          0.01113607405708981
+        ],
+        [
+          "cohesin and immunoglobulin domains define a new family of neural adhesion molecules",
+          0.007323626887490677
+        ],
+        [
+          "a new family of neural adhesion molecules",
+          0.006038427505387881
+        ],
+        [
+          "cell adhesion molecules",
+          0.005757098927427231
+        ],
+        [
+          "new family of neural adhesion molecules",
+          0.0051555677093778705
+        ],
+        [
+          "adhesion molecules.",
+          0.0051357992641519355
+        ],
+        [
+          "cellular adhesion function for TMEM132 family, connecting the extracellular medium",
+          0.004757108413534608
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a7d4721faa1ab7d2e000012",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "protecting axonal transport",
+          0.21433305265361757
+        ],
+        [
+          "stabilizing peptides and small molecules protecting axonal transport",
+          0.20664508925678746
+        ],
+        [
+          "Microtubule-stabilizing peptides and small molecules protecting axonal transport",
+          0.18272719218745737
+        ],
+        [
+          "protecting axonal transport and brain function",
+          0.08465990808928218
+        ],
+        [
+          "stabilizing peptides and small molecules protecting axonal transport and brain function",
+          0.08162322164959779
+        ],
+        [
+          "Microtubule-stabilizing peptides and small molecules protecting axonal transport and brain function",
+          0.07217583617867462
+        ],
+        [
+          "stabilizing",
+          0.04144158387123936
+        ],
+        [
+          "Microtubule-stabilizing",
+          0.03664497563347667
+        ],
+        [
+          "neuroprotective",
+          0.014987434579512241
+        ],
+        [
+          "stabilizing peptides",
+          0.01073736048332384
+        ],
+        [
+          "Microtubule-stabilizing peptides",
+          0.00949457710163263
+        ],
+        [
+          "impairments in axonal transport",
+          0.009149033133909657
+        ],
+        [
+          "axonal transport",
+          0.0073531755880960155
+        ],
+        [
+          "NAP (davunetide), an eight amino acid snippet derived from activity-dependent neuroprotective",
+          0.006036866961666912
+        ],
+        [
+          "microtubule-stabilizing agents on impairments in axonal transport",
+          0.005816883957361321
+        ],
+        [
+          "protecting axonal transport and brain function:",
+          0.003475865784312793
+        ],
+        [
+          "stabilizing peptides and small molecules protecting axonal transport and brain function:",
+          0.0033511891252942854
+        ],
+        [
+          "davunetide), an eight amino acid snippet derived from activity-dependent neuroprotective",
+          0.0031446787077431524
+        ],
+        [
+          "protection of axonal transport",
+          0.00312715806063387
+        ],
+        [
+          "(davunetide), an eight amino acid snippet derived from activity-dependent neuroprotective",
+          0.003074916996380002
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "590af75d70f9fc6f0f00001c",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "BLAT",
+          0.906434084078221
+        ],
+        [
+          "aligned annotation",
+          0.47601115927056853
+        ],
+        [
+          "web",
+          0.214802036618003
+        ],
+        [
+          "Table Browser",
+          0.20711289502203248
+        ],
+        [
+          "Visualizing Genomic Annotations with the UCSC Genome Browser.",
+          0.18487459938249615
+        ],
+        [
+          "annotation",
+          0.1803130739657318
+        ],
+        [
+          "Visualizing Genomic Annotations",
+          0.14881999230898044
+        ],
+        [
+          "web-based graphical interface",
+          0.12478853894438785
+        ],
+        [
+          "Genome Bioinformatics",
+          0.11793402432838507
+        ],
+        [
+          "annotations",
+          0.11612533615284745
+        ],
+        [
+          "Visualizing Genomic Annotations with the UCSC Genome Browser",
+          0.11085040257974199
+        ],
+        [
+          "web-based UCSC Genome Browser",
+          0.0840384453775419
+        ],
+        [
+          "Genome Browser",
+          0.0638850352249943
+        ],
+        [
+          "aligned annotation \"tracks\"",
+          0.061685527974414796
+        ],
+        [
+          "annotations for a given genome are displayed in the browser",
+          0.05815762779041672
+        ],
+        [
+          "Table",
+          0.05233738920908152
+        ],
+        [
+          "BLAT,",
+          0.051795657335169935
+        ],
+        [
+          "aligned annotation \"tracks.\"",
+          0.04920337172869242
+        ],
+        [
+          "(UCSC) Genome Browser",
+          0.04766223101383438
+        ],
+        [
+          "web-based graphical interface.",
+          0.04505608719253443
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a8941c5bc7bade53a000002",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "Ser133",
+          0.9637454978259363
+        ],
+        [
+          "Ser(133",
+          0.38629248023555113
+        ],
+        [
+          "133",
+          0.29797111104697577
+        ],
+        [
+          "Ser",
+          0.18015391156898808
+        ],
+        [
+          "Ser(133)",
+          0.06567049932105916
+        ],
+        [
+          "133)",
+          0.05034809158462194
+        ],
+        [
+          "(Ser133",
+          0.017849581404956287
+        ],
+        [
+          "pCREB-Ser(133",
+          0.011165345216496564
+        ],
+        [
+          "(133",
+          0.00986960500541979
+        ],
+        [
+          "pCREB-Ser",
+          0.004844039415659834
+        ],
+        [
+          "pCREB-Ser(133)",
+          0.0018981311647905284
+        ],
+        [
+          "(133)",
+          0.001677852720333366
+        ],
+        [
+          "Ser13",
+          0.001252417915723559
+        ],
+        [
+          "Ser133)",
+          0.001213373782744389
+        ],
+        [
+          "Ser(133) (pCREB)",
+          0.001062969078483516
+        ],
+        [
+          "3",
+          0.0008698238479506613
+        ],
+        [
+          "133) (pCREB)",
+          0.0008149172843194175
+        ],
+        [
+          "-Ser(133",
+          0.0007235028894775179
+        ],
+        [
+          "Ser(133) (pCREB",
+          0.00044909576441507995
+        ],
+        [
+          "133) (pCREB",
+          0.00034429590488051557
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "590c74d170f9fc6f0f00001e",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "Upc2",
+          0.5248725376792726
+        ],
+        [
+          "Upc2 and Ecm22",
+          0.1376635085731495
+        ],
+        [
+          "Ecm22",
+          0.10636542174576336
+        ],
+        [
+          "Ecm22 and Upc2",
+          0.08115201669492725
+        ],
+        [
+          "zinc cluster proteins Upc2",
+          0.03782189566353459
+        ],
+        [
+          "FHN1",
+          0.01475204280590229
+        ],
+        [
+          "FHN1, NPR1",
+          0.013382381933179211
+        ],
+        [
+          "PRR2",
+          0.010648008148201422
+        ],
+        [
+          "NPR1",
+          0.010439718406372823
+        ],
+        [
+          "zinc cluster proteins Upc2 and Ecm22",
+          0.009919922427169069
+        ],
+        [
+          "FHN1, NPR1, PRR2",
+          0.008392133455381926
+        ],
+        [
+          "ECM22 or UPC2 leads to increased filamentation, whereas cells lacking both ECM22",
+          0.008384572623202365
+        ],
+        [
+          "NPR1, PRR2",
+          0.006546779978358776
+        ],
+        [
+          "FHN1, NPR1,",
+          0.006487358251248265
+        ],
+        [
+          "Upc",
+          0.0062203167188357965
+        ],
+        [
+          "NPR1,",
+          0.0059022545509776255
+        ],
+        [
+          "FHN1,",
+          0.004985842644706228
+        ],
+        [
+          "Upc2 and Ecm",
+          0.00308589604980937
+        ],
+        [
+          "ECM",
+          0.002977391650007614
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a7d51dafaa1ab7d2e000017",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "Intravenous",
+          0.9960750129354813
+        ],
+        [
+          "travenous",
+          0.0009434897160109404
+        ],
+        [
+          "ous",
+          0.0008173891496394914
+        ],
+        [
+          "Intravenous immunoglobulin",
+          0.0005326362630803673
+        ],
+        [
+          "Intravenous immunoglobulin (IVIG",
+          0.000434548055888755
+        ],
+        [
+          "venous",
+          0.00037672348361443705
+        ],
+        [
+          "Intravenous immunoglobulin (IVIG)",
+          0.00029816347219294273
+        ],
+        [
+          "In",
+          0.00017634599939581925
+        ],
+        [
+          "Intraven",
+          0.00014932516093639324
+        ],
+        [
+          "Intravenous im",
+          6.092351296688345e-05
+        ],
+        [
+          "Intra",
+          4.3641713529905616e-05
+        ],
+        [
+          "Intravenous immunoglobulin (IVIG) treatment",
+          3.230398801238668e-05
+        ],
+        [
+          "Alzheimer's disease. Intravenous",
+          3.092926010511901e-05
+        ],
+        [
+          ". Intravenous",
+          2.5412604187556014e-05
+        ],
+        [
+          "(IVIG",
+          6.255055498202628e-07
+        ],
+        [
+          "(IVIG)",
+          5.67050077152938e-07
+        ],
+        [
+          "ous immunoglobulin",
+          5.405531447351113e-07
+        ],
+        [
+          "IVIG",
+          5.297373198474829e-07
+        ],
+        [
+          "IVIG)",
+          4.802316912721579e-07
+        ],
+        [
+          "travenous immunoglobulin (IVIG",
+          4.1160717467986923e-07
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a89800efcd1d6a10c00000c",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "M20 domain",
+          0.6152303497237814
+        ],
+        [
+          "UCP1+ adipocytes",
+          0.38070767927626126
+        ],
+        [
+          "adipocytes",
+          0.35439301855773253
+        ],
+        [
+          "peptidase M20 domain",
+          0.16277567906038515
+        ],
+        [
+          "in UCP1+ adipocytes",
+          0.05400797833407967
+        ],
+        [
+          "mitochondrial respiration. A secreted enzyme, PM20D1, enriched in UCP1+ adipocytes",
+          0.044212862089660604
+        ],
+        [
+          "mitochondrial membrane",
+          0.04211183270416713
+        ],
+        [
+          "UCP1",
+          0.0401581561908355
+        ],
+        [
+          "M20 domain containing 1 (PM20D1), that is enriched in UCP1",
+          0.03597027056848078
+        ],
+        [
+          "UCP1-independent thermogenic mechanisms. Here, we identify a secreted enzyme, peptidase M20 domain",
+          0.03415012635787166
+        ],
+        [
+          "M20 domain containing 1",
+          0.03262999065973351
+        ],
+        [
+          "inner mitochondrial membrane",
+          0.030755827421486626
+        ],
+        [
+          "Mitochondria. Brown and beige adipocytes",
+          0.020953845722001985
+        ],
+        [
+          "enriched in UCP1+ adipocytes",
+          0.01802169149489679
+        ],
+        [
+          "PM20D1, enriched in UCP1+ adipocytes",
+          0.014942119833442473
+        ],
+        [
+          "mitochondria",
+          0.013533699011301022
+        ],
+        [
+          "UCP1+ adipocytes,",
+          0.012470847828552964
+        ],
+        [
+          "Brown and beige adipocytes",
+          0.01174571364386304
+        ],
+        [
+          "adipocytes,",
+          0.010570737420606647
+        ],
+        [
+          "peptidase M20 domain containing 1 (PM20D1), that is enriched in UCP1",
+          0.009516899191333767
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a7d5ce0faa1ab7d2e00001b",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "decreasing food intake",
+          0.357023924262476
+        ],
+        [
+          "by decreasing food intake",
+          0.2284759063509932
+        ],
+        [
+          "decreasing food intake.",
+          0.12589226662780512
+        ],
+        [
+          "by decreasing food intake.",
+          0.08056420807033231
+        ],
+        [
+          "reduces body weight, at least in part, by decreasing food intake",
+          0.03405010678800003
+        ],
+        [
+          "GDF15 to mice with obesity reduces body weight, at least in part, by decreasing food intake",
+          0.016257351335444425
+        ],
+        [
+          "reduces body weight, at least in part, by decreasing food intake.",
+          0.012006604687109684
+        ],
+        [
+          "weight loss, and the administration of GDF15 to mice with obesity reduces body weight",
+          0.01115461173023416
+        ],
+        [
+          "weight loss",
+          0.009478314027403994
+        ],
+        [
+          "reduces body weight",
+          0.008482932669528306
+        ],
+        [
+          "obesity reduces body weight, at least in part, by decreasing food intake",
+          0.007576457165548044
+        ],
+        [
+          "food intake",
+          0.006131221982727938
+        ],
+        [
+          "GDF15 to mice with obesity reduces body weight, at least in part, by decreasing food intake.",
+          0.005732598489615513
+        ],
+        [
+          "at least in part, by decreasing food intake",
+          0.003258497432283035
+        ],
+        [
+          "reduces",
+          0.003097230633876222
+        ],
+        [
+          "GDF15 to mice with obesity reduces body weight",
+          0.003091597424696468
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a7617b183b0d9ea66000022",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "hepatocyte growth factor",
+          1.453196287106793
+        ],
+        [
+          "MET",
+          1.0799058183084902
+        ],
+        [
+          "vascular endothelial growth factor-receptor 2",
+          0.7607078734556473
+        ],
+        [
+          "MET pathway",
+          0.24189394707611359
+        ],
+        [
+          "MET receptor",
+          0.22386403197870966
+        ],
+        [
+          "MET-positive gastric cancer",
+          0.20492242734751706
+        ],
+        [
+          "MET-positive gastric cancer. The aim of this study was to evaluate the potential pharmacokinetic (PK",
+          0.2027579326823206
+        ],
+        [
+          "hepatocyte growth factor (HGF)",
+          0.19338386642089628
+        ],
+        [
+          "HGF",
+          0.18404101169649073
+        ],
+        [
+          "hepatocyte growth factor (HGF",
+          0.1660314131289508
+        ],
+        [
+          "ECX PK",
+          0.11256271464182326
+        ],
+        [
+          "PK",
+          0.09574276694560974
+        ],
+        [
+          "endothelial growth factor-receptor 2",
+          0.09532982599052772
+        ],
+        [
+          "the MET pathway",
+          0.08998846222923626
+        ],
+        [
+          "MET pathway with rilotumumab is not effective in improving clinical outcomes in patients with MET",
+          0.07218732250834702
+        ],
+        [
+          "hepatocyte growth factor binding to the mesenchymal-epithelial transition",
+          0.07158074456034288
+        ],
+        [
+          "the MET receptor",
+          0.05716390959272106
+        ],
+        [
+          "the MET",
+          0.05295854062398605
+        ],
+        [
+          "mesenchymal-epithelial transition",
+          0.047941340720092845
+        ],
+        [
+          "vascular endothelial growth factor",
+          0.04252121730666314
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "593fe5c270f9fc6f0f000021",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "Six",
+          0.9694555720706953
+        ],
+        [
+          "ND10",
+          0.8925576906992816
+        ],
+        [
+          "IV and V",
+          0.8230489056107361
+        ],
+        [
+          "Several",
+          0.7529877949931196
+        ],
+        [
+          "II and V",
+          0.7510260486352548
+        ],
+        [
+          "PMLI to VII",
+          0.30889270625764376
+        ],
+        [
+          "I to VI",
+          0.3074822323543487
+        ],
+        [
+          "several different isoforms",
+          0.26721460527690655
+        ],
+        [
+          "I-IV, but not with PML isoforms V and VI",
+          0.20105326921008565
+        ],
+        [
+          "Several PML",
+          0.15941613348874134
+        ],
+        [
+          "Several PML isoforms",
+          0.15873005355723105
+        ],
+        [
+          "I-IV",
+          0.14833016756261783
+        ],
+        [
+          "IV",
+          0.14489478814400458
+        ],
+        [
+          "(I to VI",
+          0.1349222273023871
+        ],
+        [
+          "V and VI",
+          0.12651503551160076
+        ],
+        [
+          "Several PML isoforms are generated from a single",
+          0.12616235700412967
+        ],
+        [
+          "IV, but not with PML isoforms V and VI",
+          0.122676159182612
+        ],
+        [
+          "VII",
+          0.10497225608279047
+        ],
+        [
+          "several different isoforms, and depletion of all PML isoforms decreases cellular resistance to ICP0",
+          0.10301762061992226
+        ],
+        [
+          "PML isoforms IV and V",
+          0.09287714548087751
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a7d6287faa1ab7d2e00001c",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "GFRAL",
+          0.22876892519817735
+        ],
+        [
+          "GDNF family receptor \u03b1-like (GFRAL)",
+          0.19438191553156273
+        ],
+        [
+          "GFRAL)",
+          0.19346729193730305
+        ],
+        [
+          "GDNF family receptor \u03b1-like (GFRAL",
+          0.18813909239186857
+        ],
+        [
+          "GDNF family receptor \u03b1-like",
+          0.11356831927493949
+        ],
+        [
+          "GDNF",
+          0.036775112383792816
+        ],
+        [
+          "GDNF family receptor",
+          0.00938601425881463
+        ],
+        [
+          "\u03b1-like (GFRAL)",
+          0.005377332551341088
+        ],
+        [
+          "\u03b1-like (GFRAL",
+          0.005204632657991741
+        ],
+        [
+          "(GFRAL)",
+          0.004501492253490159
+        ],
+        [
+          "(GFRAL",
+          0.004356921088387719
+        ],
+        [
+          "GFRAL is the receptor for GDF15",
+          0.0033318656283484864
+        ],
+        [
+          "\u03b1-like",
+          0.003141725496264431
+        ],
+        [
+          "GDNF family",
+          0.0019447899828557214
+        ],
+        [
+          "RET",
+          0.0017474045516691398
+        ],
+        [
+          "GDF15 binds specifically to GDNF family receptor \u03b1-like (GFRAL)",
+          0.0016211791560073968
+        ],
+        [
+          "GDF15 binds specifically to GDNF family receptor \u03b1-like (GFRAL",
+          0.0015691129196960798
+        ],
+        [
+          "GDF15 binds specifically to GDNF family receptor \u03b1-like",
+          0.0009471796359647943
+        ],
+        [
+          "GDNF family receptor \u03b1",
+          0.0009325598977164308
+        ],
+        [
+          "receptor \u03b1-like (GFRAL)",
+          0.0008371332038082516
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "593fe7f970f9fc6f0f000022",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "ND10",
+          0.9408558809576179
+        ],
+        [
+          "Six",
+          0.43770309532954854
+        ],
+        [
+          "PMLI, PMLII and PMLVI",
+          0.09703987648235853
+        ],
+        [
+          "PMLVI",
+          0.053619217513372064
+        ],
+        [
+          "PMLIII, PMLIV and PMLV",
+          0.04827540621047165
+        ],
+        [
+          "PMLI,",
+          0.04054514301662048
+        ],
+        [
+          "PMLII and PMLVI",
+          0.038582807730821296
+        ],
+        [
+          "PMLIII",
+          0.028499684769658133
+        ],
+        [
+          "PMLIII, PMLIV",
+          0.0276612767436028
+        ],
+        [
+          "PMLI, PMLII",
+          0.027385025776427326
+        ],
+        [
+          "PMLIV and PMLV",
+          0.024809822882989413
+        ],
+        [
+          "PMLI",
+          0.023852814823449142
+        ],
+        [
+          "PMLV",
+          0.02315744447873244
+        ],
+        [
+          "PMLVI accumulate in the cytoplasm following arsenic treatment, whereas PMLIII",
+          0.022685888427317003
+        ],
+        [
+          "PMLVI accumulate in the cytoplasm following arsenic treatment, whereas PMLIII, PMLIV",
+          0.02201851153913795
+        ],
+        [
+          "10",
+          0.018312390163107706
+        ],
+        [
+          "PMLIII,",
+          0.017827706786810477
+        ],
+        [
+          "PMLII and PMLVI accumulate in the cytoplasm following arsenic treatment, whereas PMLIII",
+          0.01632409632191572
+        ],
+        [
+          "PMLIV",
+          0.014215755611338124
+        ],
+        [
+          "PMLVI accumulate in the cytoplasm following arsenic treatment, whereas PMLIII,",
+          0.014190941771787044
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "593ff22b70f9fc6f0f000023",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "197",
+          2.954581952494589
+        ],
+        [
+          "Grg3",
+          0.847980715668921
+        ],
+        [
+          "two",
+          0.5139762617569267
+        ],
+        [
+          "four",
+          0.4888851050477636
+        ],
+        [
+          "at least four",
+          0.356097255998257
+        ],
+        [
+          "grg",
+          0.16069955867799632
+        ],
+        [
+          "at least two",
+          0.114028569142681
+        ],
+        [
+          "grg (Groucho-related gene) family can dimerize through the amino-terminal Q domain. The murine grg",
+          0.08295933417579851
+        ],
+        [
+          "Grg3,",
+          0.06986964459033115
+        ],
+        [
+          "four family members",
+          0.06012069015147388
+        ],
+        [
+          "at least four family members",
+          0.04379109236631306
+        ],
+        [
+          "(Groucho-related gene) family can dimerize through the amino-terminal Q domain. The murine grg",
+          0.037296357592392256
+        ],
+        [
+          "Groucho-related gene) family can dimerize through the amino-terminal Q domain. The murine grg",
+          0.0337420745591676
+        ],
+        [
+          "Grg3 appears to produce two transcripts. One of the Grg3",
+          0.03214179561187992
+        ],
+        [
+          "Grg gene encodes a 197",
+          0.022033507545962817
+        ],
+        [
+          "Grg3, a murine Groucho-related gene,",
+          0.0178995803608291
+        ],
+        [
+          "four family members.",
+          0.013744555992867181
+        ],
+        [
+          "murine grg",
+          0.013557054380954038
+        ],
+        [
+          "50",
+          0.013050540580854888
+        ],
+        [
+          "at least four family members.",
+          0.010011347499523888
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a39453d966455904c000006",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "Tn-seq",
+          0.8041230112451616
+        ],
+        [
+          "subSeq",
+          0.6350868494153946
+        ],
+        [
+          "Sample",
+          0.447031594463598
+        ],
+        [
+          "SHORE",
+          0.3593453142229476
+        ],
+        [
+          "samExploreR that allows the subsampling (m out of n bootstraping",
+          0.34074687330451364
+        ],
+        [
+          "samExploreR",
+          0.3331370696228147
+        ],
+        [
+          "subSeq R",
+          0.32929291108137415
+        ],
+        [
+          "RNA-Seq",
+          0.32035771508710553
+        ],
+        [
+          "RNA-Seq - a case study in Drososphila pseudoobscura. RNA-Seq",
+          0.21615727309309732
+        ],
+        [
+          "bootstraping",
+          0.19416745501551524
+        ],
+        [
+          "Velvet",
+          0.19218773951025045
+        ],
+        [
+          "sequencing-by-synthesis",
+          0.16705938314794738
+        ],
+        [
+          "Illumina sequencing-by-synthesis",
+          0.12881109641807978
+        ],
+        [
+          "Bar-seq",
+          0.12817506787080815
+        ],
+        [
+          "TopHat",
+          0.11847692059469721
+        ],
+        [
+          "molecular subtyping models for cancer diagnostics requires well-designed studies. Sample",
+          0.11677371454609779
+        ],
+        [
+          "GSNAP",
+          0.11331192282191704
+        ],
+        [
+          "RNA-sequencing read requirements for breast cancer subtyping",
+          0.10771283252500395
+        ],
+        [
+          "GSNAP maps a higher proportion of reads, TopHat",
+          0.10200510912375638
+        ],
+        [
+          "Velvet assembler into a targeted de novo assembly",
+          0.06650516379326088
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a3e8683966455904c000007",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "Stroop",
+          0.6997640898087772
+        ],
+        [
+          "Stroop test",
+          0.6194858582359927
+        ],
+        [
+          "Synesthesia Battery",
+          0.5491680851935985
+        ],
+        [
+          "CIELAB",
+          0.31888059609448965
+        ],
+        [
+          "the Synesthesia Battery",
+          0.31619759591168023
+        ],
+        [
+          "the Stroop test",
+          0.2918009827336691
+        ],
+        [
+          "Stroop tests",
+          0.26175117427136346
+        ],
+        [
+          "CIELUV and CIELAB",
+          0.25239333343643
+        ],
+        [
+          "CIELUV",
+          0.14355196875094403
+        ],
+        [
+          "Synesthesia Battery.",
+          0.07619937170503052
+        ],
+        [
+          "ROC",
+          0.0510216254070641
+        ],
+        [
+          "the Synesthesia Battery.",
+          0.04387374065012766
+        ],
+        [
+          "CIELAB colour models (rather than RGB",
+          0.03937694940141532
+        ],
+        [
+          "Stroop-type tests",
+          0.033780976581907915
+        ],
+        [
+          "psychophysical, and Stroop",
+          0.032377695073703756
+        ],
+        [
+          "CIELUV and CIELAB colour models (rather than RGB",
+          0.0311667741521529
+        ],
+        [
+          "CIELUV, CIELAB",
+          0.0271644484534305
+        ],
+        [
+          "perceptual CIELUV and CIELAB",
+          0.020438633980542513
+        ],
+        [
+          "grapheme-colour synaesthesia (i.e., experiencing colours in response to letter and/or number stimuli",
+          0.01836771908229252
+        ],
+        [
+          "HSV, CIELUV, CIELAB",
+          0.01608966961612326
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a43a139966455904c000008",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "nucleosome positioning",
+          0.8637772478186121
+        ],
+        [
+          "Nucleosome Occupancy",
+          0.8095822486299198
+        ],
+        [
+          "accessibility",
+          0.726055476047558
+        ],
+        [
+          "DNA methylation",
+          0.6759944637106768
+        ],
+        [
+          "Methylation",
+          0.45960751845517445
+        ],
+        [
+          "Methylome",
+          0.3750092511174324
+        ],
+        [
+          "DNA methylation and nucleosome occupancy",
+          0.37146037701194234
+        ],
+        [
+          "Nucleosome Occupancy and Methylation",
+          0.30155503298358427
+        ],
+        [
+          "open-chromatin",
+          0.27007135498112056
+        ],
+        [
+          "transcriptional regulators",
+          0.26273191906183696
+        ],
+        [
+          "Nucleosome Occupancy Methylome-sequencing",
+          0.24653834495287946
+        ],
+        [
+          "Nucleosome Occupancy Methylome",
+          0.23450497830573946
+        ],
+        [
+          "Methylome sequencing",
+          0.14925282363780726
+        ],
+        [
+          "methylation and nucleosome occupancy",
+          0.11694694864720859
+        ],
+        [
+          "Nucleosome Occupancy and Methylome",
+          0.1163002410885395
+        ],
+        [
+          "Methylation sequencing (NOMe-seq) to compare the genome-wide DNA methylation",
+          0.11430362969828496
+        ],
+        [
+          "Methylome sequencing (NOMe-seq) was used to determine the allele-specific positioning of nucleosomes",
+          0.10486782565620867
+        ],
+        [
+          "DNA methylation-deficient derivative. The NOMe-seq accessibility",
+          0.1035979519087963
+        ],
+        [
+          "methylation-deficient derivative. The NOMe-seq accessibility",
+          0.09398183483208333
+        ],
+        [
+          "DNaseI",
+          0.08383288825311334
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a4df811966455904c00000e",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "TFIIS",
+          0.9510990987073709
+        ],
+        [
+          "RNAPII",
+          0.9335397288082289
+        ],
+        [
+          "Pol II",
+          0.29366209245043234
+        ],
+        [
+          "second largest subunit",
+          0.24768952936570246
+        ],
+        [
+          "Rpb9",
+          0.21018440371552846
+        ],
+        [
+          "Pol I is protected by its subunit A12",
+          0.18396161093864893
+        ],
+        [
+          "SII",
+          0.18370831412840238
+        ],
+        [
+          "SII for transcriptional read-through and carry out SII",
+          0.16906570665925091
+        ],
+        [
+          "Pol I",
+          0.1626372772093689
+        ],
+        [
+          "A12",
+          0.15665790024327544
+        ],
+        [
+          "rpb2",
+          0.15091658039193742
+        ],
+        [
+          "Pol III but very weak for Pol II",
+          0.1501324631769893
+        ],
+        [
+          "Pol I is protected by its subunit A12.2",
+          0.10410255605876813
+        ],
+        [
+          "rpb2 10's arrest-prone phenotype. This mutant enzyme can respond to SII",
+          0.09549679892492399
+        ],
+        [
+          "A12.2",
+          0.08865158202796646
+        ],
+        [
+          "subunit Rpb9",
+          0.06827501404444297
+        ],
+        [
+          "Pol I and Pol III but very weak for Pol II",
+          0.06710426998100982
+        ],
+        [
+          "the second largest subunit",
+          0.06098243963207854
+        ],
+        [
+          "Pol III",
+          0.0563423754567002
+        ],
+        [
+          "Pol I) and Pol II",
+          0.04527402528515067
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5a4e50b242878bf97d000001",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "topoisomerase II",
+          2.7858728152530237
+        ],
+        [
+          "topoisomerase 2",
+          0.906058664571041
+        ],
+        [
+          "DNA topoisomerase II",
+          0.8117081261364155
+        ],
+        [
+          "type II topoisomerase",
+          0.49969460574002433
+        ],
+        [
+          "type II",
+          0.39552522243896376
+        ],
+        [
+          "topo II",
+          0.2732730166238401
+        ],
+        [
+          "topoisomerase II (topo II",
+          0.241253730416917
+        ],
+        [
+          "topoisomerase II-mediated DNA breaks. Topoisomerase II",
+          0.21860413626298283
+        ],
+        [
+          "II",
+          0.14726614248795197
+        ],
+        [
+          "Type II topoisomerases",
+          0.127837753892398
+        ],
+        [
+          "DNA topoisomerase 2",
+          0.12535029691763036
+        ],
+        [
+          "topoisomerase 2 (Top2",
+          0.12345100036784128
+        ],
+        [
+          "topoisomerase II. Since DNA topoisomerase II",
+          0.09198009938422665
+        ],
+        [
+          "top1",
+          0.07237370652495702
+        ],
+        [
+          "topo II)",
+          0.07074301056358198
+        ],
+        [
+          "Topoisomerase II inactivation prevents the completion of DNA replication in budding yeast. Type II",
+          0.06478786266126571
+        ],
+        [
+          "topoisomerase II (topo II)",
+          0.06382888198117519
+        ],
+        [
+          "top1) and three endonuclease mutants (end1",
+          0.04071222771116299
+        ],
+        [
+          "Top2",
+          0.03567741112165845
+        ],
+        [
+          "2",
+          0.03297112263841742
+        ]
+      ]
+    }
+  ]
+}
