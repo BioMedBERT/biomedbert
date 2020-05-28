@@ -24,22 +24,36 @@ Usage
 Models repository
 -----------------
 BioMedBERT-Large from BERT weights:
-  ```gs://ekaba-assets/biomedbert_base_bert_weights_and_vocab```
+  ``gs://ekaba-assets/biomedbert_base_bert_weights_and_vocab``
 
 BioMedBERT-Large from scratch:
-  ```gs://ekaba-assets/biomedbert_base_scratch_breathe_bert_vocab```
+  ``gs://ekaba-assets/biomedbert_base_scratch_breathe_bert_vocab``
+
+On TPUs v3-128
+--------------
+First set the GCP zone to `europe-west4-a`
+  ``biomedbert gcp project set ai-vs-covid19 europe-west4-a``
+
+Syntax:
+  ``biomedbert gcp vm create tpu <vm-instance> [preemptible]``
+  ``biomedbert gcp vm delete tpu <vm-instance>``
+
+Creating TPUs:
+  ``biomedbert gcp vm create tpu biomedbert``
+  ``biomedbert gcp vm create tpu biomedbert-preempt``
+
+Deleting TPUs:
 
 Fine-tune SQuAD
 -----------------
 Syntax:
   ```biomedbert squad finetune (v1|v2) <model_type> <bucket_name> <model_dir> <train_file> <predict_file> <tpu_name> <tpu_cores>```
 
-how
-  The term is a one-line phrase, and the
-  definition is one or more paragraphs or
-  body elements, indented relative to the
-  term. Blank lines are not allowed
-  between term and definition.
+Finetune SQuAD with BERT:
+  v1:
+    ``biomedbert squad finetune v1 large ekaba-assets biomedbert_base_bert_weights_and_vocab train-v1.1.json dev-v1.1.json biomedbert 128``
+  v2:
+    ``biomedbert squad finetune v2 large ekaba-assets biomedbert_base_bert_weights_and_vocab train-v2.0.json dev-v2.0.json biomedbert 128``
 
 
 
