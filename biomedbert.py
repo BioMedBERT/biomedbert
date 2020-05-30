@@ -83,6 +83,15 @@ def ner_commands(args: dict):
 
     # fine tune ner
     if args['ner'] and args['finetune']:
+        # print("args['<ner_dataset>']: ", args['<ner_dataset>'])
+        # print("args['<model_dir>']: ", args['<model_dir>'])
+        # print("args['<model_type>']: ", args['<model_type>'])
+        # print("args['<bucket_name>']: ", args['<bucket_name>'])
+        # print("args['<tpu_name>']: ", args['<tpu_name>'])
+        # print("args['<tpu_cores>']: ", args['<tpu_cores>'])
+        # print("zone: ", zone)
+        # print("project_id: ", project_id)
+
         fine_tune_ner(args['<ner_dataset>'], args['<model_dir>'], args['<model_type>'], args['<bucket_name>'],
                       args['<tpu_name>'], zone, project_id, args['<tpu_cores>'])
 
