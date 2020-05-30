@@ -37,8 +37,8 @@ def fine_tune_ner(ner_dataset: str, model_dir: str, model_type: str, bucket_name
     init_checkpoint = tf.train.latest_checkpoint('gs://{}/{}'.format(bucket_name, model_dir))
     vocab_file = 'gs://{}/{}/vocab.txt'.format(bucket_name, model_dir)
     bert_config_file = 'gs://{}/{}/{}'.format(bucket_name, model_dir, config)
-    # output_dir = 'gs://{}/{}/NER_outputs/{}'.format(bucket_name, model_dir, ner_dataset)
-    output_dir = './NER_outputs/{}'.format(ner_dataset)
+    output_dir = 'gs://{}/{}/NER_outputs/{}'.format(bucket_name, model_dir, ner_dataset)
+    # output_dir = './NER_outputs/{}'.format(ner_dataset)
     data_dir = 'gs://{}/datasets/NER/{}'.format(bucket_name, ner_dataset)
 
     try:
