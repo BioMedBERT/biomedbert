@@ -64,7 +64,6 @@ flags.DEFINE_bool(
     "do_train", True,
     "Whether to run training."
 )
-flags.DEFINE_bool("use_tpu", False, "Whether to use TPU or GPU/CPU.")
 
 flags.DEFINE_bool("do_eval", False, "Whether to run eval on the dev set.")
 
@@ -79,6 +78,19 @@ flags.DEFINE_integer("predict_batch_size", 8, "Total batch size for predict.")
 flags.DEFINE_float("learning_rate", 5e-5, "The initial learning rate for Adam.")
 
 flags.DEFINE_float("num_train_epochs", 10.0, "Total number of training epochs to perform.")
+
+flags.DEFINE_float(
+    "warmup_proportion", 0.1,
+    "Proportion of training to perform linear learning rate warmup for. "
+    "E.g., 0.1 = 10% of training.")
+
+flags.DEFINE_integer("save_checkpoints_steps", 1000,
+                     "How often to save the model checkpoint.")
+
+flags.DEFINE_integer("iterations_per_loop", 1000,
+                     "How many steps to make in each estimator call.")
+
+flags.DEFINE_bool("use_tpu", False, "Whether to use TPU or GPU/CPU.")
 
 tf.flags.DEFINE_string(
     "tpu_name", None,
@@ -97,17 +109,6 @@ tf.flags.DEFINE_string(
     "[Optional] Project name for the Cloud TPU-enabled project. If not "
     "specified, we will attempt to automatically detect the GCE project from "
     "metadata.")
-
-flags.DEFINE_float(
-    "warmup_proportion", 0.1,
-    "Proportion of training to perform linear learning rate warmup for. "
-    "E.g., 0.1 = 10% of training.")
-
-flags.DEFINE_integer("save_checkpoints_steps", 1000,
-                     "How often to save the model checkpoint.")
-
-flags.DEFINE_integer("iterations_per_loop", 1000,
-                     "How many steps to make in each estimator call.")
 
 tf.flags.DEFINE_string("master", None, "[Optional] TensorFlow master URL.")
 
@@ -515,10 +516,11 @@ def main(_):
 
     tokenizer = tokenization.FullTokenizer(
         vocab_file=FLAGS.vocab_file, do_lower_case=FLAGS.do_lower_case)
+
     tpu_cluster_resolver = None
     if FLAGS.use_tpu and FLAGS.tpu_name:
         tpu_cluster_resolver = tf.contrib.cluster_resolver.TPUClusterResolver(
-            tpu=FLAGS.tpu_name, zone=FLAGS.tpu_zone, project=FLAGS.gcp_project)
+            FLAGS.tpu_name, zone=FLAGS.tpu_zone, project=FLAGS.gcp_project)
 
     # is_per_host = tf.contrib.tpu.InputPipelineConfig.PER_HOST_V2
     is_per_host = tf.contrib.tpu.InputPipelineConfig.BROADCAST
@@ -575,6 +577,7 @@ def main(_):
             is_training=True,
             drop_remainder=True)
         estimator.train(input_fn=train_input_fn, max_steps=num_train_steps)
+        
     if FLAGS.do_eval:
         eval_examples = processor.get_dev_examples(FLAGS.data_dir)
         eval_file = os.path.join(FLAGS.output_dir, "eval.tf_record")
