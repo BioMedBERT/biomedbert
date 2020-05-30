@@ -51,10 +51,10 @@ def fine_tune_ner(ner_dataset: str, model_dir: str, model_type: str, bucket_name
     try:
         run('python3 biobert/run_ner.py  --vocab_file={}  --bert_config_file={}  --init_checkpoint={}'
             '--do_train=true  --do_eval=true --num_train_epochs=10.0  --data_dir={}  --output_dir={}'
-            '--num_tpu_cores=128  --use_tpu=true --tpu_name=biomedbert-preempt  --tpu_zone=europe-west4-a'
-            '--gcp_project=ai-vs-covid19  --num_tpu_cores={}'.format(
+            '--num_tpu_cores=128  --use_tpu={} --tpu_name={}  --tpu_zone={} --gcp_project={}'
+            '--num_tpu_cores={}'.format(
             vocab_file, bert_config_file, init_checkpoint, data_dir,
-            output_dir, num_tpu_cores))  # use_tpu, tpu_name, tpu_zone, gcp_project, num_tpu_cores))
+            output_dir, use_tpu, tpu_name, tpu_zone, gcp_project, num_tpu_cores))
     except exceptions.UnexpectedExit:
         print('Cannot fine tune NER - {}'.format(ner_dataset))
 
