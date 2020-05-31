@@ -11,7 +11,7 @@ Goal: document representations effective for multiple tasks with no nees for fin
 Model uses citations but does not require any citation information.
 Example of tasks where the model outpower state-of-the-art : topic classification, citation prediction, and recommendation.
 
-In addition, relese of **Scidoc**: Collection of data sets and an evaluation suite for documentlevel embeddings in the scientific domain. Covers seven document-level tasks ranging from citation prediction, to document classification and recommendation.
+In addition, release of **Scidoc**: Collection of data sets and an evaluation suite for documentlevel embeddings in the scientific domain. Covers seven document-level tasks ranging from citation prediction, to document classification and recommendation.
 
 ## 2 Model
 - Transformer model architecture as basis of encoding the input paper
@@ -28,3 +28,6 @@ In addition, relese of **Scidoc**: Collection of data sets and an evaluation sui
 - Embeddings that can be applied to downstream tasks in a “feature-based” fashion (no fine tuning)
 
 ## 3 SciDocs Evaluation Framework
+- A new comprehensive evaluation framework to measure the effectiveness of scientific paper embedding, covering seven document-level tasks ranging from citation prediction, to document classification and recommendation. 
+- Training data and associated dataset are released.
+- **Document classification**: 
