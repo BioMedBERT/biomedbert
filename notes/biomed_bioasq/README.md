@@ -13,4 +13,4 @@ bibtext:
 
 
 ## Reader notes:
-- [Fabrizio's](/fabrizio.md)
+- [Fabrizio's](/notes/biomed_bioasq/fabrizio.md)
