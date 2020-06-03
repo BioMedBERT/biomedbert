@@ -9,4 +9,4 @@ Language models pretrained on text from a wide variety of sources form the found
 [Source Code GitHub Repo](https://github.com/allenai)
 
 ## Reader notes:
-- [Fabrizio's](/fabrizio.md)
+- [Fabrizio's](/notes/dont_stop_pretrain/fabrizio.md)
