@@ -53,7 +53,9 @@ Evaluate the ability of paper embeddings to boost performance in a production re
   - Initialization: SciBERT pretrained weight
   - Training: Adam optimizer following the suggested hyperparameters in Devlin et al.
   - Each training epoch takes approximately 1-2 days to complete on the full datase
-- **Task-Specific Model Details**: TODO
+- **Task-Specific Model Details**: 
+  - Classification task: linear SVM where embedding vectors were the only features
+  - Recommandation task: feedforward ranking neural network, take ten features as input (expl: cosine similarity between the query and candidate embeddings)
 - **Baseline Methods**:
   - Work at intersection of textual representation, citation mining, and graph learning
   - SIF a method for learning document representations by removing the first principal component of aggregated word-level embeddings which we pretrain on scientific text
@@ -68,3 +70,9 @@ Substantial improvements across all tasks with average performance of 80.0 acros
 - Similar trends for the “citation” and “co-citation” tasks: model outperforming virtually all other baselines except for SGC (but SGC cannot be used in real-world setting to embed new papers that are not cited yet)
 - **recommendation task**: SPECTER outperforms all other models on this task with nDCG of 53.9.
 
+## 6 Analysis
+- **Ablation study**: 
+  - Decrease in performance when removing abstract or title
+  - Decrease in performance when addind authors or venue
+- **Visualization**: see article
+- **Comparison with Task Specific Fine-Tuning**: SPECTER still outperforms a SciBERT model fine-tuned on the end tasks as well as their multitask combination
