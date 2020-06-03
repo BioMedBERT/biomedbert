@@ -47,3 +47,24 @@ Evaluate the ability of paper embeddings to boost performance in a production re
   - Semantic Scholar corpus (Ammar et al., 2018) = 146K query papers (around 26.7M tokens) with their corresponding outgoing citations + 32K papers for validation
   - Per paper: 5 training triples comprised of a query, a positive, and a negative paper
   - 2 hard negatives and 3 easy negatives per paper
+  -  684K training triples and 145K validation triples
+- **Training and Implementation**:
+  - NLP: AllenNLP
+  - Initialization: SciBERT pretrained weight
+  - Training: Adam optimizer following the suggested hyperparameters in Devlin et al.
+  - Each training epoch takes approximately 1-2 days to complete on the full datase
+- **Task-Specific Model Details**: TODO
+- **Baseline Methods**:
+  - Work at intersection of textual representation, citation mining, and graph learning
+  - SIF a method for learning document representations by removing the first principal component of aggregated word-level embeddings which we pretrain on scientific text
+  - SciBERT, a state-of-the-art pretrained Transformer LM for scientific text + Sent-BERT
+  - Citeomatic, paper representation model for citation prediction
+  - SGC, state-of-the-art graph-convolutional approach
+  
+## 5 Results
+Substantial improvements across all tasks with average performance of 80.0 across all metrics on all tasks which is a 3.1 point absolute improvement over the next-best baseline
+- Classifier performance when trained on SPECTER representations is better than when trained on any other baseline
+- User activity prediction: improving over the best baseline (Citeomatic in this case) by 2.7 and 4.0 points
+- Similar trends for the “citation” and “co-citation” tasks: model outperforming virtually all other baselines except for SGC (but SGC cannot be used in real-world setting to embed new papers that are not cited yet)
+- **recommendation task**: SPECTER outperforms all other models on this task with nDCG of 53.9.
+
