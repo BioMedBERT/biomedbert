@@ -25,6 +25,14 @@ Usage
 :Install BioMedBERT:
    ``pip install .``
 
+Train the BioMedBERT Model
+--------------------------
+Syntax for training BioMedBERT-Large model:
+  ``biomedbert code train model <model_type> <model_dir> <pretrain_dir> <bucket_name> <tpu_name> <train_steps> <train_bs> <eval_bs> <tpu_cores>``
+
+Train BioMedBERT-Large from BERT weights:
+  ``biomedbert code train model large biomedbert_large_breathe_wikipedia_bert_weights_vocab pre_trained_biomed_wikipedia_data_bert_vocab ekaba-assets biomedbert 100000 128b``
+
 Models repository
 -----------------
 BioMedBERT-Large from BERT weights:
