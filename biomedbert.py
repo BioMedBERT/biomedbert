@@ -14,7 +14,7 @@ Usage:
   biomedbert code train vocab <data_path> <prefix>
   biomedbert code shard data <number_of_shards> <shard_path> <prc_data_path>
   biomedbert code make pretrain data <pre_trained_dir> <voc_filename> <shard_path>
-  biomedbert code train model <model_type> <model_dir> <pretraining_dir> <bucket_name> <tpu_name> <train_steps> <tpu_cores>
+  biomedbert code train model <model_type> <model_dir> <pretrain_dir> <bucket_name> <tpu_name> <train_steps> <train_bs> <eval_bs> <tpu_cores>
   biomedbert code extract embeddings <input_txt> <voc_fname> <config_fname> <init_checkpoint>
   biomedbert glue download dataset
   biomedbert glue finetune <dataset> <model_dir> <checkpoint_name> <vocab_file> [<tpu_name>]
@@ -172,8 +172,9 @@ def code_commands(args: dict):
 
     # train biomedbert
     if args['code'] and args['train'] and args['model']:
-        train_biomedbert(args['<model_type>'], args['<model_dir>'], args['<pretraining_dir>'], args['<bucket_name>'],
-                         args['<tpu_name>'], project_id, zone, args['<train_steps>'], args['<tpu_cores>'])
+        train_biomedbert(args['<model_type>'], args['<model_dir>'], args['<pretrain_dir>'], args['<bucket_name>'],
+                         args['<tpu_name>'], project_id, zone, args['<train_steps>'],
+                         args['<train_bs>'], args['<eval_bs>'], args['<tpu_cores>'])
 
     # extract contextual embeddings
     if args['code'] and args['extract'] and args['embeddings']:
