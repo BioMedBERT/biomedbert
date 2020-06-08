@@ -17,7 +17,7 @@ Usage:
   biomedbert code train model <model_type> <model_dir> <pretrain_dir> <bucket_name> <tpu_name> <train_steps> <train_bs> <eval_bs> <tpu_cores>
   biomedbert code extract embeddings <input_txt> <voc_fname> <config_fname> <init_checkpoint>
   biomedbert glue download dataset
-  biomedbert glue finetune <dataset> <model_dir> <checkpoint_name> <vocab_file> [<tpu_name>]
+  biomedbert glue finetune <glue_dataset> <model_type> <bucket_name> <model_dir> <tpu_name> <tpu_cores>
   biomedbert glue predict <dataset> <model_dir> <trained_classifier> <vocab_file> [<tpu_name>]
   biomedbert squad evaluate (v1|v2) <bucket_name> <model_dir> <evaluate_file> <predict_file>
   biomedbert squad finetune (v1|v2) <model_type> <bucket_name> <model_dir> <train_file> <predict_file> <tpu_name> <tpu_cores>
@@ -158,9 +158,8 @@ def glue_commands(args: dict):
 
     # finetune glue
     if args['glue'] and args['finetune']:
-        fine_tune_classification_glue(args['<dataset>'], args['<model_dir>'],
-                                      args['<checkpoint_name>'], args['<vocab_file>'],
-                                      args['<tpu_name>'], zone, project_id)
+        fine_tune_classification_glue(args['<glue_dataset>'], args['<model_type>'], args['<bucket_name>'],
+                                      args['<model_dir>'], args['<tpu_name>'], zone, project_id, args['<tpu_cores>'])
 
 
 def code_commands(args: dict):

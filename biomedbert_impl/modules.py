@@ -3,17 +3,14 @@
 
 import os
 import sys
-import json
 import logging
 import sentencepiece as spm
 import tensorflow as tf
 from invoke import run, exceptions
 from subprocess import call, CalledProcessError
-from bert import modeling, optimization, tokenization
-from bert.run_pretraining import input_fn_builder, model_fn_builder
 
 # global parameters
-voc_size = 32000 # former -> 28996
+voc_size = 28996 # original -> 32000
 
 log = logging.getLogger('biomedbert')
 log.setLevel(logging.INFO)
