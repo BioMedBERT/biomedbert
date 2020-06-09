@@ -25,6 +25,14 @@ Usage
 :Install BioMedBERT:
    ``pip install .``
 
+Set the GCP Project configuration
+---------------------------------
+Syntax:
+  ``biomedbert gcp project set <project-id> <project-zone>``
+
+Setting the zone to `europe-west4-a`:
+  ``biomedbert gcp project set ai-vs-covid19 europe-west4-a``
+
 Train the BioMedBERT Model
 --------------------------
 Syntax for training BioMedBERT-Large model:
