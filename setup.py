@@ -6,7 +6,7 @@ from setuptools.command.test import test as TestCommand
 
 REQUIRES = [
     'docopt', 'invoke', 'tqdm', 'sentencepiece', 'google-api-python-client', 'oauth2client',
-    'tensorflow'
+    'tensorflow==1.15'
 ]
 
 
