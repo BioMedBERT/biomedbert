@@ -91,7 +91,6 @@ def ner_commands(args: dict):
         # print("args['<tpu_cores>']: ", args['<tpu_cores>'])
         # print("zone: ", zone)
         # print("project_id: ", project_id)
-
         fine_tune_ner(args['<ner_dataset>'], args['<model_dir>'], args['<model_type>'], args['<bucket_name>'],
                       args['<tpu_name>'], zone, project_id, args['<tpu_cores>'])
 

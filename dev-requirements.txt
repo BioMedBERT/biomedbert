@@ -2,3 +2,9 @@ pytest
 invoke==0.14.0
 tox
 tensorflow
+docopt
+invoke
+tqdm
+sentencepiece
+google-api-python-client
+oauth2client
