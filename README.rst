@@ -43,11 +43,11 @@ Train BioMedBERT-Large from BERT weights:
 
 Models repository
 -----------------
-BioMedBERT-Large from BERT weights:
-  ``gs://ekaba-assets/biomedbert_base_bert_weights_and_vocab``
+BioMedBERT-Large from BERT weights (Lagos):
+  ``gs://ekaba-assets/biomedbert_large_bert_weights_and_vocab``
 
-BioMedBERT-Large from scratch:
-  ``gs://ekaba-assets/biomedbert_base_scratch_breathe_bert_vocab``
+BioMedBERT-Large from scratch (Calabar):
+  ``gs://ekaba-assets/biomedbert_large_scratch_breathe_bert_vocab``
 
 On TPUs v3-128
 --------------
@@ -81,33 +81,33 @@ Finetune SQuAD
 with BERT weights:
 """"""""""""""""""
 v1:
-  ``biomedbert squad finetune v1 large ekaba-assets biomedbert_base_bert_weights_and_vocab train-v1.1.json dev-v1.1.json biomedbert 128``
+  ``biomedbert squad finetune v1 large ekaba-assets biomedbert_large_bert_weights_and_vocab train-v1.1.json dev-v1.1.json biomedbert 128``
 v2:
-  ``biomedbert squad finetune v2 large ekaba-assets biomedbert_base_bert_weights_and_vocab train-v2.0.json dev-v2.0.json biomedbert 128``
+  ``biomedbert squad finetune v2 large ekaba-assets biomedbert_large_bert_weights_and_vocab train-v2.0.json dev-v2.0.json biomedbert 128``
 
 
 From Scratch:
 """""""""""""
 v1:
-  ``biomedbert squad finetune v1 large ekaba-assets biomedbert_base_scratch_breathe_bert_vocab train-v1.1.json dev-v1.1.json biomedbert-preempt 128``
+  ``biomedbert squad finetune v1 large ekaba-assets biomedbert_large_scratch_breathe_bert_vocab train-v1.1.json dev-v1.1.json biomedbert-preempt 128``
 v2:
-  ``biomedbert squad finetune v2 large ekaba-assets biomedbert_base_scratch_breathe_bert_vocab train-v2.0.json dev-v2.0.json biomedbert-preempt 128``
+  ``biomedbert squad finetune v2 large ekaba-assets biomedbert_large_scratch_breathe_bert_vocab train-v2.0.json dev-v2.0.json biomedbert-preempt 128``
 
 Evaluate SQuAD
 ^^^^^^^^^^^^^^
 with BERT weights:
 """"""""""""""""""
 v1:
-  ``biomedbert squad evaluate v1 ekaba-assets biomedbert_base_bert_weights_and_vocab evaluate-v1.1.py dev-v1.1.json predictions.json``
+  ``biomedbert squad evaluate v1 ekaba-assets biomedbert_large_bert_weights_and_vocab evaluate-v1.1.py dev-v1.1.json predictions.json``
 v2:
-  ``biomedbert squad evaluate v2 ekaba-assets biomedbert_base_bert_weights_and_vocab evaluate-v2.0.py dev-v2.0.json``
+  ``biomedbert squad evaluate v2 ekaba-assets biomedbert_large_bert_weights_and_vocab evaluate-v2.0.py dev-v2.0.json``
 
 From Scratch:
 """""""""""""
 v1:
-  ``biomedbert squad evaluate v1 ekaba-assets biomedbert_base_scratch_breathe_bert_vocab evaluate-v1.1.py dev-v1.1.json``
+  ``biomedbert squad evaluate v1 ekaba-assets biomedbert_large_scratch_breathe_bert_vocab evaluate-v1.1.py dev-v1.1.json``
 v2:
-  ``biomedbert squad evaluate v2 ekaba-assets biomedbert_base_scratch_breathe_bert_vocab evaluate-v2.0.py dev-v2.0.json``
+  ``biomedbert squad evaluate v2 ekaba-assets biomedbert_large_scratch_breathe_bert_vocab evaluate-v2.0.py dev-v2.0.json``
 
 
 Fine-tune and Evaluate BioASQ
@@ -124,33 +124,33 @@ Change the ``<train_file>`` (BioASQ-train-factoid-4b.json)  and ``<predict_file>
 with BERT weights:
 """"""""""""""""""
 From SQuAD v1:
-  ``biomedbert bioasq finetune large BioASQ-train-factoid-4b.json BioASQ-test-factoid-4b-1.json ekaba-assets biomedbert_base_bert_weights_and_vocab squad_v1 biomebert 128``
+  ``biomedbert bioasq finetune large BioASQ-train-factoid-4b.json BioASQ-test-factoid-4b-1.json ekaba-assets biomedbert_large_bert_weights_and_vocab squad_v1 biomebert 128``
 From SQuAD v2:
-  ``biomedbert bioasq finetune large BioASQ-train-factoid-4b.json BioASQ-test-factoid-4b-1.json ekaba-assets biomedbert_base_bert_weights_and_vocab squad_v2 biomedbert-preempt 128``
+  ``biomedbert bioasq finetune large BioASQ-train-factoid-4b.json BioASQ-test-factoid-4b-1.json ekaba-assets biomedbert_large_bert_weights_and_vocab squad_v2 biomedbert-preempt 128``
 
 
 From Scratch:
 """""""""""""
 From SQuAD v1:
-  ``biomedbert bioasq finetune large BioASQ-train-factoid-4b.json BioASQ-test-factoid-4b-1.json ekaba-assets biomedbert_base_scratch_breathe_bert_vocab squad_v1 biomebert 128``
+  ``biomedbert bioasq finetune large BioASQ-train-factoid-4b.json BioASQ-test-factoid-4b-1.json ekaba-assets biomedbert_large_scratch_breathe_bert_vocab squad_v1 biomebert 128``
 From SQuAD v2:
-  ``biomedbert bioasq finetune large BioASQ-train-factoid-4b.json BioASQ-test-factoid-4b-1.json ekaba-assets biomedbert_base_scratch_breathe_bert_vocab squad_v2 biomedbert-preempt 128``
+  ``biomedbert bioasq finetune large BioASQ-train-factoid-4b.json BioASQ-test-factoid-4b-1.json ekaba-assets biomedbert_large_scratch_breathe_bert_vocab squad_v2 biomedbert-preempt 128``
 
 Evaluate BioASQ
 ^^^^^^^^^^^^^^^
 with BERT weights:
 """"""""""""""""""
 From SQuAD v1:
-  ``biomedbert bioasq evaluate ekaba-assets biomedbert_base_bert_weights_and_vocab BioASQ-train-factoid-4b.json 4B1_golden.json squad_v1``
+  ``biomedbert bioasq evaluate ekaba-assets biomedbert_large_bert_weights_and_vocab BioASQ-train-factoid-4b.json 4B1_golden.json squad_v1``
 From SQuAD v2:
-  ``biomedbert bioasq evaluate ekaba-assets biomedbert_base_bert_weights_and_vocab BioASQ-train-factoid-4b.json 4B1_golden.json squad_v2``
+  ``biomedbert bioasq evaluate ekaba-assets biomedbert_large_bert_weights_and_vocab BioASQ-train-factoid-4b.json 4B1_golden.json squad_v2``
 
 From Scratch:
 """""""""""""
 From SQuAD v1:
-  ``biomedbert bioasq evaluate ekaba-assets biomedbert_base_scratch_breathe_bert_vocab BioASQ-train-factoid-4b.json 4B1_golden.json squad_v1``
+  ``biomedbert bioasq evaluate ekaba-assets biomedbert_large_scratch_breathe_bert_vocab BioASQ-train-factoid-4b.json 4B1_golden.json squad_v1``
 From SQuAD v2:
-  ``biomedbert bioasq evaluate ekaba-assets biomedbert_base_scratch_breathe_bert_vocab BioASQ-train-factoid-4b.json 4B1_golden.json squad_v2``
+  ``biomedbert bioasq evaluate ekaba-assets biomedbert_large_scratch_breathe_bert_vocab BioASQ-train-factoid-4b.json 4B1_golden.json squad_v2``
 
 Fine-tune and Evaluate RE
 --------------------------
@@ -164,33 +164,33 @@ Finetune RE
 with BERT weights:
 """"""""""""""""""
 GAD 1:
-  ``biomedbert re finetune large GAD 1 biomedbert_base_bert_weights_and_vocab ekaba-assets biomedbert-preempt 128``
+  ``biomedbert re finetune large GAD 1 biomedbert_large_bert_weights_and_vocab ekaba-assets biomedbert-preempt 128``
 EU-ADR 1:
-  ``biomedbert re finetune large euadr 1 biomedbert_base_bert_weights_and_vocab ekaba-assets biomedbert-preempt 128``
+  ``biomedbert re finetune large euadr 1 biomedbert_large_bert_weights_and_vocab ekaba-assets biomedbert-preempt 128``
 
 
 From Scratch:
 """""""""""""
 GAD 1:
-  ``biomedbert re finetune large GAD 1 biomedbert_base_scratch_breathe_bert_vocab ekaba-assets biomedbert 128``
+  ``biomedbert re finetune large GAD 1 biomedbert_large_scratch_breathe_bert_vocab ekaba-assets biomedbert 128``
 EU-ADR 1:
-  ``biomedbert re finetune large euadr 1 biomedbert_base_scratch_breathe_bert_vocab ekaba-assets biomedbert 128``
+  ``biomedbert re finetune large euadr 1 biomedbert_large_scratch_breathe_bert_vocab ekaba-assets biomedbert 128``
 
 Evaluate RE
 ^^^^^^^^^^^^
 with BERT weights:
 """"""""""""""""""
 GAD 1:
-  ``biomedbert re evaluate GAD 1 biomedbert_base_bert_weights_and_vocab ekaba-assets``
+  ``biomedbert re evaluate GAD 1 biomedbert_large_bert_weights_and_vocab ekaba-assets``
 EU-ADR 1:
-  ``biomedbert re evaluate euadr 1 biomedbert_base_bert_weights_and_vocab ekaba-assets``
+  ``biomedbert re evaluate euadr 1 biomedbert_large_bert_weights_and_vocab ekaba-assets``
 
 From Scratch:
 """""""""""""
 GAD 1:
-  ``biomedbert re evaluate GAD 1 biomedbert_base_scratch_breathe_bert_vocab ekaba-assets``
+  ``biomedbert re evaluate GAD 1 biomedbert_large_scratch_breathe_bert_vocab ekaba-assets``
 EU-ADR 1:
-  ``biomedbert re evaluate euadr 1 biomedbert_base_scratch_breathe_bert_vocab ekaba-assets``
+  ``biomedbert re evaluate euadr 1 biomedbert_large_scratch_breathe_bert_vocab ekaba-assets``
 
 
 Requirements
