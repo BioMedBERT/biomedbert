@@ -39,7 +39,7 @@ def fine_tune_bioasq(model_type: str, bucket_name: str, train_file: str, predict
     init_checkpoint = tf.train.latest_checkpoint('gs://{}/{}/{}'.format(bucket_name, model_dir, squad_folder))
     vocab_file = 'gs://{}/{}/vocab.txt'.format(bucket_name, model_dir)
     bert_config_file = 'gs://{}/{}/{}'.format(bucket_name, model_dir, config)
-    output_dir = 'gs://{}/{}/BioASQ_outputs/{}/{}'.format(bucket_name, model_dir, squad_folder, train_file.split('.')[0])
+    output_dir = 'gs://{}/{}/BioASQ_outputs/{}/{}'.format(bucket_name, model_dir, squad_folder, predict_file.split('.')[0])
     train_file = 'gs://{}/datasets/QA/BioASQ/{}'.format(bucket_name, train_file)
     predict_file = 'gs://{}/datasets/QA/BioASQ/{}'.format(bucket_name, predict_file)
 
