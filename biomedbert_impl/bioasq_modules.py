@@ -59,12 +59,12 @@ def fine_tune_bioasq(model_type: str, bucket_name: str, train_file: str, predict
         print('Cannot fine tune BioASQ - {}'.format(train_file))
 
 
-def evaluate_bioasq(bucket_name: str, model_dir: str, train_file: str, eval_file: str, squad_folder: str):
+def evaluate_bioasq(bucket_name: str, model_dir: str, predict_file: str, eval_file: str, squad_folder: str):
     """evaluate bioasq"""
 
     # convert results to BioASQ JSON format
     try:
-        output_dir = 'BioASQ_outputs/{}/{}'.format(squad_folder, train_file.split('.')[0])
+        output_dir = 'BioASQ_outputs/{}/{}'.format(squad_folder, predict_file.split('.')[0])
 
         if not os.path.exists(output_dir):
             run('mkdir -p {}'.format(output_dir))
