@@ -45,7 +45,7 @@ def fine_tune_classification_glue(glue_dataset: str, model_type: str, bucket_nam
         run('python3 bert/run_classifier.py  --task_name={}  --do_train=true  --do_eval=true   '
             '--data_dir={}   --vocab_file={}   --bert_config_file={}   '
             '--init_checkpoint={}   --max_seq_length=128   --train_batch_size=32   '
-            '--learning_rate=2e-5   --num_train_epochs=4.0   --output_dir={}   '
+            '--learning_rate=2e-5   --num_train_epochs=10.0   --output_dir={}   '
             '--num_tpu_cores={}   --use_tpu={}   --tpu_name={}   --tpu_zone={}   '
             '--gcp_project={}'.format(
             glue_dataset, data_dir, vocab_file, bert_config_file, init_checkpoint,
