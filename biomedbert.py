@@ -23,6 +23,7 @@ Usage:
   biomedbert squad finetune (v1|v2) <model_type> <bucket_name> <model_dir> <train_file> <predict_file> <tpu_name> <tpu_cores>
   biomedbert ner finetune <model_type> <ner_dataset> <model_dir> <bucket_name> [<tpu_name> <tpu_cores>]
   biomedbert ner evaluate token level <model_type> <ner_dataset> <model_dir> <bucket_name> [<tpu_name> <tpu_cores>]
+  biomedbert ner evaluate entity level <model_type> <ner_training_output_dir> <ner_data_dir>
   biomedbert re finetune <model_type> <re_dataset> <re_dataset_no> <model_dir> <bucket_name> <tpu_name> <tpu_cores>
   biomedbert re evaluate <re_dataset> <re_dataset_no> <model_dir> <bucket_name>
   biomedbert bioasq evaluate <bucket_name> <model_dir> <train_file> <eval_file> <squad_folder>
@@ -46,7 +47,7 @@ from biomedbert_impl.glue_modules import fine_tune_classification_glue, download
     predict_classification_glue
 from biomedbert_impl.squad_modules import fine_tune_squad, evaluate_squad
 from biomedbert_impl.bioasq_modules import fine_tune_bioasq, evaluate_bioasq
-from biomedbert_impl.ner_modules import fine_tune_ner, token_level_evaluation
+from biomedbert_impl.ner_modules import fine_tune_ner, token_level_evaluation, word_level_prediction
 from biomedbert_impl.re_modules import fine_tune_re, evaluate_re
 
 __version__ = "0.1.0"
@@ -83,14 +84,6 @@ def ner_commands(args: dict):
 
     # fine tune ner
     if args['ner'] and args['finetune']:
-        # print("args['<ner_dataset>']: ", args['<ner_dataset>'])
-        # print("args['<model_dir>']: ", args['<model_dir>'])
-        # print("args['<model_type>']: ", args['<model_type>'])
-        # print("args['<bucket_name>']: ", args['<bucket_name>'])
-        # print("args['<tpu_name>']: ", args['<tpu_name>'])
-        # print("args['<tpu_cores>']: ", args['<tpu_cores>'])
-        # print("zone: ", zone)
-        # print("project_id: ", project_id)
         fine_tune_ner(args['<ner_dataset>'], args['<model_dir>'], args['<model_type>'], args['<bucket_name>'],
                       args['<tpu_name>'], zone, project_id, args['<tpu_cores>'])
 
@@ -98,6 +91,10 @@ def ner_commands(args: dict):
     if args['ner'] and args['evaluate'] and args['token'] and args['level']:
         token_level_evaluation(args['<ner_dataset>'], args['<model_dir>'], args['<model_type>'], args['<bucket_name>'],
                                args['<tpu_name>'], zone, project_id, args['<tpu_cores>'])
+
+    # entity-level evaluation
+    if args['ner'] and args['evaluate'] and args['entity'] and args['level']:
+        word_level_prediction(args['<model_type>'], args['<ner_training_output_dir>'], args['<ner_data_dir>'])
 
 
 def bioasq_commands(args: dict):

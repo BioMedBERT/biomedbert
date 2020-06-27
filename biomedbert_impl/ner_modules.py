@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import os
 import sys
 import logging
 import tensorflow as tf
@@ -59,18 +60,6 @@ def fine_tune_ner(ner_dataset: str, model_dir: str, model_type: str, bucket_name
         print('Cannot fine tune NER - {}'.format(ner_dataset))
 
 
-'''
-biomedbert ner finetune <model_type> <ner_dataset> <model_dir> <bucket_name> [<tpu_name> <tpu_cores>]
-
-python3 biobert/run_ner.py  --vocab_file=gs://ekaba-assets/biomedbert_base_bert_weights_and_vocab/vocab.txt 
---bert_config_file=gs://ekaba-assets/biomedbert_base_bert_weights_and_vocab/large_bert_config.json    
---init_checkpoint=gs://ekaba-assets/biomedbert_base_bert_weights_and_vocab/model.ckpt-1000000   --do_train=true 
---do_eval=true --num_train_epochs=10.0   --data_dir=gs://ekaba-assets/datasets/NER/NCBI-disease 
---output_dir=gs://ekaba-assets/biomedbert_base_bert_weights_and_vocab/NER_outputs/NCBI-disease  --num_tpu_cores=128   
---use_tpu=true --tpu_name=biomedbert-preempt   --tpu_zone=europe-west4-a  --gcp_project=ai-vs-covid19  
---num_tpu_cores=128 '''
-
-
 def token_level_evaluation(ner_dataset: str, model_dir: str, model_type: str, bucket_name: str,
                            tpu_name: str, tpu_zone: str, gcp_project: str, tpu_cores: str):
     """token-level evaluation ner"""
@@ -109,3 +98,29 @@ def token_level_evaluation(ner_dataset: str, model_dir: str, model_type: str, bu
             output_dir, use_tpu, tpu_name, tpu_zone, gcp_project, num_tpu_cores))
     except exceptions.UnexpectedExit:
         print('Cannot evaluate NER - {}'.format(ner_dataset))
+
+
+def word_level_prediction(model_dir: str, ner_training_output_dir: str, ner_data_dir: str):
+    """word level evaluation ner"""
+
+    output_dir = 'gs://ekaba-assets/{}/{}/{}'.format(model_dir, ner_training_output_dir, ner_data_dir)
+    ner_data_dir_path = 'gs://ekaba-assets/datasets/NER/{}'.format(ner_data_dir)
+
+    try:
+        run('python biobert/biocodes/ner_detoknize.py --token_test_path={}/token_test.txt ' \
+            '--label_test_path={}/label_test.txt --answer_path={}/test.tsv --output_dir={} '.format(
+            output_dir, output_dir, ner_data_dir_path, output_dir
+        ))
+    except exceptions.UnexpectedExit:
+        print('Cannot do NER word level prediction')
+
+    try:
+        if not os.path.exists('{}'.format(ner_training_output_dir)):
+            os.makedirs('{}'.format(ner_training_output_dir))
+
+        run('gsutil cp gs://ekaba-assets/{}/{}/{}/NER_result_conll.txt {}'.format(
+            model_dir, ner_training_output_dir, ner_data_dir, ner_training_output_dir))
+
+        run('perl biobert/biocodes/conlleval.pl < {}/NER_result_conll.txt'.format(ner_training_output_dir))
+    except exceptions.UnexpectedExit:
+        print('Cannot do NER word level prediction - perl biocodes')

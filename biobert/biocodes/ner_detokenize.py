@@ -13,7 +13,7 @@
 # limitations under the License.
 
 import argparse
-
+import tensorflow as tf
 
 parser = argparse.ArgumentParser(description='')
 parser.add_argument('--token_test_path', type=str,  help='Path to token_test.txt from output folder. ex) output/token_test.txt')
@@ -36,7 +36,7 @@ def detokenize(pred_token_test_path, pred_label_test_path):
 
     # read predicted
     pred = {'toks':[], 'labels':[]} # dictionary for predicted tokens and labels.
-    with open(pred_token_test_path,'r') as in_tok, open(pred_label_test_path,'r') as in_lab: #'token_test.txt'
+    with tf.gfile.Open(pred_token_test_path,'r') as in_tok, tf.gfile.Open(pred_label_test_path,'r') as in_lab: #'token_test.txt'
         for lineIdx, (lineTok, lineLab) in enumerate(zip(in_tok, in_lab)):
             lineTok = lineTok.strip()
             pred['toks'].append(lineTok)
@@ -82,7 +82,7 @@ def transform2CoNLLForm(golden_path, output_dir, bert_pred, debug):
     """
     # read golden
     ans = {'toks':["[CLS]"], 'labels':["[CLS]"], 'sentence':[]}
-    with open(golden_path,'r') as in_:
+    with tf.gfile.Open(golden_path,'r') as in_:
         buf = []
         #labelBuf=[]
         for lineIdx, line in enumerate(in_):
@@ -115,7 +115,7 @@ def transform2CoNLLForm(golden_path, output_dir, bert_pred, debug):
     if debug:
         ansCount = 0
         prdCount = 0 
-        with open(output_dir+'/NER_result_sent-debug.txt', 'w') as out_:
+        with tf.gfile.Open(output_dir+'/NER_result_sent-debug.txt', 'w') as out_:
             for ans_sent, pred_sent in zip(ans['sentence'], bert_pred['sentence']):
                 out_.write("ANS (%s): "%(len(ans_sent)) + " ".join(ans_sent)+"\n")
                 out_.write("PRD (%s): "%(len(pred_sent)) + " ".join(pred_sent)+"\n")
@@ -129,7 +129,7 @@ def transform2CoNLLForm(golden_path, output_dir, bert_pred, debug):
         assert (len(ans['labels']) == len(bert_pred['labels'])), ("Error! : len(ans['labels'])(%s) != len(bert_pred['labels'])(%s) : Please report us"%(len(ans['labels']), len(bert_pred['labels'])))
     
     print("len(bert_pred['toks']): ", len(bert_pred['toks']), "len(ans['labels']): ", len(ans['labels']))
-    with open(output_dir+'/NER_result_conll.txt', 'w') as out_:
+    with tf.gfile.Open(output_dir+'/NER_result_conll.txt', 'w') as out_:
         offset = 0 # Since some sentences can be trimmed due to max_seq_length, we use offset method.
 
         for idx, (bpred_t, bpred_l) in enumerate(zip(bert_pred['toks'], bert_pred['labels'])):
