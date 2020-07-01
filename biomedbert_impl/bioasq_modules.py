@@ -48,7 +48,7 @@ def fine_tune_bioasq(model_type: str, bucket_name: str, train_file: str, predict
             '--bert_config_file={}   --predict_batch_size=128   '
             '--init_checkpoint={}   --do_train=true --do_predict=true  '
             '--max_seq_length={}   --train_batch_size=32   --learning_rate=5e-6   '
-            '--doc_stride=128   --num_train_epochs=2.0   --do_lower_case=False   '
+            '--doc_stride=128   --num_train_epochs=5.0   --do_lower_case=False   '
             '--train_file={}  --predict_file={}   '
             '--output_dir={}/  --num_tpu_cores={}   --use_tpu={}   '
             '--tpu_name={}   --tpu_zone={}  --gcp_project={}'.format(

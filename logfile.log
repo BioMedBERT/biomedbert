@@ -313,3 +313,8 @@ tcsetattr: Interrupted system call
 Connection to 34.90.226.144 closed by remote host.
 Connection to 34.90.226.144 closed.
 ERROR: (gcloud.compute.ssh) [/usr/bin/ssh] exited with return code [255].
+Warning: Permanently added 'compute.3755518052857097792' (ECDSA) to the list of known hosts.
+tcsetattr: Interrupted system call
+Connection to 34.91.134.228 closed by remote host.
+Connection to 34.91.134.228 closed.
+ERROR: (gcloud.compute.ssh) [/usr/bin/ssh] exited with return code [255].
