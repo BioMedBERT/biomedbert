@@ -318,3 +318,4 @@ tcsetattr: Interrupted system call
 Connection to 34.91.134.228 closed by remote host.
 Connection to 34.91.134.228 closed.
 ERROR: (gcloud.compute.ssh) [/usr/bin/ssh] exited with return code [255].
+tcsetattr: Interrupted system call

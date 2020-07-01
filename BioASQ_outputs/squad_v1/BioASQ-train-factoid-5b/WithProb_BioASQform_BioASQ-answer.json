@@ -1,0 +1,2143 @@
+{
+  "questions": [
+    {
+      "type": "factoid",
+      "id": "58a95c711978bbde22000001",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "Alzheimer's disease",
+          2.3424608719964177
+        ],
+        [
+          "A\u03b2 dyshomeostasis",
+          0.5993135071375152
+        ],
+        [
+          "Alzheimer's disease. Alzheimer's disease",
+          0.21766933197274016
+        ],
+        [
+          "dementia",
+          0.12980565321549775
+        ],
+        [
+          "Alzheimer's disease compared with amyloid burden alone. SIGNIFICANCE STATEMENT: Alzheimer's disease",
+          0.1101006192551815
+        ],
+        [
+          ".",
+          0.05810672933090782
+        ],
+        [
+          "Alzheimer's disease.",
+          0.04465702673837416
+        ],
+        [
+          "Alzheimer's disease (AD)",
+          0.042408870981026456
+        ],
+        [
+          "A\u03b2 antibodies (solanezumab,",
+          0.026802685497882443
+        ],
+        [
+          "Alzheimer's disease (AD",
+          0.021024330495860957
+        ],
+        [
+          "A\u03b2",
+          0.018978707105195832
+        ],
+        [
+          "A\u03b2 antibodies (solanezumab, crenezumab,",
+          0.015719442626164655
+        ],
+        [
+          "Alzheimer's disease. Alzheimer's disease (AD)",
+          0.015644829909012677
+        ],
+        [
+          "dyshomeostasis",
+          0.014977353053438974
+        ],
+        [
+          "Alzheimer's",
+          0.01129324604935277
+        ],
+        [
+          "Alzheimer",
+          0.009543441166591943
+        ],
+        [
+          "Alzheimer's disease. Alzheimer's disease (AD",
+          0.005613305792112188
+        ],
+        [
+          "Alzheimer's disease (AD).",
+          0.0044625828304911295
+        ],
+        [
+          "Down's syndrome",
+          0.004142144369440062
+        ],
+        [
+          "solanezumab,",
+          0.0034127473962202834
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "587f760792a5b8ad44000005",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "the",
+          0.9364827720582243
+        ],
+        [
+          "RESULTS",
+          0.0393777553527525
+        ],
+        [
+          "JAMM is available for free and can run on Linux machines through the",
+          0.012383153562809892
+        ],
+        [
+          "RESULTS: We developed JAMM",
+          0.005065145063286746
+        ],
+        [
+          "JAMM",
+          0.002564676045420726
+        ],
+        [
+          "JAMM: a peak finder for joint analysis of NGS replicates. MOTIVATION",
+          0.001231666475288981
+        ],
+        [
+          "the command line: http://code.google.com/p/jamm-peak-finder",
+          0.0008660340721930677
+        ],
+        [
+          "the command line: http://code.google.com/p/jamm",
+          0.0006014065378932366
+        ],
+        [
+          "RESULTS:",
+          0.00045772737798663413
+        ],
+        [
+          "JAMM is a universal peak finder that is applicable to different types of datasets. We show that JAMM",
+          0.00044120597186338845
+        ],
+        [
+          "MOTIVATION",
+          0.0002916728161989783
+        ],
+        [
+          "the command line: http://code.google.com/p/jamm-peak-finder.",
+          5.664071288422314e-05
+        ],
+        [
+          ". RESULTS",
+          3.95526784789608e-05
+        ],
+        [
+          "RESULT",
+          3.8535641389078434e-05
+        ],
+        [
+          "IMPLEMENTATION: JAMM is available for free and can run on Linux machines through the",
+          2.100843767414616e-05
+        ],
+        [
+          "S",
+          1.9612176884796975e-05
+        ],
+        [
+          "RES",
+          1.8027038589901415e-05
+        ],
+        [
+          "RESULTS: We developed JAMM (",
+          1.4725270118488941e-05
+        ],
+        [
+          "RESULTS: We developed JAMM (Joint Analysis of NGS replicates via Mixture Model",
+          1.4540563700872416e-05
+        ],
+        [
+          "JAMM:",
+          1.4142146361007047e-05
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "58a9bbe81978bbde22000007",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "crypt base",
+          1.2833077374814137
+        ],
+        [
+          "throughout the crypts",
+          0.5739885483618387
+        ],
+        [
+          "intestinal crypts",
+          0.5153959617453073
+        ],
+        [
+          "intestinal stem cell niche",
+          0.5116560592047552
+        ],
+        [
+          "the crypt base",
+          0.45375962529110037
+        ],
+        [
+          "The intestinal stem cell niche",
+          0.4354286725248664
+        ],
+        [
+          "at the bottom of the crypts of Lieberk\u00fchn",
+          0.27343501985080415
+        ],
+        [
+          "the bottom of the crypts of Lieberk\u00fchn",
+          0.21801486677138976
+        ],
+        [
+          "bottom of the crypts of Lieberk\u00fchn",
+          0.20423633177429404
+        ],
+        [
+          "the intestinal crypts",
+          0.16096787994986347
+        ],
+        [
+          "in the intestinal crypts",
+          0.11823909973371
+        ],
+        [
+          "intestinal crypts.",
+          0.11724014592561832
+        ],
+        [
+          ".",
+          0.09213071848865846
+        ],
+        [
+          "at the bottom of the crypts of Lieberk\u00fchn.",
+          0.08689459742434819
+        ],
+        [
+          "throughout the crypts.",
+          0.08524401830200819
+        ],
+        [
+          "base of the crypts but aberrantly located throughout the crypts",
+          0.08024849047730262
+        ],
+        [
+          "the bottom of the crypts of Lieberk\u00fchn.",
+          0.0692826913354387
+        ],
+        [
+          "bottom of the crypts of Lieberk\u00fchn.",
+          0.06490402669941951
+        ],
+        [
+          "crypts",
+          0.05736275580951248
+        ],
+        [
+          "at the crypt base",
+          0.05487748584264595
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "58a2df9c60087bc10a000006",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "8%",
+          0.9491672325731878
+        ],
+        [
+          "7.61%",
+          0.9044396593206782
+        ],
+        [
+          "8% and that of sickle cell trait ranging from 1 to 32%",
+          0.033095254736339404
+        ],
+        [
+          "7.61%) (p < 0.02).",
+          0.030798721840031126
+        ],
+        [
+          "(7.61%",
+          0.02851682513016838
+        ],
+        [
+          "8.49%",
+          0.010574156773312344
+        ],
+        [
+          "7.61",
+          0.006993475716108616
+        ],
+        [
+          "7.61%)",
+          0.0058285622941294645
+        ],
+        [
+          "beta-thalassemia trait being 8%",
+          0.0052463635237371496
+        ],
+        [
+          "the incidence of beta-thalassemia trait being 8%",
+          0.003959024854025628
+        ],
+        [
+          "7.61%) (p < 0.02",
+          0.0034103730828438285
+        ],
+        [
+          "(8.49%",
+          0.0025763605336992478
+        ],
+        [
+          "8",
+          0.0019858049176354536
+        ],
+        [
+          "7.61%) (p < 0.02)",
+          0.0013616303959812965
+        ],
+        [
+          ".",
+          0.0013406967068977796
+        ],
+        [
+          "(7.61%) (p < 0.02).",
+          0.0009710783421467166
+        ],
+        [
+          "incidence of beta-thalassemia trait being 8%",
+          0.0009438790607979109
+        ],
+        [
+          "8% and",
+          0.0009402043807912595
+        ],
+        [
+          "mean incidence of heterozygosity for beta-thalassaemia in the whole Greek population (7.61%",
+          0.0007020799266421521
+        ],
+        [
+          "8.49%)",
+          0.000641118522117992
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "58a32edd60087bc10a000012",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "obesity",
+          0.5436212865484397
+        ],
+        [
+          "the treatment of obesity",
+          0.1840239177101431
+        ],
+        [
+          "obesity, and is used with lifestyle modification.",
+          0.06681178721977887
+        ],
+        [
+          "treatment of obesity",
+          0.06034469253555684
+        ],
+        [
+          "obesity,",
+          0.055800709790617666
+        ],
+        [
+          "the treatment of obesity, and is used with lifestyle modification.",
+          0.02261678697584376
+        ],
+        [
+          "the treatment of obesity,",
+          0.018889372952766464
+        ],
+        [
+          ".",
+          0.016103164387971543
+        ],
+        [
+          "treatment of obesity, and is used with lifestyle modification.",
+          0.007416443868721378
+        ],
+        [
+          "treatment of obesity,",
+          0.006194158983288113
+        ],
+        [
+          "for the treatment of obesity",
+          0.003439105441166145
+        ],
+        [
+          "obesity and obesity with Type 2 diabetes",
+          0.0030997713892371714
+        ],
+        [
+          "obesity, and is used with lifestyle modification",
+          0.0019445832068856132
+        ],
+        [
+          "bupropion hydrochloride extended release for the treatment of obesity",
+          0.0009094960829610818
+        ],
+        [
+          "the treatment of obesity, and is used with lifestyle modification",
+          0.0006582704336625676
+        ],
+        [
+          "obesity with Type 2 diabetes",
+          0.0005889468111076455
+        ],
+        [
+          "Type 2 diabetes",
+          0.0005015468720019977
+        ],
+        [
+          "for the treatment of obesity, and is used with lifestyle modification.",
+          0.000422670683888134
+        ],
+        [
+          "obesity and obesity",
+          0.0004180760729293484
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5880a8ec0a76a87357000001",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "CAFE",
+          0.9819189731484403
+        ],
+        [
+          "SUMMARY",
+          0.007776592063561764
+        ],
+        [
+          "CAFE:",
+          0.0039421982630509465
+        ],
+        [
+          "AVAILABILITY AND IMPLEMENTATION: CAFE",
+          0.0013220025808224221
+        ],
+        [
+          "CAF",
+          0.0010833221854876795
+        ],
+        [
+          "CA",
+          0.0006018746387455486
+        ],
+        [
+          "CAFE: an R package for the detection of gross chromosomal abnormalities",
+          0.00020833205715148971
+        ],
+        [
+          ". CAFE",
+          0.0001592932545010913
+        ],
+        [
+          "CAFE: an R package for the detection of gross chromosomal abnormalities from gene expression",
+          0.00012311923051699648
+        ],
+        [
+          "E",
+          0.00010896257639351814
+        ],
+        [
+          "CAFE is available from https://bitbucket.org/cob87icW6z/cafe",
+          0.00010642114270026658
+        ],
+        [
+          "Bioinformatics",
+          5.854822509069366e-05
+        ],
+        [
+          "microarray data. SUMMARY",
+          5.750850809280897e-05
+        ],
+        [
+          "CAFE will also be freely available from Bioconductor. CONTACT",
+          5.6802288897605365e-05
+        ],
+        [
+          "CAFE is available from https://bitbucket.org/cob87icW6z/cafe/",
+          5.096730678777931e-05
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "58a877cf38c171fb5b000004",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "transposable element",
+          0.6508874377208471
+        ],
+        [
+          "a transposable element",
+          0.2185470720159829
+        ],
+        [
+          "transposable element.",
+          0.08958587679005346
+        ],
+        [
+          "a transposable element.",
+          0.030080056752989172
+        ],
+        [
+          ".",
+          0.007852027136410977
+        ],
+        [
+          "element",
+          0.0007431798868002749
+        ],
+        [
+          "industrial melanism mutation in British peppered moths is a transposable element",
+          0.00047101979746308416
+        ],
+        [
+          "transposable",
+          0.0004067127805078899
+        ],
+        [
+          "carbonaria-typica polymorphism",
+          0.0003916502344096515
+        ],
+        [
+          "melanism mutation in British peppered moths is a transposable element",
+          0.00026564821210110366
+        ],
+        [
+          "a transposable",
+          0.00013656107366693393
+        ],
+        [
+          "is a transposable element",
+          0.00013323925220406132
+        ],
+        [
+          "element.",
+          0.0001022886875876217
+        ],
+        [
+          "trans",
+          7.22916824384884e-05
+        ],
+        [
+          "The industrial melanism mutation in British peppered moths is a transposable element",
+          7.096912985816444e-05
+        ],
+        [
+          "industrial melanism mutation in British peppered moths is a transposable element.",
+          6.482952211976958e-05
+        ],
+        [
+          "peppered moths is a transposable element",
+          5.120218700608679e-05
+        ],
+        [
+          "mutation in British peppered moths is a transposable element",
+          4.934062284389162e-05
+        ],
+        [
+          "carbonaria",
+          4.552959374004021e-05
+        ],
+        [
+          "sable element",
+          4.3066920969246284e-05
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5880aef4c872c95565000001",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "CD38",
+          3.824695234570723
+        ],
+        [
+          "RANKL",
+          0.040022739734970884
+        ],
+        [
+          "CD38 and SLAMF7",
+          0.02467416058735785
+        ],
+        [
+          "CD38 antibody or CD38",
+          0.013044550315110311
+        ],
+        [
+          "CD38 IgG1",
+          0.012915587645324517
+        ],
+        [
+          "SLAMF7",
+          0.0121859359210279
+        ],
+        [
+          "anti-CD38",
+          0.012065611007813372
+        ],
+        [
+          "CD38 IgG1-\u03ba",
+          0.008646711545247793
+        ],
+        [
+          "daratumumab and elotuzumab, two monoclonal antibodies that target CD38",
+          0.007207327291231175
+        ],
+        [
+          "CD38 and SLAMF7, respectively.",
+          0.005478510166617402
+        ],
+        [
+          "CD38) and elotuzumab (anti-CS1",
+          0.004545783846982157
+        ],
+        [
+          "CD38)",
+          0.0037001172417549986
+        ],
+        [
+          "daratumumab (anti-CD38",
+          0.002859349401013055
+        ],
+        [
+          "daratumumab, and probably also other CD38",
+          0.002201245407819881
+        ],
+        [
+          "CD",
+          0.0020247603633570953
+        ],
+        [
+          "CD38 and SLAMF7,",
+          0.0019556062491631865
+        ],
+        [
+          "(anti-CD38",
+          0.0017412926538420183
+        ],
+        [
+          "RANKL) or BHQ880 (anti-DKK-1",
+          0.0015210603511728656
+        ],
+        [
+          "targeting CD38",
+          0.0013740236897694126
+        ],
+        [
+          "RANKL) or BHQ880 (anti-DKK",
+          0.001362400604378531
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5884c72fe56acf517600000f",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "PD-L1",
+          4.506767429591021
+        ],
+        [
+          "PD-L1/PD-1 pathway. We assessed treatment with avelumab, an anti-PD-L1",
+          0.4446785234958616
+        ],
+        [
+          "programmed death-ligand 1 (PD-L1",
+          0.29218853213219836
+        ],
+        [
+          "programmed death-ligand 1",
+          0.18017155856091488
+        ],
+        [
+          "PD-1 (pembrolizumab and nivolumab) or PD-L1",
+          0.1388478956373556
+        ],
+        [
+          "PD-1 pathway. We assessed treatment with avelumab, an anti-PD-L1",
+          0.061957512075976606
+        ],
+        [
+          "avelumab targeting PD-L1",
+          0.053609812444427175
+        ],
+        [
+          "PD-L1/PD-1",
+          0.038478980971777835
+        ],
+        [
+          "(PD-L1",
+          0.033755745422038526
+        ],
+        [
+          "PD-1",
+          0.022006535075212587
+        ],
+        [
+          "programmed death receptor 1",
+          0.020131235419191394
+        ],
+        [
+          "PD-L1)",
+          0.019562144172618413
+        ],
+        [
+          "PD-1 and avelumab targeting PD-L1",
+          0.01853607863966574
+        ],
+        [
+          "programmed death receptor 1 (PD-1) and its ligand programmed death ligand 1 (PD-L1",
+          0.016155700165618604
+        ],
+        [
+          "programmed death-ligand 1 (PD-L1)",
+          0.013316266608898994
+        ],
+        [
+          "programmed death receptor 1 (PD-1",
+          0.011873167260177038
+        ],
+        [
+          "cell death protein-1 ligand (PD-L1",
+          0.009523081368457373
+        ],
+        [
+          "PD-L1). Several drugs targeting PD-1",
+          0.007273170153101931
+        ],
+        [
+          "programmed death ligand 1 (PD-L1). Several drugs targeting PD-1",
+          0.007114932171737411
+        ],
+        [
+          "programmed death receptor 1 (PD-1) and its ligand programmed death ligand 1",
+          0.0065494464070802415
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5891f9e549702f2e01000002",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "Restless Legs Syndrome",
+          2.2562521957843513
+        ],
+        [
+          "Restless legs syndrome. Restless legs syndrome",
+          0.27826332759547856
+        ],
+        [
+          "restless legs syndrome/Willis-Ekbom disease (RLS/WED",
+          0.14137267403281195
+        ],
+        [
+          "Restless legs syndrome (RLS)",
+          0.06695077378846455
+        ],
+        [
+          "Restless legs syndrome (RLS",
+          0.04670207408760369
+        ],
+        [
+          "Restless legs syndrome. Restless legs syndrome (RLS)",
+          0.03641887278898121
+        ],
+        [
+          "RLS/WED",
+          0.027829588512685605
+        ],
+        [
+          "Restless legs syndrome. Restless legs syndrome (RLS",
+          0.025404290330563208
+        ],
+        [
+          "Restless Legs",
+          0.021738455356358467
+        ],
+        [
+          "restless legs syndrome (WED/RLS",
+          0.013085168675940444
+        ],
+        [
+          "restless legs syndrome (WED/RLS)",
+          0.009462379248344581
+        ],
+        [
+          "Willis-Ekbom disease/restless legs syndrome",
+          0.008708301580782184
+        ],
+        [
+          "Restless legs syndrome (RLS),",
+          0.006746403972700292
+        ],
+        [
+          "restless legs syndrome/Willis-Ekbom disease (RLS/WED)",
+          0.00671444481695135
+        ],
+        [
+          "Restless Legs Syndrome in Children with Neurodevelopmental Conditions.",
+          0.004015898708957957
+        ],
+        [
+          "Restless legs syndrome.",
+          0.0037436720869282567
+        ],
+        [
+          "Restless legs syndrome. Restless legs syndrome (RLS),",
+          0.0036698071457865996
+        ],
+        [
+          "restless legs syndrome/",
+          0.0036103163246148763
+        ],
+        [
+          "syndrome",
+          0.002862628197622765
+        ],
+        [
+          "Restless legs syndrome (RLS), also known as Willis-Ekbom disease",
+          0.0028045311106714723
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5880be1dc872c95565000007",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "PARP",
+          5.430210351798763
+        ],
+        [
+          "Poly(ADP-ribose) polymerase",
+          0.7151020239524635
+        ],
+        [
+          "Poly(ADP-ribose) Polymerase (PARP",
+          0.5960459373519167
+        ],
+        [
+          "poly(adenosine diphosphate [ADP]-ribose) polymerase (PARP",
+          0.31035792265223555
+        ],
+        [
+          "poly (ADP) ribose polymerase (PARP)",
+          0.2966140055132326
+        ],
+        [
+          "poly (ADP) ribose polymerase",
+          0.29117366515522913
+        ],
+        [
+          "PARP)",
+          0.2523274577977093
+        ],
+        [
+          "Poly(ADP-ribose) Polymerase (PARP)",
+          0.219486675054064
+        ],
+        [
+          "poly (ADP) ribose polymerase (PARP",
+          0.21614293517082972
+        ],
+        [
+          "poly(adenosine diphosphate [ADP]-ribose) polymerase",
+          0.18682046698949403
+        ],
+        [
+          "PARP inhibitors, including veliparib, rucaparib,",
+          0.1268811015160557
+        ],
+        [
+          "PARP-1/PARP-2",
+          0.12185501353947271
+        ],
+        [
+          "PARP inhibitors, including veliparib,",
+          0.11860077053941634
+        ],
+        [
+          "PARP-1",
+          0.08797085014794348
+        ],
+        [
+          "poly(adenosine diphosphate [ADP]-ribose) polymerase (PARP)",
+          0.08737253578577554
+        ],
+        [
+          "poly-ADP-ribose polymerase",
+          0.07176628162748766
+        ],
+        [
+          "PARP inhibitors in late phase clinical development in ovarian cancer including rucaparib, niraparib,",
+          0.06264969465891185
+        ],
+        [
+          "PARP inhibitors niraparib,",
+          0.054429889562043275
+        ],
+        [
+          "Polymerase (PARP",
+          0.0524709589480642
+        ],
+        [
+          "PARP-2",
+          0.05003456967000727
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "58a8903b38c171fb5b000006",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "mitotic arrest",
+          0.865783784310692
+        ],
+        [
+          ".",
+          0.8258453895208703
+        ],
+        [
+          "disrupts the microtubular network",
+          0.6853434644446523
+        ],
+        [
+          "mitosis",
+          0.48944974764639854
+        ],
+        [
+          "enriched in mitosis",
+          0.4469799313469096
+        ],
+        [
+          "polar body extrusion and escape of metaphase I arrest",
+          0.41013523046640254
+        ],
+        [
+          "disrupts the microtubular network, also blocked the formation of RACK1-Lck complexes.",
+          0.18807485135026852
+        ],
+        [
+          "metaphase I arrest",
+          0.16256021257076533
+        ],
+        [
+          "precocious polar body extrusion and escape of metaphase I arrest",
+          0.10774161819979558
+        ],
+        [
+          "mitotic arrest.",
+          0.08154491471424129
+        ],
+        [
+          "polar body extrusion",
+          0.06777671927833873
+        ],
+        [
+          "escape of metaphase I arrest",
+          0.05575246588609075
+        ],
+        [
+          "Cells can also be enriched in mitosis",
+          0.04547634418879726
+        ],
+        [
+          "antimitotic SAC-inducing agents",
+          0.032375642781325584
+        ],
+        [
+          "disrupts the microtubular network,",
+          0.02919108860732643
+        ],
+        [
+          "SAC-inducing agents",
+          0.02666251557737766
+        ],
+        [
+          "polar body extrusion and escape of metaphase I arrest induced",
+          0.02662604755448461
+        ],
+        [
+          "disrupts the microtubular network, also blocked the formation of RACK1-Lck complexes",
+          0.026293260966841273
+        ],
+        [
+          "depletion of the SAC kinase MPS1.",
+          0.024513757901443518
+        ],
+        [
+          "The precocious polar body extrusion and escape of metaphase I arrest",
+          0.0216587485943425
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "587e07023ec846c24f000001",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "PHYLUCE",
+          0.9476965861388874
+        ],
+        [
+          "PHYLUCE is a software package for the analysis of conserved genomic loci. UNLABELLED",
+          0.03521690335449858
+        ],
+        [
+          "PHYLUCE is also available as a package (https://binstar.org/faircloth-lab/phyluce",
+          0.0037231783111301374
+        ],
+        [
+          "phyluce). The software manual and a tutorial are available from http://phyluce",
+          0.002447622592346215
+        ],
+        [
+          "PHYLUCE is",
+          0.0024219910195802693
+        ],
+        [
+          "phyluce/ PHYLUCE",
+          0.0016216210783076312
+        ],
+        [
+          "Bioinformatics",
+          0.001098408246845042
+        ],
+        [
+          "UNLABELLED",
+          0.0008683325605484727
+        ],
+        [
+          "PHYLUCE is a software package for the analysis of conserved genomic loci",
+          0.0008119412719408297
+        ],
+        [
+          "phyluce).",
+          0.0006038894629735997
+        ],
+        [
+          "PHYLUCE is a software package for the analysis of conserved genomic loci.",
+          0.0005881628345073159
+        ],
+        [
+          "PHYLUCE is a software package for the analysis of conserved genomic loci. UNLABELLED:",
+          0.0005392513593416181
+        ],
+        [
+          "PHYLUC",
+          0.00046827005017855593
+        ],
+        [
+          "Bioinformatics online",
+          0.0004621479923204469
+        ],
+        [
+          "PH",
+          0.0003528017935266731
+        ],
+        [
+          ". PHYLUCE",
+          0.0003203787093285989
+        ],
+        [
+          "faircloth-lab/phyluce",
+          0.00028969499246991594
+        ],
+        [
+          "P",
+          0.0002493652485966893
+        ],
+        [
+          "E",
+          0.00021945298267178316
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "58a2e5f760087bc10a000007",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "alpha-synuclein",
+          3.602974749030354
+        ],
+        [
+          "\u03b1-synuclein",
+          1.6002776086837152
+        ],
+        [
+          "\u03b1-synuclein (\u03b1Syn",
+          0.11649966364625776
+        ],
+        [
+          "Alpha-synuclein (alphaS",
+          0.11226829059765805
+        ],
+        [
+          "\u03b1-synuclein (\u03b1Syn)",
+          0.08777816809657658
+        ],
+        [
+          "Alpha-synuclein (alphaS)",
+          0.07673346891789759
+        ],
+        [
+          "alpha-synuclein fibrils. The protein alpha-synuclein",
+          0.05752265362517728
+        ],
+        [
+          "alpha-synuclein (AS)",
+          0.03801499496123502
+        ],
+        [
+          "\u03b1-synuclein amyloid fibrils by solid-state NMR. Fibrillar \u03b1-synuclein",
+          0.03244297841947164
+        ],
+        [
+          "\u03b1-synuclein and fibril formation rates by NMR and fluorescence. Aggregation of \u03b1-synuclein",
+          0.03151704315300603
+        ],
+        [
+          "synuclein",
+          0.030651480953770665
+        ],
+        [
+          "\u03b1Syn",
+          0.03039756478081722
+        ],
+        [
+          "\u03b1Syn)",
+          0.022903435662776354
+        ],
+        [
+          "alpha-synuclein,",
+          0.019535501164519083
+        ],
+        [
+          "Fibrillar \u03b1-synuclein",
+          0.017715997502588118
+        ],
+        [
+          "alphaS",
+          0.016969045656298098
+        ],
+        [
+          "alpha-synuclein at low pH. Alpha-synuclein",
+          0.01667072864259969
+        ],
+        [
+          "\u03b1-synuclein (AS)",
+          0.01448912275719499
+        ],
+        [
+          "alphaS)",
+          0.011598054361585668
+        ],
+        [
+          "alpha-synuclein (AS",
+          0.009008819366428389
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "589a246078275d0c4a00002a",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "teriflunomide",
+          3.8222934582278656
+        ],
+        [
+          "Teriflunomide,",
+          0.06963203648688303
+        ],
+        [
+          "fingolimod",
+          0.016276402668411818
+        ],
+        [
+          "fingolimod,",
+          0.01293202041121519
+        ],
+        [
+          "fingolimod, teriflunomide",
+          0.007331775039500204
+        ],
+        [
+          "TEMSO (Teriflunomide",
+          0.006829645393188542
+        ],
+        [
+          "Teriflunomide Multiple Sclerosis",
+          0.00668101056623434
+        ],
+        [
+          "(Teriflunomide",
+          0.006109210702447903
+        ],
+        [
+          "fingolimod, and teriflunomide",
+          0.005206494196892363
+        ],
+        [
+          "fingolimod, teriflunomide,",
+          0.004913495927891717
+        ],
+        [
+          "Teriflunomide Multiple Sclerosis Oral",
+          0.00411198447832294
+        ],
+        [
+          "fingolimod, teriflunomide, and dimethyl fumarate",
+          0.002440372199447656
+        ],
+        [
+          "fingolimod, teriflunomide, and dimethyl fumarate (DMF)",
+          0.0023668574477562184
+        ],
+        [
+          "Dimethyl fumarate (DMF), fingolimod, and teriflunomide",
+          0.0018939158775308797
+        ],
+        [
+          "Teriflunomide Multiple Sclerosis Oral)",
+          0.0017227422566455301
+        ],
+        [
+          "teriflunomide (TEMSO, NCT00134563",
+          0.0016422112519172264
+        ],
+        [
+          "teriflunomide is well-tolerated and efficacy of teriflunomide",
+          0.0015907399014779308
+        ],
+        [
+          "teriflunomide (TEMSO,",
+          0.0013185065889871736
+        ],
+        [
+          "Dimethyl fumarate (DMF), fingolimod,",
+          0.0013023833016136336
+        ],
+        [
+          "fingolimod, teriflunomide, and dimethyl fumarate (DMF",
+          0.0012565196785863945
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "58a1c0f178275d0c4a000056",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "1962",
+          0.9550756100679345
+        ],
+        [
+          "1958 and 1959",
+          0.3132781471342851
+        ],
+        [
+          "1958 and 1959.",
+          0.2746650781408891
+        ],
+        [
+          "1958",
+          0.14481337425887403
+        ],
+        [
+          ".",
+          0.11676237985343639
+        ],
+        [
+          "1959",
+          0.0674134577815313
+        ],
+        [
+          "1959.",
+          0.05910441828990701
+        ],
+        [
+          "in 1962",
+          0.019405478086802718
+        ],
+        [
+          "1962,",
+          0.01761565886450115
+        ],
+        [
+          "in 1958 and 1959",
+          0.008537777813894436
+        ],
+        [
+          "in 1958 and 1959.",
+          0.007485454800642956
+        ],
+        [
+          "in 1958",
+          0.003946602803969715
+        ],
+        [
+          "1962, when oral poliovirus vaccine (OPV) became available,",
+          0.001548896356546403
+        ],
+        [
+          "in the Belgian Congo in 1958 and 1959",
+          0.001344946782565227
+        ],
+        [
+          "in the Belgian Congo in 1958 and 1959.",
+          0.001179175491517031
+        ],
+        [
+          "in the Belgian Congo in 1958",
+          0.0006217040146703917
+        ],
+        [
+          "in 1962,",
+          0.00035791960183692047
+        ],
+        [
+          "However, in 1962",
+          0.00017052638298051923
+        ],
+        [
+          "1987",
+          0.0001286986151377143
+        ],
+        [
+          "2004",
+          0.00011057840903940716
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "58aa0c6f396a458e50000008",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "oxytocin",
+          4.10773384238119
+        ],
+        [
+          "oxytocin. Neuropeptide hormone oxytocin",
+          0.2700415469346409
+        ],
+        [
+          "Oxytocin is known as the 'love hormone' due its role in promoting mother-child and pair bonding.",
+          0.10721069344917633
+        ],
+        [
+          "Oxytocin Receptor Specific Manner. The neurohypophysial hormone oxytocin",
+          0.07588187686122755
+        ],
+        [
+          "oxytocin (OXT)",
+          0.07585827997447392
+        ],
+        [
+          ".",
+          0.07034262511260711
+        ],
+        [
+          "oxytocin: implications for psychiatry. Oxytocin",
+          0.038185430368512276
+        ],
+        [
+          "Oxytocin is known as the 'love hormone",
+          0.03227077023043832
+        ],
+        [
+          "oxytocin,",
+          0.028750524125304783
+        ],
+        [
+          "Neuropeptide hormone oxytocin",
+          0.018202520297260792
+        ],
+        [
+          "oxytocin (OT)",
+          0.014286965178432314
+        ],
+        [
+          "neurohypophysial hormone oxytocin",
+          0.013988394508035053
+        ],
+        [
+          "The neurohypophysial hormone oxytocin",
+          0.013380253345309751
+        ],
+        [
+          "oxytocin (OT",
+          0.013147157209021237
+        ],
+        [
+          ". More recent research indicates that oxytocin",
+          0.012866452932056897
+        ],
+        [
+          "oxytocin.",
+          0.012568914831207943
+        ],
+        [
+          "corticosterone",
+          0.009093327146615461
+        ],
+        [
+          "Oxytocin Receptor Specific Manner. The neurohypophysial hormone oxytocin (OXT)",
+          0.007875518251177325
+        ],
+        [
+          "Oxytocin is known as the 'love hormone'",
+          0.00663832840090674
+        ],
+        [
+          "oxytocine",
+          0.0063528606916392755
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "58a9c532396a458e50000002",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "six",
+          2.8352683216398344
+        ],
+        [
+          "three",
+          0.17018858035015466
+        ],
+        [
+          "six cysteines",
+          0.11940141423469718
+        ],
+        [
+          "three kinds of defensins have six",
+          0.10626974162050837
+        ],
+        [
+          "six conserved cysteines",
+          0.09635395210360921
+        ],
+        [
+          "41 residues and intervening propeptide of 3 residues. There are six",
+          0.09503988322580306
+        ],
+        [
+          "3 residues. There are six",
+          0.0764662094154106
+        ],
+        [
+          "six cysteines in the sequence of mature CFBD peptide, which possibly form three",
+          0.03941017580836938
+        ],
+        [
+          "six conserved cysteines whose three",
+          0.03912436191954347
+        ],
+        [
+          "six conserved cysteines whose three intramolecular disulfides stabilize a largely \u03b2-sheet structure.",
+          0.0330992479492167
+        ],
+        [
+          "four",
+          0.024819059887702718
+        ],
+        [
+          "six conserved cysteines, three",
+          0.02292148050916891
+        ],
+        [
+          "four myeloid \u03b1-defensins (HNP1-4",
+          0.01823034533356398
+        ],
+        [
+          "three subfamilies of defensins in primates: \u03b1,",
+          0.018120679406194228
+        ],
+        [
+          "six cysteines, which form three",
+          0.017554064296436314
+        ],
+        [
+          "six cysteines in the sequence of mature CFBD peptide,",
+          0.01700576133089701
+        ],
+        [
+          "six conserved cysteines,",
+          0.01680690205876778
+        ],
+        [
+          "three subfamilies of defensins in primates: \u03b1, \u03b2",
+          0.016350631795023676
+        ],
+        [
+          "three kinds of defensins have six conserved cysteines",
+          0.016102337001916055
+        ],
+        [
+          "41",
+          0.015112302365285246
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "58a3428d60087bc10a00001b",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "huntingtin",
+          1.0637584251703465
+        ],
+        [
+          "HTT gene",
+          0.45856981357424303
+        ],
+        [
+          "HTT",
+          0.45659862627515435
+        ],
+        [
+          "huntingtin protein",
+          0.42860617076825847
+        ],
+        [
+          "huntingtin protein (HTT",
+          0.14773398435063
+        ],
+        [
+          "huntingtin protein (HTT)",
+          0.10829438061387645
+        ],
+        [
+          "HTT gene.",
+          0.08352540531439563
+        ],
+        [
+          "huntingtin protein (HTT) gene",
+          0.06917719654568516
+        ],
+        [
+          "huntingtin.",
+          0.032044291884879374
+        ],
+        [
+          "HTT)",
+          0.02209442733757915
+        ],
+        [
+          "HTT) gene",
+          0.01411366438251021
+        ],
+        [
+          "the HTT gene",
+          0.013489973166885426
+        ],
+        [
+          "the HTT",
+          0.01260253175987116
+        ],
+        [
+          "the huntingtin protein",
+          0.006363459515969887
+        ],
+        [
+          ".",
+          0.004191217379704642
+        ],
+        [
+          "HTT) gene underlie both adult-onset and juvenile forms of Huntington's disease (HD). HTT",
+          0.003861447915353249
+        ],
+        [
+          "the HTT gene.",
+          0.0024692987659492294
+        ],
+        [
+          "the huntingtin protein (HTT",
+          0.002193387059414181
+        ],
+        [
+          "(HTT",
+          0.002130239124196684
+        ],
+        [
+          "the huntingtin",
+          0.0019969040532422755
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "58a872bd38c171fb5b000002",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "SMIM1",
+          1.66739385310902
+        ],
+        [
+          "SMIM1 gene",
+          0.24976438201025639
+        ],
+        [
+          "SMIM",
+          0.02191224545405534
+        ],
+        [
+          "SMIM1 17 bp",
+          0.013387756818279998
+        ],
+        [
+          "Disruption of SMIM1",
+          0.012301760549796972
+        ],
+        [
+          "SMIM1 cDNA in Vel- cultured cells generated anti-Vel cell surface reactivity, confirming that SMIM1",
+          0.007493773289471407
+        ],
+        [
+          "the SMIM1",
+          0.005846224659391727
+        ],
+        [
+          "SMIM1 17 bp (64-80del) gene",
+          0.00485750117012558
+        ],
+        [
+          "SMIM1 protein",
+          0.0033042922818491906
+        ],
+        [
+          "the SMIM1 gene",
+          0.0017421270606241734
+        ],
+        [
+          "SM",
+          0.001722838001772278
+        ],
+        [
+          "SMIM1 17 bp (64-80del) gene deletion",
+          0.0009991743960390668
+        ],
+        [
+          "SMIM1 protein carries the Vel blood group antigen,",
+          0.0009603616076966306
+        ],
+        [
+          "SMIM1 causes",
+          0.0006858583709363821
+        ],
+        [
+          "SMIM1.",
+          0.0006776647576387885
+        ],
+        [
+          "SMIM1 17",
+          0.0005356934224829266
+        ],
+        [
+          "SMIM1 causes the Vel- blood type.",
+          0.0004984116233089004
+        ],
+        [
+          "small integral membrane protein 1 (SMIM1",
+          0.00044618651766208225
+        ],
+        [
+          "SMIM1 causes the Vel- blood type",
+          0.0004234729336609668
+        ],
+        [
+          "SMIM1 17 bp (64-80del)",
+          0.0003862432952754446
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5895bc397d9090f35300000b",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "SLC9A6",
+          2.6729294970855118
+        ],
+        [
+          "NHE6",
+          0.653643604467556
+        ],
+        [
+          "solute carrier family 9, subfamily A member 6",
+          0.5482385452204398
+        ],
+        [
+          "SLC9A6 Mutation. BACKGROUND: Mutations of SLC9A6",
+          0.37535932524632964
+        ],
+        [
+          "SLC9A6 gene",
+          0.3265359519981484
+        ],
+        [
+          "SLC9A6 encoding the recycling endosomal alkali cation/proton exchanger NHE6",
+          0.262340863479947
+        ],
+        [
+          "NHE6).",
+          0.1357344863012191
+        ],
+        [
+          "solute carrier family 9, subfamily A member 6 (SLC9A6)",
+          0.13150028520737891
+        ],
+        [
+          "SLC9A6 encoding the recycling endosomal alkali cation/proton exchanger NHE6.",
+          0.12783256651319522
+        ],
+        [
+          "solute carrier family 9, subfamily A member 6 (SLC9A6",
+          0.11799621464397847
+        ],
+        [
+          "NHE6)",
+          0.060807999316251686
+        ],
+        [
+          "solute carrier family 9, subfamily A member 6 (SLC9A6) gene",
+          0.05495617332880829
+        ],
+        [
+          "X-linked Na(+) /H(+) exchanger 6 (NHE6",
+          0.05127143534088039
+        ],
+        [
+          "(NHE6",
+          0.050177306372133634
+        ],
+        [
+          ".",
+          0.041639806629978904
+        ],
+        [
+          "NHE6.",
+          0.030742880491289124
+        ],
+        [
+          "solute carrier family 9",
+          0.026181521623128888
+        ],
+        [
+          "Na(+) /H(+) exchanger 6 (NHE6",
+          0.020498139309455574
+        ],
+        [
+          "X-linked Na(+) /H(+) exchanger 6",
+          0.01920418196051013
+        ],
+        [
+          "Christianson syndrome (CS) is caused by mutations in SLC9A6",
+          0.018922781639528447
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "58a8045860087bc10a000035",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "hair pulling disorder",
+          2.801719647193777
+        ],
+        [
+          "Hair pulling disorder (HPD",
+          0.052339507936418485
+        ],
+        [
+          "(Hair Pulling Disorder",
+          0.03863966585157178
+        ],
+        [
+          "hair pulling disorder, HPD",
+          0.02997302740637684
+        ],
+        [
+          "hair pulling disorder; HPD",
+          0.01484406663187063
+        ],
+        [
+          "Hair pulling",
+          0.011801741236666292
+        ],
+        [
+          "Trichotillomania (hair pulling disorder",
+          0.011403501771321933
+        ],
+        [
+          "hair pulling disorder. Hair pulling disorder",
+          0.01016598107495702
+        ],
+        [
+          ".",
+          0.004863520901540441
+        ],
+        [
+          "hair pulling disorder, HPD)",
+          0.004189495673811396
+        ],
+        [
+          "hair pulling disorder,",
+          0.0034908689609102887
+        ],
+        [
+          "Hair pulling disorder (HPD;",
+          0.0023898884202306642
+        ],
+        [
+          "Hair pulling disorder (HPD; trichotillomania)",
+          0.0020194822080801898
+        ],
+        [
+          "Hair Pulling Disorder)",
+          0.0018791984300341735
+        ],
+        [
+          "HPD",
+          0.001524371050628036
+        ],
+        [
+          "hair pulling disorder;",
+          0.0012089182863934504
+        ],
+        [
+          "Hair pulling disorder (HPD; trichotillomania",
+          0.0008620522251701098
+        ],
+        [
+          "(hair pulling disorder, HPD",
+          0.0007093710360424147
+        ],
+        [
+          "hair pulling disorder; HPD)",
+          0.0006915188232214804
+        ],
+        [
+          "Pulling Disorder",
+          0.000653074786203144
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "58a9c152396a458e50000001",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "C. difficile",
+          0.944100991815557
+        ],
+        [
+          "Escherichia coli",
+          0.9408359894584329
+        ],
+        [
+          "Paneth cells",
+          0.7623876192236483
+        ],
+        [
+          "epithelial cells",
+          0.48503572749832435
+        ],
+        [
+          "human",
+          0.46279316259829445
+        ],
+        [
+          "small intestine",
+          0.4435457921606378
+        ],
+        [
+          "epithelial",
+          0.4160983092166054
+        ],
+        [
+          "Escherichia coli by the antimicrobial peptide human",
+          0.19715248374256428
+        ],
+        [
+          "human defensin 5. Human",
+          0.19399698741476837
+        ],
+        [
+          "Escherichia coli by the antimicrobial peptide human defensin 5. Human",
+          0.1660631019183388
+        ],
+        [
+          "Staphylococcus aureus,",
+          0.159575356859566
+        ],
+        [
+          "Paneth",
+          0.15741441799862865
+        ],
+        [
+          "Staphylococcus aureus, Escherichia coli,",
+          0.12649323218334294
+        ],
+        [
+          "Escherichia coli,",
+          0.12021891044314197
+        ],
+        [
+          "lactoferrin,",
+          0.10283961813867629
+        ],
+        [
+          "the small intestine",
+          0.09979038109104316
+        ],
+        [
+          "human alpha defensin. Human",
+          0.08443090720514475
+        ],
+        [
+          "Staphylococcus aureus, Escherichia coli, and Streptococcus agalactiae",
+          0.07457396744972074
+        ],
+        [
+          "Escherichia coli, and Streptococcus agalactiae",
+          0.07087494690018942
+        ],
+        [
+          "epithelial cells in the genitourinary tract.",
+          0.06823081609359391
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "5891c90949702f2e01000001",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "INCA",
+          0.39790675494424343
+        ],
+        [
+          "UNLABELLED: INteractive Codon usage Analysis (INCA",
+          0.13185150083361238
+        ],
+        [
+          "INCA)",
+          0.10412217948269857
+        ],
+        [
+          "INCA: synonymous codon usage analysis and clustering by means of self-organizing map. UNLABELLED",
+          0.09905696783738399
+        ],
+        [
+          "UNLABELLED: INteractive Codon usage Analysis (INCA)",
+          0.0946273480687273
+        ],
+        [
+          "UNLABELLED: INteractive Codon usage Analysis",
+          0.061322724124643554
+        ],
+        [
+          "UNLABELLED",
+          0.048603322185132594
+        ],
+        [
+          "INteractive Codon usage Analysis (INCA",
+          0.01446155498650974
+        ],
+        [
+          "INteractive Codon usage Analysis (INCA)",
+          0.010378786655226608
+        ],
+        [
+          "INCA:",
+          0.007832869872569929
+        ],
+        [
+          "INteractive Codon usage Analysis",
+          0.006725914693759982
+        ],
+        [
+          "(INCA",
+          0.005722670959419848
+        ],
+        [
+          "(INCA)",
+          0.004107053566596731
+        ],
+        [
+          "INCA: synonymous codon usage analysis and clustering by means of self-organizing map. UNLABELLED:",
+          0.0029651348313105338
+        ],
+        [
+          "INCA includes",
+          0.0021339759492533983
+        ],
+        [
+          "INCA includes a specific unsupervised neural network algorithm, the self-organizing map,",
+          0.0019696292719408918
+        ],
+        [
+          "AVAILABILITY: INCA",
+          0.0017387189503502
+        ],
+        [
+          "INCA includes a specific unsupervised neural network algorithm",
+          0.0017088552163013499
+        ]
+      ]
+    },
+    {
+      "type": "factoid",
+      "id": "58a2ced760087bc10a000004",
+      "ideal_answer": "Dummy",
+      "exact_answer": [
+        [
+          "5p15.33",
+          0.7755496899600962
+        ],
+        [
+          "5p15.32",
+          0.7663026211203846
+        ],
+        [
+          "5p15.3",
+          0.5064276667755655
+        ],
+        [
+          "5p15.3.",
+          0.19491101253888504
+        ],
+        [
+          "chromosome 5p15.3",
+          0.1578000813110449
+        ],
+        [
+          "chromosome 5p15.32",
+          0.14233103069932881
+        ],
+        [
+          "5p15.33;",
+          0.12362239860758945
+        ],
+        [
+          ".",
+          0.06386600937054
+        ],
+        [
+          "chromosome 5p15.3.",
+          0.06073320168877104
+        ],
+        [
+          "5p15.32.",
+          0.05672667955352133
+        ],
+        [
+          "6A3 (SLC6A3; dopamine transporter 1; DAT1) localizes to 5p15.33",
+          0.0424169461995322
+        ],
+        [
+          "5p15",
+          0.04008745766310596
+        ],
+        [
+          ";",
+          0.013469623215135087
+        ],
+        [
+          "SLC6A3; dopamine transporter 1; DAT1) localizes to 5p15.33",
+          0.012288714608343559
+        ],
+        [
+          "chromosome 5p15.32.",
+          0.010536264063926291
+        ],
+        [
+          "6A3 (SLC6A3; dopamine transporter 1; DAT1) localizes to 5p15.33;",
+          0.006761249083943345
+        ],
+        [
+          "chromosome 5p15",
+          0.006196846556885565
+        ],
+        [
+          "5p15.",
+          0.0024628333841473144
+        ],
+        [
+          "SLC6A3; dopamine transporter 1; DAT1) localizes to 5p15.33;",
+          0.0019588175913856907
+        ],
+        [
+          "5",
+          0.0019368358648465592
+        ]
+      ]
+    }
+  ]
+}
