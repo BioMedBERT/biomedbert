@@ -124,26 +124,26 @@ def create_model(bert_config, is_training, input_ids, input_mask, segment_ids,
   output_layer = model.get_pooled_output()
   hidden_size = output_layer.shape[-1].value
 
-  output_weights = tf.get_variable(
+  output_weights = tf.compat.v1.get_variable(
       "output_weights", [num_labels, hidden_size],
-      initializer=tf.truncated_normal_initializer(stddev=0.02))
+      initializer=tf.compat.v1.truncated_normal_initializer(stddev=0.02))
 
-  output_bias = tf.get_variable(
-      "output_bias", [num_labels], initializer=tf.zeros_initializer())
+  output_bias = tf.compat.v1.get_variable(
+      "output_bias", [num_labels], initializer=tf.compat.v1.zeros_initializer())
 
-  with tf.variable_scope("loss"):
+  with tf.compat.v1.variable_scope("loss"):
     if is_training:
       # I.e., 0.1 dropout
-      output_layer = tf.nn.dropout(output_layer, keep_prob=0.9)
+      output_layer = tf.compat.v1.nn.dropout(output_layer, keep_prob=0.9)
 
-    logits = tf.matmul(output_layer, output_weights, transpose_b=True)
-    logits = tf.nn.bias_add(logits, output_bias)
-    log_probs = tf.nn.log_softmax(logits, axis=-1)
+    logits = tf.compat.v1.matmul(output_layer, output_weights, transpose_b=True)
+    logits = tf.compat.v1.nn.bias_add(logits, output_bias)
+    log_probs = tf.compat.v1.nn.log_softmax(logits, axis=-1)
 
-    one_hot_labels = tf.one_hot(labels, depth=num_labels, dtype=tf.float32)
+    one_hot_labels = tf.compat.v1.one_hot(labels, depth=num_labels, dtype=tf.compat.v1.float32)
 
-    per_example_loss = -tf.reduce_sum(one_hot_labels * log_probs, axis=-1)
-    loss = tf.reduce_mean(per_example_loss)
+    per_example_loss = -tf.compat.v1.reduce_sum(one_hot_labels * log_probs, axis=-1)
+    loss = tf.compat.v1.reduce_mean(per_example_loss)
 
     return (loss, per_example_loss, log_probs)
 
@@ -156,21 +156,21 @@ def model_fn_builder(bert_config, num_labels, init_checkpoint, learning_rate,
   def model_fn(features, labels, mode, params):  # pylint: disable=unused-argument
     """The `model_fn` for TPUEstimator."""
 
-    tf.logging.info("*** Features ***")
+    tf.compat.v1.logging.info("*** Features ***")
     for name in sorted(features.keys()):
-      tf.logging.info("  name = %s, shape = %s" % (name, features[name].shape))
+      tf.compat.v1.logging.info("  name = %s, shape = %s" % (name, features[name].shape))
 
     input_ids = features["input_ids"]
     input_mask = features["input_mask"]
     segment_ids = features["segment_ids"]
     label_ids = features["label_ids"]
 
-    is_training = (mode == tf.estimator.ModeKeys.TRAIN)
+    is_training = (mode == tf.compat.v1.estimator.ModeKeys.TRAIN)
     (total_loss, per_example_loss, log_probs) = create_model(
         bert_config, is_training, input_ids, input_mask, segment_ids, label_ids,
         num_labels, use_one_hot_embeddings)
 
-    tvars = tf.trainable_variables()
+    tvars = tf.compat.v1.trainable_variables()
 
     scaffold_fn = None
     initialized_variable_names = []
@@ -180,35 +180,35 @@ def model_fn_builder(bert_config, num_labels, init_checkpoint, learning_rate,
       if use_tpu:
 
         def tpu_scaffold():
-          tf.train.init_from_checkpoint(init_checkpoint, assignment_map)
-          return tf.train.Scaffold()
+          tf.compat.v1.train.init_from_checkpoint(init_checkpoint, assignment_map)
+          return tf.compat.v1.train.Scaffold()
 
         scaffold_fn = tpu_scaffold
       else:
-        tf.train.init_from_checkpoint(init_checkpoint, assignment_map)
+        tf.compat.v1.train.init_from_checkpoint(init_checkpoint, assignment_map)
 
-    tf.logging.info("**** Trainable Variables ****")
+    tf.compat.v1.logging.info("**** Trainable Variables ****")
     for var in tvars:
       init_string = ""
       if var.name in initialized_variable_names:
         init_string = ", *INIT_FROM_CKPT*"
-      tf.logging.info("  name = %s, shape = %s%s", var.name, var.shape,
+      tf.compat.v1.logging.info("  name = %s, shape = %s%s", var.name, var.shape,
                       init_string)
 
     output_spec = None
-    if mode == tf.estimator.ModeKeys.TRAIN:
+    if mode == tf.compat.v1.estimator.ModeKeys.TRAIN:
 
       train_op = optimization.create_optimizer(
           total_loss, learning_rate, num_train_steps, num_warmup_steps, use_tpu)
 
-      output_spec = tf.contrib.tpu.TPUEstimatorSpec(
+      output_spec = tf.compat.v1.contrib.tpu.TPUEstimatorSpec(
           mode=mode,
           loss=total_loss,
           train_op=train_op,
           scaffold_fn=scaffold_fn)
 
-    elif mode == tf.estimator.ModeKeys.PREDICT:
-      output_spec = tf.contrib.tpu.TPUEstimatorSpec(
+    elif mode == tf.compat.v1.estimator.ModeKeys.PREDICT:
+      output_spec = tf.compat.v1.contrib.tpu.TPUEstimatorSpec(
           mode=mode,
           predictions={
               "log_probs": log_probs,
@@ -237,24 +237,24 @@ def input_fn_builder(dataset_path, seq_length, is_training,
 
     def extract_fn(data_record):
       features = {
-          "query_ids": tf.FixedLenSequenceFeature(
-              [], tf.int64, allow_missing=True),
-          "doc_ids": tf.FixedLenSequenceFeature(
-              [], tf.int64, allow_missing=True),
-          "label": tf.FixedLenFeature([], tf.int64),
+          "query_ids": tf.compat.v1.FixedLenSequenceFeature(
+              [], tf.compat.v1.int64, allow_missing=True),
+          "doc_ids": tf.compat.v1.FixedLenSequenceFeature(
+              [], tf.compat.v1.int64, allow_missing=True),
+          "label": tf.compat.v1.FixedLenFeature([], tf.compat.v1.int64),
       }
-      sample = tf.parse_single_example(data_record, features)
+      sample = tf.compat.v1.parse_single_example(data_record, features)
 
-      query_ids = tf.cast(sample["query_ids"], tf.int32)
-      doc_ids = tf.cast(sample["doc_ids"], tf.int32)
-      label_ids = tf.cast(sample["label"], tf.int32)
-      input_ids = tf.concat((query_ids, doc_ids), 0)
+      query_ids = tf.compat.v1.cast(sample["query_ids"], tf.compat.v1.int32)
+      doc_ids = tf.compat.v1.cast(sample["doc_ids"], tf.compat.v1.int32)
+      label_ids = tf.compat.v1.cast(sample["label"], tf.compat.v1.int32)
+      input_ids = tf.compat.v1.concat((query_ids, doc_ids), 0)
 
-      query_segment_id = tf.zeros_like(query_ids)
-      doc_segment_id = tf.ones_like(doc_ids)
-      segment_ids = tf.concat((query_segment_id, doc_segment_id), 0)
+      query_segment_id = tf.compat.v1.zeros_like(query_ids)
+      doc_segment_id = tf.compat.v1.ones_like(doc_ids)
+      segment_ids = tf.compat.v1.concat((query_segment_id, doc_segment_id), 0)
 
-      input_mask = tf.ones_like(input_ids)
+      input_mask = tf.compat.v1.ones_like(input_ids)
 
       features = {
           "input_ids": input_ids,
@@ -264,7 +264,7 @@ def input_fn_builder(dataset_path, seq_length, is_training,
       }
       return features
 
-    dataset = tf.data.TFRecordDataset([dataset_path])
+    dataset = tf.compat.v1.data.TFRecordDataset([dataset_path])
     dataset = dataset.map(
         extract_fn, num_parallel_calls=4).prefetch(output_buffer_size)
 
@@ -315,7 +315,7 @@ def main(_):
 
   tpu_cluster_resolver = None
   if FLAGS.use_tpu and FLAGS.tpu_name:
-    tpu_cluster_resolver = tf.contrib.cluster_resolver.TPUClusterResolver(
+    tpu_cluster_resolver = tf.compat.v1.contrib.cluster_resolver.TPUClusterResolver(
         FLAGS.tpu_name, zone=FLAGS.tpu_zone, project=FLAGS.gcp_project)
 
   is_per_host = tf.compat.v1.contrib.tpu.InputPipelineConfig.PER_HOST_V2
@@ -324,7 +324,7 @@ def main(_):
       master=FLAGS.master,
       model_dir=FLAGS.output_dir,
       save_checkpoints_steps=FLAGS.save_checkpoints_steps,
-      tpu_config=tf.contrib.tpu.TPUConfig(
+      tpu_config=tf.compat.v1.contrib.tpu.TPUConfig(
           iterations_per_loop=FLAGS.iterations_per_loop,
           num_shards=FLAGS.num_tpu_cores,
           per_host_input_for_training=is_per_host))
@@ -378,10 +378,10 @@ def main(_):
       tf.compat.v1.logging.info("Computing metrics...")
 
       if FLAGS.msmarco_output:
-        msmarco_file = tf.gfile.Open(
+        msmarco_file = tf.compat.v1.gfile.Open(
             FLAGS.output_dir + "/msmarco_predictions_" + set_name + ".tsv", "w")
         query_docids_map = []
-        with tf.gfile.Open(
+        with tf.compat.v1.gfile.Open(
             FLAGS.data_dir + "/query_doc_ids_" + set_name + ".txt") as ref_file:
           for line in ref_file:
             query_docids_map.append(line.strip().split("\t"))
@@ -396,7 +396,7 @@ def main(_):
       for item in result:
         results.append((item["log_probs"], item["label_ids"]))
         if total_count % 10000 == 0:
-          tf.logging.info("Read {} examples in {} secs".format(
+          tf.compat.v1.logging.info("Read {} examples in {} secs".format(
               total_count, int(time.time() - start_time)))
 
         if len(results) == FLAGS.num_eval_docs:
