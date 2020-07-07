@@ -15,7 +15,7 @@ import metrics
 import modeling
 import optimization
 
-flags = tf.flags
+flags = tf.compat.v1.flags
 
 FLAGS = flags.FLAGS
 
