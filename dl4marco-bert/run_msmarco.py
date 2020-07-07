@@ -318,8 +318,8 @@ def main(_):
     tpu_cluster_resolver = tf.contrib.cluster_resolver.TPUClusterResolver(
         FLAGS.tpu_name, zone=FLAGS.tpu_zone, project=FLAGS.gcp_project)
 
-  is_per_host = tf.contrib.tpu.InputPipelineConfig.PER_HOST_V2
-  run_config = tf.contrib.tpu.RunConfig(
+  is_per_host = tf.compat.v1.contrib.tpu.InputPipelineConfig.PER_HOST_V2
+  run_config = tf.compat.v1.contrib.tpu.RunConfig(
       cluster=tpu_cluster_resolver,
       master=FLAGS.master,
       model_dir=FLAGS.output_dir,
@@ -341,7 +341,7 @@ def main(_):
 
   # If TPU is not available, this will fall back to normal Estimator on CPU
   # or GPU.
-  estimator = tf.contrib.tpu.TPUEstimator(
+  estimator = tf.compat.v1.contrib.tpu.TPUEstimator(
       use_tpu=FLAGS.use_tpu,
       model_fn=model_fn,
       config=run_config,
@@ -350,21 +350,21 @@ def main(_):
       predict_batch_size=FLAGS.eval_batch_size)
 
   if FLAGS.do_train:
-    tf.logging.info("***** Running training *****")
-    tf.logging.info("  Batch size = %d", FLAGS.train_batch_size)
-    tf.logging.info("  Num steps = %d", FLAGS.num_train_steps)
+    tf.compat.v1.logging.info("***** Running training *****")
+    tf.compat.v1.logging.info("  Batch size = %d", FLAGS.train_batch_size)
+    tf.compat.v1.logging.info("  Num steps = %d", FLAGS.num_train_steps)
     train_input_fn = input_fn_builder(
         dataset_path=FLAGS.data_dir + "/dataset_train.tf",
         seq_length=FLAGS.max_seq_length,
         is_training=True)
     estimator.train(input_fn=train_input_fn,
                     max_steps=FLAGS.num_train_steps)
-    tf.logging.info("Done Training!")
+    tf.compat.v1.logging.info("Done Training!")
 
   if FLAGS.do_eval:
     for set_name in ["dev", "eval"]:
-      tf.logging.info("***** Running evaluation *****")
-      tf.logging.info("  Batch size = %d", FLAGS.eval_batch_size)
+      tf.compat.v1.logging.info("***** Running evaluation *****")
+      tf.compat.v1.logging.info("  Batch size = %d", FLAGS.eval_batch_size)
       max_eval_examples = None
       if FLAGS.max_eval_examples:
         max_eval_examples = FLAGS.max_eval_examples * FLAGS.num_eval_docs
@@ -375,7 +375,7 @@ def main(_):
           is_training=False,
           max_eval_examples=max_eval_examples)
 
-      tf.logging.info("Computing metrics...")
+      tf.compat.v1.logging.info("Computing metrics...")
 
       if FLAGS.msmarco_output:
         msmarco_file = tf.gfile.Open(
@@ -438,9 +438,9 @@ def main(_):
 
       all_metrics /= example_idx
 
-      tf.logging.info("Eval {}:".format(set_name))
-      tf.logging.info("  ".join(METRICS_MAP))
-      tf.logging.info(all_metrics)
+      tf.compat.v1.logging.info("Eval {}:".format(set_name))
+      tf.compat.v1.logging.info("  ".join(METRICS_MAP))
+      tf.compat.v1.logging.info(all_metrics)
 
 
 if __name__ == "__main__":
