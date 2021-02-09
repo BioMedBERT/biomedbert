@@ -15,3 +15,7 @@ echo ""
 
 gcloud compute ssh --project "$PROJECT_ID" --zone "$ZONE" \
   "$INSTANCE_NAME" -- -L 8080:localhost:8080
+
+
+gcloud compute ssh --project ebisong-sandbox --zone us-central1-a \
+solvm -- -L 8080:localhost:8080
